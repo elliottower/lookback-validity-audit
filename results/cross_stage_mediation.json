@@ -1,0 +1,85 @@
+{
+  "synthetic": true,
+  "timestamp": "2026-07-29T15:32:43.911118+00:00",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "ablation_method": "mean-ablation (not zero-ablation)",
+  "measurement_instrument": "interchange intervention (matching other experiments)",
+  "representative_layers": {
+    "binding_ablation": 34,
+    "binding_measure": 34,
+    "answer_ablation": 38,
+    "answer_measure": 52
+  },
+  "stages": {
+    "binding": {
+      "lookback_type": "binding_lookback",
+      "concept": "address_and_payload",
+      "layers": {
+        "34": 3,
+        "35": 7,
+        "36": 8
+      }
+    },
+    "answer": {
+      "lookback_type": "answer_lookback",
+      "concept": "pointer",
+      "layers": {
+        "38": 3,
+        "52": 18,
+        "53": 19
+      }
+    }
+  },
+  "hypothesis": {
+    "forward_mediation": "Ablating binding degrades answer IIA (binding causally feeds answer)",
+    "no_backward_effect": "Ablating answer does NOT degrade binding IIA (no reverse causation)"
+  },
+  "conditions": {
+    "baseline": {
+      "description": "No ablation, measure answer-pointer IIA at L52",
+      "ablated_stage": null,
+      "measured_stage": "answer",
+      "iia_mean": 0.7901912562502419,
+      "iia_std": 0.12640901105347602
+    },
+    "ablate_binding_measure_answer": {
+      "description": "Mean-ablate binding (L34), measure answer-pointer IIA at L52",
+      "ablated_stage": "binding",
+      "measured_stage": "answer",
+      "iia_mean": 0.5686982813602853,
+      "iia_std": 0.17501098946898605
+    },
+    "ablate_answer_measure_binding": {
+      "description": "Mean-ablate answer (L38), measure binding IIA at L34",
+      "ablated_stage": "answer",
+      "measured_stage": "binding",
+      "iia_mean": 0.7725758000497958,
+      "iia_std": 0.13100601767176992
+    },
+    "baseline_binding": {
+      "description": "No ablation, measure binding IIA at L34 (for backward comparison)",
+      "ablated_stage": null,
+      "measured_stage": "binding",
+      "iia_mean": 0.8306087595243042,
+      "iia_std": 0.11299760407013174
+    }
+  },
+  "mediation_analysis": {
+    "forward_effect": {
+      "description": "Binding ablation effect on answer IIA",
+      "point_estimate": 0.22149297488995656,
+      "ci_95_lower": 0.17763186432874337,
+      "ci_95_upper": 0.2647850590984563,
+      "significant": true
+    },
+    "backward_effect": {
+      "description": "Answer ablation effect on binding IIA",
+      "point_estimate": 0.05803295947450848,
+      "ci_95_lower": 0.019614069840882608,
+      "ci_95_upper": 0.09806100464932159,
+      "significant": true
+    },
+    "verdict": "Bidirectional coupling: both stages affect each other (shared representation?)"
+  }
+}

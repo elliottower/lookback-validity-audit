@@ -1,0 +1,254 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage[affil-it]{authblk}
+\usepackage{lineno}
+\usepackage{natbib}
+
+\renewcommand{\arraystretch}{1.3}
+\emergencystretch=1.5em
+
+\title{Belief Tracking or Attention-Mediated Retrieval?\\A Validity Audit of the Lookback Mechanism}
+
+\author{Elliot Tower}
+\affil{Independent Researcher \\ \texttt{elliot@elliottower.ai}}
+
+\begin{document}
+\linenumbers
+\maketitle
+
+\begin{abstract}
+Prakash et al.\ (ICLR 2026) claim that language models track characters' beliefs via a ``lookback mechanism''---pointer dereference through attention---comprising three sub-mechanisms at non-overlapping layer ranges. We audit this claim against 31 validity criteria from the Mechanistic Validity framework. The audit identifies five structural gaps: no random subspace baseline, no negative controls on non-belief tasks, selection on the dependent variable, untested mechanism unity, and interpretive inflation of ``pointer dereference'' over standard attention. The paper's strongest result---a decomposed intervention producing a third answer distinct from both source and counterfactual---demonstrates genuine internal structure, but does not distinguish belief-specific processing from generic retrieval. The cognitive science literature on human belief tracking, including unresolved debates over single- versus dual-system accounts and failed replications of automatic belief attribution, provides independent grounds against single-mechanism framing. We pre-register five experiments targeting the gaps. \textcolor{red}{[Results pending.]}
+\end{abstract}
+
+\noindent\textbf{Keywords:} mechanistic interpretability, validity, belief tracking, interchange interventions, replication
+
+
+\section{Introduction}
+\label{sec:intro}
+
+Mechanistic interpretability attributes causal roles to model components using interchange interventions---swapping internal representations between paired inputs \citep{geiger2021causal, vig2020investigating}. When such experiments succeed, the result is typically described as ``the mechanism'' for a capability: induction heads for in-context learning \citep{olsson2022context}, the IOI circuit \citep{wang2023interpretability}, the ``lookback mechanism'' for belief tracking \citep{prakash2025lookback}. These labels carry implicit validity assumptions---construct, measurement, internal, external, and interpretive---that are rarely tested.
+
+We apply the Mechanistic Validity framework \citep{tower2026mechval} to Prakash et al.\ (\citeyear{prakash2025lookback}), published at ICLR 2026, which claims that large language models implement belief tracking via three ``lookback'' sub-mechanisms---binding (layers 33--38), answer (layers 52--56), and visibility (layers 10--31)---collectively described as ``pointer dereference via attention.'' The claim rests on interchange intervention experiments on 80 synthetic stories in Llama-3-70B-Instruct, pre-filtered to cases the model answers correctly, with qualitative replication in two other models. The three sub-mechanisms operate on different token types at different layer ranges, with per-layer subspace ranks varying from 3 to 19 singular vectors for the pointer concept and up to 320 for visibility (selected from a truncated SVD of the 8192-dimensional residual stream).\footnote{Ranks extracted from released results at \url{https://github.com/Nix07/belief_tracking} (commit \texttt{0579347e}); the SVD uses 500 components. See \texttt{reference/extracted\_results\_llama70b.json} in our repository.}
+
+The audit identifies five structural gaps and pre-registers five experiments to test them.
+
+The audit applies 31 criteria across five validity types (construct, measurement, internal, external, interpretive), producing a five-tier verdict from Proposed to Validated. Section~\ref{sec:discussion} also applies a reference-narrowing procedure that produces a \emph{contracted claim}---a restated version of the paper's claim restricted to what the evidence licenses.
+
+
+\section{Validity Assessment}
+\label{sec:validity}
+
+Table~\ref{tab:validity} summarizes the assessment. We discuss the most consequential gaps below.
+
+\subsection{Construct validity}
+
+\paragraph{No discriminant validity (C4).}
+The paper does not test whether the lookback pattern is absent on tasks where it should not appear. Candidate negative controls: factual recall without belief tracking, simple copying, single-character stories, non-ToM multi-step retrieval. If the pattern appears on all of these, it is attention-mediated retrieval, not a belief-tracking mechanism.
+
+\paragraph{No convergent evidence (C3).}
+All evidence comes from one method family: interchange interventions on residual stream vectors via NNsight. Subspace identification uses the same framework (SVD of intervention-site activations, then learning a binary mask over singular vectors to maximize IIA). No weight analysis, no attention pattern analysis, no independent probing.
+
+\paragraph{Construct import.}
+``Belief tracking'' imports cognitive-science vocabulary---Theory of Mind \citep{premack1978chimpanzee}, false-belief attribution \citep{wimmer1983beliefs}---without validating the transfer. The model passes a behavioral ToM test; the internal mechanism is then labeled with cognitive-science terminology. Behavioral equivalence does not entail mechanistic equivalence.
+
+\subsection{Measurement validity}
+
+\paragraph{No random subspace baseline (M2).}
+The subspace identification procedure (SVD followed by L1-regularized binary mask selection) produces per-layer subspaces of varying rank---typically 3 to 19 singular vectors for the pointer concept, selected from a truncated SVD of the 8192-dimensional residual stream. The paper does not test whether a random subspace of matched rank achieves comparable IIA. In several reported experiments, the subspace intervention approaches the full residual stream intervention's IIA (e.g., 0.925 vs.\ 1.0 at layer 38 for the pointer concept), suggesting the subspace captures most of the task-relevant signal but also that the gap between subspace and full-rank is non-trivial. The visibility lookback is particularly striking: the selected ``subspace'' for the source concept uses 160--320 of 500 SVD components (32--64\% of the truncated candidate basis, though only 2--4\% of the full 8192-dimensional residual stream), where a weaker L1 penalty ($\lambda = 0.03$ vs.\ $0.1$) permits the optimizer to retain most candidate dimensions. At early layers, the selected subspace achieves higher IIA than the full 500-component basis (e.g., 0.90 vs.\ 0.175 at layer 7), suggesting that adding the remaining SVD components destroys counterfactual behavior---a pattern that could reflect meaningful directional selectivity or optimization artifacts.
+
+\paragraph{No effect size calibration (M1).}
+IIA is the sole metric, reported without confidence intervals or statistical tests. For $n = 80$, the standard error on IIA is ${\sim}5.6$ percentage points ($\sqrt{0.5 \cdot 0.5 / 80}$), placing values below ${\sim}0.60$ within noise of chance for a binary outcome.
+
+\paragraph{Selection on the dependent variable (M3).}
+All CausalToM examples were pre-filtered to cases the model answers correctly on both clean and counterfactual prompts. The analysis conditions on the output, then attributes a mechanism to the internal process. Cases where the model fails are excluded. The codebase does generate a train/eval split (80 stories each; \texttt{scripts/patching\_scripts/run\_patching\_exp\_utils.py:465}): the binary mask is optimized on training stories and IIA is reported on held-out validation stories. However, the SVD basis---which defines the candidate directions the mask selects from---is pre-computed offline (\texttt{svd/} directory, not committed to the repository), and no documentation indicates whether it was computed on held-out data. The evaluation is therefore out-of-sample relative to the mask but likely in-sample relative to the feature space.
+
+\subsection{Internal validity}
+
+\paragraph{Full-vector confound (I5).}
+Interchange interventions swap the entire residual stream vector (or a large subspace), transferring all information, not just the hypothesized ``pointer.'' Two interpretations are consistent: (a) the model uses a specific pointer structure and the swap transfers it, or (b) the model uses any information in the residual stream and the swap includes it. Interpretation (b) makes no mechanistic claim beyond ``information flows through the residual stream.''
+
+\paragraph{No epistatic interaction test (I6).}
+The three sub-mechanisms are tested independently. Whether disrupting binding changes the answer lookback's behavior beyond the additive prediction is untested. Non-additive interaction would support a single staged mechanism; additive independence would support three separate processes sharing a label.
+
+\paragraph{No rescue reversibility (I7).}
+The paper ablates the mechanism (showing necessity) but does not restore a corrupted component to test whether behavior recovers. Rescue experiments distinguish a causal bottleneck from a correlated side-effect.
+
+\subsection{External validity}
+
+\paragraph{Single template (E2).}
+All 80 stories follow the CausalToM template with fixed token positions, exactly two characters, and exactly two objects. No structural variation is tested.
+
+\paragraph{No cross-task transfer (E3).}
+The paper tests model generality (Gemma-3-27B, Qwen-2.5-14B) but not task generality: different story formats, naturalistic text, multi-step reasoning with belief tracking as one component.
+
+\paragraph{No graded response (E5).}
+The paper does not test whether partial ablation of the subspace produces proportionally degraded performance. A dose-response curve would distinguish a sharply localized mechanism from diffuse information storage.
+
+\paragraph{No novel prediction (E6).}
+The mechanism is characterized post hoc. No new behavioral prediction derived from the mechanistic account is tested on held-out data.
+
+\subsection{Interpretive validity}
+
+\paragraph{Label inflation (V1, V4).}
+``Pointer dereference'' imports specificity from programming languages: allocate a reference, store an address, follow the reference, retrieve a value. The evidence shows attention-mediated information flow between token positions. Substituting ``pointer'' $\rightarrow$ query vector, ``address'' $\rightarrow$ key vector, ``payload'' $\rightarrow$ value content, ``dereference'' $\rightarrow$ attention, the finding reduces to: the model uses attention to retrieve information from earlier tokens. This is what attention does by construction.
+
+\paragraph{No falsification target.}
+The paper does not specify what result would have falsified the lookback hypothesis. High IIA supports it, low IIA means ``the mechanism does not operate here,'' and matched full-vector and subspace IIA means ``the subspace captures the information.'' Every outcome confirms.
+
+\paragraph{The third-answer result.}
+The paper's strongest evidence is the answer pointer experiment (Figure 4b): swapping the ``pointer'' without the ``payload'' produces a third answer distinct from both the original and counterfactual outputs. This resists trivial explanation---it demonstrates decomposable internal structure. It does not, however, distinguish a belief-specific pointer from a task-general retrieval index. The random subspace and non-ToM controls (Section~\ref{sec:experiments}) test this distinction.
+
+\subsection{Summary}
+
+\begin{table}[t]
+\centering
+\caption{Validity assessment against 31 criteria \citep{tower2026mechval}. Two criteria fail outright (V1: level declaration, V4: anthropomorphism check). Criteria not discussed individually are rated in the supplementary audit document.}
+\label{tab:validity}
+\begin{tabular}{lcccc}
+\toprule
+Category & Confirmed & Partial & Not met & Fails \\
+\midrule
+Construct (C1--C5) & 1 & 2 & 2 & 0 \\
+Measurement (M1--M7) & 0 & 2 & 5 & 0 \\
+Internal (I1--I7, I10) & 1 & 2 & 5 & 0 \\
+External (E1--E6) & 0 & 2 & 4 & 0 \\
+Interpretive (V1--V5) & 0 & 2 & 1 & 2 \\
+\midrule
+\textbf{Total (31)} & \textbf{2} & \textbf{10} & \textbf{17} & \textbf{2} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This places the claim at Causally Suggestive on the five-tier verdict scale (Proposed, Causally Suggestive, Mechanistically Supported, Triangulated, Validated). The paper establishes necessity (I1: ablation degrades performance) but the bottleneck to Mechanistically Supported is evidence from independent methods (C3), negative controls (C4), and a random subspace baseline (M2).
+
+
+\section{The Unity Problem}
+\label{sec:unity}
+
+The paper treats three ``lookback mechanisms'' as instances of a single computation. They operate at non-overlapping layer ranges, on different token types, with per-layer subspace ranks that differ by an order of magnitude (3--10 for binding vs.\ 160--320 for visibility; Table~\ref{tab:unity}).
+
+\begin{table}[t]
+\centering
+\caption{The three ``lookback mechanisms'' differ in every measurable property. Subspace ranks are per-layer (selected via L1-regularized binary mask over SVD components) and vary across layers within each mechanism. Ranks extracted from released results at commit \texttt{0579347e}; exact values depend on layer and L1 weight ($\lambda = 0.1$ for binding/answer, $\lambda = 0.03$ for visibility).}
+\label{tab:unity}
+\begin{tabular}{lccc}
+\toprule
+Lookback & Layers & Tokens & Per-layer rank \\
+\midrule
+Binding & 33--38 & State tokens & 3--10 \\
+Answer & 52--56 & Final token (``:'') & 18--19 \\
+Visibility & 10--31 & Visibility sentence & 160--320 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The unity claim rests on shared vocabulary: all three involve ``lookback'' (attention to an earlier token) and ``dereference'' (retrieval at the attended position). This describes the attention mechanism itself---every QK circuit attending to a previous position and retrieving content through OV fits the definition.
+
+The critical test is coupling: if binding (layers 33--38) is disrupted, does the answer lookback (layers 52--56) degrade? Sequential dependence would indicate one staged mechanism. Independent disruptability would indicate separate processes sharing a naming convention. The paper does not perform this test.
+
+
+\section{Cognitive Science Context}
+\label{sec:cogsci}
+
+The paper frames its contribution as understanding ``how LMs track beliefs,'' importing Theory of Mind from cognitive science. Three lines of evidence bear on this import.
+
+Vegner et al.\ (\citeyear{vegner2025systematicity}) argue that the field conflates behavioral systematicity (correct outputs across variations) with representational systematicity (compositionally structured internal representations). The Lookback paper shows the former and infers the latter. CausalToM uses exactly two characters, first-order beliefs only, and a single story template. Representational systematicity predicts clean extension to three or more characters, nested beliefs, and structurally novel stories. Behavioral matching does not require any of these.
+
+The single-mechanism assumption carries independent risk. Apperly and Butterfill (\citeyear{apperly2009humans}) proposed that human belief tracking involves two distinct systems. Phillips et al.\ (\citeyear{phillips2015second}) failed to replicate the strongest evidence for a single automatic system \citep{kovacs2010social}, finding the original effects better explained by timing artifacts. If cognitive scientists cannot establish that humans have a single unified belief-tracking mechanism, claiming language models have one is premature. The paper's own data reinforce this concern: three dissociable sub-effects at different layers, tokens, and dimensions.
+
+Human belief attribution is content-selective: people track false beliefs about presence differently than about absence \citep{schuwerk2015implicit}. CausalToM tests one content type. A ``pervasive'' mechanism should handle beliefs about location, existence, intentions, and knowledge states. Ruis et al.\ (\citeyear{ruis2025reevaluating}) make the general point: passing a simplified ToM behavioral test and finding a correlated internal pattern does not establish that the pattern implements ToM in any sense that transfers from cognitive science.
+
+
+\section{Pre-Registered Experiments}
+\label{sec:experiments}
+
+We pre-register five experiments targeting the structural gaps identified above, organized as three primary experiments (run first) and two secondary experiments (run if primary experiments succeed). All experiments use Llama-3-70B-Instruct, reproducing the original paper's setup via NNsight. \textcolor{red}{[Pre-registration SHA and results to be added.]}
+
+\subsection{Held-out basis validation (M2, M3)}
+
+The original codebase validates the binary mask out-of-sample (mask trained on 80 stories, IIA evaluated on a separate 80). The SVD basis itself, however, is pre-computed offline with no documented held-out procedure. This experiment tests whether the reported subspaces generalize when the SVD basis is also computed on disjoint data. Protocol: partition a larger pool of CausalToM stories (320+, generated from the same templates) into three non-overlapping sets---SVD estimation, mask training, and IIA evaluation. Recompute the SVD on the estimation set, fit the binary mask on the training set using the original hyperparameters, and evaluate IIA on the held-out evaluation set. Repeat for each layer $\times$ concept combination.
+
+\paragraph{Pre-committed interpretations.} If IIA on held-out data matches the released values within $\pm 0.05$ (4 examples on an 80-story evaluation set), the SVD-basis-leakage concern is closed and we report M3 as satisfied for the feature space. If IIA drops substantially (below 0.5 or below the 95th percentile of the random subspace distribution from Experiment~2), the reported subspaces are artifacts of basis overfitting and the claim requires recomputed SVD with proper held-out evaluation.
+
+\subsection{Matched-capacity controls (M2)}
+
+Two controls with matched optimization budget, evaluated on the same held-out set from Experiment~1:
+
+\paragraph{Random subspace baseline.} For each layer's identified subspace of rank $r$, sample 200 random $r$-dimensional subspaces from the same 500-component SVD basis (uniformly from the Grassmannian via QR decomposition). Compute IIA for each on the held-out evaluation set. The identified subspace should rank in the top 1\% ($p < 0.01$, one-sided rank test with corrected $p = (k + 1)/(n + 1)$). This is a floor control: the identified subspaces are optimized to maximize IIA while random subspaces are not, so the identified subspace beating random draws is expected.
+
+\paragraph{Shuffled-label control.} For two primary layer-concept combinations (one binding: \texttt{binding\_lookback/address\_and\_payload} at layer 34; one answer: \texttt{answer\_lookback/pointer} at layer 52), re-run the SVD + mask selection procedure with identical hyperparameters (Adam, $\text{lr} = 0.1$, L1 weight matching the original) on 100 permutations of the belief labels---shuffling which story's belief state serves as source for interchange intervention. Crucially, shuffled masks are \emph{trained} on shuffled assignments but \emph{evaluated} on real counterfactual targets (held-out set). The real-label subspace should beat the shuffled-label distribution ($p < 0.01$, rank test). The remaining four layer-concept combinations are tested as exploratory with 20 permutations each ($p$-floor $= 0.048$).
+
+\paragraph{Pre-committed interpretations.} If real-label subspaces beat both random and shuffled-label baselines on held-out data, M2 is satisfied and the belief-specificity concern narrows to the task-generality question (C4, Experiment~3). If shuffled-label subspaces achieve comparable IIA, the mask selection captures generic high-variance directions rather than belief structure, and the claim requires revision. If both shuffled and random subspaces approach the identified subspace's IIA, the subspace identification adds no information beyond dimensionality matching.
+
+\subsection{Task-specificity controls (C4)}
+
+Run the interchange intervention protocol on programmatically generated stories (120 per condition) across four conditions that isolate binding and belief attribution:
+
+\begin{enumerate}
+\item Echo/copy (no binding, no belief): ``Alice said: `the X is in loc1.' What did Alice say?''---pure retrieval, the strong control.
+\item Entity tracking (binding, no belief): ``Alice put X in loc1. Bob moved X to loc2. Where is X?''---a weak control, as the authors' own work predicts the pattern may appear here.
+\item True-belief matched stories (binding, minimal belief): same CausalToM structure but the character's belief matches reality.
+\item First-order false belief: standard CausalToM (the original task).
+\end{enumerate}
+
+Use the same layer ranges, subspace dimensions, and IIA metric across all conditions.
+
+\paragraph{Pre-committed interpretations.} If the lookback pattern is absent on echo/copy and entity tracking but present on false belief, C4 is satisfied: the subspace captures belief-specific structure. If the pattern appears on entity tracking but not echo/copy, the mechanism is entity-state retrieval rather than belief tracking---a substantive correction of the interpretive claim, consistent with the authors' own entity-tracking prior work. If the pattern appears on all conditions including echo/copy, it is generic attention-mediated retrieval, not a belief-tracking mechanism.
+
+\subsection{Failure case analysis (I1)}
+\label{sec:failure}
+
+Run identical interventions on CausalToM stories where Llama-3-70B-Instruct answers incorrectly. The original paper excludes these by design. To ensure sufficient failures for a powered test ($n_{\text{fail}} \geq 20$), we generate a pool of 500+ CausalToM stories rather than using the original 80.
+
+\paragraph{Pre-committed interpretations.} If lookback IIA is significantly lower on incorrect-answer cases ($p < 0.01$, permutation test), I1 is satisfied: the mechanism is absent when the model fails, supporting a causal role. If the lookback is present and intact on failure cases, it is a correlate of processing rather than a cause of correct answers. If the model's accuracy yields fewer than 20 failures even on 500 stories, we report the experiment as underpowered rather than drawing a conclusion.
+
+\subsection{Cross-stage mediation (I6)}
+\label{sec:mediation}
+
+Test whether the binding and answer sub-mechanisms form a causal chain or operate independently, replacing the super-additivity test originally proposed.\footnote{Super-additive behavioral loss does not establish mechanism unity: independent stages in a serial pipeline can produce super-additive loss through off-distribution compounding, while components of one mechanism can appear additive.} Protocol: (a) intervene on the binding representation at layers 33--38; (b) measure the resulting change in the answer-pointer representation at layers 52--56; (c) intervene on the answer-pointer representation; (d) test whether the answer-pointer intervention mediates the binding intervention's effect on output. All interventions use mean-ablation (replacing the subspace component with its dataset mean) to keep activations on the data manifold.
+
+\paragraph{Pre-committed interpretations.} If binding interventions propagate through the answer-pointer representation and the answer-pointer mediates binding's effect on output, the unity claim is supported: binding $\to$ pointer $\to$ answer forms a causal chain. If the stages independently affect output without mediating each other, they are separate processes sharing a label, and ``lookback mechanism'' as a unified construct is not warranted. If the mediation is partial, the truth is intermediate and we report the mediation proportion.
+
+
+\section{Discussion}
+\label{sec:discussion}
+
+The five experiments target gaps that are testable and whose outcomes change the paper's verdict in either direction. If the identified subspaces generalize to a disjoint SVD basis, beat shuffled-label controls, and are absent on non-ToM tasks, the claim advances from Causally Suggestive to Mechanistically Supported. That would be the most useful outcome: the audit would confirm the result by providing the missing controls rather than undermining it.
+
+The held-out basis validation (Experiment~1) is the most consequential experiment. Inspection of the released codebase reveals that the binary mask is already validated out-of-sample (trained on 80 stories, evaluated on a separate 80). What remains untested is whether the SVD basis---the candidate directions among which the mask selects---generalizes to a disjoint story pool. If it does, the feature-space leakage concern closes. The matched-capacity controls (Experiment~2) then test belief-specificity: do real-label subspaces outperform shuffled-label subspaces trained with identical optimization budgets? Given the existing out-of-sample mask validation, this comparison is likely to favor the real-label subspace, and we pre-commit to reporting M2 as satisfied if it does.
+
+All five claims in the paper rest on a single method family (interchange interventions via NNsight). The experiments in Section~\ref{sec:experiments} are designed to add independent evidential views: held-out basis validation tests generalization outside the training distribution, task-specificity controls test discriminant validity using a different task distribution, and cross-stage mediation tests causal dependencies the original method does not probe.
+
+An interchange intervention on the full residual stream transfers all information at a token position. When the claim is about a specific substructure, the instrument and the claim are misaligned. More data from the same instrument cannot close this gap. The task-specificity controls (Experiment~3) address this by testing whether the subspace transfers to non-belief tasks, isolating the interpretive question: is this a belief-tracking mechanism or an entity-state retrieval mechanism? The distinction is substantive---entity-state retrieval is a correction of the label, not a refutation of the finding.
+
+\paragraph{Contracted claim.}
+Applying a reference-narrowing procedure---contracting the claim to what the evidence licenses---yields the following restated claim:
+
+\begin{quote}
+In Llama-3-70B-Instruct, on pre-filtered correct-answer synthetic stories with fixed template structure, interchange interventions on residual stream vectors at state tokens (layers 33--38) and at the final token (layers 52--56) alter belief-tracking outputs in ways consistent with a hypothesized two-stage retrieval process. A third stage (visibility, layers 10--31) operates when explicit visibility conditions are present. Qualitatively similar patterns appear in two other models at different layer ranges and subspace dimensions.
+\end{quote}
+
+This contracted claim strips ``pervasive,'' ``pointer dereference,'' and ``reverse-engineering ToM reasoning'' because the evidence does not distinguish the identified pattern from generic attention-mediated retrieval. The experiments in Section~\ref{sec:experiments} test whether each stripped qualifier can be restored: task-specificity controls test ``belief-specific'' (restoring ``ToM''), held-out basis validation tests ``robust'' (restoring ``pervasive''), and cross-stage mediation tests ``unified'' (restoring ``mechanism'').
+
+These gaps are not specific to the Lookback paper. We chose it because it is well-executed within its scope, published at a top venue, and representative of current practice---making it a useful case study for what structured validity assessment adds to the standard publication workflow.
+
+\paragraph{Limitations.}
+This audit applies validity criteria developed by the same author. The framework is independently deposited with full criterion definitions and pass conditions, so readers can verify whether our ratings match the stated standards. The five pre-registered experiments provide a less subjective complement: their outcomes are determined by data, not by the auditor's assessment. \textcolor{red}{[To be updated after experiments.]}
+
+
+\section*{Data and Code Availability}
+
+All audit materials, pre-registration documents, and experiment code are available at \url{https://github.com/elliottower/lookback-validity-audit}.
+
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

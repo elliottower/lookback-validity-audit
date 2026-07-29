@@ -9,6 +9,7 @@ from nnsight import CONFIG, LanguageModel
 
 CONFIG.APP.REMOTE_LOGGING = False
 CONFIG.set_default_api_key(os.environ["NDIF_KEY"])
+os.environ["HF_TOKEN"] = os.environ.get("HF_TOKEN", "")
 
 print("Loading model handle (no local weights)...")
 lm = LanguageModel("meta-llama/Meta-Llama-3-70B-Instruct", dispatch=True)

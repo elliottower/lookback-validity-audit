@@ -14,9 +14,11 @@ too few for a powered test. Options:
   (c) Report the experiment as underpowered if N_fail < 20.
 Option (a) is preferred: it preserves the original distribution.
 
+Uses NDIF for remote Llama 3.1-70B inference (no local GPU needed).
+
 Usage:
-    python failure_case_analysis.py --output results/failure_cases.json
-    python failure_case_analysis.py --dry-run --output results/DRYRUN_failure_cases.json
+    uv run python experiments/failure_case_analysis.py --dry-run
+    uv run python experiments/failure_case_analysis.py --output results/failure_cases.json
 """
 
 import argparse
@@ -28,42 +30,51 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
+from ndif_utils import (
+    build_projection_matrix,
+    compute_iia_answer_per_sample,
+    compute_iia_binding_per_sample,
+    generate_counterfactual_pairs,
+    get_model_prediction,
+    load_subspace_specs,
+    load_svd_basis,
+    setup_nnsight,
+)
 
-# Per-layer subspace specs keyed by lookback_type/concept/layer.
-# Source: https://github.com/Nix07/belief_tracking @ 0579347e
-# See reference/extracted_results_llama70b.json for full extraction.
-LOOKBACK_SUBSPACES = {
-    # Binding mechanism — binding_lookback/address_and_payload
-    "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
-    "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
-    "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
-    # Answer mechanism — answer_lookback/pointer
-    "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925,
-                           "lookback_type": "answer_lookback", "concept": "pointer"},
-    "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775,
-                           "lookback_type": "answer_lookback", "concept": "pointer"},
-    "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55,
-                           "lookback_type": "answer_lookback", "concept": "pointer"},
-}
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 MIN_FAILURES_FOR_POWER = 20
 
 
-def identify_failure_cases(model, stories, device):
-    """Run the model on all CausalToM stories and partition into correct/incorrect.
+def partition_pairs_by_accuracy(lm, pairs, pair_type):
+    """Run model on all pairs, partition into correct/incorrect on the clean prompt.
+
+    Args:
+        lm: nnsight LanguageModel
+        pairs: list of counterfactual pair dicts
+        pair_type: "answer" or "binding" (for logging)
 
     Returns:
-        correct_indices: list of story indices where model answers correctly
-        incorrect_indices: list of story indices where model answers incorrectly
+        correct_pairs: list of pairs where model gets clean_prompt correct
+        incorrect_pairs: list of pairs where model gets clean_prompt wrong
     """
-    raise NotImplementedError(
-        "Requires loading CausalToM dataset and running Llama-3-70B-Instruct. "
-        "The model's answer is the argmax of the next-token logits at the final position. "
-        "Use a LARGER pool than the original 80 stories to ensure enough failures."
-    )
+    correct_pairs = []
+    incorrect_pairs = []
+
+    for sample in tqdm(pairs, desc=f"Partitioning {pair_type} pairs"):
+        clean_prompt = sample["clean_prompt"]
+        clean_target = sample["clean_ans"].lower().strip()
+
+        pred_tok, _ = get_model_prediction(lm, clean_prompt)
+        if pred_tok is None:
+            continue
+
+        if pred_tok == clean_target:
+            correct_pairs.append(sample)
+        else:
+            incorrect_pairs.append(sample)
+
+    return correct_pairs, incorrect_pairs
 
 
 def permutation_test_iia_difference(correct_iias, incorrect_iias, n_permutations=10000, rng=None):
@@ -95,23 +106,52 @@ def main():
     parser = argparse.ArgumentParser(description="Failure case analysis for Lookback audit")
     parser.add_argument("--output", type=str, default="results/failure_cases.json")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--n-pairs", type=int, default=500,
+                        help="Number of counterfactual pairs to generate (oversample for failures)")
     parser.add_argument("--n-permutations", type=int, default=10000)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--device", type=str, default="cuda")
     args = parser.parse_args()
 
+    ts = lambda: datetime.now(timezone.utc).strftime("%H:%M:%S")
     rng = np.random.default_rng(args.seed)
     torch.manual_seed(args.seed)
+
+    subspaces = load_subspace_specs()
 
     if args.dry_run:
         n_total = 500
         n_correct = 450
         n_incorrect = 50
+        answer_correct_pairs = None
+        answer_incorrect_pairs = None
+        binding_correct_pairs = None
+        binding_incorrect_pairs = None
     else:
-        raise NotImplementedError(
-            "Must first run model on CausalToM pool to determine correct/incorrect split. "
-            "Generate 500+ stories to ensure enough failures for a powered test."
+        print(f"[{ts()}] Setting up nnsight + NDIF...")
+        lm = setup_nnsight()
+
+        print(f"[{ts()}] Generating {args.n_pairs} counterfactual pairs...")
+        answer_pairs, binding_pairs = generate_counterfactual_pairs(
+            n_samples=args.n_pairs, seed=args.seed,
         )
+        print(f"[{ts()}] Generated {len(answer_pairs)} answer pairs, {len(binding_pairs)} binding pairs")
+
+        print(f"[{ts()}] Partitioning answer pairs by model accuracy...")
+        answer_correct_pairs, answer_incorrect_pairs = partition_pairs_by_accuracy(
+            lm, answer_pairs, "answer"
+        )
+        print(f"[{ts()}] Answer: {len(answer_correct_pairs)} correct, {len(answer_incorrect_pairs)} incorrect")
+
+        print(f"[{ts()}] Partitioning binding pairs by model accuracy...")
+        binding_correct_pairs, binding_incorrect_pairs = partition_pairs_by_accuracy(
+            lm, binding_pairs, "binding"
+        )
+        print(f"[{ts()}] Binding: {len(binding_correct_pairs)} correct, {len(binding_incorrect_pairs)} incorrect")
+
+        n_total = len(answer_pairs) + len(binding_pairs)
+        n_correct = len(answer_correct_pairs) + len(binding_correct_pairs)
+        n_incorrect = len(answer_incorrect_pairs) + len(binding_incorrect_pairs)
 
     results = {
         "synthetic": args.dry_run,
@@ -127,18 +167,67 @@ def main():
         "subspace_results": {},
     }
 
+    if not args.dry_run:
+        results["partition_details"] = {
+            "answer_correct": len(answer_correct_pairs),
+            "answer_incorrect": len(answer_incorrect_pairs),
+            "binding_correct": len(binding_correct_pairs),
+            "binding_incorrect": len(binding_incorrect_pairs),
+        }
+
     if n_incorrect < MIN_FAILURES_FOR_POWER:
         print(f"WARNING: Only {n_incorrect} failure cases. Need >= {MIN_FAILURES_FOR_POWER} for power.")
         print("Consider generating a larger CausalToM pool.")
 
-    for sub_name, sub_spec in tqdm(LOOKBACK_SUBSPACES.items(), desc="Subspaces"):
-        print(f"\nTesting {sub_name} (rank={sub_spec['rank']}, layer={sub_spec['layer']})")
+    for sub_name, sub_spec in tqdm(subspaces.items(), desc="Subspaces"):
+        layer = sub_spec["layer"]
+        rank = sub_spec["rank"]
+        lookback = sub_spec["lookback_type"]
+
+        print(f"\nTesting {sub_name} (rank={rank}, layer={layer})")
 
         if args.dry_run:
-            correct_iias = rng.beta(7, 3, size=n_correct)
-            incorrect_iias = rng.beta(3, 5, size=n_incorrect)
+            correct_iias = rng.beta(7, 3, size=450)
+            incorrect_iias = rng.beta(3, 5, size=50)
         else:
-            raise NotImplementedError("Full IIA computation requires model loading.")
+            is_answer = "answer" in lookback
+            vec_type = "last_token" if is_answer else "state_tokens"
+            compute_fn = compute_iia_answer_per_sample if is_answer else compute_iia_binding_per_sample
+            correct_pairs = answer_correct_pairs if is_answer else binding_correct_pairs
+            incorrect_pairs = answer_incorrect_pairs if is_answer else binding_incorrect_pairs
+
+            svd_basis = load_svd_basis(layer, vec_type)
+            if svd_basis is None:
+                print(f"  SKIP: SVD basis not found for layer {layer} ({vec_type})")
+                continue
+            proj = build_projection_matrix(svd_basis, np.arange(rank))
+
+            print(f"  Computing IIA on {len(correct_pairs)} correct pairs...")
+            correct_iias = np.array(compute_fn(lm, correct_pairs, layer, proj))
+
+            if len(incorrect_pairs) > 0:
+                print(f"  Computing IIA on {len(incorrect_pairs)} incorrect pairs...")
+                incorrect_iias = np.array(compute_fn(lm, incorrect_pairs, layer, proj))
+            else:
+                print("  WARNING: No incorrect pairs — cannot run permutation test")
+                incorrect_iias = np.array([])
+
+        if len(incorrect_iias) == 0:
+            results["subspace_results"][sub_name] = {
+                "correct_iia_mean": float(np.mean(correct_iias)),
+                "correct_iia_std": float(np.std(correct_iias, ddof=1)) if len(correct_iias) > 1 else 0.0,
+                "incorrect_iia_mean": None,
+                "incorrect_iia_std": None,
+                "difference": None,
+                "p_value": None,
+                "significant_at_001": None,
+                "interpretation": "No incorrect cases — test not run",
+                "n_correct": len(correct_iias),
+                "n_incorrect": 0,
+            }
+            print(f"  Correct IIA: {float(np.mean(correct_iias)):.4f}")
+            print("  No incorrect cases — skipping permutation test")
+            continue
 
         p_value = permutation_test_iia_difference(
             correct_iias, incorrect_iias,
@@ -152,11 +241,13 @@ def main():
             "correct_iia_mean": correct_mean,
             "correct_iia_std": float(np.std(correct_iias, ddof=1)),
             "incorrect_iia_mean": incorrect_mean,
-            "incorrect_iia_std": float(np.std(incorrect_iias, ddof=1)),
+            "incorrect_iia_std": float(np.std(incorrect_iias, ddof=1)) if len(incorrect_iias) > 1 else 0.0,
             "difference": correct_mean - incorrect_mean,
             "p_value": float(p_value),
             "p_value_formula": "(count + 1) / (n_perm + 1)",
             "significant_at_001": p_value < 0.01,
+            "n_correct": len(correct_iias),
+            "n_incorrect": len(incorrect_iias),
             "interpretation": (
                 "Lookback absent on failures (supports causal role)"
                 if p_value < 0.01
@@ -165,7 +256,7 @@ def main():
         }
 
         print(f"  Correct IIA:   {correct_mean:.4f} +/- {float(np.std(correct_iias, ddof=1)):.4f}")
-        print(f"  Incorrect IIA: {incorrect_mean:.4f} +/- {float(np.std(incorrect_iias, ddof=1)):.4f}")
+        print(f"  Incorrect IIA: {incorrect_mean:.4f} +/- {float(np.std(incorrect_iias, ddof=1)) if len(incorrect_iias) > 1 else 0.0:.4f}")
         print(f"  p-value:       {p_value:.6f}")
 
     output_path = Path(args.output)

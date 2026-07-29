@@ -21,5 +21,13 @@ results/DRYRUN_*
 *.synctex.gz
 *.pdf
 
+# Large tensor files (SVD bases, activations) — regenerate via scripts/extract_svd.py
+results/svd/partial_activations/
+results/svd/CausalToM/
+*.pt
+
+# macOS
+.DS_Store
+
 # Reference repo clone (use git submodule or re-clone from source)
 reference/belief_tracking/

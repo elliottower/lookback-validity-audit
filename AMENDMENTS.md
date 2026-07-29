@@ -137,16 +137,49 @@ confirmatory interpretations convert the paper into a genuine validity audit.
 
 ---
 
+---
+
+## Amendment 6: Experiment 6 (compositional generalization) and audit fixes
+
+**Problem.** The original pre-registration had five experiments. Cognitive science
+review (Vegner et al. 2025, Apperly & Butterfill 2009, Schuwerk et al. 2015)
+identified an untested assumption: the paper infers representational
+systematicity from behavioral systematicity without testing compositional
+generalization.
+
+**Correction.** Added Experiment 6 (compositional generalization) with three axes:
+1. Character scaling: 3, 4, 5 characters (distractor characters present but
+   non-interacting, holding interacting characters' positions stable)
+2. Nested beliefs: second-order false belief
+3. Content selectivity: location, existence, intentions, knowledge states
+
+Additionally, the following audit fixes are applied:
+- Random subspace baseline (#1): changed from Grassmannian QR sampling to
+  random r-of-500 SVD index selection (matching the paper's binary mask method)
+- SE calculation (#2): added "(at most)" for the upper-bound SE at p=0.5
+- Multiple comparisons (#4): added BH correction across all pre-registered tests
+- Contracted claim (#9): stripped "two-stage retrieval process" (untested)
+- Third-answer steelman (#10): expanded with QK/OV explanation, pre-committed
+  quantitative criterion for "coherent" third answers
+
+**Why.** CausalToM uses exactly two characters, first-order beliefs, and beliefs
+about object location only. A compositional mechanism should generalize; a
+template-matched circuit will degrade.
+
+---
+
 ## Files changed
 
-- `experiments/random_subspace_baseline.py` — labeling fix
+- `experiments/random_subspace_baseline.py` — labeling fix, null distribution fix
 - `experiments/shuffled_label_control.py` — labeling fix
 - `experiments/non_tom_control.py` — labeling fix
 - `experiments/failure_case_analysis.py` — labeling fix
 - `experiments/unity_coupling_test.py` — labeling fix
+- `experiments/compositional_generalization.py` — created (Experiment 6)
 - `reference/extracted_results_llama70b.json` — created (full extraction)
 - `paper/lookback_audit.tex` — rank corrections, train/eval clarification,
   visibility finding, experiment rewrite with pre-committed interpretations,
-  discussion rewrite for audit framing
+  discussion rewrite for audit framing, audit fixes (SE, BH, contracted claim,
+  third-answer steelman, random baseline method)
 - `COMPUTE_ESTIMATE.md` — created (GPU-hours breakdown)
 - `.gitignore` — added LaTeX build artifacts
