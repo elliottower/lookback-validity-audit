@@ -168,6 +168,53 @@ template-matched circuit will degrade.
 
 ---
 
+## Amendment 7: Model substitution and scope clarification
+
+**Problem 1 (model).** Prakash et al. used Llama-3-70B-Instruct. NDIF
+provides Llama-3.1-70B-Instruct. These are different weights with
+potentially different layer-wise geometry. All rank and IIA values in
+Amendment 1 were extracted from the paper's released Llama-3.0 results,
+but our interventions run on Llama-3.1.
+
+**Correction.** We retain Llama-3.1 (3.0 is not available on NDIF) and
+add a **same-model replication** as a positive control before running
+any pre-registered experiments:
+
+1. Reproduce the paper's headline IIA values on Llama-3.1 using
+   our extracted SVD bases and top-r component selection.
+2. If we replicate within 0.10 of the reported values for the
+   primary subspaces (binding_addr_payload_L34, answer_pointer_L52),
+   the model substitution is validated and all downstream results
+   are interpretable on 3.1.
+3. If we cannot replicate (delta > 0.10), this is itself a cross-model
+   generalization result (analogous to E4) and we report it as such.
+   In that case, experiments testing SVD basis generalization (E1)
+   become uninterpretable for the overfitting question specifically,
+   though the shuffled-label and task-specificity controls remain valid.
+
+This replication runs first, before any pre-registered experiment.
+
+**Problem 2 (visibility scope).** The SVD extraction covers binding
+(state_tokens, layers 34-38) and answer (last_token, layers 34-54).
+It does not cover the visibility lookback, which operates on visibility
+sentence tokens at early layers (7-24) with ranks of 160-320 out of
+500 components.
+
+**Correction.** Visibility is explicitly out of scope for this audit.
+The cross-stage mediation test (Experiment 5) is scoped to
+binding-vs-answer coupling only. Visibility has the weakest evidence
+in the original paper (ranks consuming 32-64% of the SVD basis suggest
+the "subspace" is most of the representation), and characterizing it
+would require a separate extraction targeting early-layer visibility
+sentence positions.
+
+**Why.** An audit on different weights than the original must establish
+that the finding transfers before testing whether it generalizes. The
+positive control is the minimum requirement for interpretability. The
+visibility scoping prevents an apparent omission from reading as a gap.
+
+---
+
 ## Files changed
 
 - `experiments/random_subspace_baseline.py` — labeling fix, null distribution fix
