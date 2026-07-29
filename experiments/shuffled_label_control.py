@@ -84,15 +84,24 @@ def main():
     torch.manual_seed(args.seed)
     rng = np.random.default_rng(args.seed)
 
-    # Per-layer specs matching the Lookback paper.
-    # Ranks are placeholders — extract from their released results.
+    # Per-layer specs matching the Lookback paper, keyed by lookback_type/concept/layer.
+    # Source: https://github.com/Nix07/belief_tracking @ 0579347e
+    # See reference/extracted_results_llama70b.json for full extraction.
     subspaces_per_layer = {
-        "binding_L35": {"layer": 35, "l1_weight": 0.1},
-        "binding_L36": {"layer": 36, "l1_weight": 0.1},
-        "binding_L38": {"layer": 38, "l1_weight": 0.1},
-        "answer_L52": {"layer": 52, "l1_weight": 0.1},
-        "answer_L53": {"layer": 53, "l1_weight": 0.1},
-        "answer_L54": {"layer": 54, "l1_weight": 0.1},
+        # Binding mechanism — binding_lookback/address_and_payload
+        "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625, "l1_weight": 0.1,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+        "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375, "l1_weight": 0.1,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+        "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500, "l1_weight": 0.1,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+        # Answer mechanism — answer_lookback/pointer
+        "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925, "l1_weight": 0.1,
+                               "lookback_type": "answer_lookback", "concept": "pointer"},
+        "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775, "l1_weight": 0.1,
+                               "lookback_type": "answer_lookback", "concept": "pointer"},
+        "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55, "l1_weight": 0.1,
+                               "lookback_type": "answer_lookback", "concept": "pointer"},
     }
     n_svd_components = 500
     lr = 0.1

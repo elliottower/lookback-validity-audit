@@ -1,0 +1,70 @@
+{
+  "_source": "reference/belief_tracking/results/causalToM_novis/Meta-Llama-3-70B-Instruct/",
+  "_repo_sha": "0579347e3cf963d13d55edf041c7b595b0dcd88b",
+  "_extraction_note": "Extracted from Nix07/belief_tracking released results. 'rank' = number of 1s in learned binary mask over 500-component SVD basis. 'sv_iia' = IIA with the selected singular vectors. 'full_rank_iia' = IIA using the full 500-component SVD basis (upper bound).",
+
+  "answer_lookback_pointer": {
+    "_description": "Pointer dereference through attention — the paper's core 'answer' mechanism",
+    "L34": {"full_rank_iia": 0.925, "sv_iia": 0.975, "rank": 2},
+    "L35": {"full_rank_iia": 0.8375, "sv_iia": 0.7875, "rank": 5},
+    "L36": {"full_rank_iia": 0.8625, "sv_iia": 0.825, "rank": 4},
+    "L37": {"full_rank_iia": 0.925, "sv_iia": 0.8625, "rank": 4},
+    "L38": {"full_rank_iia": 1.0, "sv_iia": 0.925, "rank": 3},
+    "L39": {"full_rank_iia": 0.9875, "sv_iia": 0.9625, "rank": 13},
+    "L43": {"full_rank_iia": 0.975, "sv_iia": 0.9375, "rank": 18},
+    "L50": {"full_rank_iia": 0.975, "sv_iia": 0.925, "rank": 18},
+    "L52": {"full_rank_iia": 0.925, "sv_iia": 0.775, "rank": 18},
+    "L53": {"full_rank_iia": 0.725, "sv_iia": 0.55, "rank": 19},
+    "L54": {"full_rank_iia": 0.525, "sv_iia": 0.4375, "rank": 19}
+  },
+
+  "answer_lookback_payload": {
+    "_description": "Payload/answer content — peaks at later layers",
+    "L56": {"full_rank_iia": 0.8, "sv_iia": 0.775, "rank": 25},
+    "L57": {"full_rank_iia": 0.8875, "sv_iia": 0.925, "rank": 26},
+    "L58": {"full_rank_iia": 0.8875, "sv_iia": 0.925, "rank": 26},
+    "L60": {"full_rank_iia": 0.9, "sv_iia": 0.9, "rank": 25},
+    "L64": {"full_rank_iia": 1.0, "sv_iia": 1.0, "rank": 24}
+  },
+
+  "binding_lookback_address_and_payload": {
+    "_description": "Combined binding mechanism (address + payload)",
+    "L34": {"full_rank_iia": 0.975, "sv_iia": 0.9625, "rank": 3},
+    "L35": {"full_rank_iia": 0.8, "sv_iia": 0.7375, "rank": 7},
+    "L36": {"full_rank_iia": 0.825, "sv_iia": 0.75, "rank": 8},
+    "L37": {"full_rank_iia": 0.8125, "sv_iia": 0.775, "rank": 9},
+    "L38": {"full_rank_iia": 0.7625, "sv_iia": 0.675, "rank": 10}
+  },
+
+  "visibility_lookback_source": {
+    "_description": "Visibility lookback, 'source' concept (from causalToM_vis). Uses L1 weight 0.03 (weaker than 0.1 for binding/answer). Only concept with singular_vector results; address_and_pointer and payload have full_rank only. Ranks are very high (160-320 out of 500 components).",
+    "_note": "sv_iia EXCEEDS full_rank_iia at many layers — mask selects directions better for IIA than the full SVD basis",
+    "L7": {"full_rank_iia": 0.175, "sv_iia": 0.9, "rank": 208},
+    "L8": {"full_rank_iia": 0.1625, "sv_iia": 0.85, "rank": 268},
+    "L9": {"full_rank_iia": 0.275, "sv_iia": 0.8875, "rank": 262},
+    "L10": {"full_rank_iia": 0.7625, "sv_iia": 0.95, "rank": 262},
+    "L11": {"full_rank_iia": 0.75, "sv_iia": 0.9, "rank": 270},
+    "L12": {"full_rank_iia": 0.95, "sv_iia": 0.8875, "rank": 284},
+    "L13": {"full_rank_iia": 0.95, "sv_iia": 0.8875, "rank": 320},
+    "L14": {"full_rank_iia": 0.975, "sv_iia": 0.975, "rank": 312},
+    "L15": {"full_rank_iia": 0.975, "sv_iia": 0.95, "rank": 284},
+    "L21": {"full_rank_iia": 0.8375, "sv_iia": 0.9125, "rank": 220},
+    "L24": {"full_rank_iia": 0.65, "sv_iia": 0.95, "rank": 184}
+  },
+
+  "experiment_scripts_should_use": {
+    "_note": "Binding uses binding_lookback/address_and_payload; answer uses answer_lookback/pointer. Each keyed by lookback_type/concept/layer.",
+    "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625, "full_rank_iia": 0.975,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375, "full_rank_iia": 0.800,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500, "full_rank_iia": 0.825,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925, "full_rank_iia": 1.0,
+                           "lookback_type": "answer_lookback", "concept": "pointer"},
+    "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775, "full_rank_iia": 0.925,
+                           "lookback_type": "answer_lookback", "concept": "pointer"},
+    "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55, "full_rank_iia": 0.725,
+                           "lookback_type": "answer_lookback", "concept": "pointer"}
+  }
+}

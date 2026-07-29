@@ -334,11 +334,13 @@ To δ = 3 (realism licensed):
 
 ---
 
-## Proposed Follow-Up Experiments (for Denominator Paper)
+## Proposed Follow-Up Experiments
 
-These are the empirical tests we would run as a "gotcha" case study:
+These are the empirical tests for the validity audit. See
+COMPUTE_ESTIMATE.md for authoritative GPU-hour estimates (~30-38
+realistic GPU-hours total across all experiments).
 
-### Tier 1: Quick Kills (1-2 GPU-hours each)
+### Tier 1: Quick Kills
 
 **Test 1: Random Subspace Control.**
 For each DCM-identified subspace of dimension d, sample 100 random d-dimensional subspaces of the residual stream. Compute IIA for each. If the random subspaces achieve comparable IIA, the DCM finding is uninformative.
@@ -352,7 +354,7 @@ Expand CausalToM beyond the 80 correct-answer stories. Run the same intervention
 **Test 4: Layer-Wise BH Correction.**
 Apply Benjamini-Hochberg correction to the layer-wise IIA results. With 80 layers tested per experiment and ~6 experiments, the implicit search space is ~480 layer comparisons. How many survive correction?
 
-### Tier 2: Stronger Tests (4-8 GPU-hours each)
+### Tier 2: Stronger Tests
 
 **Test 5: Unity Test.**
 Ablate the binding lookback (layers 33-38) by mean-ablating those layers, then test whether the answer lookback (layers 52-56) still functions. If the three stages are one mechanism, disrupting the early stage should cascade. If they're independent, each should be separately disruptable.

@@ -9,3 +9,17 @@ build/
 .venv/
 .env
 results/DRYRUN_*
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+
+# Reference repo clone (use git submodule or re-clone from source)
+reference/belief_tracking/

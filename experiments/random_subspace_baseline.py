@@ -96,16 +96,25 @@ def main():
     rng = np.random.default_rng(args.seed)
 
     # Per-layer subspace ranks from the Lookback paper's SVD + mask results.
-    # Each layer has its own rank (number of selected singular vectors).
-    # These are placeholders — extract actual ranks from their released results/.json files.
-    # Source: https://github.com/Nix07/belief_tracking/results/
+    # Each entry is keyed by lookback_type/concept/layer to avoid conflation.
+    # Source: https://github.com/Nix07/belief_tracking @ 0579347e
+    #   results/causalToM_novis/Meta-Llama-3-70B-Instruct/{lookback_type}/{concept}/{layer}.json
+    # See reference/extracted_results_llama70b.json for full extraction.
     subspaces_per_layer = {
-        "answer_pointer_L52": {"layer": 52, "rank": 18, "tokens": "final"},
-        "answer_pointer_L53": {"layer": 53, "rank": 10, "tokens": "final"},
-        "answer_pointer_L54": {"layer": 54, "rank": 8, "tokens": "final"},
-        "binding_L35": {"layer": 35, "rank": 7, "tokens": "state"},
-        "binding_L36": {"layer": 36, "rank": 5, "tokens": "state"},
-        "binding_L38": {"layer": 38, "rank": 3, "tokens": "state"},
+        # Binding mechanism — binding_lookback/address_and_payload
+        "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625, "full_rank_iia": 0.975,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload", "tokens": "state"},
+        "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375, "full_rank_iia": 0.800,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload", "tokens": "state"},
+        "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500, "full_rank_iia": 0.825,
+                                     "lookback_type": "binding_lookback", "concept": "address_and_payload", "tokens": "state"},
+        # Answer mechanism — answer_lookback/pointer
+        "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925, "full_rank_iia": 1.0,
+                               "lookback_type": "answer_lookback", "concept": "pointer", "tokens": "final"},
+        "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775, "full_rank_iia": 0.925,
+                               "lookback_type": "answer_lookback", "concept": "pointer", "tokens": "final"},
+        "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55, "full_rank_iia": 0.725,
+                               "lookback_type": "answer_lookback", "concept": "pointer", "tokens": "final"},
     }
     n_svd_components = 500  # SVD truncation used by the paper
     d_model = 8192  # Llama-3-70B
@@ -149,9 +158,7 @@ def main():
 
         random_iias_arr = np.array(random_iias)
 
-        # TODO: extract from released results at
-        # https://github.com/Nix07/belief_tracking/results/{dataset}/{model}/{lookback_type}/...
-        identified_iia = None
+        identified_iia = spec.get("sv_iia")
         if identified_iia is not None:
             rank = int(np.sum(random_iias_arr >= identified_iia))
             p_value = (rank + 1) / (len(random_iias) + 1)

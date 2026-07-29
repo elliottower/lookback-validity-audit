@@ -34,13 +34,19 @@ from tqdm import tqdm
 
 # For the unity test, we test coupling between binding and answer mechanisms.
 # Each mechanism spans multiple layers; we ablate all layers in the range.
-# Per-layer ranks are from released results (placeholders — verify).
+# Binding uses binding_lookback/address_and_payload; answer uses answer_lookback/pointer.
+# Source: https://github.com/Nix07/belief_tracking @ 0579347e
+# See reference/extracted_results_llama70b.json for full extraction.
 LOOKBACK_SUBSPACES = {
     "binding": {
-        "layers": {35: 7, 36: 5, 38: 3},
+        "lookback_type": "binding_lookback",
+        "concept": "address_and_payload",
+        "layers": {34: 3, 35: 7, 36: 8},
     },
     "answer": {
-        "layers": {52: 18, 53: 10, 54: 8},
+        "lookback_type": "answer_lookback",
+        "concept": "pointer",
+        "layers": {38: 3, 52: 18, 53: 19},
     },
 }
 

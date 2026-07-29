@@ -29,14 +29,24 @@ import torch
 from tqdm import tqdm
 
 
-# Per-layer subspace specs from released results.
+# Per-layer subspace specs keyed by lookback_type/concept/layer.
+# Source: https://github.com/Nix07/belief_tracking @ 0579347e
+# See reference/extracted_results_llama70b.json for full extraction.
 LOOKBACK_SUBSPACES = {
-    "binding_L35": {"layer": 35, "rank": 7},
-    "binding_L36": {"layer": 36, "rank": 5},
-    "binding_L38": {"layer": 38, "rank": 3},
-    "answer_L52": {"layer": 52, "rank": 18},
-    "answer_L53": {"layer": 53, "rank": 10},
-    "answer_L54": {"layer": 54, "rank": 8},
+    # Binding mechanism — binding_lookback/address_and_payload
+    "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500,
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+    # Answer mechanism — answer_lookback/pointer
+    "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925,
+                           "lookback_type": "answer_lookback", "concept": "pointer"},
+    "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775,
+                           "lookback_type": "answer_lookback", "concept": "pointer"},
+    "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55,
+                           "lookback_type": "answer_lookback", "concept": "pointer"},
 }
 
 MIN_FAILURES_FOR_POWER = 20
