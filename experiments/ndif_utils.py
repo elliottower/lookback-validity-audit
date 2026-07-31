@@ -39,6 +39,10 @@ def setup_nnsight():
     CONFIG.APP.REMOTE_LOGGING = False
     CONFIG.set_default_api_key(os.environ["NDIF_KEY"])
 
+    from nnsight.intervention.backends.remote import RemoteBackend
+    RemoteBackend.CONNECT_TIMEOUT = 30.0
+    RemoteBackend.READ_TIMEOUT = 120.0
+
     return LanguageModel(MODEL)
 
 
@@ -152,13 +156,52 @@ def filter_on_model(lm, pairs, max_size=80):
     return filtered
 
 
+def _build_context_swapped_output(cl_t, cf_t, projection, intervention_positions):
+    """Build patched output: full swap at context, subspace proj at targets.
+
+    On NDIF, single-position intervention produces out-of-distribution
+    outputs because the model needs consistent context across positions.
+    This helper full-swaps positions where clean/CF differ (context) and
+    applies the subspace projection only at the target positions.
+
+    Args:
+        cl_t: (seq, d_model) clean activations
+        cf_t: (seq, d_model) counterfactual activations
+        projection: (d_model, d_model) or None for full swap
+        intervention_positions: list of (target_pos, source_pos) tuples.
+            For answer: [(-1, -1)]. For binding: [(167,155),(168,156),...]
+
+    Returns: (seq, d_model) patched output tensor
+    """
+    delta_norm = (cf_t - cl_t).norm(dim=-1)
+    patched = cl_t.clone()
+
+    target_set = {p[0] % cl_t.shape[0] for p in intervention_positions}
+
+    for t in range(cl_t.shape[0]):
+        if t in target_set:
+            continue
+        if delta_norm[t] > 0.01:
+            patched[t] = cf_t[t]
+
+    for tgt, src in intervention_positions:
+        if projection is not None:
+            x = cl_t[tgt]
+            patched[tgt] = x - (x @ projection) + (cf_t[src] @ projection)
+        else:
+            patched[tgt] = cf_t[src]
+
+    return patched
+
+
 def compute_iia_answer(lm, pairs, layer, projection, retries=3):
     """Compute IIA for answer_lookback via subspace interchange on NDIF.
 
-    Intervention at the last token position only:
-        x_patched = x_org - (x_org @ P) + (x_alt @ P)
-
-    nnsight constraint: no loops inside trace, no double output access.
+    Uses three-trace context-swap protocol (required on NDIF because
+    cross-invoke variable references fail with NameError):
+      1. Get CF full output at layer
+      2. Get clean full output at layer
+      3. Build patched: context swap + subspace proj at position -1
 
     Args:
         lm: nnsight LanguageModel
@@ -174,27 +217,27 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
     for sample in pairs:
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
-        target = sample.get("target", sample.get("counterfactual_ans", ""))
+        target = sample["counterfactual_ans"]
 
         for attempt in range(retries):
             try:
-                with lm.trace(remote=True) as tracer:
-                    with tracer.invoke(alt_prompt):
-                        alt_last = lm.model.layers[layer].output[0][-1].clone()
+                with lm.trace(alt_prompt, remote=True):
+                    cf_out = lm.model.layers[layer].output[0].save()
 
-                    with tracer.invoke(org_prompt):
-                        curr = lm.model.layers[layer].output[0][-1].clone()
-                        if projection is not None:
-                            alt_proj = alt_last @ projection
-                            org_proj = curr @ projection
-                            patch = curr - org_proj + alt_proj
-                        else:
-                            patch = alt_last
+                with lm.trace(org_prompt, remote=True):
+                    cl_out = lm.model.layers[layer].output[0].save()
 
-                        lm.model.layers[layer].output[0][-1] = patch
+                cf_t = cf_out.detach().cpu().float()
+                cl_t = cl_out.detach().cpu().float()
 
-                        logits = lm.lm_head.output[0, -1]
-                        pred_id = logits.argmax(dim=-1).save()
+                patched = _build_context_swapped_output(
+                    cl_t, cf_t, projection,
+                    intervention_positions=[(-1, -1)],
+                )
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
 
                 pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
                 is_correct = pred_tok == target.lower().strip()
@@ -203,6 +246,63 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
                 break
 
             except Exception as e:
+                print(f"  IIA answer trace error (attempt {attempt+1}/{retries}): {type(e).__name__}: {e}")
+                if attempt < retries - 1:
+                    time.sleep(3 * (attempt + 1))
+                else:
+                    total += 1
+
+    return correct / total if total > 0 else 0.0
+
+
+def compute_iia_answer_flex(lm, pairs, layer, projection, retries=3):
+    """Like compute_iia_answer but handles different-length clean/CF prompts.
+
+    For same-length pairs: uses full context-swap protocol.
+    For different-length pairs: position-only intervention at -1 (no context swap).
+    """
+    correct, total = 0, 0
+
+    for sample in pairs:
+        alt_prompt = sample["counterfactual_prompt"]
+        org_prompt = sample["clean_prompt"]
+        target = sample["counterfactual_ans"]
+
+        for attempt in range(retries):
+            try:
+                with lm.trace(alt_prompt, remote=True):
+                    cf_out = lm.model.layers[layer].output[0].save()
+
+                with lm.trace(org_prompt, remote=True):
+                    cl_out = lm.model.layers[layer].output[0].save()
+
+                cf_t = cf_out.detach().cpu().float()
+                cl_t = cl_out.detach().cpu().float()
+
+                if cf_t.shape[0] == cl_t.shape[0]:
+                    patched = _build_context_swapped_output(
+                        cl_t, cf_t, projection,
+                        intervention_positions=[(-1, -1)],
+                    )
+                else:
+                    patched = cl_t.clone()
+                    if projection is not None:
+                        x = cl_t[-1]
+                        patched[-1] = x - (x @ projection) + (cf_t[-1] @ projection)
+                    else:
+                        patched[-1] = cf_t[-1]
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
+
+                pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
+                correct += int(pred_tok == target.lower().strip())
+                total += 1
+                break
+
+            except Exception as e:
+                print(f"  IIA flex trace error (attempt {attempt+1}/{retries}): {type(e).__name__}: {e}")
                 if attempt < retries - 1:
                     time.sleep(3 * (attempt + 1))
                 else:
@@ -212,36 +312,33 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
 
 
 def compute_iia_answer_per_sample(lm, pairs, layer, projection, retries=3):
-    """Like compute_iia_answer but returns per-sample binary results.
-
-    Returns: list of 0/1 ints, one per pair.
-    """
+    """Like compute_iia_answer but returns per-sample binary results."""
     results = []
 
     for sample in pairs:
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
-        target = sample.get("target", sample.get("counterfactual_ans", ""))
+        target = sample["counterfactual_ans"]
 
         for attempt in range(retries):
             try:
-                with lm.trace(remote=True) as tracer:
-                    with tracer.invoke(alt_prompt):
-                        alt_last = lm.model.layers[layer].output[0][-1].clone()
+                with lm.trace(alt_prompt, remote=True):
+                    cf_out = lm.model.layers[layer].output[0].save()
 
-                    with tracer.invoke(org_prompt):
-                        curr = lm.model.layers[layer].output[0][-1].clone()
-                        if projection is not None:
-                            alt_proj = alt_last @ projection
-                            org_proj = curr @ projection
-                            patch = curr - org_proj + alt_proj
-                        else:
-                            patch = alt_last
+                with lm.trace(org_prompt, remote=True):
+                    cl_out = lm.model.layers[layer].output[0].save()
 
-                        lm.model.layers[layer].output[0][-1] = patch
+                cf_t = cf_out.detach().cpu().float()
+                cl_t = cl_out.detach().cpu().float()
 
-                        logits = lm.lm_head.output[0, -1]
-                        pred_id = logits.argmax(dim=-1).save()
+                patched = _build_context_swapped_output(
+                    cl_t, cf_t, projection,
+                    intervention_positions=[(-1, -1)],
+                )
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
 
                 pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
                 results.append(int(pred_tok == target.lower().strip()))
@@ -256,44 +353,48 @@ def compute_iia_answer_per_sample(lm, pairs, layer, projection, retries=3):
     return results
 
 
+BINDING_POSITIONS = [(167, 155), (168, 156), (155, 167), (156, 168)]
+
+
 def compute_iia_binding(lm, pairs, layer, projection, retries=3):
     """Compute IIA for binding_lookback via subspace interchange on NDIF.
 
-    Intervention at state token positions [155, 156, 167, 168] with swap:
-        cache=[155,156,167,168], patch=[167,168,155,156]
+    Intervention at state token positions with cross-position swap:
+        patch[167]=cf[155], patch[168]=cf[156], patch[155]=cf[167], patch[156]=cf[168]
 
-    Saves full layer output to access multiple positions.
+    Uses three-trace context-swap protocol (same NDIF constraint as answer).
+
+    NOTE: binding pairs have counterfactual_ans == clean_ans (both prompts
+    produce the same answer). The intervention TARGET is the 'target' field
+    which is the OTHER drink (what the model should predict after swapping
+    the sentence-position bindings).
     """
     correct, total = 0, 0
 
     for sample in pairs:
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
-        target = sample.get("target", sample.get("counterfactual_ans", ""))
+        target = sample["target"]
 
         for attempt in range(retries):
             try:
-                with lm.trace(remote=True) as tracer:
-                    with tracer.invoke(alt_prompt):
-                        alt_out = lm.model.layers[layer].output[0].save()
+                with lm.trace(alt_prompt, remote=True):
+                    cf_out = lm.model.layers[layer].output[0].save()
 
-                    with tracer.invoke(org_prompt):
-                        org_out = lm.model.layers[layer].output[0]
+                with lm.trace(org_prompt, remote=True):
+                    cl_out = lm.model.layers[layer].output[0].save()
 
-                        if projection is not None:
-                            for p_pos, c_pos in [(167, 155), (168, 156), (155, 167), (156, 168)]:
-                                curr = org_out[p_pos].clone()
-                                alt_proj = alt_out[c_pos] @ projection
-                                org_proj = curr @ projection
-                                org_out[p_pos] = curr - org_proj + alt_proj
-                        else:
-                            org_out[167] = alt_out[155]
-                            org_out[168] = alt_out[156]
-                            org_out[155] = alt_out[167]
-                            org_out[156] = alt_out[168]
+                cf_t = cf_out.detach().cpu().float()
+                cl_t = cl_out.detach().cpu().float()
 
-                        logits = lm.lm_head.output[0, -1]
-                        pred_id = logits.argmax(dim=-1).save()
+                patched = _build_context_swapped_output(
+                    cl_t, cf_t, projection,
+                    intervention_positions=BINDING_POSITIONS,
+                )
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
 
                 pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
                 is_correct = pred_tok == target.lower().strip()
@@ -302,6 +403,7 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3):
                 break
 
             except Exception as e:
+                print(f"  IIA binding trace error (attempt {attempt+1}/{retries}): {type(e).__name__}: {e}")
                 if attempt < retries - 1:
                     time.sleep(3 * (attempt + 1))
                 else:
@@ -317,31 +419,27 @@ def compute_iia_binding_per_sample(lm, pairs, layer, projection, retries=3):
     for sample in pairs:
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
-        target = sample.get("target", sample.get("counterfactual_ans", ""))
+        target = sample["target"]
 
         for attempt in range(retries):
             try:
-                with lm.trace(remote=True) as tracer:
-                    with tracer.invoke(alt_prompt):
-                        alt_out = lm.model.layers[layer].output[0].save()
+                with lm.trace(alt_prompt, remote=True):
+                    cf_out = lm.model.layers[layer].output[0].save()
 
-                    with tracer.invoke(org_prompt):
-                        org_out = lm.model.layers[layer].output[0]
+                with lm.trace(org_prompt, remote=True):
+                    cl_out = lm.model.layers[layer].output[0].save()
 
-                        if projection is not None:
-                            for p_pos, c_pos in [(167, 155), (168, 156), (155, 167), (156, 168)]:
-                                curr = org_out[p_pos].clone()
-                                alt_proj = alt_out[c_pos] @ projection
-                                org_proj = curr @ projection
-                                org_out[p_pos] = curr - org_proj + alt_proj
-                        else:
-                            org_out[167] = alt_out[155]
-                            org_out[168] = alt_out[156]
-                            org_out[155] = alt_out[167]
-                            org_out[156] = alt_out[168]
+                cf_t = cf_out.detach().cpu().float()
+                cl_t = cl_out.detach().cpu().float()
 
-                        logits = lm.lm_head.output[0, -1]
-                        pred_id = logits.argmax(dim=-1).save()
+                patched = _build_context_swapped_output(
+                    cl_t, cf_t, projection,
+                    intervention_positions=BINDING_POSITIONS,
+                )
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
 
                 pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
                 results.append(int(pred_tok == target.lower().strip()))

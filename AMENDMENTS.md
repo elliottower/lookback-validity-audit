@@ -215,7 +215,261 @@ visibility scoping prevents an apparent omission from reading as a gap.
 
 ---
 
-## Files changed
+## Amendment 8: Five severity tests (specificity, necessity, localization, dimensionality, discriminant validity)
+
+**Problem.** Experiments 1--6 test whether the paper's claimed subspaces
+beat appropriate null baselines (random, shuffled, non-ToM) and replicate
+across seeds and compositions. They do not test five additional properties
+that a genuine mechanistic account requires:
+
+1. Whether the subspace is **necessary** for correct behavior (not just
+   sufficient for interchange steering).
+2. Whether the effect is **localized** to the claimed layers or broadly
+   recoverable at adjacent layers.
+3. Whether the full reported rank is needed or whether a **single SVD
+   direction** captures the mechanism.
+4. Whether the subspace transfers across **prompt templates and entity
+   names** (robustness to surface features).
+5. Whether the same subspace steers **unrelated tasks** (discriminant
+   validity against a generic answer-pointer interpretation).
+
+**Correction.** Five additional experiments, numbered E7--E11. No results
+from these experiments have been computed or inspected at time of writing
+(result directories exist but are empty).
+
+### Experiment 7: Necessity test (zero-ablation)
+
+**Question.** Is the identified subspace necessary for correct model
+behavior, or merely correlated with it?
+
+**Protocol.** For each of the 6 subspaces: (1) collect clean activations
+at the target layer, (2) zero-ablate the subspace component at position -1
+(answer subspaces) or all positions (binding subspaces):
+`x_ablated = x - x @ P` where `P = V_sel @ V_sel.T`, (3) measure
+post-ablation accuracy on the same 80 CausalToM pairs used in the
+positive control.
+
+**Metrics.** Clean accuracy, ablated accuracy, accuracy drop
+(clean - ablated) per subspace.
+
+**Predictions.**
+- Primary answer subspaces (L38, L52): accuracy drop > 0.30. These are
+  the paper's strongest subspaces and should be necessary for correct
+  output if they implement the claimed mechanism.
+- Secondary subspaces (L35, L36, L53): accuracy drop > 0.10 but
+  potentially smaller than primary, consistent with redundant coding.
+- Binding subspaces (L34--36, full-sequence ablation): accuracy drop
+  > 0.15. Binding information feeds the answer pointer, so disrupting
+  it should propagate.
+
+**Pre-committed interpretations.**
+- If ablated accuracy remains above 0.80 for all subspaces, the
+  subspaces are not necessary and the finding reduces to "these
+  directions correlate with belief information but the model does not
+  rely on them." This would be a significant qualification of the
+  paper's mechanistic claims.
+- If ablated accuracy drops below 0.50 for L38 and L52, necessity is
+  confirmed for the primary subspaces and the mechanism claim is
+  strengthened beyond what interchange intervention alone establishes.
+- Intermediate drops (0.50--0.80) are consistent with partial necessity
+  with redundant pathways.
+
+### Experiment 8: Layer spread test
+
+**Question.** Is the interchange effect localized to the paper's claimed
+layers (34--36, 38, 52--53) or recoverable at adjacent layers?
+
+**Protocol.** For each of the 3 answer subspaces (L38, L52, L53), compute
+IIA at layers L-2 through L+2 (5 layers each). At each adjacent layer,
+use the top-k SVD directions (same rank as the paper's subspace at that
+layer) computed from the same 80 evaluation pairs' activations. At the
+paper's own layer, use the paper's mask.
+
+**Metrics.** IIA per (subspace, layer) combination. The "localization
+ratio": IIA at the paper's layer divided by the mean IIA at adjacent
+layers.
+
+**Predictions.**
+- Paper layers should show IIA > 0.80 (matching positive control).
+- Adjacent layers (offset +/-1) should show IIA < 0.50. The paper claims
+  layer-specific processing stages; if information is equally accessible
+  one layer away, the "stage" claim weakens to "this information is
+  distributed across middle/late layers."
+- Layers at offset +/-2 should show IIA < 0.30.
+- Localization ratio should be > 2.0 for each subspace.
+
+**Pre-committed interpretations.**
+- If localization ratio > 2.0 for all three answer subspaces, the
+  layer-specificity claim is supported.
+- If localization ratio < 1.5 for any primary subspace (L38 or L52),
+  the processing-stage framing is overstated: the model represents
+  belief information broadly rather than computing it at discrete
+  layers. This weakens the two-stage pipeline claim without
+  invalidating the finding that belief-relevant subspaces exist.
+- If adjacent layers show IIA > 0.80, we report this as a failure of
+  layer-specificity regardless of the paper layer's IIA.
+
+### Experiment 9: Rank-1 decomposition
+
+**Question.** Does each SVD direction in the paper's mask contribute
+meaningfully to IIA, or does one direction do most of the work?
+
+**Protocol.** For each of the 3 answer subspaces: (1) measure full-mask
+IIA (baseline), (2) measure IIA for each individual mask direction
+(rank-1 projections), (3) measure leave-one-out IIA (full mask minus
+each direction).
+
+**Metrics.** Per subspace: full_mask_iia, individual direction IIAs,
+leave-one-out IIAs. Derived: single-to-full ratio (best individual
+IIA / full IIA), effectively_rank_1 flag (ratio > 0.90).
+
+**Predictions.**
+- Low-rank subspaces (L38, rank 3): no single direction should exceed
+  0.70 of the full-mask IIA. With only 3 directions, each should
+  contribute meaningfully.
+- High-rank subspaces (L52 rank 18, L53 rank 19): the best single
+  direction is more likely to capture a large fraction, but full IIA
+  should still require multiple directions. Best single direction
+  predicted at 0.40--0.60 of full.
+- Leave-one-out should show small individual drops for most directions,
+  with at most 2--3 directions whose removal drops IIA by > 0.10.
+
+**Pre-committed interpretations.**
+- If the best single direction achieves > 0.90 of full IIA for any
+  subspace, the multi-rank claim for that subspace is inflated: the
+  "subspace" is functionally a single feature direction, which is a
+  qualitatively different (and less surprising) finding.
+- If all individual directions contribute < 0.50 of full IIA and
+  leave-one-out drops are distributed across multiple directions, the
+  multi-dimensional subspace claim is supported.
+- For L52/L53 specifically: if the top 3 directions together capture
+  > 0.90 of IIA, the effective rank is 3, not 18--19, even though the
+  mask selects more components.
+
+### Experiment 10: Surface heuristic / adversarial robustness
+
+**Question.** Does the subspace transfer across prompt templates and
+entity names, or does it exploit surface-level features of the CausalToM
+dataset?
+
+**Protocol.** Four conditions:
+1. **Template 2 baseline**: standard CausalToM template-2 pairs (should
+   match positive control).
+2. **Template transfer**: re-tell the same stories using template 1 (or
+   a manually varied template). IIA should be preserved if the subspace
+   encodes beliefs, not template tokens.
+3. **Entity-name swap**: replace character names with novel names not in
+   CausalToM. IIA should be preserved.
+4. **Recency confound**: construct stories where the most recently
+   mentioned substance before the question is NOT the belief-correct
+   answer. If IIA tracks the heuristic answer rather than the belief
+   answer, the subspace encodes recency, not belief.
+
+For conditions 2--4, filtering and IIA evaluation use the **intersection
+of pairs that pass behavioral filtering under both the original and
+modified prompts**, so that IIA differences reflect template/name
+sensitivity rather than different surviving subsets.
+
+**Metrics.** IIA per (condition, subspace). Heuristic match rate for
+condition 4 (fraction of intervened predictions matching the recency
+target rather than the belief target).
+
+**Predictions.**
+- Template 2 baseline: IIA > 0.90 (matching positive control).
+- Template transfer: IIA > 0.70. Some degradation is expected because
+  the SVD basis was computed on template 2, but the belief content is
+  identical.
+- Entity-name swap: IIA > 0.85. Names are surface tokens; the
+  subspace should be robust.
+- Recency confound: heuristic match rate < 0.20. If > 0.50, the
+  subspace tracks surface position rather than belief content.
+
+**Pre-committed interpretations.**
+- If template transfer IIA < 0.30, the subspace is template-specific
+  and the "belief tracking" label is overstated: it would be more
+  accurately described as "template-2 answer retrieval."
+- If entity-swap IIA < 0.50, the subspace relies on specific token
+  identities, suggesting memorization rather than compositional
+  representation.
+- If heuristic match rate > 0.50, the subspace encodes "last mentioned
+  substance" rather than "believed substance," which would be a
+  fundamental recharacterization of what the mechanism computes.
+- If all conditions show IIA > 0.70, the subspace is genuinely robust
+  to surface variation and the template-specificity concern is closed.
+
+### Experiment 11: Cross-task contamination (discriminant validity)
+
+**Question.** Does the belief-tracking subspace affect unrelated tasks?
+If so, it may encode a generic answer-retrieval mechanism rather than
+belief-specific information.
+
+**Protocol.** Apply all 6 subspaces (answer subspaces at position -1,
+binding subspaces skipped) to three non-belief task types:
+1. **Factual recall**: "The capital of France is" -> "Paris" vs
+   "The capital of Japan is" -> "Tokyo". 40 pairs (world capitals,
+   chemical elements, animal facts).
+2. **Simple arithmetic**: "15 + 23 =" -> "38" vs "42 + 17 =" -> "59".
+   40 pairs.
+3. **Property association**: "Grass is typically the color" -> "green" vs
+   "The sky is typically the color" -> "blue". 40 pairs.
+
+Filter on model accuracy. Compute IIA using `compute_iia_answer_flex`
+(handles variable token lengths). The key question: does swapping the
+belief subspace at L52 make the model say "Tokyo" when prompted about
+France?
+
+**Metrics.** IIA per (task, subspace). Chance baseline is 0.0 (swapping
+should have no effect on unrelated tasks).
+
+**Predictions.**
+- All three tasks: IIA < 0.15 for all answer subspaces. The belief
+  subspace should not steer factual recall, arithmetic, or property
+  association.
+- If binding subspaces are tested (full-sequence ablation variant):
+  IIA < 0.10.
+
+**Pre-committed interpretations.**
+- If IIA < 0.15 across all tasks and subspaces, the belief-specificity
+  claim is supported: the subspace does not function as a generic
+  answer pointer.
+- If IIA > 0.40 on factual recall but < 0.15 on arithmetic, the
+  subspace encodes "entity-associated retrieval" (a broader category
+  than belief tracking but narrower than generic answer pointing).
+  This would be a meaningful refinement of the mechanism's scope.
+- If IIA > 0.50 on all three tasks, the subspace is a generic
+  last-token answer mechanism and the "belief tracking" label is
+  incorrect. This would be the strongest possible falsification of
+  the paper's specificity claims.
+
+---
+
+**Methodological notes applying to all five experiments.**
+
+1. All experiments use the same 80 model-filtered CausalToM pairs as the
+   positive control (seed 42, 240 generated, filtered to 80).
+2. All answer-subspace IIA uses the last-token intervention protocol
+   (`compute_iia_answer` or `compute_iia_answer_flex`).
+3. All projections use our reconstructed top-r SVD masks (see Amendment 7
+   caveat: these approximate but do not exactly reproduce the paper's
+   learned binary masks).
+4. Results are checkpointed per subspace/condition to survive NDIF
+   instability.
+5. BH correction is applied across all tests within each experiment.
+
+**Design fix (E10).** An earlier draft independently filtered original
+and entity-swapped pairs, making the IIA comparison unpaired. The
+registered version evaluates on the intersection of surviving pairs
+under both conditions.
+
+**Why.** Sufficiency (interchange works) is the weakest form of causal
+evidence. These five experiments test whether the identified subspaces
+are also necessary, localized, multi-dimensional, robust, and
+belief-specific. Together with E1--E6, they constitute a comprehensive
+severity test of the mechanistic claim.
+
+---
+
+## Files changed (Amendments 1--7)
 
 - `experiments/random_subspace_baseline.py` — labeling fix, null distribution fix
 - `experiments/shuffled_label_control.py` — labeling fix
@@ -230,3 +484,11 @@ visibility scoping prevents an apparent omission from reading as a gap.
   third-answer steelman, random baseline method)
 - `COMPUTE_ESTIMATE.md` — created (GPU-hours breakdown)
 - `.gitignore` — added LaTeX build artifacts
+
+## Files changed (Amendment 8)
+
+- `experiments/necessity_test.py` — created (Experiment 7)
+- `experiments/layer_spread_test.py` — created (Experiment 8)
+- `experiments/rank_decomposition_test.py` — created (Experiment 9)
+- `experiments/adversarial_heuristic_test.py` — created (Experiment 10)
+- `experiments/cross_task_contamination.py` — created (Experiment 11)

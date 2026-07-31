@@ -113,16 +113,15 @@ def measure_iia_with_ablation(lm, pairs, ablation_layer, ablation_P,
                                retries=3):
     """Measure IIA at measure_layer while mean-ablating at ablation_layer.
 
-    For each counterfactual pair, runs a single NDIF trace that:
-      1. In the alt invocation: caches the last-token activation at measure_layer
-      2. In the org invocation:
-         a. Mean-ablates the subspace at ablation_layer (position [-1])
-         b. Applies interchange intervention at measure_layer (position [-1])
-         c. Reads the predicted token
+    Uses 4-trace protocol to avoid cross-invoke references (which fail
+    non-deterministically on NDIF remote):
+      1. Get CF activation at measure_layer
+      2. Get clean activation at ablation_layer
+      3. Forward with ablation at ablation_layer -> read post-ablation
+         activation at measure_layer
+      4. Forward with ablation + interchange at measure_layer -> prediction
 
-    ablation_layer and measure_layer MUST be different (OutOfOrderError otherwise).
-
-    All layer accesses are unrolled (no loops inside trace).
+    ablation_layer and measure_layer MUST be different layers.
 
     Args:
         lm: nnsight LanguageModel
@@ -145,26 +144,34 @@ def measure_iia_with_ablation(lm, pairs, ablation_layer, ablation_P,
 
         for attempt in range(retries):
             try:
-                with lm.trace(remote=True) as tracer:
-                    with tracer.invoke(alt_prompt):
-                        alt_last = lm.model.layers[measure_layer].output[0][-1].clone()
+                with lm.trace(alt_prompt, remote=True):
+                    cf_meas_out = lm.model.layers[measure_layer].output[0].save()
 
-                    with tracer.invoke(org_prompt):
-                        # Step 1: mean-ablate at ablation_layer
-                        abl_out = lm.model.layers[ablation_layer].output[0]
-                        abl_curr = abl_out[-1].clone()
-                        abl_subspace = abl_curr @ ablation_P
-                        abl_out[-1] = abl_curr - abl_subspace + mean_proj
+                with lm.trace(org_prompt, remote=True):
+                    cl_abl_out = lm.model.layers[ablation_layer].output[0].save()
 
-                        # Step 2: interchange at measure_layer
-                        meas_curr = lm.model.layers[measure_layer].output[0][-1].clone()
-                        meas_org_proj = meas_curr @ measure_P
-                        meas_alt_proj = alt_last @ measure_P
-                        lm.model.layers[measure_layer].output[0][-1] = (
-                            meas_curr - meas_org_proj + meas_alt_proj
-                        )
+                cf_meas = cf_meas_out.detach().cpu().float()
+                cl_abl = cl_abl_out.detach().cpu().float()
 
-                        pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
+                ablated = cl_abl.clone()
+                abl_curr = cl_abl[-1]
+                ablated[-1] = abl_curr - (abl_curr @ ablation_P) + mean_proj
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[ablation_layer].output[0] = ablated
+                    post_abl_meas = lm.model.layers[measure_layer].output[0].save()
+
+                post_abl = post_abl_meas.detach().cpu().float()
+
+                patched = post_abl.clone()
+                meas_curr = post_abl[-1]
+                cf_last = cf_meas[-1]
+                patched[-1] = meas_curr - (meas_curr @ measure_P) + (cf_last @ measure_P)
+
+                with lm.trace(org_prompt, remote=True):
+                    lm.model.layers[ablation_layer].output[0] = ablated
+                    lm.model.layers[measure_layer].output[0] = patched
+                    pred_id = lm.lm_head.output[0, -1].argmax(dim=-1).save()
 
                 pred_tok = lm.tokenizer.decode([pred_id.item()]).lower().strip()
                 results.append(int(pred_tok == target.lower().strip()))

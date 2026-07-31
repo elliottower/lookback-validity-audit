@@ -41,7 +41,7 @@ from tqdm import tqdm
 
 from ndif_utils import (
     build_projection_matrix,
-    compute_iia_answer,
+    compute_iia_answer_flex,
     filter_on_model,
     load_subspace_specs,
     load_svd_basis,
@@ -395,7 +395,7 @@ def main():
 
                 selected = np.arange(rank)
                 projection = build_projection_matrix(svd_basis, selected)
-                iia = compute_iia_answer(lm, pairs, layer, projection)
+                iia = compute_iia_answer_flex(lm, pairs, layer, projection)
 
             intervention_method = "transfer_last_token"
 

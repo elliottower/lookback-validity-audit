@@ -40,7 +40,7 @@ from tqdm import tqdm
 
 from ndif_utils import (
     build_projection_matrix,
-    compute_iia_answer,
+    compute_iia_answer_flex,
     load_subspace_specs,
     load_svd_basis,
     setup_nnsight,
@@ -332,7 +332,7 @@ def main():
 
                 selected = np.arange(rank)
                 projection = build_projection_matrix(svd_basis, selected)
-                mean_iia = compute_iia_answer(lm, pairs, layer, projection)
+                mean_iia = compute_iia_answer_flex(lm, pairs, layer, projection)
 
             cond_results["subspace_iias"][sub_name] = {
                 "iia_mean": mean_iia,
