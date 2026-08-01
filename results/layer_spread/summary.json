@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-08-01T22:17:59.969004+00:00",
+  "dry_run": false,
+  "seed": 42,
+  "n_eval": 80,
+  "spread_offsets": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "method": "At original layer: paper's binary mask. At adjacent layers: top-k SVD from existing basis or on-the-fly SVD. Answer subspaces only (last-token intervention).",
+  "subspaces": {
+    "answer_pointer_L38": {
+      "center_layer": 38,
+      "rank": 3,
+      "paper_iia": 0.925,
+      "layer_results": {
+        "36": {
+          "layer": 36,
+          "offset": -2,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 3
+        },
+        "37": {
+          "layer": 37,
+          "offset": -1,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 3
+        },
+        "38": {
+          "layer": 38,
+          "offset": 0,
+          "is_paper_layer": true,
+          "iia": 0.0,
+          "basis_source": "paper_mask",
+          "rank": 3
+        },
+        "39": {
+          "layer": 39,
+          "offset": 1,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 3
+        }
+      },
+      "center_iia": 0.0,
+      "mean_adjacent_iia": 0.0,
+      "spread_ratio": null,
+      "interpretation": "INSUFFICIENT DATA"
+    },
+    "answer_pointer_L52": {
+      "center_layer": 52,
+      "rank": 18,
+      "paper_iia": 0.775,
+      "layer_results": {
+        "50": {
+          "layer": 50,
+          "offset": -2,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 18
+        },
+        "52": {
+          "layer": 52,
+          "offset": 0,
+          "is_paper_layer": true,
+          "iia": 0.0,
+          "basis_source": "paper_mask",
+          "rank": 18
+        },
+        "53": {
+          "layer": 53,
+          "offset": 1,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 18
+        },
+        "54": {
+          "layer": 54,
+          "offset": 2,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 18
+        }
+      },
+      "center_iia": 0.0,
+      "mean_adjacent_iia": 0.0,
+      "spread_ratio": null,
+      "interpretation": "INSUFFICIENT DATA"
+    },
+    "answer_pointer_L53": {
+      "center_layer": 53,
+      "rank": 19,
+      "paper_iia": 0.55,
+      "layer_results": {
+        "52": {
+          "layer": 52,
+          "offset": -1,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 19
+        },
+        "53": {
+          "layer": 53,
+          "offset": 0,
+          "is_paper_layer": true,
+          "iia": 0.0,
+          "basis_source": "paper_mask",
+          "rank": 19
+        },
+        "54": {
+          "layer": 54,
+          "offset": 1,
+          "is_paper_layer": false,
+          "iia": 0.0,
+          "basis_source": "existing_svd_topk",
+          "rank": 19
+        }
+      },
+      "center_iia": 0.0,
+      "mean_adjacent_iia": 0.0,
+      "spread_ratio": null,
+      "interpretation": "INSUFFICIENT DATA"
+    }
+  }
+}

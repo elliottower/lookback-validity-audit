@@ -486,3 +486,38 @@ def collect_activations_last_token(lm, prompt, layer, retries=3):
             if attempt < retries - 1:
                 time.sleep(3 * (attempt + 1))
     return None
+
+
+def wilson_ci(k, n, z=1.96):
+    """Wilson score confidence interval for a binomial proportion.
+
+    Returns (lower, upper) bounds. With z=1.96, this is a 95% CI.
+    Returns (0.0, 1.0) if n=0.
+    """
+    if n == 0:
+        return 0.0, 1.0
+    p = k / n
+    denom = 1 + z**2 / n
+    center = (p + z**2 / (2 * n)) / denom
+    spread = z * np.sqrt((p * (1 - p) + z**2 / (4 * n)) / n) / denom
+    return max(0.0, center - spread), min(1.0, center + spread)
+
+
+MIN_N_FOR_INTERPRETATION = 50
+
+
+def iia_with_ci(k, n, z=1.96):
+    """Compute IIA point estimate with Wilson CI and interpretability flag.
+
+    Returns dict with: iia, n, ci_lower, ci_upper, interpretable.
+    """
+    iia = k / n if n > 0 else 0.0
+    lo, hi = wilson_ci(k, n, z)
+    return {
+        "iia": iia,
+        "n": n,
+        "ci_lower": lo,
+        "ci_upper": hi,
+        "ci_width": hi - lo,
+        "interpretable": n >= MIN_N_FOR_INTERPRETATION,
+    }

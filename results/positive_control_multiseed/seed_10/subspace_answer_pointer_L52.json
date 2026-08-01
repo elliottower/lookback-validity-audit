@@ -1,0 +1,10 @@
+{
+  "layer": 52,
+  "rank": 18,
+  "lookback_type": "answer_lookback",
+  "paper_iia": 0.775,
+  "our_iia": 1.0,
+  "delta": 0.22499999999999998,
+  "n_pairs": 80,
+  "seed": 10
+}

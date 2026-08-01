@@ -1,0 +1,10 @@
+{
+  "layer": 35,
+  "rank": 7,
+  "lookback_type": "binding_lookback",
+  "paper_iia": 0.7375,
+  "our_iia": 0.8125,
+  "delta": 0.07499999999999996,
+  "n_pairs": 80,
+  "seed": 10
+}

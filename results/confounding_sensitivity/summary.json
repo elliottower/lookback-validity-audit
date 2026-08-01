@@ -1,0 +1,452 @@
+{
+  "timestamp": "2026-08-01T22:19:39.572964+00:00",
+  "criterion": "I8",
+  "criterion_name": "Confounding sensitivity",
+  "method": "E-value (VanderWeele & Ding, 2017)",
+  "formula": "E = RR + sqrt(RR * (RR - 1)); RR = IIA / baseline_IIA",
+  "baseline_iia": 0.5,
+  "n_measurements": 39,
+  "n_positive_effects": 20,
+  "n_null_effects": 19,
+  "weakest_positive": {
+    "source": "cross_task",
+    "condition": "factual_recall",
+    "subspace": "answer_pointer_L38",
+    "iia": 0.5294117647058824,
+    "evalue": 1.3084
+  },
+  "strongest_positive": {
+    "source": "positive_control",
+    "condition": "replication",
+    "subspace": "answer_pointer_L38",
+    "iia": 1.0,
+    "evalue": 3.4142
+  },
+  "n_robust": 19,
+  "n_fragile": 1,
+  "robustness_threshold": 2.0,
+  "subspace_summary": {
+    "answer_pointer_L38": {
+      "n_positive_effects": 8,
+      "min_evalue": 1.3084,
+      "max_evalue": 3.4142,
+      "median_evalue": 3.3627
+    },
+    "answer_pointer_L53": {
+      "n_positive_effects": 4,
+      "min_evalue": 2.1483,
+      "max_evalue": 3.4142,
+      "median_evalue": 3.4142
+    },
+    "answer_pointer_L52": {
+      "n_positive_effects": 6,
+      "min_evalue": 2.5058,
+      "max_evalue": 3.4142,
+      "median_evalue": 3.4142
+    },
+    "binding_addr_payload_L35": {
+      "n_positive_effects": 1,
+      "min_evalue": 2.8433,
+      "max_evalue": 2.8433,
+      "median_evalue": 2.8433
+    },
+    "binding_addr_payload_L34": {
+      "n_positive_effects": 1,
+      "min_evalue": 3.3627,
+      "max_evalue": 3.3627,
+      "median_evalue": 3.3627
+    }
+  },
+  "all_evalues": [
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "binding_addr_payload_L36",
+      "iia": 0.225,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.45,
+      "evalue": 1.0
+    },
+    {
+      "source": "false_belief",
+      "condition": "false_belief",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.3875,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.775,
+      "evalue": 1.0
+    },
+    {
+      "source": "observability",
+      "condition": "observed_other_container",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.2125,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.425,
+      "evalue": 1.0
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "early",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.0,
+      "n_pairs": 21,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "early",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.0,
+      "n_pairs": 21,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "early",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.0,
+      "n_pairs": 21,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "action_recall",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.4,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.8,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "action_recall",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.05714285714285714,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.1143,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "reality_state",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "reality_state",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "reality_state",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "fill_completion",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "fill_completion",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "question_framing",
+      "condition": "fill_completion",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "factual_recall",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.0,
+      "n_pairs": 34,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "factual_recall",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.0,
+      "n_pairs": 34,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "color_property",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.3333333333333333,
+      "n_pairs": 6,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.6667,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "color_property",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.0,
+      "n_pairs": 6,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "color_property",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.0,
+      "n_pairs": 6,
+      "baseline_iia": 0.5,
+      "risk_ratio": 0.0,
+      "evalue": 1.0
+    },
+    {
+      "source": "cross_task",
+      "condition": "factual_recall",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.5294117647058824,
+      "n_pairs": 34,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.0588,
+      "evalue": 1.3084
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "baseline",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.7,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.4,
+      "evalue": 2.1483
+    },
+    {
+      "source": "adversarial_heuristic",
+      "condition": "template_0",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.782608695652174,
+      "n_pairs": 23,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.5652,
+      "evalue": 2.5058
+    },
+    {
+      "source": "adversarial_heuristic",
+      "condition": "template_0",
+      "subspace": "answer_pointer_L53",
+      "iia": 0.782608695652174,
+      "n_pairs": 23,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.5652,
+      "evalue": 2.5058
+    },
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "binding_addr_payload_L35",
+      "iia": 0.8625,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.725,
+      "evalue": 2.8433
+    },
+    {
+      "source": "question_framing",
+      "condition": "action_recall",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.8857142857142857,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.7714,
+      "evalue": 2.9404
+    },
+    {
+      "source": "adversarial_heuristic",
+      "condition": "template_0",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.9565217391304348,
+      "n_pairs": 23,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.913,
+      "evalue": 3.2347
+    },
+    {
+      "source": "false_belief",
+      "condition": "false_belief",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.975,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.95,
+      "evalue": 3.3111
+    },
+    {
+      "source": "false_belief",
+      "condition": "false_belief",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.975,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.95,
+      "evalue": 3.3111
+    },
+    {
+      "source": "observability",
+      "condition": "observed_other_container",
+      "subspace": "answer_pointer_L52",
+      "iia": 0.975,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.95,
+      "evalue": 3.3111
+    },
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "binding_addr_payload_L34",
+      "iia": 0.9875,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.975,
+      "evalue": 3.3627
+    },
+    {
+      "source": "observability",
+      "condition": "observed_other_container",
+      "subspace": "answer_pointer_L38",
+      "iia": 0.9875,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 1.975,
+      "evalue": 3.3627
+    },
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "answer_pointer_L38",
+      "iia": 1.0,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "answer_pointer_L52",
+      "iia": 1.0,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "positive_control",
+      "condition": "replication",
+      "subspace": "answer_pointer_L53",
+      "iia": 1.0,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "baseline",
+      "subspace": "answer_pointer_L38",
+      "iia": 1.0,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "distractor_insertion",
+      "condition": "baseline",
+      "subspace": "answer_pointer_L52",
+      "iia": 1.0,
+      "n_pairs": 80,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "question_framing",
+      "condition": "belief",
+      "subspace": "answer_pointer_L38",
+      "iia": 1.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "question_framing",
+      "condition": "belief",
+      "subspace": "answer_pointer_L52",
+      "iia": 1.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    },
+    {
+      "source": "question_framing",
+      "condition": "belief",
+      "subspace": "answer_pointer_L53",
+      "iia": 1.0,
+      "n_pairs": 35,
+      "baseline_iia": 0.5,
+      "risk_ratio": 2.0,
+      "evalue": 3.4142
+    }
+  ]
+}

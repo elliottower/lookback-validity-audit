@@ -1,0 +1,31 @@
+{
+  "dry_run": false,
+  "framing": "belief",
+  "question_template": "What does {char} believe the {container} contains?",
+  "n_pairs": 35,
+  "subspace_iias": {
+    "answer_pointer_L38": 1.0,
+    "answer_pointer_L52": 1.0,
+    "answer_pointer_L53": 1.0
+  },
+  "subspace_cis": {
+    "answer_pointer_L38": {
+      "ci_lower": 0.9010957324106112,
+      "ci_upper": 1.0,
+      "ci_width": 0.09890426758938875,
+      "interpretable": false
+    },
+    "answer_pointer_L52": {
+      "ci_lower": 0.9010957324106112,
+      "ci_upper": 1.0,
+      "ci_width": 0.09890426758938875,
+      "interpretable": false
+    },
+    "answer_pointer_L53": {
+      "ci_lower": 0.9010957324106112,
+      "ci_upper": 1.0,
+      "ci_width": 0.09890426758938875,
+      "interpretable": false
+    }
+  }
+}

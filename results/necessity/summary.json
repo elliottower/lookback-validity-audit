@@ -1,0 +1,80 @@
+{
+  "experiment": "Necessity test (zero-ablation)",
+  "timestamp": "2026-08-01T22:17:55.623966+00:00",
+  "seed": 42,
+  "dry_run": false,
+  "n_eval": 80,
+  "method": "Zero subspace component: x' = x - P @ x. Answer subspaces: position -1 only. Binding subspaces: all positions.",
+  "interpretation": {
+    "necessary": "ablated_accuracy << clean_accuracy (subspace removal breaks task)",
+    "redundant": "ablated_accuracy ~ clean_accuracy (model has other pathways)"
+  },
+  "subspaces": {
+    "binding_addr_payload_L34": {
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    },
+    "binding_addr_payload_L35": {
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    },
+    "binding_addr_payload_L36": {
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    },
+    "answer_pointer_L38": {
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    },
+    "answer_pointer_L52": {
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    },
+    "answer_pointer_L53": {
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.0,
+      "ablated_accuracy": 0.0,
+      "accuracy_drop": 0.0,
+      "n_samples": 0,
+      "necessary": false
+    }
+  }
+}

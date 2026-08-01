@@ -1,0 +1,107 @@
+{
+  "experiment": "Surface heuristic test",
+  "timestamp": "2026-08-01T22:30:45.184321+00:00",
+  "seed": 42,
+  "dry_run": false,
+  "n_per_condition_generated": 120,
+  "n_eval_target": 40,
+  "method": "Adversarial story variants where positional heuristic fails. Standard: identical to CausalToM. Decoy: irrelevant substance mentioned near departure. Reordered: departure before state change sentence. Distractor: third character + different substance between state change and departure.",
+  "prediction": {
+    "heuristic_encoding": "IIA on standard >> IIA on adversarial conditions (subspace only encodes positional shortcut)",
+    "genuine_belief": "IIA comparable across all conditions (subspace tracks causal structure, not surface position)"
+  },
+  "conditions": {
+    "standard": {
+      "n_pairs": 0,
+      "subspaces": {
+        "answer_pointer_L38": {
+          "layer": 38,
+          "rank": 3,
+          "iia": 0.934141512392633,
+          "paper_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "layer": 52,
+          "rank": 18,
+          "iia": 0.7438004768127852,
+          "paper_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "layer": 53,
+          "rank": 19,
+          "iia": 0.5725135358741937,
+          "paper_iia": 0.55
+        }
+      }
+    },
+    "decoy": {
+      "n_pairs": 0,
+      "subspaces": {
+        "answer_pointer_L38": {
+          "layer": 38,
+          "rank": 3,
+          "iia": 0.7618637399814804,
+          "paper_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "layer": 52,
+          "rank": 18,
+          "iia": 0.6324918593495052,
+          "paper_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "layer": 53,
+          "rank": 19,
+          "iia": 0.4315863194833283,
+          "paper_iia": 0.55
+        }
+      }
+    },
+    "reordered": {
+      "n_pairs": 0,
+      "subspaces": {
+        "answer_pointer_L38": {
+          "layer": 38,
+          "rank": 3,
+          "iia": 0.8838240485615498,
+          "paper_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "layer": 52,
+          "rank": 18,
+          "iia": 0.6379661725995462,
+          "paper_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "layer": 53,
+          "rank": 19,
+          "iia": 0.44061103827693693,
+          "paper_iia": 0.55
+        }
+      }
+    },
+    "distractor": {
+      "n_pairs": 0,
+      "subspaces": {
+        "answer_pointer_L38": {
+          "layer": 38,
+          "rank": 3,
+          "iia": 0.9019767152547584,
+          "paper_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "layer": 52,
+          "rank": 18,
+          "iia": 0.791780920623592,
+          "paper_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "layer": 53,
+          "rank": 19,
+          "iia": 0.44970446922533247,
+          "paper_iia": 0.55
+        }
+      }
+    }
+  }
+}

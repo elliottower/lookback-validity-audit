@@ -1,0 +1,31 @@
+{
+  "dry_run": false,
+  "framing": "fill_completion",
+  "question_template": "{char} filled the {container} with",
+  "n_pairs": 35,
+  "subspace_iias": {
+    "answer_pointer_L38": 0.0,
+    "answer_pointer_L52": 0.0,
+    "answer_pointer_L53": 0.0
+  },
+  "subspace_cis": {
+    "answer_pointer_L38": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.09890426758938868,
+      "ci_width": 0.09890426758938868,
+      "interpretable": false
+    },
+    "answer_pointer_L52": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.09890426758938868,
+      "ci_width": 0.09890426758938868,
+      "interpretable": false
+    },
+    "answer_pointer_L53": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.09890426758938868,
+      "ci_width": 0.09890426758938868,
+      "interpretable": false
+    }
+  }
+}

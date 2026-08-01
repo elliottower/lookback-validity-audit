@@ -1,0 +1,31 @@
+{
+  "dry_run": false,
+  "template_idx": 0,
+  "is_paper_template": false,
+  "n_pairs": 23,
+  "subspace_iias": {
+    "answer_pointer_L38": 0.9565217391304348,
+    "answer_pointer_L52": 0.782608695652174,
+    "answer_pointer_L53": 0.782608695652174
+  },
+  "subspace_cis": {
+    "answer_pointer_L38": {
+      "ci_lower": 0.7900841350594088,
+      "ci_upper": 0.9922835330378734,
+      "ci_width": 0.20219939797846465,
+      "interpretable": false
+    },
+    "answer_pointer_L52": {
+      "ci_lower": 0.5809611981726508,
+      "ci_upper": 0.9033616439828094,
+      "ci_width": 0.3224004458101586,
+      "interpretable": false
+    },
+    "answer_pointer_L53": {
+      "ci_lower": 0.5809611981726508,
+      "ci_upper": 0.9033616439828094,
+      "ci_width": 0.3224004458101586,
+      "interpretable": false
+    }
+  }
+}

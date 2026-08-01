@@ -748,3 +748,102 @@ power beyond "entity-state binding."
 - `experiments/distractor_insertion_test.py` — created (Experiment 13)
 - `experiments/false_belief_test.py` — created (Experiment 14)
 - `experiments/observability_test.py` — created (Experiment 15)
+
+---
+
+## Amendment 10: Framework version, prompt format fix, and provenance corrections
+
+**Date.** 2026-08-01.
+
+### 10a: Mechanistic validity framework v10 → v11
+
+**Problem.** The audit was designed against version 10 of the mechanistic
+validity framework (31 criteria: C1--C5, M1--M7, I1--I10, E1--E6,
+V1--V5). Version 11 adds three criteria:
+
+- **I3 (Minimality):** the identified mechanism uses no more components
+  than necessary
+- **I5 (Rival mechanism exclusion):** no alternative subspace of the
+  same rank achieves comparable IIA
+- **I11 (Onset-offset coupling):** the mechanism appears and disappears
+  with the capability it supports
+
+Of these, I5 was already addressed by Experiment 5 (rival mechanism
+test) under a different name. I3 was partially addressed by the rank
+decomposition test (E9). I11 requires either training checkpoints
+(emergence direction, infeasible for Llama-3.1-70B) or fine-tuning away
+the capability (disappearance direction, feasible).
+
+**Correction.** The criterion set is updated from 31 to 34. Results
+computed before this amendment (E1--E15, I8 confounding sensitivity)
+were designed and executed under v10 numbering. This amendment records
+the version change and maps existing experiments to the new criteria:
+
+| v11 criterion | Status | Experiment |
+|---------------|--------|-----------|
+| I3 Minimality | Covered by E9 (rank decomposition) | rank_decomposition_test.py |
+| I5 Rival mechanism exclusion | Covered by new script | rival_mechanism_test.py |
+| I11 Onset-offset coupling | New script (disappearance direction only) | onset_offset_test.py |
+
+No existing results are invalidated by this version change. The scoring
+table in the paper will use v11 numbering.
+
+### 10b: Compositional generalization prompt format fix
+
+**Problem.** All compositional generalization conditions except
+`content_existence` (yes/no answers) produced n_pairs=0 after model
+filtering. Root cause: the CausalToM paper's prompts use a structured
+format with an instruction prefix and "Answer:" suffix that elicits
+single-token responses. The compositional generator used bare narrative
+prompts, causing the model to produce multi-token answers that failed
+exact-match filtering. For `content_intention`, the expected answers
+were multi-word phrases ("cook dinner") that cannot match a single
+argmax token.
+
+**Correction.**
+1. All compositional generators now wrap prompts in the CausalToM
+   structured format: `Instruction: ...\n\nStory: ...\nQuestion: ...\nAnswer:`
+2. The instruction text matches the CausalToM paper's instruction for
+   substance-name answers, with appropriate variants for yes/no and
+   single-word conditions.
+3. `content_intention` answers changed from multi-word phrases to
+   single-word activities ("cooking", "cleaning", etc.).
+4. Added `filter_on_model_diagnostic` that logs pre-filter counts,
+   post-filter counts, and sample rejections (first 5) per condition.
+5. Stale results from the broken run moved to
+   `results/compositional/stale_v1/`.
+
+### 10c: I8 confounding sensitivity labeled exploratory
+
+**Problem.** The E-value confounding sensitivity analysis (I8) ran from
+an uncommitted script (`experiments/confounding_sensitivity.py`). The
+script was not part of any pre-registration tag at time of execution.
+
+**Correction.** I8 results are labeled exploratory in the paper text.
+The script has since been committed and is included in this amendment,
+but the results themselves cannot retroactively become pre-registered.
+All conclusions drawn from I8 are hedged accordingly.
+
+### 10d: Pre-registration tag provenance note
+
+**Problem.** The tag `prereg-amendment-2` was moved to a different SHA
+during development. Git tags are mutable references, and moving a
+pre-registration tag destroys the provenance chain.
+
+**Correction.** This cannot be fixed retroactively. Future amendments
+use a new tag with `-corrected` suffix rather than moving existing tags.
+The moved tag is documented here for transparency.
+
+## Files changed (Amendment 10)
+
+- `experiments/compositional_generalization.py` — prompt format fix,
+  diagnostic filter, single-word intention answers
+- `AMENDMENTS.md` — this amendment
+- `experiments/confounding_sensitivity.py` — now committed (was untracked)
+- `experiments/rival_mechanism_test.py` — committed (I5)
+- `experiments/sufficiency_test.py` — committed (I2 graded)
+- `experiments/rescue_reversibility_test.py` — committed (I10 with
+  random-subspace control)
+- `experiments/double_dissociation_test.py` — committed (I6, relabeled
+  as single dissociation)
+- `experiments/convergent_validity_probe.py` — committed (C3)

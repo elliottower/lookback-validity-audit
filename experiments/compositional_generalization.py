@@ -42,7 +42,6 @@ from tqdm import tqdm
 from ndif_utils import (
     build_projection_matrix,
     compute_iia_answer_flex,
-    filter_on_model,
     load_subspace_specs,
     load_svd_basis,
     setup_nnsight,
@@ -60,6 +59,38 @@ OBJECTS = ["book", "key", "ball", "cup", "hat", "ring", "phone", "wallet",
            "pen", "watch", "coin", "letter", "toy", "scarf", "bag", "box"]
 SETTINGS = ["kitchen", "workshop", "laboratory", "office", "classroom",
             "garage", "studio", "library"]
+
+SUBSTANCE_INSTRUCTION = (
+    "1. Track the belief of each character as described in the story. "
+    "2. A character's belief is formed only when they perform an action "
+    "themselves or can observe the action taking place. "
+    "3. A character does not have any beliefs about the container and its "
+    "contents which they cannot observe. "
+    "4. To answer the question, predict only what is inside the queried "
+    "container, strictly based on the belief of the character, mentioned "
+    "in the question. "
+    "5. If the queried character has no belief about the container in "
+    "question, then predict 'unknown'. "
+    "6. Do not predict container or character as the final output."
+)
+
+YESNO_INSTRUCTION = (
+    "1. Track the belief of each character as described in the story. "
+    "2. A character's belief is formed only when they perform an action "
+    "themselves or can observe the action taking place. "
+    "3. Answer the question with a single word: 'yes' or 'no'."
+)
+
+SINGLE_WORD_INSTRUCTION = (
+    "1. Track the belief of each character as described in the story. "
+    "2. A character's belief is formed only when they perform an action "
+    "themselves or can observe the action taking place. "
+    "3. Answer the question with a single word."
+)
+
+
+def _wrap_prompt(instruction, story, question):
+    return f"Instruction: {instruction}\n\nStory: {story}\nQuestion: {question}\nAnswer:"
 
 
 # ── Counterfactual pair generators ──
@@ -96,14 +127,15 @@ def generate_character_scaling_pairs(n_characters, n_pairs, rng):
             ) + " "
 
         def _make_prompt(sa, sb):
-            return (
+            story = (
                 f"{c1} and {c2} are working in a {setting}. {distractor_text}"
                 f"{c1} grabs an opaque {cont1} and fills it with {sa}. "
                 f"{c2} grabs another opaque {cont2} and fills it with {sb}. "
                 f"{c1} leaves the {setting}. "
-                f"{c2} empties {cont2} and refills it with {sa}. "
-                f"What does {c1} believe {cont2} contains?"
+                f"{c2} empties {cont2} and refills it with {sa}."
             )
+            question = f"What does {c1} believe {cont2} contains?"
+            return _wrap_prompt(SUBSTANCE_INSTRUCTION, story, question)
 
         pairs.append({
             "clean_prompt": _make_prompt(s1, s2),
@@ -130,14 +162,15 @@ def generate_nested_belief_pairs(n_pairs, rng):
         setting = rng.choice(SETTINGS)
 
         def _make_prompt(sa, sb, sc):
-            return (
+            story = (
                 f"{c1} and {c2} are working in a {setting}. "
                 f"{c1} grabs an opaque {cont1} and fills it with {sa}. "
                 f"{c2} grabs another opaque {cont2} and fills it with {sb}. "
                 f"{c1} leaves the {setting}. "
-                f"{c2} empties {cont2} and refills it with {sc}. "
-                f"What does {c1} think {c2} believes {cont2} contains?"
+                f"{c2} empties {cont2} and refills it with {sc}."
             )
+            question = f"What does {c1} think {c2} believes {cont2} contains?"
+            return _wrap_prompt(SUBSTANCE_INSTRUCTION, story, question)
 
         pairs.append({
             "clean_prompt": _make_prompt(s1, s2, s3),
@@ -162,24 +195,23 @@ def generate_existence_belief_pairs(n_pairs, rng):
         loc = rng.choice(LOCATIONS)
         setting = rng.choice(SETTINGS)
 
-        clean = (
+        clean_story = (
             f"{c1} and {c2} are in a {setting}. "
             f"{c1} places the {obj} on the {loc}. "
             f"{c1} leaves the {setting}. "
-            f"{c2} takes the {obj} and throws it away. {c1} returns. "
-            f"Does {c1} believe the {obj} is still on the {loc}?"
+            f"{c2} takes the {obj} and throws it away. {c1} returns."
         )
-        counterfactual = (
+        cf_story = (
             f"{c1} and {c2} are in a {setting}. "
             f"{c1} places the {obj} on the {loc}. "
             f"{c1} watches as "
-            f"{c2} takes the {obj} and throws it away. "
-            f"Does {c1} believe the {obj} is still on the {loc}?"
+            f"{c2} takes the {obj} and throws it away."
         )
+        question = f"Does {c1} believe the {obj} is still on the {loc}?"
 
         pairs.append({
-            "clean_prompt": clean,
-            "counterfactual_prompt": counterfactual,
+            "clean_prompt": _wrap_prompt(YESNO_INSTRUCTION, clean_story, question),
+            "counterfactual_prompt": _wrap_prompt(YESNO_INSTRUCTION, cf_story, question),
             "clean_ans": "yes",
             "counterfactual_ans": "no",
             "condition": "content_existence",
@@ -193,31 +225,30 @@ def generate_intention_belief_pairs(n_pairs, rng):
     Clean: c1 leaves before c2 changes plan → c1 believes original.
     Counterfactual: c1 stays and hears change → c1 knows new plan.
     """
-    actions = ["cook dinner", "clean the room", "fix the shelf", "paint the wall",
-               "write a letter", "wrap a gift", "organize the files", "prepare tea"]
+    actions = ["cooking", "cleaning", "reading", "painting",
+               "writing", "running", "swimming", "singing"]
     pairs = []
     for _ in range(n_pairs):
         c1, c2 = rng.choice(CHARACTERS, size=2, replace=False)
         act1, act2 = rng.choice(actions, size=2, replace=False)
         setting = rng.choice(SETTINGS)
 
-        clean = (
+        clean_story = (
             f"{c1} and {c2} are in a {setting}. "
-            f"{c2} tells {c1} that they plan to {act1}. "
+            f"{c2} tells {c1} that they plan to go {act1}. "
             f"{c1} leaves the {setting}. "
-            f"{c2} changes their mind and decides to {act2} instead. "
-            f"What does {c1} believe {c2} is going to do?"
+            f"{c2} changes their mind and decides to go {act2} instead."
         )
-        counterfactual = (
+        cf_story = (
             f"{c1} and {c2} are in a {setting}. "
-            f"{c2} tells {c1} that they plan to {act1}. "
-            f"{c2} then tells {c1} they changed their mind and will {act2} instead. "
-            f"What does {c1} believe {c2} is going to do?"
+            f"{c2} tells {c1} that they plan to go {act1}. "
+            f"{c2} then tells {c1} they changed their mind and will go {act2} instead."
         )
+        question = f"What activity does {c1} believe {c2} is planning?"
 
         pairs.append({
-            "clean_prompt": clean,
-            "counterfactual_prompt": counterfactual,
+            "clean_prompt": _wrap_prompt(SINGLE_WORD_INSTRUCTION, clean_story, question),
+            "counterfactual_prompt": _wrap_prompt(SINGLE_WORD_INSTRUCTION, cf_story, question),
             "clean_ans": act1,
             "counterfactual_ans": act2,
             "condition": "content_intention",
@@ -240,22 +271,21 @@ def generate_knowledge_belief_pairs(n_pairs, rng):
         fact = rng.choice(facts)
         setting = rng.choice(SETTINGS)
 
-        clean = (
+        clean_story = (
             f"{c1} and {c2} are in a {setting}. "
             f"{c1} learns that {fact}. "
-            f"{c1} leaves the {setting} without telling {c2}. "
-            f"Does {c1} believe that {c2} knows that {fact}?"
+            f"{c1} leaves the {setting} without telling {c2}."
         )
-        counterfactual = (
+        cf_story = (
             f"{c1} and {c2} are in a {setting}. "
             f"{c1} learns that {fact}. "
-            f"{c1} tells {c2} that {fact} before leaving the {setting}. "
-            f"Does {c1} believe that {c2} knows that {fact}?"
+            f"{c1} tells {c2} that {fact} before leaving the {setting}."
         )
+        question = f"Does {c1} believe that {c2} knows that {fact}?"
 
         pairs.append({
-            "clean_prompt": clean,
-            "counterfactual_prompt": counterfactual,
+            "clean_prompt": _wrap_prompt(YESNO_INSTRUCTION, clean_story, question),
+            "counterfactual_prompt": _wrap_prompt(YESNO_INSTRUCTION, cf_story, question),
             "clean_ans": "no",
             "counterfactual_ans": "yes",
             "condition": "content_knowledge",
@@ -293,6 +323,58 @@ def compute_mask_overlap(mask_a, mask_b, n_components=500):
     if norm_a == 0 or norm_b == 0:
         return 0.0
     return float(dot / (norm_a * norm_b))
+
+
+def filter_on_model_diagnostic(lm, pairs, max_size, condition_name):
+    """Filter pairs with diagnostic logging of rejections."""
+    from tqdm import tqdm
+
+    filtered = []
+    rejections = []
+    for sample in tqdm(pairs, desc=f"Filtering {condition_name}"):
+        clean_prompt = sample["clean_prompt"]
+        cf_prompt = sample["counterfactual_prompt"]
+        clean_target = sample["clean_ans"]
+        cf_target = sample["counterfactual_ans"]
+
+        try:
+            with lm.trace(clean_prompt, remote=True):
+                clean_pred = lm.lm_head.output[0, -1].argmax(dim=-1).save()
+
+            with lm.trace(cf_prompt, remote=True):
+                cf_pred = lm.lm_head.output[0, -1].argmax(dim=-1).save()
+
+            clean_tok = lm.tokenizer.decode([clean_pred.item()]).lower().strip()
+            cf_tok = lm.tokenizer.decode([cf_pred.item()]).lower().strip()
+
+            clean_match = clean_tok == clean_target.lower().strip()
+            cf_match = cf_tok == cf_target.lower().strip()
+
+            if clean_match and cf_match:
+                filtered.append(sample)
+                if len(filtered) >= max_size:
+                    break
+            elif len(rejections) < 5:
+                rejections.append({
+                    "clean_target": clean_target,
+                    "clean_predicted": clean_tok,
+                    "clean_match": clean_match,
+                    "cf_target": cf_target,
+                    "cf_predicted": cf_tok,
+                    "cf_match": cf_match,
+                })
+        except Exception as e:
+            print(f"  Filter error: {e}")
+            time.sleep(2)
+
+    print(f"  Pre-filter: {len(pairs)}, post-filter: {len(filtered)}")
+    if rejections:
+        print(f"  Sample rejections (first {len(rejections)}):")
+        for r in rejections:
+            print(f"    clean: expected={r['clean_target']!r} got={r['clean_predicted']!r} "
+                  f"| cf: expected={r['cf_target']!r} got={r['cf_predicted']!r}")
+
+    return filtered, rejections
 
 
 def main():
@@ -352,14 +434,20 @@ def main():
         print(f"  Example: {pairs[0]['clean_prompt'][:120]}...")
         print(f"{'='*60}")
 
+        n_pre_filter = len(pairs)
+        rejections = []
         if not args.dry_run:
             print(f"[{ts()}] Filtering pairs on model accuracy...")
-            pairs = filter_on_model(lm, pairs, max_size=args.n_stories)
+            pairs, rejections = filter_on_model_diagnostic(
+                lm, pairs, max_size=args.n_stories, condition_name=cond_name)
             print(f"[{ts()}] {len(pairs)} pairs passed filter")
 
         cond_result = {
             "description": desc,
+            "n_pairs_pre_filter": n_pre_filter,
             "n_pairs": len(pairs),
+            "filter_pass_rate": len(pairs) / n_pre_filter if n_pre_filter > 0 else 0.0,
+            "sample_rejections": rejections,
             "subspace_results": {},
         }
 

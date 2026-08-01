@@ -1,0 +1,1291 @@
+{
+  "pairs": [
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Charlie and Pete are working in a busy restaurant. To complete an order, Charlie grabs an opaque jar and fills it with wine. Then Pete grabs another opaque can and fills it with soda. While Charlie was attending to another task, a co-worker swapped the wine in the jar with beer. Charlie did not notice the swap.\nQuestion: What does Charlie believe the jar contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Pete and Charlie are working in a busy restaurant. To complete an order, Pete grabs an opaque can and fills it with ale. Then Charlie grabs another opaque jar and fills it with bourbon. While Pete was attending to another task, a co-worker swapped the ale in the can with tea. Pete did not notice the swap.\nQuestion: What does Pete believe the can contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "ale",
+      "clean_reality": "beer",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Charlie",
+        "Pete"
+      ],
+      "cf_chars": [
+        "Pete",
+        "Charlie"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Heidi and Tim are working in a busy restaurant. To complete an order, Heidi grabs an opaque cup and fills it with tea. Then Tim grabs another opaque jar and fills it with coffee. While Heidi was attending to another task, a co-worker swapped the tea in the cup with wine. Heidi did not notice the swap.\nQuestion: What does Heidi believe the cup contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tim and Heidi are working in a busy restaurant. To complete an order, Tim grabs an opaque jar and fills it with monster. Then Heidi grabs another opaque cup and fills it with float. While Tim was attending to another task, a co-worker swapped the monster in the jar with water. Tim did not notice the swap.\nQuestion: What does Tim believe the jar contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "monster",
+      "clean_reality": "wine",
+      "cf_reality": "water",
+      "clean_chars": [
+        "Heidi",
+        "Tim"
+      ],
+      "cf_chars": [
+        "Tim",
+        "Heidi"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Uma and Anna are working in a busy restaurant. To complete an order, Uma grabs an opaque container and fills it with espresso. Then Anna grabs another opaque tank and fills it with wine. While Uma was attending to another task, a co-worker swapped the espresso in the container with cocoa. Uma did not notice the swap.\nQuestion: What does Uma believe the container contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Anna and Uma are working in a busy restaurant. To complete an order, Anna grabs an opaque tank and fills it with port. Then Uma grabs another opaque container and fills it with gin. While Anna was attending to another task, a co-worker swapped the port in the tank with water. Anna did not notice the swap.\nQuestion: What does Anna believe the tank contains?\nAnswer:",
+      "clean_ans": "espresso",
+      "counterfactual_ans": "port",
+      "clean_reality": "cocoa",
+      "cf_reality": "water",
+      "clean_chars": [
+        "Uma",
+        "Anna"
+      ],
+      "cf_chars": [
+        "Anna",
+        "Uma"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Joe and Grace are working in a busy restaurant. To complete an order, Joe grabs an opaque tun and fills it with gin. Then Grace grabs another opaque pint and fills it with soda. While Joe was attending to another task, a co-worker swapped the gin in the tun with coffee. Joe did not notice the swap.\nQuestion: What does Joe believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Grace and Joe are working in a busy restaurant. To complete an order, Grace grabs an opaque pint and fills it with champagne. Then Joe grabs another opaque tun and fills it with beer. While Grace was attending to another task, a co-worker swapped the champagne in the pint with tea. Grace did not notice the swap.\nQuestion: What does Grace believe the pint contains?\nAnswer:",
+      "clean_ans": "gin",
+      "counterfactual_ans": "champagne",
+      "clean_reality": "coffee",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Joe",
+        "Grace"
+      ],
+      "cf_chars": [
+        "Grace",
+        "Joe"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Paul and Ellen are working in a busy restaurant. To complete an order, Paul grabs an opaque quart and fills it with float. Then Ellen grabs another opaque container and fills it with gin. While Paul was attending to another task, a co-worker swapped the float in the quart with milk. Paul did not notice the swap.\nQuestion: What does Paul believe the quart contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ellen and Paul are working in a busy restaurant. To complete an order, Ellen grabs an opaque container and fills it with cocoa. Then Paul grabs another opaque quart and fills it with bourbon. While Ellen was attending to another task, a co-worker swapped the cocoa in the container with beer. Ellen did not notice the swap.\nQuestion: What does Ellen believe the container contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "milk",
+      "cf_reality": "beer",
+      "clean_chars": [
+        "Paul",
+        "Ellen"
+      ],
+      "cf_chars": [
+        "Ellen",
+        "Paul"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Paul and Diane are working in a busy restaurant. To complete an order, Paul grabs an opaque tank and fills it with stout. Then Diane grabs another opaque flask and fills it with float. While Paul was attending to another task, a co-worker swapped the stout in the tank with cocktail. Paul did not notice the swap.\nQuestion: What does Paul believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Diane and Paul are working in a busy restaurant. To complete an order, Diane grabs an opaque flask and fills it with port. Then Paul grabs another opaque tank and fills it with coffee. While Diane was attending to another task, a co-worker swapped the port in the flask with porter. Diane did not notice the swap.\nQuestion: What does Diane believe the flask contains?\nAnswer:",
+      "clean_ans": "stout",
+      "counterfactual_ans": "port",
+      "clean_reality": "cocktail",
+      "cf_reality": "porter",
+      "clean_chars": [
+        "Paul",
+        "Diane"
+      ],
+      "cf_chars": [
+        "Diane",
+        "Paul"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Donna and Carl are working in a busy restaurant. To complete an order, Donna grabs an opaque bottle and fills it with tea. Then Carl grabs another opaque flask and fills it with wine. While Donna was attending to another task, a co-worker swapped the tea in the bottle with beer. Donna did not notice the swap.\nQuestion: What does Donna believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Carl and Donna are working in a busy restaurant. To complete an order, Carl grabs an opaque flask and fills it with punch. Then Donna grabs another opaque bottle and fills it with gin. While Carl was attending to another task, a co-worker swapped the punch in the flask with cocoa. Carl did not notice the swap.\nQuestion: What does Carl believe the flask contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "punch",
+      "clean_reality": "beer",
+      "cf_reality": "cocoa",
+      "clean_chars": [
+        "Donna",
+        "Carl"
+      ],
+      "cf_chars": [
+        "Carl",
+        "Donna"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Charlie and Wayne are working in a busy restaurant. To complete an order, Charlie grabs an opaque pitcher and fills it with cocktail. Then Wayne grabs another opaque quart and fills it with coffee. While Charlie was attending to another task, a co-worker swapped the cocktail in the pitcher with ale. Charlie did not notice the swap.\nQuestion: What does Charlie believe the pitcher contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Wayne and Charlie are working in a busy restaurant. To complete an order, Wayne grabs an opaque quart and fills it with stout. Then Charlie grabs another opaque pitcher and fills it with tea. While Wayne was attending to another task, a co-worker swapped the stout in the quart with float. Wayne did not notice the swap.\nQuestion: What does Wayne believe the quart contains?\nAnswer:",
+      "clean_ans": "cocktail",
+      "counterfactual_ans": "stout",
+      "clean_reality": "ale",
+      "cf_reality": "float",
+      "clean_chars": [
+        "Charlie",
+        "Wayne"
+      ],
+      "cf_chars": [
+        "Wayne",
+        "Charlie"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Charlie and Gary are working in a busy restaurant. To complete an order, Charlie grabs an opaque tank and fills it with juice. Then Gary grabs another opaque bottle and fills it with cocoa. While Charlie was attending to another task, a co-worker swapped the juice in the tank with punch. Charlie did not notice the swap.\nQuestion: What does Charlie believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Gary and Charlie are working in a busy restaurant. To complete an order, Gary grabs an opaque bottle and fills it with gin. Then Charlie grabs another opaque tank and fills it with stout. While Gary was attending to another task, a co-worker swapped the gin in the bottle with porter. Gary did not notice the swap.\nQuestion: What does Gary believe the bottle contains?\nAnswer:",
+      "clean_ans": "juice",
+      "counterfactual_ans": "gin",
+      "clean_reality": "punch",
+      "cf_reality": "porter",
+      "clean_chars": [
+        "Charlie",
+        "Gary"
+      ],
+      "cf_chars": [
+        "Gary",
+        "Charlie"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Uma and Dave are working in a busy restaurant. To complete an order, Uma grabs an opaque pint and fills it with wine. Then Dave grabs another opaque cup and fills it with milk. While Uma was attending to another task, a co-worker swapped the wine in the pint with champagne. Uma did not notice the swap.\nQuestion: What does Uma believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dave and Uma are working in a busy restaurant. To complete an order, Dave grabs an opaque cup and fills it with punch. Then Uma grabs another opaque pint and fills it with gin. While Dave was attending to another task, a co-worker swapped the punch in the cup with tea. Dave did not notice the swap.\nQuestion: What does Dave believe the cup contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "punch",
+      "clean_reality": "champagne",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Uma",
+        "Dave"
+      ],
+      "cf_chars": [
+        "Dave",
+        "Uma"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Will and Uma are working in a busy restaurant. To complete an order, Will grabs an opaque tank and fills it with port. Then Uma grabs another opaque can and fills it with espresso. While Will was attending to another task, a co-worker swapped the port in the tank with punch. Will did not notice the swap.\nQuestion: What does Will believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Uma and Will are working in a busy restaurant. To complete an order, Uma grabs an opaque can and fills it with cocktail. Then Will grabs another opaque tank and fills it with wine. While Uma was attending to another task, a co-worker swapped the cocktail in the can with soda. Uma did not notice the swap.\nQuestion: What does Uma believe the can contains?\nAnswer:",
+      "clean_ans": "port",
+      "counterfactual_ans": "cocktail",
+      "clean_reality": "punch",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Will",
+        "Uma"
+      ],
+      "cf_chars": [
+        "Uma",
+        "Will"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Keith and Ryan are working in a busy restaurant. To complete an order, Keith grabs an opaque mug and fills it with beer. Then Ryan grabs another opaque cup and fills it with soda. While Keith was attending to another task, a co-worker swapped the beer in the mug with stout. Keith did not notice the swap.\nQuestion: What does Keith believe the mug contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ryan and Keith are working in a busy restaurant. To complete an order, Ryan grabs an opaque cup and fills it with juice. Then Keith grabs another opaque mug and fills it with ale. While Ryan was attending to another task, a co-worker swapped the juice in the cup with espresso. Ryan did not notice the swap.\nQuestion: What does Ryan believe the cup contains?\nAnswer:",
+      "clean_ans": "beer",
+      "counterfactual_ans": "juice",
+      "clean_reality": "stout",
+      "cf_reality": "espresso",
+      "clean_chars": [
+        "Keith",
+        "Ryan"
+      ],
+      "cf_chars": [
+        "Ryan",
+        "Keith"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sam and Donna are working in a busy restaurant. To complete an order, Sam grabs an opaque horn and fills it with float. Then Donna grabs another opaque container and fills it with cocoa. While Sam was attending to another task, a co-worker swapped the float in the horn with monster. Sam did not notice the swap.\nQuestion: What does Sam believe the horn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Donna and Sam are working in a busy restaurant. To complete an order, Donna grabs an opaque container and fills it with gin. Then Sam grabs another opaque horn and fills it with bourbon. While Donna was attending to another task, a co-worker swapped the gin in the container with water. Donna did not notice the swap.\nQuestion: What does Donna believe the container contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "gin",
+      "clean_reality": "monster",
+      "cf_reality": "water",
+      "clean_chars": [
+        "Sam",
+        "Donna"
+      ],
+      "cf_chars": [
+        "Donna",
+        "Sam"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dan and Greg are working in a busy restaurant. To complete an order, Dan grabs an opaque glass and fills it with gin. Then Greg grabs another opaque tank and fills it with stout. While Dan was attending to another task, a co-worker swapped the gin in the glass with champagne. Dan did not notice the swap.\nQuestion: What does Dan believe the glass contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Greg and Dan are working in a busy restaurant. To complete an order, Greg grabs an opaque tank and fills it with beer. Then Dan grabs another opaque glass and fills it with rum. While Greg was attending to another task, a co-worker swapped the beer in the tank with espresso. Greg did not notice the swap.\nQuestion: What does Greg believe the tank contains?\nAnswer:",
+      "clean_ans": "gin",
+      "counterfactual_ans": "beer",
+      "clean_reality": "champagne",
+      "cf_reality": "espresso",
+      "clean_chars": [
+        "Dan",
+        "Greg"
+      ],
+      "cf_chars": [
+        "Greg",
+        "Dan"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Grace and Zoe are working in a busy restaurant. To complete an order, Grace grabs an opaque jar and fills it with monster. Then Zoe grabs another opaque can and fills it with juice. While Grace was attending to another task, a co-worker swapped the monster in the jar with beer. Grace did not notice the swap.\nQuestion: What does Grace believe the jar contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Zoe and Grace are working in a busy restaurant. To complete an order, Zoe grabs an opaque can and fills it with float. Then Grace grabs another opaque jar and fills it with coffee. While Zoe was attending to another task, a co-worker swapped the float in the can with soda. Zoe did not notice the swap.\nQuestion: What does Zoe believe the can contains?\nAnswer:",
+      "clean_ans": "monster",
+      "counterfactual_ans": "float",
+      "clean_reality": "beer",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Grace",
+        "Zoe"
+      ],
+      "cf_chars": [
+        "Zoe",
+        "Grace"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Peter and Joe are working in a busy restaurant. To complete an order, Peter grabs an opaque pitcher and fills it with monster. Then Joe grabs another opaque tank and fills it with water. While Peter was attending to another task, a co-worker swapped the monster in the pitcher with float. Peter did not notice the swap.\nQuestion: What does Peter believe the pitcher contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Joe and Peter are working in a busy restaurant. To complete an order, Joe grabs an opaque tank and fills it with beer. Then Peter grabs another opaque pitcher and fills it with cocktail. While Joe was attending to another task, a co-worker swapped the beer in the tank with rum. Joe did not notice the swap.\nQuestion: What does Joe believe the tank contains?\nAnswer:",
+      "clean_ans": "monster",
+      "counterfactual_ans": "beer",
+      "clean_reality": "float",
+      "cf_reality": "rum",
+      "clean_chars": [
+        "Peter",
+        "Joe"
+      ],
+      "cf_chars": [
+        "Joe",
+        "Peter"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tina and Neil are working in a busy restaurant. To complete an order, Tina grabs an opaque bottle and fills it with tea. Then Neil grabs another opaque container and fills it with champagne. While Tina was attending to another task, a co-worker swapped the tea in the bottle with water. Tina did not notice the swap.\nQuestion: What does Tina believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Neil and Tina are working in a busy restaurant. To complete an order, Neil grabs an opaque container and fills it with port. Then Tina grabs another opaque bottle and fills it with bourbon. While Neil was attending to another task, a co-worker swapped the port in the container with wine. Neil did not notice the swap.\nQuestion: What does Neil believe the container contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "port",
+      "clean_reality": "water",
+      "cf_reality": "wine",
+      "clean_chars": [
+        "Tina",
+        "Neil"
+      ],
+      "cf_chars": [
+        "Neil",
+        "Tina"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Heidi and Dave are working in a busy restaurant. To complete an order, Heidi grabs an opaque jar and fills it with porter. Then Dave grabs another opaque mug and fills it with stout. While Heidi was attending to another task, a co-worker swapped the porter in the jar with milk. Heidi did not notice the swap.\nQuestion: What does Heidi believe the jar contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dave and Heidi are working in a busy restaurant. To complete an order, Dave grabs an opaque mug and fills it with champagne. Then Heidi grabs another opaque jar and fills it with tea. While Dave was attending to another task, a co-worker swapped the champagne in the mug with monster. Dave did not notice the swap.\nQuestion: What does Dave believe the mug contains?\nAnswer:",
+      "clean_ans": "porter",
+      "counterfactual_ans": "champagne",
+      "clean_reality": "milk",
+      "cf_reality": "monster",
+      "clean_chars": [
+        "Heidi",
+        "Dave"
+      ],
+      "cf_chars": [
+        "Dave",
+        "Heidi"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Hans and Liz are working in a busy restaurant. To complete an order, Hans grabs an opaque dispenser and fills it with bourbon. Then Liz grabs another opaque jug and fills it with soda. While Hans was attending to another task, a co-worker swapped the bourbon in the dispenser with port. Hans did not notice the swap.\nQuestion: What does Hans believe the dispenser contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Liz and Hans are working in a busy restaurant. To complete an order, Liz grabs an opaque jug and fills it with sprite. Then Hans grabs another opaque dispenser and fills it with espresso. While Liz was attending to another task, a co-worker swapped the sprite in the jug with coffee. Liz did not notice the swap.\nQuestion: What does Liz believe the jug contains?\nAnswer:",
+      "clean_ans": "bourbon",
+      "counterfactual_ans": "sprite",
+      "clean_reality": "port",
+      "cf_reality": "coffee",
+      "clean_chars": [
+        "Hans",
+        "Liz"
+      ],
+      "cf_chars": [
+        "Liz",
+        "Hans"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ellen and Mary are working in a busy restaurant. To complete an order, Ellen grabs an opaque tun and fills it with espresso. Then Mary grabs another opaque quart and fills it with cocoa. While Ellen was attending to another task, a co-worker swapped the espresso in the tun with milk. Ellen did not notice the swap.\nQuestion: What does Ellen believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mary and Ellen are working in a busy restaurant. To complete an order, Mary grabs an opaque quart and fills it with ale. Then Ellen grabs another opaque tun and fills it with stout. While Mary was attending to another task, a co-worker swapped the ale in the quart with beer. Mary did not notice the swap.\nQuestion: What does Mary believe the quart contains?\nAnswer:",
+      "clean_ans": "espresso",
+      "counterfactual_ans": "ale",
+      "clean_reality": "milk",
+      "cf_reality": "beer",
+      "clean_chars": [
+        "Ellen",
+        "Mary"
+      ],
+      "cf_chars": [
+        "Mary",
+        "Ellen"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Pam and Rose are working in a busy restaurant. To complete an order, Pam grabs an opaque pint and fills it with wine. Then Rose grabs another opaque glass and fills it with coffee. While Pam was attending to another task, a co-worker swapped the wine in the pint with bourbon. Pam did not notice the swap.\nQuestion: What does Pam believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Rose and Pam are working in a busy restaurant. To complete an order, Rose grabs an opaque glass and fills it with cocoa. Then Pam grabs another opaque pint and fills it with soda. While Rose was attending to another task, a co-worker swapped the cocoa in the glass with espresso. Rose did not notice the swap.\nQuestion: What does Rose believe the glass contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "bourbon",
+      "cf_reality": "espresso",
+      "clean_chars": [
+        "Pam",
+        "Rose"
+      ],
+      "cf_chars": [
+        "Rose",
+        "Pam"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tom and Liz are working in a busy restaurant. To complete an order, Tom grabs an opaque urn and fills it with tea. Then Liz grabs another opaque bottle and fills it with cocoa. While Tom was attending to another task, a co-worker swapped the tea in the urn with bourbon. Tom did not notice the swap.\nQuestion: What does Tom believe the urn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Liz and Tom are working in a busy restaurant. To complete an order, Liz grabs an opaque bottle and fills it with beer. Then Tom grabs another opaque urn and fills it with milk. While Liz was attending to another task, a co-worker swapped the beer in the bottle with stout. Liz did not notice the swap.\nQuestion: What does Liz believe the bottle contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "beer",
+      "clean_reality": "bourbon",
+      "cf_reality": "stout",
+      "clean_chars": [
+        "Tom",
+        "Liz"
+      ],
+      "cf_chars": [
+        "Liz",
+        "Tom"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Helen and Beth are working in a busy restaurant. To complete an order, Helen grabs an opaque mug and fills it with juice. Then Beth grabs another opaque bottle and fills it with espresso. While Helen was attending to another task, a co-worker swapped the juice in the mug with sprite. Helen did not notice the swap.\nQuestion: What does Helen believe the mug contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Beth and Helen are working in a busy restaurant. To complete an order, Beth grabs an opaque bottle and fills it with water. Then Helen grabs another opaque mug and fills it with punch. While Beth was attending to another task, a co-worker swapped the water in the bottle with gin. Beth did not notice the swap.\nQuestion: What does Beth believe the bottle contains?\nAnswer:",
+      "clean_ans": "juice",
+      "counterfactual_ans": "water",
+      "clean_reality": "sprite",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Helen",
+        "Beth"
+      ],
+      "cf_chars": [
+        "Beth",
+        "Helen"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sara and Zoe are working in a busy restaurant. To complete an order, Sara grabs an opaque flask and fills it with porter. Then Zoe grabs another opaque tun and fills it with bourbon. While Sara was attending to another task, a co-worker swapped the porter in the flask with ale. Sara did not notice the swap.\nQuestion: What does Sara believe the flask contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Zoe and Sara are working in a busy restaurant. To complete an order, Zoe grabs an opaque tun and fills it with coffee. Then Sara grabs another opaque flask and fills it with rum. While Zoe was attending to another task, a co-worker swapped the coffee in the tun with milk. Zoe did not notice the swap.\nQuestion: What does Zoe believe the tun contains?\nAnswer:",
+      "clean_ans": "porter",
+      "counterfactual_ans": "coffee",
+      "clean_reality": "ale",
+      "cf_reality": "milk",
+      "clean_chars": [
+        "Sara",
+        "Zoe"
+      ],
+      "cf_chars": [
+        "Zoe",
+        "Sara"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Bill and Quinn are working in a busy restaurant. To complete an order, Bill grabs an opaque tank and fills it with champagne. Then Quinn grabs another opaque cup and fills it with milk. While Bill was attending to another task, a co-worker swapped the champagne in the tank with port. Bill did not notice the swap.\nQuestion: What does Bill believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Quinn and Bill are working in a busy restaurant. To complete an order, Quinn grabs an opaque cup and fills it with sprite. Then Bill grabs another opaque tank and fills it with monster. While Quinn was attending to another task, a co-worker swapped the sprite in the cup with juice. Quinn did not notice the swap.\nQuestion: What does Quinn believe the cup contains?\nAnswer:",
+      "clean_ans": "champagne",
+      "counterfactual_ans": "sprite",
+      "clean_reality": "port",
+      "cf_reality": "juice",
+      "clean_chars": [
+        "Bill",
+        "Quinn"
+      ],
+      "cf_chars": [
+        "Quinn",
+        "Bill"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Pam and Keith are working in a busy restaurant. To complete an order, Pam grabs an opaque mug and fills it with tea. Then Keith grabs another opaque pitcher and fills it with float. While Pam was attending to another task, a co-worker swapped the tea in the mug with ale. Pam did not notice the swap.\nQuestion: What does Pam believe the mug contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Keith and Pam are working in a busy restaurant. To complete an order, Keith grabs an opaque pitcher and fills it with wine. Then Pam grabs another opaque mug and fills it with punch. While Keith was attending to another task, a co-worker swapped the wine in the pitcher with beer. Keith did not notice the swap.\nQuestion: What does Keith believe the pitcher contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "wine",
+      "clean_reality": "ale",
+      "cf_reality": "beer",
+      "clean_chars": [
+        "Pam",
+        "Keith"
+      ],
+      "cf_chars": [
+        "Keith",
+        "Pam"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mark and Chris are working in a busy restaurant. To complete an order, Mark grabs an opaque drum and fills it with milk. Then Chris grabs another opaque tote and fills it with float. While Mark was attending to another task, a co-worker swapped the milk in the drum with tea. Mark did not notice the swap.\nQuestion: What does Mark believe the drum contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Chris and Mark are working in a busy restaurant. To complete an order, Chris grabs an opaque tote and fills it with espresso. Then Mark grabs another opaque drum and fills it with ale. While Chris was attending to another task, a co-worker swapped the espresso in the tote with port. Chris did not notice the swap.\nQuestion: What does Chris believe the tote contains?\nAnswer:",
+      "clean_ans": "milk",
+      "counterfactual_ans": "espresso",
+      "clean_reality": "tea",
+      "cf_reality": "port",
+      "clean_chars": [
+        "Mark",
+        "Chris"
+      ],
+      "cf_chars": [
+        "Chris",
+        "Mark"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mark and Sarah are working in a busy restaurant. To complete an order, Mark grabs an opaque pint and fills it with coffee. Then Sarah grabs another opaque can and fills it with ale. While Mark was attending to another task, a co-worker swapped the coffee in the pint with porter. Mark did not notice the swap.\nQuestion: What does Mark believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sarah and Mark are working in a busy restaurant. To complete an order, Sarah grabs an opaque can and fills it with champagne. Then Mark grabs another opaque pint and fills it with wine. While Sarah was attending to another task, a co-worker swapped the champagne in the can with gin. Sarah did not notice the swap.\nQuestion: What does Sarah believe the can contains?\nAnswer:",
+      "clean_ans": "coffee",
+      "counterfactual_ans": "champagne",
+      "clean_reality": "porter",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Mark",
+        "Sarah"
+      ],
+      "cf_chars": [
+        "Sarah",
+        "Mark"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Adam and Cathy are working in a busy restaurant. To complete an order, Adam grabs an opaque container and fills it with cocoa. Then Cathy grabs another opaque flask and fills it with champagne. While Adam was attending to another task, a co-worker swapped the cocoa in the container with tea. Adam did not notice the swap.\nQuestion: What does Adam believe the container contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Cathy and Adam are working in a busy restaurant. To complete an order, Cathy grabs an opaque flask and fills it with bourbon. Then Adam grabs another opaque container and fills it with coffee. While Cathy was attending to another task, a co-worker swapped the bourbon in the flask with monster. Cathy did not notice the swap.\nQuestion: What does Cathy believe the flask contains?\nAnswer:",
+      "clean_ans": "cocoa",
+      "counterfactual_ans": "bourbon",
+      "clean_reality": "tea",
+      "cf_reality": "monster",
+      "clean_chars": [
+        "Adam",
+        "Cathy"
+      ],
+      "cf_chars": [
+        "Cathy",
+        "Adam"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Oscar and Cathy are working in a busy restaurant. To complete an order, Oscar grabs an opaque quart and fills it with wine. Then Cathy grabs another opaque mug and fills it with cocktail. While Oscar was attending to another task, a co-worker swapped the wine in the quart with rum. Oscar did not notice the swap.\nQuestion: What does Oscar believe the quart contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Cathy and Oscar are working in a busy restaurant. To complete an order, Cathy grabs an opaque mug and fills it with juice. Then Oscar grabs another opaque quart and fills it with cocoa. While Cathy was attending to another task, a co-worker swapped the juice in the mug with bourbon. Cathy did not notice the swap.\nQuestion: What does Cathy believe the mug contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "juice",
+      "clean_reality": "rum",
+      "cf_reality": "bourbon",
+      "clean_chars": [
+        "Oscar",
+        "Cathy"
+      ],
+      "cf_chars": [
+        "Cathy",
+        "Oscar"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ivy and Will are working in a busy restaurant. To complete an order, Ivy grabs an opaque tank and fills it with gin. Then Will grabs another opaque flute and fills it with rum. While Ivy was attending to another task, a co-worker swapped the gin in the tank with float. Ivy did not notice the swap.\nQuestion: What does Ivy believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Will and Ivy are working in a busy restaurant. To complete an order, Will grabs an opaque flute and fills it with coffee. Then Ivy grabs another opaque tank and fills it with porter. While Will was attending to another task, a co-worker swapped the coffee in the flute with champagne. Will did not notice the swap.\nQuestion: What does Will believe the flute contains?\nAnswer:",
+      "clean_ans": "gin",
+      "counterfactual_ans": "coffee",
+      "clean_reality": "float",
+      "cf_reality": "champagne",
+      "clean_chars": [
+        "Ivy",
+        "Will"
+      ],
+      "cf_chars": [
+        "Will",
+        "Ivy"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tony and Dan are working in a busy restaurant. To complete an order, Tony grabs an opaque container and fills it with monster. Then Dan grabs another opaque can and fills it with sprite. While Tony was attending to another task, a co-worker swapped the monster in the container with gin. Tony did not notice the swap.\nQuestion: What does Tony believe the container contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dan and Tony are working in a busy restaurant. To complete an order, Dan grabs an opaque can and fills it with milk. Then Tony grabs another opaque container and fills it with tea. While Dan was attending to another task, a co-worker swapped the milk in the can with stout. Dan did not notice the swap.\nQuestion: What does Dan believe the can contains?\nAnswer:",
+      "clean_ans": "monster",
+      "counterfactual_ans": "milk",
+      "clean_reality": "gin",
+      "cf_reality": "stout",
+      "clean_chars": [
+        "Tony",
+        "Dan"
+      ],
+      "cf_chars": [
+        "Dan",
+        "Tony"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tim and Liz are working in a busy restaurant. To complete an order, Tim grabs an opaque cup and fills it with champagne. Then Liz grabs another opaque jar and fills it with soda. While Tim was attending to another task, a co-worker swapped the champagne in the cup with stout. Tim did not notice the swap.\nQuestion: What does Tim believe the cup contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Liz and Tim are working in a busy restaurant. To complete an order, Liz grabs an opaque jar and fills it with gin. Then Tim grabs another opaque cup and fills it with juice. While Liz was attending to another task, a co-worker swapped the gin in the jar with cocoa. Liz did not notice the swap.\nQuestion: What does Liz believe the jar contains?\nAnswer:",
+      "clean_ans": "champagne",
+      "counterfactual_ans": "gin",
+      "clean_reality": "stout",
+      "cf_reality": "cocoa",
+      "clean_chars": [
+        "Tim",
+        "Liz"
+      ],
+      "cf_chars": [
+        "Liz",
+        "Tim"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Eve and Alex are working in a busy restaurant. To complete an order, Eve grabs an opaque tun and fills it with water. Then Alex grabs another opaque tank and fills it with beer. While Eve was attending to another task, a co-worker swapped the water in the tun with tea. Eve did not notice the swap.\nQuestion: What does Eve believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Alex and Eve are working in a busy restaurant. To complete an order, Alex grabs an opaque tank and fills it with porter. Then Eve grabs another opaque tun and fills it with soda. While Alex was attending to another task, a co-worker swapped the porter in the tank with bourbon. Alex did not notice the swap.\nQuestion: What does Alex believe the tank contains?\nAnswer:",
+      "clean_ans": "water",
+      "counterfactual_ans": "porter",
+      "clean_reality": "tea",
+      "cf_reality": "bourbon",
+      "clean_chars": [
+        "Eve",
+        "Alex"
+      ],
+      "cf_chars": [
+        "Alex",
+        "Eve"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Karen and Peter are working in a busy restaurant. To complete an order, Karen grabs an opaque drum and fills it with soda. Then Peter grabs another opaque tank and fills it with espresso. While Karen was attending to another task, a co-worker swapped the soda in the drum with milk. Karen did not notice the swap.\nQuestion: What does Karen believe the drum contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Peter and Karen are working in a busy restaurant. To complete an order, Peter grabs an opaque tank and fills it with cocktail. Then Karen grabs another opaque drum and fills it with coffee. While Peter was attending to another task, a co-worker swapped the cocktail in the tank with ale. Peter did not notice the swap.\nQuestion: What does Peter believe the tank contains?\nAnswer:",
+      "clean_ans": "soda",
+      "counterfactual_ans": "cocktail",
+      "clean_reality": "milk",
+      "cf_reality": "ale",
+      "clean_chars": [
+        "Karen",
+        "Peter"
+      ],
+      "cf_chars": [
+        "Peter",
+        "Karen"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Julia and Mike are working in a busy restaurant. To complete an order, Julia grabs an opaque tun and fills it with juice. Then Mike grabs another opaque jar and fills it with champagne. While Julia was attending to another task, a co-worker swapped the juice in the tun with espresso. Julia did not notice the swap.\nQuestion: What does Julia believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mike and Julia are working in a busy restaurant. To complete an order, Mike grabs an opaque jar and fills it with ale. Then Julia grabs another opaque tun and fills it with wine. While Mike was attending to another task, a co-worker swapped the ale in the jar with gin. Mike did not notice the swap.\nQuestion: What does Mike believe the jar contains?\nAnswer:",
+      "clean_ans": "juice",
+      "counterfactual_ans": "ale",
+      "clean_reality": "espresso",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Julia",
+        "Mike"
+      ],
+      "cf_chars": [
+        "Mike",
+        "Julia"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Grace and Sara are working in a busy restaurant. To complete an order, Grace grabs an opaque glass and fills it with milk. Then Sara grabs another opaque horn and fills it with sprite. While Grace was attending to another task, a co-worker swapped the milk in the glass with wine. Grace did not notice the swap.\nQuestion: What does Grace believe the glass contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sara and Grace are working in a busy restaurant. To complete an order, Sara grabs an opaque horn and fills it with coffee. Then Grace grabs another opaque glass and fills it with cocoa. While Sara was attending to another task, a co-worker swapped the coffee in the horn with cocktail. Sara did not notice the swap.\nQuestion: What does Sara believe the horn contains?\nAnswer:",
+      "clean_ans": "milk",
+      "counterfactual_ans": "coffee",
+      "clean_reality": "wine",
+      "cf_reality": "cocktail",
+      "clean_chars": [
+        "Grace",
+        "Sara"
+      ],
+      "cf_chars": [
+        "Sara",
+        "Grace"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: John and Steve are working in a busy restaurant. To complete an order, John grabs an opaque bottle and fills it with water. Then Steve grabs another opaque container and fills it with ale. While John was attending to another task, a co-worker swapped the water in the bottle with coffee. John did not notice the swap.\nQuestion: What does John believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Steve and John are working in a busy restaurant. To complete an order, Steve grabs an opaque container and fills it with punch. Then John grabs another opaque bottle and fills it with champagne. While Steve was attending to another task, a co-worker swapped the punch in the container with gin. Steve did not notice the swap.\nQuestion: What does Steve believe the container contains?\nAnswer:",
+      "clean_ans": "water",
+      "counterfactual_ans": "punch",
+      "clean_reality": "coffee",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "John",
+        "Steve"
+      ],
+      "cf_chars": [
+        "Steve",
+        "John"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Donna and Luke are working in a busy restaurant. To complete an order, Donna grabs an opaque can and fills it with stout. Then Luke grabs another opaque quart and fills it with monster. While Donna was attending to another task, a co-worker swapped the stout in the can with punch. Donna did not notice the swap.\nQuestion: What does Donna believe the can contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Luke and Donna are working in a busy restaurant. To complete an order, Luke grabs an opaque quart and fills it with ale. Then Donna grabs another opaque can and fills it with bourbon. While Luke was attending to another task, a co-worker swapped the ale in the quart with champagne. Luke did not notice the swap.\nQuestion: What does Luke believe the quart contains?\nAnswer:",
+      "clean_ans": "stout",
+      "counterfactual_ans": "ale",
+      "clean_reality": "punch",
+      "cf_reality": "champagne",
+      "clean_chars": [
+        "Donna",
+        "Luke"
+      ],
+      "cf_chars": [
+        "Luke",
+        "Donna"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Josh and Pete are working in a busy restaurant. To complete an order, Josh grabs an opaque can and fills it with port. Then Pete grabs another opaque pitcher and fills it with gin. While Josh was attending to another task, a co-worker swapped the port in the can with milk. Josh did not notice the swap.\nQuestion: What does Josh believe the can contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Pete and Josh are working in a busy restaurant. To complete an order, Pete grabs an opaque pitcher and fills it with beer. Then Josh grabs another opaque can and fills it with float. While Pete was attending to another task, a co-worker swapped the beer in the pitcher with espresso. Pete did not notice the swap.\nQuestion: What does Pete believe the pitcher contains?\nAnswer:",
+      "clean_ans": "port",
+      "counterfactual_ans": "beer",
+      "clean_reality": "milk",
+      "cf_reality": "espresso",
+      "clean_chars": [
+        "Josh",
+        "Pete"
+      ],
+      "cf_chars": [
+        "Pete",
+        "Josh"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Kim and Nick are working in a busy restaurant. To complete an order, Kim grabs an opaque pint and fills it with float. Then Nick grabs another opaque tun and fills it with monster. While Kim was attending to another task, a co-worker swapped the float in the pint with beer. Kim did not notice the swap.\nQuestion: What does Kim believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Nick and Kim are working in a busy restaurant. To complete an order, Nick grabs an opaque tun and fills it with punch. Then Kim grabs another opaque pint and fills it with port. While Nick was attending to another task, a co-worker swapped the punch in the tun with coffee. Nick did not notice the swap.\nQuestion: What does Nick believe the tun contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "punch",
+      "clean_reality": "beer",
+      "cf_reality": "coffee",
+      "clean_chars": [
+        "Kim",
+        "Nick"
+      ],
+      "cf_chars": [
+        "Nick",
+        "Kim"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Linda and Carl are working in a busy restaurant. To complete an order, Linda grabs an opaque tun and fills it with monster. Then Carl grabs another opaque jar and fills it with bourbon. While Linda was attending to another task, a co-worker swapped the monster in the tun with ale. Linda did not notice the swap.\nQuestion: What does Linda believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Carl and Linda are working in a busy restaurant. To complete an order, Carl grabs an opaque jar and fills it with champagne. Then Linda grabs another opaque tun and fills it with punch. While Carl was attending to another task, a co-worker swapped the champagne in the jar with porter. Carl did not notice the swap.\nQuestion: What does Carl believe the jar contains?\nAnswer:",
+      "clean_ans": "monster",
+      "counterfactual_ans": "champagne",
+      "clean_reality": "ale",
+      "cf_reality": "porter",
+      "clean_chars": [
+        "Linda",
+        "Carl"
+      ],
+      "cf_chars": [
+        "Carl",
+        "Linda"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Rick and Eve are working in a busy restaurant. To complete an order, Rick grabs an opaque flute and fills it with espresso. Then Eve grabs another opaque jug and fills it with ale. While Rick was attending to another task, a co-worker swapped the espresso in the flute with punch. Rick did not notice the swap.\nQuestion: What does Rick believe the flute contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Eve and Rick are working in a busy restaurant. To complete an order, Eve grabs an opaque jug and fills it with bourbon. Then Rick grabs another opaque flute and fills it with water. While Eve was attending to another task, a co-worker swapped the bourbon in the jug with rum. Eve did not notice the swap.\nQuestion: What does Eve believe the jug contains?\nAnswer:",
+      "clean_ans": "espresso",
+      "counterfactual_ans": "bourbon",
+      "clean_reality": "punch",
+      "cf_reality": "rum",
+      "clean_chars": [
+        "Rick",
+        "Eve"
+      ],
+      "cf_chars": [
+        "Eve",
+        "Rick"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Alice and Tony are working in a busy restaurant. To complete an order, Alice grabs an opaque tun and fills it with float. Then Tony grabs another opaque drum and fills it with stout. While Alice was attending to another task, a co-worker swapped the float in the tun with champagne. Alice did not notice the swap.\nQuestion: What does Alice believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Tony and Alice are working in a busy restaurant. To complete an order, Tony grabs an opaque drum and fills it with cocoa. Then Alice grabs another opaque tun and fills it with ale. While Tony was attending to another task, a co-worker swapped the cocoa in the drum with coffee. Tony did not notice the swap.\nQuestion: What does Tony believe the drum contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "champagne",
+      "cf_reality": "coffee",
+      "clean_chars": [
+        "Alice",
+        "Tony"
+      ],
+      "cf_chars": [
+        "Tony",
+        "Alice"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Keith and Lily are working in a busy restaurant. To complete an order, Keith grabs an opaque pitcher and fills it with rum. Then Lily grabs another opaque mug and fills it with monster. While Keith was attending to another task, a co-worker swapped the rum in the pitcher with ale. Keith did not notice the swap.\nQuestion: What does Keith believe the pitcher contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Lily and Keith are working in a busy restaurant. To complete an order, Lily grabs an opaque mug and fills it with stout. Then Keith grabs another opaque pitcher and fills it with float. While Lily was attending to another task, a co-worker swapped the stout in the mug with champagne. Lily did not notice the swap.\nQuestion: What does Lily believe the mug contains?\nAnswer:",
+      "clean_ans": "rum",
+      "counterfactual_ans": "stout",
+      "clean_reality": "ale",
+      "cf_reality": "champagne",
+      "clean_chars": [
+        "Keith",
+        "Lily"
+      ],
+      "cf_chars": [
+        "Lily",
+        "Keith"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Bob and Jane are working in a busy restaurant. To complete an order, Bob grabs an opaque bottle and fills it with wine. Then Jane grabs another opaque flask and fills it with coffee. While Bob was attending to another task, a co-worker swapped the wine in the bottle with soda. Bob did not notice the swap.\nQuestion: What does Bob believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Jane and Bob are working in a busy restaurant. To complete an order, Jane grabs an opaque flask and fills it with sprite. Then Bob grabs another opaque bottle and fills it with float. While Jane was attending to another task, a co-worker swapped the sprite in the flask with tea. Jane did not notice the swap.\nQuestion: What does Jane believe the flask contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "sprite",
+      "clean_reality": "soda",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Bob",
+        "Jane"
+      ],
+      "cf_chars": [
+        "Jane",
+        "Bob"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Zoe and Phil are working in a busy restaurant. To complete an order, Zoe grabs an opaque container and fills it with coffee. Then Phil grabs another opaque drum and fills it with porter. While Zoe was attending to another task, a co-worker swapped the coffee in the container with punch. Zoe did not notice the swap.\nQuestion: What does Zoe believe the container contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Phil and Zoe are working in a busy restaurant. To complete an order, Phil grabs an opaque drum and fills it with water. Then Zoe grabs another opaque container and fills it with beer. While Phil was attending to another task, a co-worker swapped the water in the drum with espresso. Phil did not notice the swap.\nQuestion: What does Phil believe the drum contains?\nAnswer:",
+      "clean_ans": "coffee",
+      "counterfactual_ans": "water",
+      "clean_reality": "punch",
+      "cf_reality": "espresso",
+      "clean_chars": [
+        "Zoe",
+        "Phil"
+      ],
+      "cf_chars": [
+        "Phil",
+        "Zoe"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dave and Mike are working in a busy restaurant. To complete an order, Dave grabs an opaque vat and fills it with milk. Then Mike grabs another opaque urn and fills it with bourbon. While Dave was attending to another task, a co-worker swapped the milk in the vat with wine. Dave did not notice the swap.\nQuestion: What does Dave believe the vat contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mike and Dave are working in a busy restaurant. To complete an order, Mike grabs an opaque urn and fills it with beer. Then Dave grabs another opaque vat and fills it with cocoa. While Mike was attending to another task, a co-worker swapped the beer in the urn with soda. Mike did not notice the swap.\nQuestion: What does Mike believe the urn contains?\nAnswer:",
+      "clean_ans": "milk",
+      "counterfactual_ans": "beer",
+      "clean_reality": "wine",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Dave",
+        "Mike"
+      ],
+      "cf_chars": [
+        "Mike",
+        "Dave"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Julia and Nancy are working in a busy restaurant. To complete an order, Julia grabs an opaque vat and fills it with float. Then Nancy grabs another opaque tank and fills it with champagne. While Julia was attending to another task, a co-worker swapped the float in the vat with cocoa. Julia did not notice the swap.\nQuestion: What does Julia believe the vat contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Nancy and Julia are working in a busy restaurant. To complete an order, Nancy grabs an opaque tank and fills it with wine. Then Julia grabs another opaque vat and fills it with stout. While Nancy was attending to another task, a co-worker swapped the wine in the tank with gin. Nancy did not notice the swap.\nQuestion: What does Nancy believe the tank contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "wine",
+      "clean_reality": "cocoa",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Julia",
+        "Nancy"
+      ],
+      "cf_chars": [
+        "Nancy",
+        "Julia"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Luke and Chad are working in a busy restaurant. To complete an order, Luke grabs an opaque vat and fills it with stout. Then Chad grabs another opaque dispenser and fills it with wine. While Luke was attending to another task, a co-worker swapped the stout in the vat with gin. Luke did not notice the swap.\nQuestion: What does Luke believe the vat contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Chad and Luke are working in a busy restaurant. To complete an order, Chad grabs an opaque dispenser and fills it with cocoa. Then Luke grabs another opaque vat and fills it with tea. While Chad was attending to another task, a co-worker swapped the cocoa in the dispenser with porter. Chad did not notice the swap.\nQuestion: What does Chad believe the dispenser contains?\nAnswer:",
+      "clean_ans": "stout",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "gin",
+      "cf_reality": "porter",
+      "clean_chars": [
+        "Luke",
+        "Chad"
+      ],
+      "cf_chars": [
+        "Chad",
+        "Luke"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Alice and Hans are working in a busy restaurant. To complete an order, Alice grabs an opaque can and fills it with champagne. Then Hans grabs another opaque pint and fills it with bourbon. While Alice was attending to another task, a co-worker swapped the champagne in the can with tea. Alice did not notice the swap.\nQuestion: What does Alice believe the can contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Hans and Alice are working in a busy restaurant. To complete an order, Hans grabs an opaque pint and fills it with soda. Then Alice grabs another opaque can and fills it with wine. While Hans was attending to another task, a co-worker swapped the soda in the pint with punch. Hans did not notice the swap.\nQuestion: What does Hans believe the pint contains?\nAnswer:",
+      "clean_ans": "champagne",
+      "counterfactual_ans": "soda",
+      "clean_reality": "tea",
+      "cf_reality": "punch",
+      "clean_chars": [
+        "Alice",
+        "Hans"
+      ],
+      "cf_chars": [
+        "Hans",
+        "Alice"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Kyle and Fiona are working in a busy restaurant. To complete an order, Kyle grabs an opaque jug and fills it with espresso. Then Fiona grabs another opaque mug and fills it with champagne. While Kyle was attending to another task, a co-worker swapped the espresso in the jug with bourbon. Kyle did not notice the swap.\nQuestion: What does Kyle believe the jug contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Fiona and Kyle are working in a busy restaurant. To complete an order, Fiona grabs an opaque mug and fills it with port. Then Kyle grabs another opaque jug and fills it with porter. While Fiona was attending to another task, a co-worker swapped the port in the mug with water. Fiona did not notice the swap.\nQuestion: What does Fiona believe the mug contains?\nAnswer:",
+      "clean_ans": "espresso",
+      "counterfactual_ans": "port",
+      "clean_reality": "bourbon",
+      "cf_reality": "water",
+      "clean_chars": [
+        "Kyle",
+        "Fiona"
+      ],
+      "cf_chars": [
+        "Fiona",
+        "Kyle"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Joe and Max are working in a busy restaurant. To complete an order, Joe grabs an opaque horn and fills it with water. Then Max grabs another opaque dispenser and fills it with cocktail. While Joe was attending to another task, a co-worker swapped the water in the horn with rum. Joe did not notice the swap.\nQuestion: What does Joe believe the horn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Max and Joe are working in a busy restaurant. To complete an order, Max grabs an opaque dispenser and fills it with punch. Then Joe grabs another opaque horn and fills it with espresso. While Max was attending to another task, a co-worker swapped the punch in the dispenser with bourbon. Max did not notice the swap.\nQuestion: What does Max believe the dispenser contains?\nAnswer:",
+      "clean_ans": "water",
+      "counterfactual_ans": "punch",
+      "clean_reality": "rum",
+      "cf_reality": "bourbon",
+      "clean_chars": [
+        "Joe",
+        "Max"
+      ],
+      "cf_chars": [
+        "Max",
+        "Joe"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Will and Quinn are working in a busy restaurant. To complete an order, Will grabs an opaque tank and fills it with wine. Then Quinn grabs another opaque tote and fills it with sprite. While Will was attending to another task, a co-worker swapped the wine in the tank with gin. Will did not notice the swap.\nQuestion: What does Will believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Quinn and Will are working in a busy restaurant. To complete an order, Quinn grabs an opaque tote and fills it with punch. Then Will grabs another opaque tank and fills it with champagne. While Quinn was attending to another task, a co-worker swapped the punch in the tote with ale. Quinn did not notice the swap.\nQuestion: What does Quinn believe the tote contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "punch",
+      "clean_reality": "gin",
+      "cf_reality": "ale",
+      "clean_chars": [
+        "Will",
+        "Quinn"
+      ],
+      "cf_chars": [
+        "Quinn",
+        "Will"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Jim and Julia are working in a busy restaurant. To complete an order, Jim grabs an opaque horn and fills it with cocoa. Then Julia grabs another opaque pitcher and fills it with soda. While Jim was attending to another task, a co-worker swapped the cocoa in the horn with float. Jim did not notice the swap.\nQuestion: What does Jim believe the horn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Julia and Jim are working in a busy restaurant. To complete an order, Julia grabs an opaque pitcher and fills it with bourbon. Then Jim grabs another opaque horn and fills it with water. While Julia was attending to another task, a co-worker swapped the bourbon in the pitcher with punch. Julia did not notice the swap.\nQuestion: What does Julia believe the pitcher contains?\nAnswer:",
+      "clean_ans": "cocoa",
+      "counterfactual_ans": "bourbon",
+      "clean_reality": "float",
+      "cf_reality": "punch",
+      "clean_chars": [
+        "Jim",
+        "Julia"
+      ],
+      "cf_chars": [
+        "Julia",
+        "Jim"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Heidi and Mark are working in a busy restaurant. To complete an order, Heidi grabs an opaque jar and fills it with stout. Then Mark grabs another opaque mug and fills it with espresso. While Heidi was attending to another task, a co-worker swapped the stout in the jar with soda. Heidi did not notice the swap.\nQuestion: What does Heidi believe the jar contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mark and Heidi are working in a busy restaurant. To complete an order, Mark grabs an opaque mug and fills it with cocoa. Then Heidi grabs another opaque jar and fills it with juice. While Mark was attending to another task, a co-worker swapped the cocoa in the mug with milk. Mark did not notice the swap.\nQuestion: What does Mark believe the mug contains?\nAnswer:",
+      "clean_ans": "stout",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "soda",
+      "cf_reality": "milk",
+      "clean_chars": [
+        "Heidi",
+        "Mark"
+      ],
+      "cf_chars": [
+        "Mark",
+        "Heidi"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Oscar and Paul are working in a busy restaurant. To complete an order, Oscar grabs an opaque pint and fills it with cocoa. Then Paul grabs another opaque jug and fills it with champagne. While Oscar was attending to another task, a co-worker swapped the cocoa in the pint with punch. Oscar did not notice the swap.\nQuestion: What does Oscar believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Paul and Oscar are working in a busy restaurant. To complete an order, Paul grabs an opaque jug and fills it with gin. Then Oscar grabs another opaque pint and fills it with espresso. While Paul was attending to another task, a co-worker swapped the gin in the jug with tea. Paul did not notice the swap.\nQuestion: What does Paul believe the jug contains?\nAnswer:",
+      "clean_ans": "cocoa",
+      "counterfactual_ans": "gin",
+      "clean_reality": "punch",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Oscar",
+        "Paul"
+      ],
+      "cf_chars": [
+        "Paul",
+        "Oscar"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Lily and Jake are working in a busy restaurant. To complete an order, Lily grabs an opaque tank and fills it with cocktail. Then Jake grabs another opaque cup and fills it with wine. While Lily was attending to another task, a co-worker swapped the cocktail in the tank with stout. Lily did not notice the swap.\nQuestion: What does Lily believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Jake and Lily are working in a busy restaurant. To complete an order, Jake grabs an opaque cup and fills it with water. Then Lily grabs another opaque tank and fills it with float. While Jake was attending to another task, a co-worker swapped the water in the cup with soda. Jake did not notice the swap.\nQuestion: What does Jake believe the cup contains?\nAnswer:",
+      "clean_ans": "cocktail",
+      "counterfactual_ans": "water",
+      "clean_reality": "stout",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Lily",
+        "Jake"
+      ],
+      "cf_chars": [
+        "Jake",
+        "Lily"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Hans and Cathy are working in a busy restaurant. To complete an order, Hans grabs an opaque dispenser and fills it with port. Then Cathy grabs another opaque glass and fills it with coffee. While Hans was attending to another task, a co-worker swapped the port in the dispenser with cocoa. Hans did not notice the swap.\nQuestion: What does Hans believe the dispenser contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Cathy and Hans are working in a busy restaurant. To complete an order, Cathy grabs an opaque glass and fills it with porter. Then Hans grabs another opaque dispenser and fills it with gin. While Cathy was attending to another task, a co-worker swapped the porter in the glass with cocktail. Cathy did not notice the swap.\nQuestion: What does Cathy believe the glass contains?\nAnswer:",
+      "clean_ans": "port",
+      "counterfactual_ans": "porter",
+      "clean_reality": "cocoa",
+      "cf_reality": "cocktail",
+      "clean_chars": [
+        "Hans",
+        "Cathy"
+      ],
+      "cf_chars": [
+        "Cathy",
+        "Hans"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Gary and Eric are working in a busy restaurant. To complete an order, Gary grabs an opaque tote and fills it with juice. Then Eric grabs another opaque glass and fills it with rum. While Gary was attending to another task, a co-worker swapped the juice in the tote with beer. Gary did not notice the swap.\nQuestion: What does Gary believe the tote contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Eric and Gary are working in a busy restaurant. To complete an order, Eric grabs an opaque glass and fills it with port. Then Gary grabs another opaque tote and fills it with ale. While Eric was attending to another task, a co-worker swapped the port in the glass with punch. Eric did not notice the swap.\nQuestion: What does Eric believe the glass contains?\nAnswer:",
+      "clean_ans": "juice",
+      "counterfactual_ans": "port",
+      "clean_reality": "beer",
+      "cf_reality": "punch",
+      "clean_chars": [
+        "Gary",
+        "Eric"
+      ],
+      "cf_chars": [
+        "Eric",
+        "Gary"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Adam and Ben are working in a busy restaurant. To complete an order, Adam grabs an opaque jug and fills it with port. Then Ben grabs another opaque mug and fills it with porter. While Adam was attending to another task, a co-worker swapped the port in the jug with stout. Adam did not notice the swap.\nQuestion: What does Adam believe the jug contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ben and Adam are working in a busy restaurant. To complete an order, Ben grabs an opaque mug and fills it with rum. Then Adam grabs another opaque jug and fills it with ale. While Ben was attending to another task, a co-worker swapped the rum in the mug with float. Ben did not notice the swap.\nQuestion: What does Ben believe the mug contains?\nAnswer:",
+      "clean_ans": "port",
+      "counterfactual_ans": "rum",
+      "clean_reality": "stout",
+      "cf_reality": "float",
+      "clean_chars": [
+        "Adam",
+        "Ben"
+      ],
+      "cf_chars": [
+        "Ben",
+        "Adam"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Neil and Steve are working in a busy restaurant. To complete an order, Neil grabs an opaque drum and fills it with cocktail. Then Steve grabs another opaque cup and fills it with bourbon. While Neil was attending to another task, a co-worker swapped the cocktail in the drum with espresso. Neil did not notice the swap.\nQuestion: What does Neil believe the drum contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Steve and Neil are working in a busy restaurant. To complete an order, Steve grabs an opaque cup and fills it with monster. Then Neil grabs another opaque drum and fills it with stout. While Steve was attending to another task, a co-worker swapped the monster in the cup with champagne. Steve did not notice the swap.\nQuestion: What does Steve believe the cup contains?\nAnswer:",
+      "clean_ans": "cocktail",
+      "counterfactual_ans": "monster",
+      "clean_reality": "espresso",
+      "cf_reality": "champagne",
+      "clean_chars": [
+        "Neil",
+        "Steve"
+      ],
+      "cf_chars": [
+        "Steve",
+        "Neil"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Beth and Phil are working in a busy restaurant. To complete an order, Beth grabs an opaque dispenser and fills it with espresso. Then Phil grabs another opaque glass and fills it with cocktail. While Beth was attending to another task, a co-worker swapped the espresso in the dispenser with stout. Beth did not notice the swap.\nQuestion: What does Beth believe the dispenser contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Phil and Beth are working in a busy restaurant. To complete an order, Phil grabs an opaque glass and fills it with cocoa. Then Beth grabs another opaque dispenser and fills it with porter. While Phil was attending to another task, a co-worker swapped the cocoa in the glass with soda. Phil did not notice the swap.\nQuestion: What does Phil believe the glass contains?\nAnswer:",
+      "clean_ans": "espresso",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "stout",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Beth",
+        "Phil"
+      ],
+      "cf_chars": [
+        "Phil",
+        "Beth"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ruth and Mike are working in a busy restaurant. To complete an order, Ruth grabs an opaque vat and fills it with float. Then Mike grabs another opaque can and fills it with bourbon. While Ruth was attending to another task, a co-worker swapped the float in the vat with sprite. Ruth did not notice the swap.\nQuestion: What does Ruth believe the vat contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mike and Ruth are working in a busy restaurant. To complete an order, Mike grabs an opaque can and fills it with cocoa. Then Ruth grabs another opaque vat and fills it with espresso. While Mike was attending to another task, a co-worker swapped the cocoa in the can with port. Mike did not notice the swap.\nQuestion: What does Mike believe the can contains?\nAnswer:",
+      "clean_ans": "float",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "sprite",
+      "cf_reality": "port",
+      "clean_chars": [
+        "Ruth",
+        "Mike"
+      ],
+      "cf_chars": [
+        "Mike",
+        "Ruth"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Gwen and James are working in a busy restaurant. To complete an order, Gwen grabs an opaque bottle and fills it with gin. Then James grabs another opaque mug and fills it with cocoa. While Gwen was attending to another task, a co-worker swapped the gin in the bottle with wine. Gwen did not notice the swap.\nQuestion: What does Gwen believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: James and Gwen are working in a busy restaurant. To complete an order, James grabs an opaque mug and fills it with ale. Then Gwen grabs another opaque bottle and fills it with punch. While James was attending to another task, a co-worker swapped the ale in the mug with champagne. James did not notice the swap.\nQuestion: What does James believe the mug contains?\nAnswer:",
+      "clean_ans": "gin",
+      "counterfactual_ans": "ale",
+      "clean_reality": "wine",
+      "cf_reality": "champagne",
+      "clean_chars": [
+        "Gwen",
+        "James"
+      ],
+      "cf_chars": [
+        "James",
+        "Gwen"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Josh and Ryan are working in a busy restaurant. To complete an order, Josh grabs an opaque pint and fills it with sprite. Then Ryan grabs another opaque pitcher and fills it with coffee. While Josh was attending to another task, a co-worker swapped the sprite in the pint with cocktail. Josh did not notice the swap.\nQuestion: What does Josh believe the pint contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Ryan and Josh are working in a busy restaurant. To complete an order, Ryan grabs an opaque pitcher and fills it with gin. Then Josh grabs another opaque pint and fills it with champagne. While Ryan was attending to another task, a co-worker swapped the gin in the pitcher with float. Ryan did not notice the swap.\nQuestion: What does Ryan believe the pitcher contains?\nAnswer:",
+      "clean_ans": "sprite",
+      "counterfactual_ans": "gin",
+      "clean_reality": "cocktail",
+      "cf_reality": "float",
+      "clean_chars": [
+        "Josh",
+        "Ryan"
+      ],
+      "cf_chars": [
+        "Ryan",
+        "Josh"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Laura and Liz are working in a busy restaurant. To complete an order, Laura grabs an opaque tank and fills it with monster. Then Liz grabs another opaque jar and fills it with coffee. While Laura was attending to another task, a co-worker swapped the monster in the tank with tea. Laura did not notice the swap.\nQuestion: What does Laura believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Liz and Laura are working in a busy restaurant. To complete an order, Liz grabs an opaque jar and fills it with wine. Then Laura grabs another opaque tank and fills it with espresso. While Liz was attending to another task, a co-worker swapped the wine in the jar with sprite. Liz did not notice the swap.\nQuestion: What does Liz believe the jar contains?\nAnswer:",
+      "clean_ans": "monster",
+      "counterfactual_ans": "wine",
+      "clean_reality": "tea",
+      "cf_reality": "sprite",
+      "clean_chars": [
+        "Laura",
+        "Liz"
+      ],
+      "cf_chars": [
+        "Liz",
+        "Laura"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Uma and Joe are working in a busy restaurant. To complete an order, Uma grabs an opaque bottle and fills it with stout. Then Joe grabs another opaque dispenser and fills it with porter. While Uma was attending to another task, a co-worker swapped the stout in the bottle with sprite. Uma did not notice the swap.\nQuestion: What does Uma believe the bottle contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Joe and Uma are working in a busy restaurant. To complete an order, Joe grabs an opaque dispenser and fills it with cocoa. Then Uma grabs another opaque bottle and fills it with water. While Joe was attending to another task, a co-worker swapped the cocoa in the dispenser with tea. Joe did not notice the swap.\nQuestion: What does Joe believe the dispenser contains?\nAnswer:",
+      "clean_ans": "stout",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "sprite",
+      "cf_reality": "tea",
+      "clean_chars": [
+        "Uma",
+        "Joe"
+      ],
+      "cf_chars": [
+        "Joe",
+        "Uma"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Rick and Dave are working in a busy restaurant. To complete an order, Rick grabs an opaque horn and fills it with rum. Then Dave grabs another opaque bottle and fills it with ale. While Rick was attending to another task, a co-worker swapped the rum in the horn with port. Rick did not notice the swap.\nQuestion: What does Rick believe the horn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Dave and Rick are working in a busy restaurant. To complete an order, Dave grabs an opaque bottle and fills it with cocktail. Then Rick grabs another opaque horn and fills it with sprite. While Dave was attending to another task, a co-worker swapped the cocktail in the bottle with bourbon. Dave did not notice the swap.\nQuestion: What does Dave believe the bottle contains?\nAnswer:",
+      "clean_ans": "rum",
+      "counterfactual_ans": "cocktail",
+      "clean_reality": "port",
+      "cf_reality": "bourbon",
+      "clean_chars": [
+        "Rick",
+        "Dave"
+      ],
+      "cf_chars": [
+        "Dave",
+        "Rick"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Doug and Kim are working in a busy restaurant. To complete an order, Doug grabs an opaque tun and fills it with champagne. Then Kim grabs another opaque tank and fills it with cocktail. While Doug was attending to another task, a co-worker swapped the champagne in the tun with porter. Doug did not notice the swap.\nQuestion: What does Doug believe the tun contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Kim and Doug are working in a busy restaurant. To complete an order, Kim grabs an opaque tank and fills it with cocoa. Then Doug grabs another opaque tun and fills it with gin. While Kim was attending to another task, a co-worker swapped the cocoa in the tank with rum. Kim did not notice the swap.\nQuestion: What does Kim believe the tank contains?\nAnswer:",
+      "clean_ans": "champagne",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "porter",
+      "cf_reality": "rum",
+      "clean_chars": [
+        "Doug",
+        "Kim"
+      ],
+      "cf_chars": [
+        "Kim",
+        "Doug"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Linda and Sean are working in a busy restaurant. To complete an order, Linda grabs an opaque glass and fills it with champagne. Then Sean grabs another opaque jug and fills it with beer. While Linda was attending to another task, a co-worker swapped the champagne in the glass with bourbon. Linda did not notice the swap.\nQuestion: What does Linda believe the glass contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sean and Linda are working in a busy restaurant. To complete an order, Sean grabs an opaque jug and fills it with porter. Then Linda grabs another opaque glass and fills it with juice. While Sean was attending to another task, a co-worker swapped the porter in the jug with coffee. Sean did not notice the swap.\nQuestion: What does Sean believe the jug contains?\nAnswer:",
+      "clean_ans": "champagne",
+      "counterfactual_ans": "porter",
+      "clean_reality": "bourbon",
+      "cf_reality": "coffee",
+      "clean_chars": [
+        "Linda",
+        "Sean"
+      ],
+      "cf_chars": [
+        "Sean",
+        "Linda"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: David and Quinn are working in a busy restaurant. To complete an order, David grabs an opaque dispenser and fills it with port. Then Quinn grabs another opaque can and fills it with monster. While David was attending to another task, a co-worker swapped the port in the dispenser with float. David did not notice the swap.\nQuestion: What does David believe the dispenser contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Quinn and David are working in a busy restaurant. To complete an order, Quinn grabs an opaque can and fills it with rum. Then David grabs another opaque dispenser and fills it with beer. While Quinn was attending to another task, a co-worker swapped the rum in the can with coffee. Quinn did not notice the swap.\nQuestion: What does Quinn believe the can contains?\nAnswer:",
+      "clean_ans": "port",
+      "counterfactual_ans": "rum",
+      "clean_reality": "float",
+      "cf_reality": "coffee",
+      "clean_chars": [
+        "David",
+        "Quinn"
+      ],
+      "cf_chars": [
+        "Quinn",
+        "David"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Rick and Sean are working in a busy restaurant. To complete an order, Rick grabs an opaque quart and fills it with rum. Then Sean grabs another opaque pitcher and fills it with water. While Rick was attending to another task, a co-worker swapped the rum in the quart with porter. Rick did not notice the swap.\nQuestion: What does Rick believe the quart contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Sean and Rick are working in a busy restaurant. To complete an order, Sean grabs an opaque pitcher and fills it with bourbon. Then Rick grabs another opaque quart and fills it with soda. While Sean was attending to another task, a co-worker swapped the bourbon in the pitcher with gin. Sean did not notice the swap.\nQuestion: What does Sean believe the pitcher contains?\nAnswer:",
+      "clean_ans": "rum",
+      "counterfactual_ans": "bourbon",
+      "clean_reality": "porter",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Rick",
+        "Sean"
+      ],
+      "cf_chars": [
+        "Sean",
+        "Rick"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Carl and Lee are working in a busy restaurant. To complete an order, Carl grabs an opaque tank and fills it with porter. Then Lee grabs another opaque flask and fills it with soda. While Carl was attending to another task, a co-worker swapped the porter in the tank with stout. Carl did not notice the swap.\nQuestion: What does Carl believe the tank contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Lee and Carl are working in a busy restaurant. To complete an order, Lee grabs an opaque flask and fills it with sprite. Then Carl grabs another opaque tank and fills it with beer. While Lee was attending to another task, a co-worker swapped the sprite in the flask with water. Lee did not notice the swap.\nQuestion: What does Lee believe the flask contains?\nAnswer:",
+      "clean_ans": "porter",
+      "counterfactual_ans": "sprite",
+      "clean_reality": "stout",
+      "cf_reality": "water",
+      "clean_chars": [
+        "Carl",
+        "Lee"
+      ],
+      "cf_chars": [
+        "Lee",
+        "Carl"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Max and Alice are working in a busy restaurant. To complete an order, Max grabs an opaque dispenser and fills it with cocoa. Then Alice grabs another opaque container and fills it with champagne. While Max was attending to another task, a co-worker swapped the cocoa in the dispenser with juice. Max did not notice the swap.\nQuestion: What does Max believe the dispenser contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Alice and Max are working in a busy restaurant. To complete an order, Alice grabs an opaque container and fills it with milk. Then Max grabs another opaque dispenser and fills it with gin. While Alice was attending to another task, a co-worker swapped the milk in the container with sprite. Alice did not notice the swap.\nQuestion: What does Alice believe the container contains?\nAnswer:",
+      "clean_ans": "cocoa",
+      "counterfactual_ans": "milk",
+      "clean_reality": "juice",
+      "cf_reality": "sprite",
+      "clean_chars": [
+        "Max",
+        "Alice"
+      ],
+      "cf_chars": [
+        "Alice",
+        "Max"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Pete and Donna are working in a busy restaurant. To complete an order, Pete grabs an opaque horn and fills it with tea. Then Donna grabs another opaque dispenser and fills it with port. While Pete was attending to another task, a co-worker swapped the tea in the horn with stout. Pete did not notice the swap.\nQuestion: What does Pete believe the horn contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Donna and Pete are working in a busy restaurant. To complete an order, Donna grabs an opaque dispenser and fills it with ale. Then Pete grabs another opaque horn and fills it with milk. While Donna was attending to another task, a co-worker swapped the ale in the dispenser with soda. Donna did not notice the swap.\nQuestion: What does Donna believe the dispenser contains?\nAnswer:",
+      "clean_ans": "tea",
+      "counterfactual_ans": "ale",
+      "clean_reality": "stout",
+      "cf_reality": "soda",
+      "clean_chars": [
+        "Pete",
+        "Donna"
+      ],
+      "cf_chars": [
+        "Donna",
+        "Pete"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Fiona and Mark are working in a busy restaurant. To complete an order, Fiona grabs an opaque flask and fills it with wine. Then Mark grabs another opaque mug and fills it with beer. While Fiona was attending to another task, a co-worker swapped the wine in the flask with bourbon. Fiona did not notice the swap.\nQuestion: What does Fiona believe the flask contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mark and Fiona are working in a busy restaurant. To complete an order, Mark grabs an opaque mug and fills it with monster. Then Fiona grabs another opaque flask and fills it with punch. While Mark was attending to another task, a co-worker swapped the monster in the mug with cocoa. Mark did not notice the swap.\nQuestion: What does Mark believe the mug contains?\nAnswer:",
+      "clean_ans": "wine",
+      "counterfactual_ans": "monster",
+      "clean_reality": "bourbon",
+      "cf_reality": "cocoa",
+      "clean_chars": [
+        "Fiona",
+        "Mark"
+      ],
+      "cf_chars": [
+        "Mark",
+        "Fiona"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Jeff and Emma are working in a busy restaurant. To complete an order, Jeff grabs an opaque drum and fills it with rum. Then Emma grabs another opaque tun and fills it with port. While Jeff was attending to another task, a co-worker swapped the rum in the drum with float. Jeff did not notice the swap.\nQuestion: What does Jeff believe the drum contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Emma and Jeff are working in a busy restaurant. To complete an order, Emma grabs an opaque tun and fills it with coffee. Then Jeff grabs another opaque drum and fills it with stout. While Emma was attending to another task, a co-worker swapped the coffee in the tun with gin. Emma did not notice the swap.\nQuestion: What does Emma believe the tun contains?\nAnswer:",
+      "clean_ans": "rum",
+      "counterfactual_ans": "coffee",
+      "clean_reality": "float",
+      "cf_reality": "gin",
+      "clean_chars": [
+        "Jeff",
+        "Emma"
+      ],
+      "cf_chars": [
+        "Emma",
+        "Jeff"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Mary and Diane are working in a busy restaurant. To complete an order, Mary grabs an opaque pitcher and fills it with juice. Then Diane grabs another opaque bottle and fills it with bourbon. While Mary was attending to another task, a co-worker swapped the juice in the pitcher with tea. Mary did not notice the swap.\nQuestion: What does Mary believe the pitcher contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Diane and Mary are working in a busy restaurant. To complete an order, Diane grabs an opaque bottle and fills it with cocoa. Then Mary grabs another opaque pitcher and fills it with porter. While Diane was attending to another task, a co-worker swapped the cocoa in the bottle with float. Diane did not notice the swap.\nQuestion: What does Diane believe the bottle contains?\nAnswer:",
+      "clean_ans": "juice",
+      "counterfactual_ans": "cocoa",
+      "clean_reality": "tea",
+      "cf_reality": "float",
+      "clean_chars": [
+        "Mary",
+        "Diane"
+      ],
+      "cf_chars": [
+        "Diane",
+        "Mary"
+      ]
+    },
+    {
+      "clean_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Lily and Rick are working in a busy restaurant. To complete an order, Lily grabs an opaque cup and fills it with rum. Then Rick grabs another opaque bottle and fills it with porter. While Lily was attending to another task, a co-worker swapped the rum in the cup with cocoa. Lily did not notice the swap.\nQuestion: What does Lily believe the cup contains?\nAnswer:",
+      "counterfactual_prompt": "Instruction: 1. Track the belief of each character as described in the story. 2. A character's belief is formed only when they perform an action themselves or can observe the action taking place. 3. A character does not have any beliefs about the container and its contents which they cannot observe. 4. To answer the question, predict only what is inside the queried container, strictly based on the belief of the character, mentioned in the question. 5. If the queried character has no belief about the container in question, then predict 'unknown'. 6. Do not predict container or character as the final output.\n\nStory: Rick and Lily are working in a busy restaurant. To complete an order, Rick grabs an opaque bottle and fills it with tea. Then Lily grabs another opaque cup and fills it with ale. While Rick was attending to another task, a co-worker swapped the tea in the bottle with wine. Rick did not notice the swap.\nQuestion: What does Rick believe the bottle contains?\nAnswer:",
+      "clean_ans": "rum",
+      "counterfactual_ans": "tea",
+      "clean_reality": "cocoa",
+      "cf_reality": "wine",
+      "clean_chars": [
+        "Lily",
+        "Rick"
+      ],
+      "cf_chars": [
+        "Rick",
+        "Lily"
+      ]
+    }
+  ],
+  "behavioral_accuracy": {
+    "clean_accuracy": 1.0,
+    "cf_accuracy": 1.0,
+    "both_correct": 1.0,
+    "total_tested": 80,
+    "total_passed": 80
+  }
+}

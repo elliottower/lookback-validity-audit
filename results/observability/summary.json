@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-01T21:46:24.267155+00:00",
+  "dry_run": false,
+  "seed": 42,
+  "n_eval": 80,
+  "conditions": {
+    "observed_other_container": {
+      "dry_run": false,
+      "condition": "observed_other_container",
+      "description": "Char1 asked about container2 (filled by char2, which char1 observed)",
+      "template_idx": 1,
+      "set_character": 0,
+      "set_container": 1,
+      "n_generated": 240,
+      "n_filtered": 80,
+      "behavioral_accuracy": 0.8833333333333333,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.9875,
+        "answer_pointer_L52": 0.975,
+        "answer_pointer_L53": 0.2125
+      }
+    },
+    "self_container_control": {
+      "dry_run": false,
+      "condition": "self_container_control",
+      "description": "Char1 asked about container1 (filled by char1 themselves)",
+      "template_idx": 1,
+      "set_character": 0,
+      "set_container": 0,
+      "n_generated": 240,
+      "n_filtered": 0,
+      "behavioral_accuracy": 0.0,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      }
+    }
+  }
+}

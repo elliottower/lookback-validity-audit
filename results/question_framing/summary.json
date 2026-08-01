@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-08-01T21:46:23.366781+00:00",
+  "dry_run": false,
+  "seed": 42,
+  "n_eval": 80,
+  "n_raw": 240,
+  "n_shared": 35,
+  "n_per_framing": {
+    "belief": 80,
+    "action_recall": 80,
+    "reality_state": 80,
+    "fill_completion": 80
+  },
+  "framings": {
+    "belief": {
+      "dry_run": false,
+      "framing": "belief",
+      "question_template": "What does {char} believe the {container} contains?",
+      "n_pairs": 35,
+      "subspace_iias": {
+        "answer_pointer_L38": 1.0,
+        "answer_pointer_L52": 1.0,
+        "answer_pointer_L53": 1.0
+      }
+    },
+    "action_recall": {
+      "dry_run": false,
+      "framing": "action_recall",
+      "question_template": "What did {char} put in the {container}?",
+      "n_pairs": 35,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.8857142857142857,
+        "answer_pointer_L52": 0.4,
+        "answer_pointer_L53": 0.05714285714285714
+      }
+    },
+    "reality_state": {
+      "dry_run": false,
+      "framing": "reality_state",
+      "question_template": "What is inside the {container}?",
+      "n_pairs": 35,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      }
+    },
+    "fill_completion": {
+      "dry_run": false,
+      "framing": "fill_completion",
+      "question_template": "{char} filled the {container} with",
+      "n_pairs": 35,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      }
+    }
+  },
+  "transfer_ratios": {
+    "action_recall": {
+      "answer_pointer_L38": 0.8857142857142857,
+      "answer_pointer_L52": 0.4,
+      "answer_pointer_L53": 0.05714285714285714
+    },
+    "reality_state": {
+      "answer_pointer_L38": 0.0,
+      "answer_pointer_L52": 0.0,
+      "answer_pointer_L53": 0.0
+    },
+    "fill_completion": {
+      "answer_pointer_L38": 0.0,
+      "answer_pointer_L52": 0.0,
+      "answer_pointer_L53": 0.0
+    }
+  }
+}

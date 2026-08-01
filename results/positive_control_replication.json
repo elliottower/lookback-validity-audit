@@ -1,0 +1,94 @@
+{
+  "experiment": "Amendment 7 positive control replication",
+  "purpose": "Validate model substitution (Llama 3.0 -> 3.1) before pre-registered experiments",
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "paper_model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "timestamp": "2026-07-30T18:29:59.804108+00:00",
+  "seed": 42,
+  "n_eval": 80,
+  "dry_run": false,
+  "replication_threshold": 0.1,
+  "subspaces": {
+    "binding_addr_payload_L34": {
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback",
+      "paper_iia": 0.9625,
+      "our_iia": 0.9875,
+      "delta": 0.025000000000000022,
+      "replicated": true,
+      "is_primary": true,
+      "n_pairs": 80,
+      "threshold": 0.1
+    },
+    "binding_addr_payload_L35": {
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback",
+      "paper_iia": 0.7375,
+      "our_iia": 0.8625,
+      "delta": 0.125,
+      "replicated": false,
+      "is_primary": false,
+      "n_pairs": 80,
+      "threshold": 0.1
+    },
+    "binding_addr_payload_L36": {
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback",
+      "paper_iia": 0.75,
+      "our_iia": 0.225,
+      "delta": 0.525,
+      "replicated": false,
+      "is_primary": false,
+      "n_pairs": 80,
+      "threshold": 0.1
+    },
+    "answer_pointer_L38": {
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback",
+      "paper_iia": 0.925,
+      "our_iia": 1.0,
+      "delta": 0.07499999999999996,
+      "replicated": true,
+      "is_primary": false,
+      "n_pairs": 80,
+      "threshold": 0.1
+    },
+    "answer_pointer_L52": {
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback",
+      "paper_iia": 0.775,
+      "our_iia": 1.0,
+      "delta": 0.22499999999999998,
+      "replicated": false,
+      "is_primary": true,
+      "n_pairs": 80,
+      "threshold": 0.1
+    },
+    "answer_pointer_L53": {
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback",
+      "paper_iia": 0.55,
+      "our_iia": 1.0,
+      "delta": 0.44999999999999996,
+      "replicated": false,
+      "is_primary": false,
+      "n_pairs": 80,
+      "threshold": 0.1
+    }
+  },
+  "summary": {
+    "primary_all_pass": false,
+    "secondary_all_pass": false,
+    "n_primary_passed": 1,
+    "n_primary_total": 2,
+    "n_secondary_passed": 1,
+    "n_secondary_total": 4,
+    "verdict": "Model substitution NOT VALIDATED. Primary subspaces failed: ['answer_pointer_L52']. This is a cross-model generalization result (E4). Basis-generalization experiments (E1) become uninterpretable for the overfitting question. Shuffled-label and task-specificity controls remain valid."
+  }
+}

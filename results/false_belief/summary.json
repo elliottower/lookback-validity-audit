@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-01T21:46:23.993080+00:00",
+  "dry_run": false,
+  "seed": 42,
+  "n_eval": 80,
+  "conditions": {
+    "false_belief": {
+      "dry_run": false,
+      "n_pairs": 80,
+      "behavioral_accuracy": {
+        "clean_accuracy": 1.0,
+        "cf_accuracy": 1.0,
+        "both_correct": 1.0,
+        "total_tested": 80,
+        "total_passed": 80
+      },
+      "subspace_iias": {
+        "answer_pointer_L38": 0.975,
+        "answer_pointer_L52": 0.975,
+        "answer_pointer_L53": 0.3875
+      }
+    },
+    "reality_question": {
+      "dry_run": false,
+      "n_pairs": 0,
+      "behavioral_accuracy": {
+        "clean_accuracy": 0.0,
+        "cf_accuracy": 0.0,
+        "both_correct": 0.0,
+        "total_tested": 0,
+        "total_passed": 0
+      },
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      }
+    }
+  }
+}

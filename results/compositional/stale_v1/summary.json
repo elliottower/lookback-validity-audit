@@ -1,0 +1,652 @@
+{
+  "synthetic": false,
+  "timestamp": "2026-07-31T20:16:48.636790+00:00",
+  "seed": 42,
+  "n_stories_per_condition": 120,
+  "method": "transfer_test",
+  "method_note": "Applies CausalToM-derived projection to novel stories. Tests transfer of identified subspace, not re-identification. Binding subspaces tested with last-token intervention only (CausalToM state positions do not apply to novel templates). Full DCM (SVD + mask on new stories) requires GPU.",
+  "axes": [
+    "character_scaling",
+    "nested_beliefs",
+    "content_selectivity"
+  ],
+  "hypothesis": {
+    "character_scaling": "If compositional, IIA maintained at 3-5 characters. If template-matched, degrades.",
+    "nested_beliefs": "If compositional, same subspace handles second-order. If first-order-specific, different layers/rank.",
+    "content_selectivity": "If unified, comparable IIA across content types. If family, different layers/subspaces."
+  },
+  "conditions": {
+    "baseline_2char": {
+      "description": "CausalToM baseline, 2 characters",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "scaling_3char": {
+      "description": "Character scaling, 3 characters (1 distractor)",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "scaling_4char": {
+      "description": "Character scaling, 4 characters (2 distractors)",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "scaling_5char": {
+      "description": "Character scaling, 5 characters (3 distractors)",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "nested_belief": {
+      "description": "Second-order false belief",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "content_location": {
+      "description": "Content: location belief (CausalToM baseline)",
+      "n_pairs": 1,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 1.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 1.0389610389610389,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 1.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 1.3559322033898304,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 1.0,
+          "original_iia": 0.75,
+          "iia_ratio": 1.3333333333333333,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "content_existence": {
+      "description": "Content: existence belief",
+      "n_pairs": 62,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.016129032258064516,
+          "original_iia": 0.75,
+          "iia_ratio": 0.02150537634408602,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.016129032258064516,
+          "original_iia": 0.775,
+          "iia_ratio": 0.02081165452653486,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.016129032258064516,
+          "original_iia": 0.55,
+          "iia_ratio": 0.029325513196480937,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "content_intention": {
+      "description": "Content: intention belief",
+      "n_pairs": 0,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "content_knowledge": {
+      "description": "Content: knowledge state belief",
+      "n_pairs": 12,
+      "subspace_results": {
+        "binding_addr_payload_L34": {
+          "iia": 0.0,
+          "original_iia": 0.9625,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L35": {
+          "iia": 0.0,
+          "original_iia": 0.7375,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback"
+        },
+        "binding_addr_payload_L36": {
+          "iia": 0.0,
+          "original_iia": 0.75,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback"
+        },
+        "answer_pointer_L38": {
+          "iia": 0.0,
+          "original_iia": 0.925,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.0,
+          "original_iia": 0.775,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.0,
+          "original_iia": 0.55,
+          "iia_ratio": 0.0,
+          "mask_overlap_with_original": null,
+          "method": "transfer_last_token",
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    }
+  },
+  "interpretations": {
+    "baseline_2char": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "scaling_3char": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "scaling_4char": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "scaling_5char": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "nested_belief": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "content_location": {
+      "mean_iia_ratio": 0.6213710959473672,
+      "generalizes": false
+    },
+    "content_existence": {
+      "mean_iia_ratio": 0.011940424011183635,
+      "generalizes": false
+    },
+    "content_intention": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    },
+    "content_knowledge": {
+      "mean_iia_ratio": 0.0,
+      "generalizes": false
+    }
+  }
+}

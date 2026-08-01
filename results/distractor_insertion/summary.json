@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-08-01T21:46:23.287674+00:00",
+  "dry_run": false,
+  "seed": 42,
+  "n_eval": 80,
+  "n_baseline_pairs": 80,
+  "conditions": {
+    "baseline": {
+      "dry_run": false,
+      "condition": "baseline",
+      "n_pairs": 80,
+      "subspace_iias": {
+        "answer_pointer_L38": 1.0,
+        "answer_pointer_L52": 1.0,
+        "answer_pointer_L53": 0.7
+      }
+    },
+    "early": {
+      "dry_run": false,
+      "condition": "early",
+      "n_pairs": 21,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      },
+      "distractor_example": "milk"
+    },
+    "mid": {
+      "dry_run": false,
+      "condition": "mid",
+      "n_pairs": 0,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      },
+      "distractor_example": null
+    },
+    "late": {
+      "dry_run": false,
+      "condition": "late",
+      "n_pairs": 0,
+      "subspace_iias": {
+        "answer_pointer_L38": 0.0,
+        "answer_pointer_L52": 0.0,
+        "answer_pointer_L53": 0.0
+      },
+      "distractor_example": null
+    }
+  }
+}

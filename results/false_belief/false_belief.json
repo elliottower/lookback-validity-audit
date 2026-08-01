@@ -1,0 +1,36 @@
+{
+  "dry_run": false,
+  "n_pairs": 80,
+  "behavioral_accuracy": {
+    "clean_accuracy": 1.0,
+    "cf_accuracy": 1.0,
+    "both_correct": 1.0,
+    "total_tested": 80,
+    "total_passed": 80
+  },
+  "subspace_iias": {
+    "answer_pointer_L38": 0.975,
+    "answer_pointer_L52": 0.975,
+    "answer_pointer_L53": 0.3875
+  },
+  "subspace_cis": {
+    "answer_pointer_L38": {
+      "ci_lower": 0.9133539994467789,
+      "ci_upper": 0.9931172511018748,
+      "ci_width": 0.0797632516550959,
+      "interpretable": true
+    },
+    "answer_pointer_L52": {
+      "ci_lower": 0.9133539994467789,
+      "ci_upper": 0.9931172511018748,
+      "ci_width": 0.0797632516550959,
+      "interpretable": true
+    },
+    "answer_pointer_L53": {
+      "ci_lower": 0.2882439968827771,
+      "ci_upper": 0.4970654437767524,
+      "ci_width": 0.2088214468939753,
+      "interpretable": true
+    }
+  }
+}

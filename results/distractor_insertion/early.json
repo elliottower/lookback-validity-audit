@@ -1,0 +1,31 @@
+{
+  "dry_run": false,
+  "condition": "early",
+  "n_pairs": 21,
+  "subspace_iias": {
+    "answer_pointer_L38": 0.0,
+    "answer_pointer_L52": 0.0,
+    "answer_pointer_L53": 0.0
+  },
+  "distractor_example": "milk",
+  "subspace_cis": {
+    "answer_pointer_L38": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.15464382326420195,
+      "ci_width": 0.15464382326420195,
+      "interpretable": false
+    },
+    "answer_pointer_L52": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.15464382326420195,
+      "ci_width": 0.15464382326420195,
+      "interpretable": false
+    },
+    "answer_pointer_L53": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.15464382326420195,
+      "ci_width": 0.15464382326420195,
+      "interpretable": false
+    }
+  }
+}
