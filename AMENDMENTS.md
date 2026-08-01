@@ -492,3 +492,259 @@ severity test of the mechanistic claim.
 - `experiments/rank_decomposition_test.py` — created (Experiment 9)
 - `experiments/adversarial_heuristic_test.py` — created (Experiment 10)
 - `experiments/cross_task_contamination.py` — created (Experiment 11)
+
+---
+
+## Amendment 9: Belief-vs-binding dissociation experiments (E12--E15)
+
+**Date.** 2026-07-31, prior to any results from E12--E15.
+
+**Motivation.** Inspection of the CausalToM data generation code
+(`src/dataset.py`, `story_templates.json`) reveals that the paper's
+experimental task does not test false beliefs. The `causal_event` and
+`event_noticed` template fields (which describe drink swaps and whether
+a character noticed) are defined in the template JSON but never included
+in generated stories: `set_story()` uses only `template["context"]`.
+The paper always queries a character about the container they themselves
+filled (`set_character=rc, set_container=rc`), so the belief-correct
+answer always equals the ground-truth state. No story contains a state
+change the character fails to observe.
+
+The task therefore reduces to entity binding: tracking which character
+put which drink in which container. A subspace that achieves high IIA on
+this task need not encode epistemic state; encoding {character, container,
+drink} associations suffices. This observation motivates four experiments
+that dissociate belief tracking from entity binding.
+
+### Experiment 12: Question-framing control (belief vs non-belief)
+
+**Question.** Does the subspace encode "what the character believes" or
+"what drink is associated with this character and container"? Since the
+paper's task uses stories where belief = reality (the character is always
+asked about their own container), a subspace could achieve perfect IIA by
+tracking entity-state bindings without representing epistemic state.
+
+**Protocol.** Use the same clean/CF story pairs from the positive control
+(template 2, seed 42, 80 model-filtered pairs). For each pair, generate
+four question framings by replacing only the question text:
+
+1. **Belief (original):** "What does [char] believe the [container]
+   contains?" (baseline)
+2. **Action recall:** "What did [char] put in the [container]?"
+3. **Reality state:** "What is inside the [container]?"
+4. **Fill completion:** "[Char] filled the [container] with"
+
+All four framings yield the same correct answer because belief = reality
+for the queried character's own container. Pairs are filtered for each
+framing independently (the model must answer both clean and CF correctly
+under the new question). IIA is computed on the intersection of pairs
+passing all four framings.
+
+Only answer subspaces (L38, L52, L53) are tested at position -1. Uses
+`compute_iia_answer_flex` because different question framings produce
+different token lengths.
+
+**Metrics.** IIA per (framing, subspace). Framing transfer ratio:
+non-belief IIA / belief IIA.
+
+**Predictions.**
+- Belief baseline: IIA > 0.80 (matching positive control).
+- Action recall: IIA within 0.10 of belief baseline. The subspace
+  encodes the binding regardless of epistemic framing.
+- Reality state: IIA within 0.10 of belief baseline.
+- Fill completion: IIA within 0.10 of belief baseline.
+
+**Pre-committed interpretations.**
+- If all non-belief framings show IIA within 0.10 of the belief
+  framing, the subspace encodes entity-state bindings, and the "belief
+  tracking" characterization adds no explanatory power beyond "entity
+  retrieval." This would not invalidate the subspace's existence but
+  would recharacterize what it computes.
+- If belief framing IIA exceeds non-belief framings by > 0.25 for at
+  least two subspaces, the subspace is sensitive to epistemic question
+  framing, supporting the belief-tracking interpretation.
+- If the fill-completion framing (which removes the question frame
+  entirely) shows IIA > 0.80, the subspace functions as a cloze
+  completion mechanism, independent of any question structure.
+
+### Experiment 13: Distractor insertion (positional heuristic test)
+
+**Question.** Does the subspace use the semantic character-drink binding
+or the positional location of drink tokens in the prompt?
+
+**Protocol.** Take model-filtered template-2 pairs. For each pair,
+create three distractor variants by inserting sentences that mention
+drinks in non-binding contexts:
+
+1. **Early distractor:** After the opening sentence ("... busy
+   restaurant."), insert: "A customer nearby was drinking [distractor_drink]."
+2. **Mid distractor:** Between the two fill actions, insert:
+   "The smell of [distractor_drink] wafted from the kitchen."
+3. **Late distractor:** After both fill actions but before the question,
+   insert: "Another order called for [distractor_drink]."
+
+The distractor drink is sampled from the drink pool, excluding drinks
+used in the story. Each variant is re-filtered on the model (must still
+answer both clean and CF correctly). IIA is computed on the intersection
+of pairs passing the original and each distractor condition.
+
+**Metrics.** IIA per (distractor position, subspace). Distractor drop:
+original IIA minus distractor IIA.
+
+**Predictions.**
+- All distractor conditions: IIA within 0.10 of the no-distractor
+  baseline. The subspace should track semantic binding (who filled
+  what), not positional drink-token location.
+- If the late distractor (closest to the question) causes the largest
+  drop, the subspace has a recency bias toward drink tokens near the
+  query position.
+
+**Pre-committed interpretations.**
+- If distractor drop > 0.20 for any position, the subspace relies on
+  positional features of the prompt. This would indicate that the
+  mechanism is a positional lookup ("what drink token appeared at
+  position P?") rather than a semantic binding.
+- If all distractor drops < 0.10, the subspace is robust to positional
+  perturbation.
+
+### Experiment 14: True false-belief test
+
+**Question.** Can the subspace handle stories with genuine false beliefs,
+where a character's belief differs from reality?
+
+**Protocol.** Construct stories by extending template 2 with the
+causal_event the paper defined but never used:
+
+> "[Char1] and [Char2] are working in a busy restaurant. To complete an
+> order, [Char1] grabs an opaque [Container1] and fills it with [State1].
+> Then [Char2] grabs another opaque [Container2] and fills it with
+> [State2]. While [Char1] was attending to another task, a co-worker
+> swapped the [State1] in the [Container1] with [State3]. [Char1] did
+> not notice the swap."
+
+Now char1 falsely believes container1 has state1, but it actually
+contains state3. The question "What does [Char1] believe [Container1]
+contains?" should yield state1 (the false belief).
+
+Clean/CF pairs:
+- Clean: char1 believes state1 (pre-swap drink)
+- CF: reversed characters, different drinks; char_cf believes state_cf
+
+Generate 240 stories (seed 42), filter on model accuracy (model must
+answer with the pre-swap drink, demonstrating false-belief reasoning),
+retain up to 80. Compute IIA with the paper's answer subspaces.
+
+**Metrics.** IIA per subspace. Behavioral accuracy: fraction of stories
+where the model correctly answers with the false belief (pre-swap drink).
+
+**Predictions.**
+- Behavioral accuracy > 0.50. LLama-3.1-70B-Instruct should handle
+  simple false-belief stories.
+- IIA on false-belief pairs: < 0.30 for all answer subspaces. The
+  paper's subspace was trained on entity-binding pairs (belief = reality)
+  and should not generalize to genuine epistemic state tracking where
+  belief diverges from reality.
+
+**Pre-committed interpretations.**
+- If behavioral accuracy < 0.30, the model itself cannot reliably
+  perform false-belief reasoning on this story format. Report the
+  behavioral failure and note that the subspace cannot be tested.
+- If behavioral accuracy > 0.50 AND IIA > 0.60 for at least one
+  subspace, the subspace genuinely tracks the character's epistemic
+  state even when it diverges from reality. This would be the strongest
+  possible evidence FOR the paper's "belief tracking" interpretation.
+- If behavioral accuracy > 0.50 AND IIA < 0.30, the subspace trained
+  on entity-binding does not generalize to false beliefs. Combined
+  with E12 showing framing-invariance, this would support the
+  recharacterization: the subspace encodes character-state bindings
+  that happen to align with beliefs in the paper's task, but does not
+  encode epistemic state per se.
+
+### Experiment 15: Observability dissociation
+
+**Question.** Does the subspace encode who can observe what — a core
+component of belief tracking — or only self-action bindings?
+
+**Protocol.** Use template 1, where char1 CAN observe char2's actions
+but char2 CANNOT observe char1's. This creates an asymmetry:
+- Char1 knows what char2 put in container2 (observed it)
+- Char2 does not know what char1 put in container1
+
+Construct pairs asking about char1's knowledge of container2 (the
+container char2 filled, which char1 observed):
+- Clean: "What does [Char1] believe [Container2] contains?" → state2
+- CF: reversed chars, new states → different answer
+
+Also construct a control condition asking about char1's knowledge of
+container1 (which char1 filled themselves):
+- "What does [Char1] believe [Container1] contains?" → state1
+
+This matches the paper's standard query pattern (self-filled container)
+and serves as a positive control: if the subspace works on self-queries,
+any deficit on observed-other queries isolates the observability gap.
+
+For both conditions: generate 240 template-1 pairs, filter on model
+accuracy, retain up to 80.
+
+**Metrics.** IIA per subspace for both conditions. Dissociation =
+self-container IIA minus observed-other-container IIA.
+
+**Predictions.**
+- Behavioral accuracy (both conditions): > 0.50.
+- IIA (self-container control): within 0.10 of the positive-control
+  baseline from E1. Template 1 self-queries match the paper's pattern.
+- IIA (observed-other-container): < 0.30. The paper's subspace was
+  trained on self-filled-container pairs (set_character=rc,
+  set_container=rc). Observability-mediated knowledge of ANOTHER
+  character's container is a different binding pattern.
+
+**Pre-committed interpretations.**
+- If self-container IIA matches baseline AND observed-other IIA > 0.60,
+  the subspace encodes observability-mediated beliefs, supporting the
+  "belief tracking" interpretation.
+- If self-container IIA matches baseline AND observed-other IIA < 0.30,
+  the subspace only encodes self-action bindings. It tracks "what did I
+  put where?" but not "what did I see someone else put where?" — the
+  latter requires modeling observability, which the subspace does not
+  capture.
+- If behavioral accuracy < 0.30 for observed-other queries, template 1
+  produces unreliable model behavior and the observability test is
+  uninformative. Report as inconclusive.
+
+---
+
+**Methodological notes applying to E12--E15.**
+
+1. All experiments use the same SVD-reconstructed projections and
+   compute_iia_answer_flex as E7--E11.
+2. All filtering requires correct model predictions on both clean and
+   CF prompts under the experimental condition.
+3. E12 evaluates on the intersection of pairs passing all framings,
+   ensuring paired comparison. E13 compares baseline IIA (all
+   model-filtered pairs) against each distractor condition IIA (the
+   subset of those pairs where the model still answers correctly with
+   the distractor inserted). Distractor pairs are a subset of baseline
+   pairs by construction.
+4. Results are checkpointed per condition/subspace.
+5. E14 extends the template-2 context string with the causal_event
+   text. Because this changes prompt length, compute_iia_answer_flex
+   handles the length mismatch.
+
+**Observation that motivates all four experiments.** The paper's
+CausalToM stories never include drink swaps or unobserved state changes.
+The `causal_event` and `event_noticed` fields exist in the template JSON
+but `Dataset.set_story()` only uses `template["context"]`. The question
+always queries a character about the container they filled
+(`set_character=rc, set_container=rc`), so belief = reality for every
+evaluated pair. The task is entity binding, not false-belief reasoning.
+This does not invalidate the paper's subspace findings — the subspaces
+exist and achieve high IIA — but it reframes what the subspaces compute.
+E12--E15 test whether the "belief" characterization adds explanatory
+power beyond "entity-state binding."
+
+## Files changed (Amendment 9)
+
+- `experiments/question_framing_test.py` — created (Experiment 12)
+- `experiments/distractor_insertion_test.py` — created (Experiment 13)
+- `experiments/false_belief_test.py` — created (Experiment 14)
+- `experiments/observability_test.py` — created (Experiment 15)
