@@ -362,11 +362,20 @@ def main():
             for sub_name, iia in cached.get("subspace_iias", {}).items():
                 print(f"    {sub_name}: IIA={iia:.4f}")
     if "reality_question" not in summary["conditions"]:
-        if not args.dry_run:
+        rq_cache = RESULTS_DIR / "filtered_reality_pairs.json"
+        if not args.dry_run and rq_cache.exists():
+            with open(rq_cache) as f:
+                saved = json.load(f)
+            rq_pairs = saved["pairs"]
+            rq_behavioral = saved["behavioral_accuracy"]
+            print(f"[{ts()}] Loaded {len(rq_pairs)} cached reality pairs")
+        elif not args.dry_run:
             print(f"[{ts()}] Generating reality-question pairs...")
             rq_raw = generate_reality_pairs(args.n_eval * 3, args.seed)
             rq_pairs, rq_behavioral = filter_on_model_with_accuracy(
                 lm, rq_raw, max_size=args.n_eval)
+            with open(rq_cache, "w") as f:
+                json.dump({"pairs": rq_pairs, "behavioral_accuracy": rq_behavioral}, f, indent=2)
             print(f"[{ts()}] {len(rq_pairs)} reality pairs passed filter")
             print(f"[{ts()}] Reality behavioral accuracy: {rq_behavioral}")
         else:

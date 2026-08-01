@@ -182,21 +182,32 @@ def main():
                     print(f"    {sub_name}: IIA={iia:.4f}")
                 continue
 
-        print(f"[{ts()}] Generating template-1 pairs...")
-        pairs_raw = generate_template1_pairs(
-            args.n_eval * 3, args.seed,
-            cond_spec["set_character"], cond_spec["set_container"])
-
-        if not args.dry_run:
-            print(f"[{ts()}] Filtering on model accuracy...")
-            all_passing = filter_on_model(lm, pairs_raw, max_size=len(pairs_raw))
-            behavioral_accuracy = len(all_passing) / len(pairs_raw) if pairs_raw else 0
-            pairs = all_passing[:args.n_eval]
-            print(f"  {len(all_passing)}/{len(pairs_raw)} passed filter "
-                  f"(accuracy={behavioral_accuracy:.2f}), using {len(pairs)}")
+        pairs_cache = RESULTS_DIR / f"filtered_pairs_{cond_name}.json"
+        if pairs_cache.exists() and not args.dry_run:
+            with open(pairs_cache) as f:
+                saved = json.load(f)
+            pairs = saved["pairs"]
+            behavioral_accuracy = saved["behavioral_accuracy"]
+            print(f"[{ts()}] Loaded {len(pairs)} cached pairs "
+                  f"(accuracy={behavioral_accuracy:.2f})")
         else:
-            pairs = pairs_raw[:args.n_eval]
-            behavioral_accuracy = len(pairs) / len(pairs_raw) if pairs_raw else 0
+            print(f"[{ts()}] Generating template-1 pairs...")
+            pairs_raw = generate_template1_pairs(
+                args.n_eval * 3, args.seed,
+                cond_spec["set_character"], cond_spec["set_container"])
+
+            if not args.dry_run:
+                print(f"[{ts()}] Filtering on model accuracy...")
+                all_passing = filter_on_model(lm, pairs_raw, max_size=len(pairs_raw))
+                behavioral_accuracy = len(all_passing) / len(pairs_raw) if pairs_raw else 0
+                pairs = all_passing[:args.n_eval]
+                print(f"  {len(all_passing)}/{len(pairs_raw)} passed filter "
+                      f"(accuracy={behavioral_accuracy:.2f}), using {len(pairs)}")
+                with open(pairs_cache, "w") as f:
+                    json.dump({"pairs": pairs, "behavioral_accuracy": behavioral_accuracy}, f, indent=2)
+            else:
+                pairs = pairs_raw[:args.n_eval]
+                behavioral_accuracy = len(pairs) / len(pairs_raw) if pairs_raw else 0
 
         sub_iias = {}
         for sub_name, spec in answer_subspaces.items():

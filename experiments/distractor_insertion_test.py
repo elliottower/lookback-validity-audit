@@ -161,18 +161,27 @@ def main():
     if not args.dry_run:
         lm = setup_nnsight()
 
-    print(f"[{ts()}] Generating template-2 pairs...")
-    answer_raw, _ = generate_counterfactual_pairs(
-        n_samples=args.n_eval * 3, seed=args.seed)
-
-    if not args.dry_run:
-        print(f"[{ts()}] Filtering on model accuracy...")
-        baseline_pairs = filter_on_model(lm, answer_raw, max_size=args.n_eval)
+    baseline_cache = RESULTS_DIR / "filtered_baseline_pairs.json"
+    if baseline_cache.exists() and not args.dry_run:
+        with open(baseline_cache) as f:
+            baseline_pairs = json.load(f)
+        print(f"[{ts()}] Loaded {len(baseline_pairs)} cached baseline pairs")
     else:
-        baseline_pairs = answer_raw[:args.n_eval]
+        print(f"[{ts()}] Generating template-2 pairs...")
+        answer_raw, _ = generate_counterfactual_pairs(
+            n_samples=args.n_eval * 3, seed=args.seed)
 
-    for i, p in enumerate(baseline_pairs):
-        p["_pair_idx"] = i
+        if not args.dry_run:
+            print(f"[{ts()}] Filtering on model accuracy...")
+            baseline_pairs = filter_on_model(lm, answer_raw, max_size=args.n_eval)
+            for i, p in enumerate(baseline_pairs):
+                p["_pair_idx"] = i
+            with open(baseline_cache, "w") as f:
+                json.dump(baseline_pairs, f, indent=2)
+        else:
+            baseline_pairs = answer_raw[:args.n_eval]
+            for i, p in enumerate(baseline_pairs):
+                p["_pair_idx"] = i
 
     print(f"[{ts()}] {len(baseline_pairs)} baseline pairs")
 
@@ -209,19 +218,28 @@ def main():
             eval_pairs = baseline_pairs
             n_shared = len(baseline_pairs)
         else:
-            distractor_variants = create_distractor_pairs(
-                baseline_pairs, condition, rng, all_drinks)
-
-            if not args.dry_run:
-                eval_pairs = filter_on_model(
-                    lm, distractor_variants, max_size=len(distractor_variants))
+            dist_cache = RESULTS_DIR / f"filtered_pairs_{condition}.json"
+            if dist_cache.exists() and not args.dry_run:
+                with open(dist_cache) as f:
+                    eval_pairs = json.load(f)
                 n_shared = len(eval_pairs)
-                retention = n_shared / len(distractor_variants)
-                print(f"  {n_shared}/{len(distractor_variants)} distractor pairs "
-                      f"pass filter (retention={retention:.2f})")
+                print(f"  Loaded {n_shared} cached distractor pairs")
             else:
-                eval_pairs = distractor_variants
-                n_shared = len(eval_pairs)
+                distractor_variants = create_distractor_pairs(
+                    baseline_pairs, condition, rng, all_drinks)
+
+                if not args.dry_run:
+                    eval_pairs = filter_on_model(
+                        lm, distractor_variants, max_size=len(distractor_variants))
+                    n_shared = len(eval_pairs)
+                    retention = n_shared / len(distractor_variants)
+                    print(f"  {n_shared}/{len(distractor_variants)} distractor pairs "
+                          f"pass filter (retention={retention:.2f})")
+                    with open(dist_cache, "w") as f:
+                        json.dump(eval_pairs, f, indent=2)
+                else:
+                    eval_pairs = distractor_variants
+                    n_shared = len(eval_pairs)
 
         sub_iias = {}
         for sub_name, spec in answer_subspaces.items():

@@ -145,6 +145,14 @@ def main():
     framing_filtered = {}
     for framing_key in FRAMINGS:
         print(f"\n[{ts()}] Framing: {framing_key}")
+
+        cache_path = RESULTS_DIR / f"filtered_pairs_{framing_key}.json"
+        if cache_path.exists() and not args.dry_run:
+            with open(cache_path) as f:
+                framing_filtered[framing_key] = json.load(f)
+            print(f"  Loaded {len(framing_filtered[framing_key])} cached filtered pairs")
+            continue
+
         if framing_key == "belief":
             reframed = [{**p} for p in answer_raw]
         else:
@@ -153,6 +161,8 @@ def main():
 
         if not args.dry_run:
             filtered = filter_on_model(lm, reframed, max_size=args.n_eval)
+            with open(cache_path, "w") as f:
+                json.dump(filtered, f, indent=2)
         else:
             filtered = reframed[:args.n_eval]
         print(f"  {len(filtered)} pairs passed filter")
