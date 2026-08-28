@@ -1,0 +1,214 @@
+{
+  "synthetic": false,
+  "timestamp": "2026-08-01T22:22:45.927547+00:00",
+  "seed": 42,
+  "method": "rank_decomposition",
+  "method_note": "Tests each SVD direction individually within each subspace. If one direction captures most of the IIA, the stated rank is inflated.",
+  "prediction": {
+    "supports_paper": "Multiple directions contribute, no single dominant direction",
+    "weakens_paper": "Direction 0 captures >80% of full-rank IIA"
+  },
+  "subspaces": {
+    "binding_addr_payload_L34": {
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback",
+      "original_iia": 0.9625,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    },
+    "binding_addr_payload_L35": {
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback",
+      "original_iia": 0.7375,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "29": 0.0,
+        "32": 0.0,
+        "43": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    },
+    "binding_addr_payload_L36": {
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback",
+      "original_iia": 0.75,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "30": 0.0,
+        "32": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    },
+    "answer_pointer_L38": {
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback",
+      "original_iia": 0.925,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    },
+    "answer_pointer_L52": {
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback",
+      "original_iia": 0.775,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "23": 0.0,
+        "24": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    },
+    "answer_pointer_L53": {
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback",
+      "original_iia": 0.55,
+      "individual_direction_iias": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "18": 0.0,
+        "19": 0.0,
+        "21": 0.0,
+        "22": 0.0,
+        "26": 0.0
+      },
+      "cumulative_iias": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 0.0
+      },
+      "full_rank_iia": 0.0,
+      "max_individual_iia": 0.0,
+      "concentration_ratio": Infinity,
+      "effectively_rank1": true
+    }
+  },
+  "verdict": "6/6 subspaces are effectively rank-1"
+}

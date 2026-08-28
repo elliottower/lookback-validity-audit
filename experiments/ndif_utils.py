@@ -26,7 +26,7 @@ BELIEF_TRACKING = REPO_ROOT / "reference" / "belief_tracking"
 
 sys.path.insert(0, str(BELIEF_TRACKING))
 
-MODEL = "meta-llama/Meta-Llama-3.1-70B-Instruct"
+MODEL = "meta-llama/Llama-3.1-70B-Instruct"
 
 
 def setup_nnsight():

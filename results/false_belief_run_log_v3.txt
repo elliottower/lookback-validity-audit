@@ -1,0 +1,41 @@
+[21:46:14] True false-belief test
+[21:46:14] Seed: 42, N eval: 80
+[21:46:14] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+[21:46:14] Setting up nnsight...
+
+============================================================
+[21:46:23] CONDITION 1: False-belief (belief question)
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.9750
+    answer_pointer_L52: IIA=0.9750
+    answer_pointer_L53: IIA=0.3875
+  Behavioral accuracy: {'clean_accuracy': 1.0, 'cf_accuracy': 1.0, 'both_correct': 1.0, 'total_tested': 80, 'total_passed': 80}
+
+============================================================
+[21:46:23] CONDITION 2: Reality question control
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+FALSE BELIEF TEST SUMMARY
+============================================================
+
+false_belief:
+  Behavioral: clean=1.0000, cf=1.0000, both=1.0000 (80/80 passed)
+  Subspace IIAs:
+    answer_pointer_L38: 0.9750
+    answer_pointer_L52: 0.9750
+    answer_pointer_L53: 0.3875
+
+reality_question:
+  Behavioral: clean=0.0000, cf=0.0000, both=0.0000 (0/0 passed)
+  Subspace IIAs:
+    answer_pointer_L38: 0.0000
+    answer_pointer_L52: 0.0000
+    answer_pointer_L53: 0.0000
+
+[21:46:23] Done. Results at /Users/elliottower/Documents/GitHub/lookback-validity-audit/results/false_belief

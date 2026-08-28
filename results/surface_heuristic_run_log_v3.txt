@@ -1,0 +1,1521 @@
+[22:04:35] Surface heuristic test
+[22:04:35] Conditions: standard, decoy, reordered, distractor
+[22:04:35] Subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+
+[22:04:35] Generating adversarial stories...
+  standard: 120 pairs generated
+  decoy: 120 pairs generated
+  reordered: 120 pairs generated
+  distractor: 120 pairs generated
+
+[22:04:35] Setting up nnsight + NDIF...
+[22:04:49] Filtering pairs on model accuracy...
+Filtering on model accuracy:   0%|          | 0/120 [00:00<?, ?it/s]Filtering on model accuracy:   1%|          | 1/120 [00:04<08:46,  4.42s/it]Filtering on model accuracy:   2%|▏         | 2/120 [00:07<06:40,  3.40s/it]Filtering on model accuracy:   2%|▎         | 3/120 [00:09<06:03,  3.11s/it]Filtering on model accuracy:   3%|▎         | 4/120 [00:12<05:53,  3.05s/it]Filtering on model accuracy:   4%|▍         | 5/120 [00:15<05:42,  2.98s/it]Filtering on model accuracy:   5%|▌         | 6/120 [00:19<06:01,  3.17s/it]Filtering on model accuracy:   6%|▌         | 7/120 [00:23<06:47,  3.61s/it]Filtering on model accuracy:   7%|▋         | 8/120 [00:27<06:48,  3.65s/it]Filtering on model accuracy:   8%|▊         | 9/120 [00:30<06:18,  3.41s/it]Filtering on model accuracy:   8%|▊         | 10/120 [00:33<05:49,  3.18s/it]Filtering on model accuracy:   9%|▉         | 11/120 [00:35<05:19,  2.93s/it]Filtering on model accuracy:  10%|█         | 12/120 [00:37<05:01,  2.79s/it]Filtering on model accuracy:  11%|█         | 13/120 [00:40<05:00,  2.81s/it]Filtering on model accuracy:  12%|█▏        | 14/120 [00:43<04:59,  2.83s/it]Filtering on model accuracy:  12%|█▎        | 15/120 [00:47<05:35,  3.19s/it]Filtering on model accuracy:  13%|█▎        | 16/120 [00:50<05:21,  3.09s/it]Filtering on model accuracy:  14%|█▍        | 17/120 [00:53<05:07,  2.99s/it]Filtering on model accuracy:  15%|█▌        | 18/120 [00:57<05:33,  3.27s/it]Filtering on model accuracy:  16%|█▌        | 19/120 [00:59<05:13,  3.11s/it]Filtering on model accuracy:  17%|█▋        | 20/120 [01:02<05:09,  3.10s/it]Filtering on model accuracy:  18%|█▊        | 21/120 [01:05<05:04,  3.07s/it]Filtering on model accuracy:  18%|█▊        | 22/120 [01:09<05:06,  3.13s/it]Filtering on model accuracy:  19%|█▉        | 23/120 [01:12<04:59,  3.08s/it]Filtering on model accuracy:  20%|██        | 24/120 [01:16<05:26,  3.40s/it]Filtering on model accuracy:  21%|██        | 25/120 [01:20<05:38,  3.56s/it]Filtering on model accuracy:  22%|██▏       | 26/120 [01:24<05:39,  3.61s/it]Filtering on model accuracy:  22%|██▎       | 27/120 [01:28<05:56,  3.83s/it]Filtering on model accuracy:  23%|██▎       | 28/120 [01:30<05:13,  3.41s/it]Filtering on model accuracy:  24%|██▍       | 29/120 [01:33<04:51,  3.20s/it]Filtering on model accuracy:  25%|██▌       | 30/120 [01:36<04:36,  3.07s/it]Filtering on model accuracy:  26%|██▌       | 31/120 [01:39<04:43,  3.18s/it]Filtering on model accuracy:  27%|██▋       | 32/120 [01:42<04:31,  3.08s/it]Filtering on model accuracy:  28%|██▊       | 33/120 [01:45<04:22,  3.02s/it]Filtering on model accuracy:  28%|██▊       | 34/120 [01:48<04:24,  3.07s/it]Filtering on model accuracy:  29%|██▉       | 35/120 [01:52<04:34,  3.23s/it]Filtering on model accuracy:  30%|███       | 36/120 [01:55<04:22,  3.12s/it]Filtering on model accuracy:  31%|███       | 37/120 [01:59<04:59,  3.61s/it]Filtering on model accuracy:  32%|███▏      | 38/120 [02:02<04:34,  3.35s/it]Filtering on model accuracy:  32%|███▎      | 39/120 [02:06<04:51,  3.60s/it]Filtering on model accuracy:  33%|███▎      | 40/120 [02:09<04:33,  3.41s/it]  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  34%|███▍      | 41/120 [02:12<04:19,  3.28s/it]Filtering on model accuracy:  35%|███▌      | 42/120 [02:15<03:59,  3.07s/it]Filtering on model accuracy:  36%|███▌      | 43/120 [02:17<03:39,  2.86s/it]Filtering on model accuracy:  37%|███▋      | 44/120 [02:21<04:04,  3.21s/it]Filtering on model accuracy:  38%|███▊      | 45/120 [02:24<04:01,  3.22s/it]Filtering on model accuracy:  38%|███▊      | 46/120 [02:27<03:45,  3.05s/it]Filtering on model accuracy:  39%|███▉      | 47/120 [02:30<03:34,  2.94s/it]Filtering on model accuracy:  40%|████      | 48/120 [02:34<03:58,  3.31s/it]Filtering on model accuracy:  41%|████      | 49/120 [02:37<03:51,  3.26s/it]Filtering on model accuracy:  42%|████▏     | 50/120 [02:41<03:52,  3.33s/it]Filtering on model accuracy:  42%|████▎     | 51/120 [02:43<03:39,  3.19s/it]Filtering on model accuracy:  43%|████▎     | 52/120 [02:46<03:28,  3.06s/it]Filtering on model accuracy:  44%|████▍     | 53/120 [02:49<03:19,  2.98s/it]Filtering on model accuracy:  45%|████▌     | 54/120 [02:52<03:11,  2.90s/it]Filtering on model accuracy:  46%|████▌     | 55/120 [02:54<02:57,  2.73s/it]Filtering on model accuracy:  47%|████▋     | 56/120 [02:57<03:02,  2.85s/it]Filtering on model accuracy:  48%|████▊     | 57/120 [03:00<03:06,  2.95s/it]Filtering on model accuracy:  48%|████▊     | 58/120 [03:04<03:12,  3.11s/it]Filtering on model accuracy:  49%|████▉     | 59/120 [03:08<03:36,  3.55s/it]Filtering on model accuracy:  50%|█████     | 60/120 [03:11<03:22,  3.37s/it]Filtering on model accuracy:  51%|█████     | 61/120 [03:14<03:10,  3.23s/it]Filtering on model accuracy:  52%|█████▏    | 62/120 [03:20<03:52,  4.00s/it]Filtering on model accuracy:  52%|█████▎    | 63/120 [03:23<03:32,  3.73s/it]Filtering on model accuracy:  53%|█████▎    | 64/120 [03:27<03:29,  3.74s/it]Filtering on model accuracy:  54%|█████▍    | 65/120 [03:30<03:10,  3.46s/it]Filtering on model accuracy:  55%|█████▌    | 66/120 [03:34<03:17,  3.66s/it]Filtering on model accuracy:  56%|█████▌    | 67/120 [03:37<02:59,  3.38s/it]Filtering on model accuracy:  57%|█████▋    | 68/120 [03:40<02:59,  3.45s/it]Filtering on model accuracy:  57%|█████▊    | 69/120 [03:45<03:14,  3.81s/it]Filtering on model accuracy:  58%|█████▊    | 70/120 [03:48<02:59,  3.60s/it]Filtering on model accuracy:  59%|█████▉    | 71/120 [03:51<02:45,  3.38s/it]Filtering on model accuracy:  60%|██████    | 72/120 [03:54<02:32,  3.17s/it]Filtering on model accuracy:  61%|██████    | 73/120 [03:57<02:27,  3.13s/it]Filtering on model accuracy:  62%|██████▏   | 74/120 [03:59<02:18,  3.01s/it]Filtering on model accuracy:  62%|██████▎   | 75/120 [04:02<02:11,  2.92s/it]Filtering on model accuracy:  63%|██████▎   | 76/120 [04:05<02:07,  2.89s/it]Filtering on model accuracy:  64%|██████▍   | 77/120 [04:09<02:18,  3.21s/it]Filtering on model accuracy:  65%|██████▌   | 78/120 [04:11<02:08,  3.06s/it]Filtering on model accuracy:  66%|██████▌   | 79/120 [04:15<02:06,  3.08s/it]Filtering on model accuracy:  67%|██████▋   | 80/120 [04:18<02:00,  3.02s/it]Filtering on model accuracy:  68%|██████▊   | 81/120 [04:21<02:04,  3.20s/it]
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  68%|██████▊   | 82/120 [04:25<02:03,  3.26s/it]Filtering on model accuracy:  69%|██████▉   | 83/120 [04:27<01:55,  3.12s/it]Filtering on model accuracy:  70%|███████   | 84/120 [04:30<01:47,  3.00s/it]Filtering on model accuracy:  71%|███████   | 85/120 [04:32<01:39,  2.83s/it]Filtering on model accuracy:  72%|███████▏  | 86/120 [04:35<01:34,  2.79s/it]Filtering on model accuracy:  72%|███████▎  | 87/120 [04:38<01:31,  2.77s/it]Filtering on model accuracy:  73%|███████▎  | 88/120 [04:41<01:28,  2.77s/it]Filtering on model accuracy:  74%|███████▍  | 89/120 [04:44<01:26,  2.81s/it]Filtering on model accuracy:  75%|███████▌  | 90/120 [04:46<01:24,  2.81s/it]Filtering on model accuracy:  76%|███████▌  | 91/120 [04:51<01:34,  3.27s/it]Filtering on model accuracy:  77%|███████▋  | 92/120 [04:54<01:30,  3.25s/it]Filtering on model accuracy:  78%|███████▊  | 93/120 [04:59<01:39,  3.67s/it]Filtering on model accuracy:  78%|███████▊  | 94/120 [05:01<01:28,  3.42s/it]Filtering on model accuracy:  79%|███████▉  | 95/120 [05:04<01:22,  3.32s/it]Filtering on model accuracy:  80%|████████  | 96/120 [05:09<01:24,  3.53s/it]Filtering on model accuracy:  81%|████████  | 97/120 [05:11<01:16,  3.32s/it]Filtering on model accuracy:  82%|████████▏ | 98/120 [05:15<01:13,  3.34s/it]Filtering on model accuracy:  82%|████████▎ | 99/120 [05:19<01:13,  3.49s/it]Filtering on model accuracy:  83%|████████▎ | 100/120 [05:22<01:11,  3.60s/it]Filtering on model accuracy:  84%|████████▍ | 101/120 [05:27<01:11,  3.77s/it]Filtering on model accuracy:  85%|████████▌ | 102/120 [05:31<01:09,  3.88s/it]Filtering on model accuracy:  86%|████████▌ | 103/120 [05:35<01:05,  3.86s/it]Filtering on model accuracy:  87%|████████▋ | 104/120 [05:37<00:56,  3.54s/it]Filtering on model accuracy:  88%|████████▊ | 105/120 [05:40<00:49,  3.28s/it]Filtering on model accuracy:  88%|████████▊ | 106/120 [05:43<00:44,  3.14s/it]Filtering on model accuracy:  89%|████████▉ | 107/120 [05:46<00:41,  3.22s/it]Filtering on model accuracy:  90%|█████████ | 108/120 [05:49<00:36,  3.05s/it]Filtering on model accuracy:  91%|█████████ | 109/120 [05:52<00:34,  3.12s/it]Filtering on model accuracy:  92%|█████████▏| 110/120 [05:56<00:32,  3.26s/it]Filtering on model accuracy:  92%|█████████▎| 111/120 [05:59<00:28,  3.12s/it]Filtering on model accuracy:  93%|█████████▎| 112/120 [06:03<00:27,  3.45s/it]Filtering on model accuracy:  94%|█████████▍| 113/120 [06:05<00:22,  3.18s/it]Filtering on model accuracy:  95%|█████████▌| 114/120 [06:08<00:18,  3.05s/it]Filtering on model accuracy:  96%|█████████▌| 115/120 [06:13<00:18,  3.73s/it]Filtering on model accuracy:  97%|█████████▋| 116/120 [06:18<00:16,  4.07s/it]Filtering on model accuracy:  98%|█████████▊| 117/120 [06:23<00:12,  4.27s/it]Filtering on model accuracy:  98%|█████████▊| 118/120 [06:28<00:08,  4.38s/it]Filtering on model accuracy:  99%|█████████▉| 119/120 [06:30<00:03,  3.91s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:33<00:00,  3.60s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:33<00:00,  3.28s/it]
+
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  standard: 0/120 passed filter
+Filtering on model accuracy:   0%|          | 0/120 [00:00<?, ?it/s]Filtering on model accuracy:   1%|          | 1/120 [00:03<06:05,  3.07s/it]Filtering on model accuracy:   2%|▏         | 2/120 [00:08<08:34,  4.36s/it]Filtering on model accuracy:   2%|▎         | 3/120 [00:12<07:57,  4.08s/it]Filtering on model accuracy:   3%|▎         | 4/120 [00:14<06:54,  3.58s/it]Filtering on model accuracy:   4%|▍         | 5/120 [00:17<06:26,  3.36s/it]Filtering on model accuracy:   5%|▌         | 6/120 [00:21<06:34,  3.46s/it]Filtering on model accuracy:   6%|▌         | 7/120 [00:25<06:34,  3.49s/it]Filtering on model accuracy:   7%|▋         | 8/120 [00:28<06:37,  3.55s/it]Filtering on model accuracy:   8%|▊         | 9/120 [00:31<06:01,  3.26s/it]Filtering on model accuracy:   8%|▊         | 10/120 [00:33<05:36,  3.06s/it]Filtering on model accuracy:   9%|▉         | 11/120 [00:37<05:47,  3.18s/it]Filtering on model accuracy:  10%|█         | 12/120 [00:39<05:18,  2.95s/it]Filtering on model accuracy:  11%|█         | 13/120 [00:42<04:59,  2.80s/it]Filtering on model accuracy:  12%|█▏        | 14/120 [00:45<05:23,  3.05s/it]Filtering on model accuracy:  12%|█▎        | 15/120 [00:48<05:15,  3.00s/it]Filtering on model accuracy:  13%|█▎        | 16/120 [00:52<05:27,  3.14s/it]Filtering on model accuracy:  14%|█▍        | 17/120 [00:55<05:40,  3.30s/it]Filtering on model accuracy:  15%|█▌        | 18/120 [00:59<05:30,  3.24s/it]Filtering on model accuracy:  16%|█▌        | 19/120 [01:01<05:09,  3.06s/it]Filtering on model accuracy:  17%|█▋        | 20/120 [01:04<05:06,  3.06s/it]Filtering on model accuracy:  18%|█▊        | 21/120 [01:08<05:21,  3.24s/it]Filtering on model accuracy:  18%|█▊        | 22/120 [01:12<05:34,  3.42s/it]Filtering on model accuracy:  19%|█▉        | 23/120 [01:15<05:28,  3.38s/it]Filtering on model accuracy:  20%|██        | 24/120 [01:18<05:15,  3.28s/it]Filtering on model accuracy:  21%|██        | 25/120 [01:22<05:25,  3.43s/it]Filtering on model accuracy:  22%|██▏       | 26/120 [01:25<05:03,  3.23s/it]Filtering on model accuracy:  22%|██▎       | 27/120 [01:30<05:47,  3.73s/it]Filtering on model accuracy:  23%|██▎       | 28/120 [01:33<05:47,  3.78s/it]Filtering on model accuracy:  24%|██▍       | 29/120 [01:36<05:15,  3.47s/it]Filtering on model accuracy:  25%|██▌       | 30/120 [01:39<04:48,  3.20s/it]Filtering on model accuracy:  26%|██▌       | 31/120 [01:41<04:22,  2.95s/it]Filtering on model accuracy:  27%|██▋       | 32/120 [01:44<04:05,  2.78s/it]Filtering on model accuracy:  28%|██▊       | 33/120 [01:46<03:56,  2.72s/it]Filtering on model accuracy:  28%|██▊       | 34/120 [01:49<03:49,  2.66s/it]Filtering on model accuracy:  29%|██▉       | 35/120 [01:52<03:54,  2.76s/it]Filtering on model accuracy:  30%|███       | 36/120 [01:54<03:50,  2.75s/it]Filtering on model accuracy:  31%|███       | 37/120 [01:57<03:51,  2.79s/it]Filtering on model accuracy:  32%|███▏      | 38/120 [02:00<03:52,  2.84s/it]Filtering on model accuracy:  32%|███▎      | 39/120 [02:03<03:47,  2.81s/it]Filtering on model accuracy:  33%|███▎      | 40/120 [02:06<04:00,  3.01s/it]  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  34%|███▍      | 41/120 [02:10<04:15,  3.23s/it]Filtering on model accuracy:  35%|███▌      | 42/120 [02:13<04:07,  3.18s/it]Filtering on model accuracy:  36%|███▌      | 43/120 [02:16<04:00,  3.12s/it]Filtering on model accuracy:  37%|███▋      | 44/120 [02:19<03:58,  3.14s/it]Filtering on model accuracy:  38%|███▊      | 45/120 [02:22<03:47,  3.03s/it]Filtering on model accuracy:  38%|███▊      | 46/120 [02:25<03:39,  2.97s/it]Filtering on model accuracy:  39%|███▉      | 47/120 [02:27<03:23,  2.78s/it]Filtering on model accuracy:  40%|████      | 48/120 [02:30<03:19,  2.78s/it]Filtering on model accuracy:  41%|████      | 49/120 [02:33<03:12,  2.72s/it]Filtering on model accuracy:  42%|████▏     | 50/120 [02:35<03:07,  2.67s/it]Filtering on model accuracy:  42%|████▎     | 51/120 [02:39<03:23,  2.95s/it]Filtering on model accuracy:  43%|████▎     | 52/120 [02:41<03:08,  2.77s/it]Filtering on model accuracy:  44%|████▍     | 53/120 [02:45<03:29,  3.13s/it]Filtering on model accuracy:  45%|████▌     | 54/120 [02:48<03:17,  2.99s/it]Filtering on model accuracy:  46%|████▌     | 55/120 [02:51<03:08,  2.90s/it]Filtering on model accuracy:  47%|████▋     | 56/120 [02:53<03:04,  2.88s/it]Filtering on model accuracy:  48%|████▊     | 57/120 [02:56<02:58,  2.84s/it]Filtering on model accuracy:  48%|████▊     | 58/120 [02:59<02:54,  2.82s/it]Filtering on model accuracy:  49%|████▉     | 59/120 [03:02<02:59,  2.95s/it]Filtering on model accuracy:  50%|█████     | 60/120 [03:05<02:52,  2.88s/it]Filtering on model accuracy:  51%|█████     | 61/120 [03:08<02:50,  2.90s/it]Filtering on model accuracy:  52%|█████▏    | 62/120 [03:13<03:22,  3.49s/it]Filtering on model accuracy:  52%|█████▎    | 63/120 [03:17<03:27,  3.63s/it]Filtering on model accuracy:  53%|█████▎    | 64/120 [03:21<03:35,  3.84s/it]Filtering on model accuracy:  54%|█████▍    | 65/120 [03:26<03:46,  4.11s/it]Filtering on model accuracy:  55%|█████▌    | 66/120 [03:29<03:23,  3.77s/it]Filtering on model accuracy:  56%|█████▌    | 67/120 [03:32<03:14,  3.67s/it]Filtering on model accuracy:  57%|█████▋    | 68/120 [03:36<03:21,  3.87s/it]Filtering on model accuracy:  57%|█████▊    | 69/120 [03:40<03:15,  3.84s/it]Filtering on model accuracy:  58%|█████▊    | 70/120 [03:43<02:56,  3.54s/it]Filtering on model accuracy:  59%|█████▉    | 71/120 [03:46<02:42,  3.31s/it]Filtering on model accuracy:  60%|██████    | 72/120 [03:48<02:29,  3.12s/it]Filtering on model accuracy:  61%|██████    | 73/120 [03:51<02:25,  3.09s/it]Filtering on model accuracy:  62%|██████▏   | 74/120 [03:54<02:18,  3.02s/it]Filtering on model accuracy:  62%|██████▎   | 75/120 [03:57<02:13,  2.97s/it]Filtering on model accuracy:  63%|██████▎   | 76/120 [04:00<02:08,  2.91s/it]Filtering on model accuracy:  64%|██████▍   | 77/120 [04:03<02:04,  2.91s/it]Filtering on model accuracy:  65%|██████▌   | 78/120 [04:06<02:04,  2.97s/it]Filtering on model accuracy:  66%|██████▌   | 79/120 [04:09<02:05,  3.07s/it]Filtering on model accuracy:  67%|██████▋   | 80/120 [04:12<02:03,  3.08s/it]Filtering on model accuracy:  68%|██████▊   | 81/120 [04:18<02:30,  3.86s/it]
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  68%|██████▊   | 82/120 [04:22<02:28,  3.92s/it]Filtering on model accuracy:  69%|██████▉   | 83/120 [04:26<02:24,  3.92s/it]Filtering on model accuracy:  70%|███████   | 84/120 [04:30<02:20,  3.91s/it]Filtering on model accuracy:  71%|███████   | 85/120 [04:34<02:22,  4.07s/it]Filtering on model accuracy:  72%|███████▏  | 86/120 [04:37<02:04,  3.65s/it]Filtering on model accuracy:  72%|███████▎  | 87/120 [04:40<01:52,  3.40s/it]Filtering on model accuracy:  73%|███████▎  | 88/120 [04:44<01:58,  3.72s/it]Filtering on model accuracy:  74%|███████▍  | 89/120 [04:48<01:58,  3.82s/it]Filtering on model accuracy:  75%|███████▌  | 90/120 [04:51<01:46,  3.56s/it]Filtering on model accuracy:  76%|███████▌  | 91/120 [04:57<01:57,  4.05s/it]Filtering on model accuracy:  77%|███████▋  | 92/120 [04:59<01:42,  3.64s/it]Filtering on model accuracy:  78%|███████▊  | 93/120 [05:03<01:37,  3.60s/it]Filtering on model accuracy:  78%|███████▊  | 94/120 [05:07<01:35,  3.68s/it]Filtering on model accuracy:  79%|███████▉  | 95/120 [05:09<01:25,  3.40s/it]Filtering on model accuracy:  80%|████████  | 96/120 [05:12<01:17,  3.21s/it]Filtering on model accuracy:  81%|████████  | 97/120 [05:16<01:20,  3.49s/it]Filtering on model accuracy:  82%|████████▏ | 98/120 [05:19<01:11,  3.26s/it]Filtering on model accuracy:  82%|████████▎ | 99/120 [05:22<01:06,  3.19s/it]Filtering on model accuracy:  83%|████████▎ | 100/120 [05:25<01:01,  3.08s/it]Filtering on model accuracy:  84%|████████▍ | 101/120 [05:29<01:04,  3.37s/it]Filtering on model accuracy:  85%|████████▌ | 102/120 [05:33<01:03,  3.51s/it]Filtering on model accuracy:  86%|████████▌ | 103/120 [05:37<01:05,  3.87s/it]Filtering on model accuracy:  87%|████████▋ | 104/120 [05:42<01:03,  3.94s/it]Filtering on model accuracy:  88%|████████▊ | 105/120 [05:45<00:57,  3.86s/it]Filtering on model accuracy:  88%|████████▊ | 106/120 [05:48<00:51,  3.65s/it]Filtering on model accuracy:  89%|████████▉ | 107/120 [05:56<01:03,  4.89s/it]Filtering on model accuracy:  90%|█████████ | 108/120 [06:01<00:59,  5.00s/it]Filtering on model accuracy:  91%|█████████ | 109/120 [06:05<00:48,  4.43s/it]Filtering on model accuracy:  92%|█████████▏| 110/120 [06:08<00:42,  4.29s/it]Filtering on model accuracy:  92%|█████████▎| 111/120 [06:11<00:34,  3.88s/it]Filtering on model accuracy:  93%|█████████▎| 112/120 [06:15<00:30,  3.85s/it]Filtering on model accuracy:  94%|█████████▍| 113/120 [06:19<00:26,  3.73s/it]Filtering on model accuracy:  95%|█████████▌| 114/120 [06:23<00:23,  3.87s/it]Filtering on model accuracy:  96%|█████████▌| 115/120 [06:26<00:18,  3.61s/it]Filtering on model accuracy:  97%|█████████▋| 116/120 [06:29<00:13,  3.39s/it]Filtering on model accuracy:  98%|█████████▊| 117/120 [06:32<00:09,  3.22s/it]Filtering on model accuracy:  98%|█████████▊| 118/120 [06:35<00:06,  3.20s/it]Filtering on model accuracy:  99%|█████████▉| 119/120 [06:38<00:03,  3.25s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:42<00:00,  3.42s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:42<00:00,  3.35s/it]
+
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  decoy: 0/120 passed filter
+Filtering on model accuracy:   0%|          | 0/120 [00:00<?, ?it/s]Filtering on model accuracy:   1%|          | 1/120 [00:03<06:53,  3.47s/it]Filtering on model accuracy:   2%|▏         | 2/120 [00:07<07:06,  3.61s/it]Filtering on model accuracy:   2%|▎         | 3/120 [00:12<08:39,  4.44s/it]Filtering on model accuracy:   3%|▎         | 4/120 [00:17<08:44,  4.52s/it]Filtering on model accuracy:   4%|▍         | 5/120 [00:21<08:17,  4.33s/it]Filtering on model accuracy:   5%|▌         | 6/120 [00:26<08:56,  4.71s/it]Filtering on model accuracy:   6%|▌         | 7/120 [00:31<08:49,  4.69s/it]Filtering on model accuracy:   7%|▋         | 8/120 [00:35<08:24,  4.50s/it]Filtering on model accuracy:   8%|▊         | 9/120 [00:41<09:01,  4.88s/it]Filtering on model accuracy:   8%|▊         | 10/120 [00:45<08:38,  4.71s/it]Filtering on model accuracy:   9%|▉         | 11/120 [00:48<07:43,  4.25s/it]Filtering on model accuracy:  10%|█         | 12/120 [00:52<07:32,  4.19s/it]Filtering on model accuracy:  11%|█         | 13/120 [00:56<07:00,  3.93s/it]Filtering on model accuracy:  12%|█▏        | 14/120 [00:59<06:39,  3.77s/it]Filtering on model accuracy:  12%|█▎        | 15/120 [01:04<07:17,  4.17s/it]Filtering on model accuracy:  13%|█▎        | 16/120 [01:09<07:29,  4.32s/it]Filtering on model accuracy:  14%|█▍        | 17/120 [01:14<07:44,  4.51s/it]Filtering on model accuracy:  15%|█▌        | 18/120 [01:18<07:20,  4.31s/it]Filtering on model accuracy:  16%|█▌        | 19/120 [01:22<07:07,  4.23s/it]Filtering on model accuracy:  17%|█▋        | 20/120 [01:27<07:29,  4.50s/it]Filtering on model accuracy:  18%|█▊        | 21/120 [01:30<06:58,  4.23s/it]Filtering on model accuracy:  18%|█▊        | 22/120 [01:35<06:54,  4.22s/it]Filtering on model accuracy:  19%|█▉        | 23/120 [01:37<06:11,  3.83s/it]Filtering on model accuracy:  20%|██        | 24/120 [01:41<05:51,  3.66s/it]Filtering on model accuracy:  21%|██        | 25/120 [01:46<06:47,  4.29s/it]Filtering on model accuracy:  22%|██▏       | 26/120 [01:51<06:52,  4.38s/it]Filtering on model accuracy:  22%|██▎       | 27/120 [01:56<06:57,  4.49s/it]Filtering on model accuracy:  23%|██▎       | 28/120 [01:59<06:08,  4.01s/it]Filtering on model accuracy:  24%|██▍       | 29/120 [02:02<05:37,  3.71s/it]Filtering on model accuracy:  25%|██▌       | 30/120 [02:06<05:52,  3.92s/it]Filtering on model accuracy:  26%|██▌       | 31/120 [02:09<05:19,  3.58s/it]Filtering on model accuracy:  27%|██▋       | 32/120 [02:13<05:21,  3.66s/it]Filtering on model accuracy:  28%|██▊       | 33/120 [02:17<05:26,  3.76s/it]Filtering on model accuracy:  28%|██▊       | 34/120 [02:19<04:57,  3.46s/it]Filtering on model accuracy:  29%|██▉       | 35/120 [02:23<05:03,  3.57s/it]Filtering on model accuracy:  30%|███       | 36/120 [02:26<04:43,  3.37s/it]Filtering on model accuracy:  31%|███       | 37/120 [02:29<04:32,  3.28s/it]Filtering on model accuracy:  32%|███▏      | 38/120 [02:32<04:24,  3.23s/it]Filtering on model accuracy:  32%|███▎      | 39/120 [02:36<04:27,  3.30s/it]Filtering on model accuracy:  33%|███▎      | 40/120 [02:39<04:18,  3.24s/it]  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  34%|███▍      | 41/120 [02:43<04:37,  3.52s/it]Filtering on model accuracy:  35%|███▌      | 42/120 [02:47<04:39,  3.58s/it]Filtering on model accuracy:  36%|███▌      | 43/120 [02:52<05:02,  3.92s/it]Filtering on model accuracy:  37%|███▋      | 44/120 [02:56<05:07,  4.05s/it]Filtering on model accuracy:  38%|███▊      | 45/120 [03:00<04:59,  4.00s/it]Filtering on model accuracy:  38%|███▊      | 46/120 [03:02<04:26,  3.60s/it]Filtering on model accuracy:  39%|███▉      | 47/120 [03:05<04:02,  3.33s/it]Filtering on model accuracy:  40%|████      | 48/120 [03:08<03:38,  3.04s/it]Filtering on model accuracy:  41%|████      | 49/120 [03:12<04:02,  3.41s/it]Filtering on model accuracy:  42%|████▏     | 50/120 [03:15<04:03,  3.48s/it]Filtering on model accuracy:  42%|████▎     | 51/120 [03:19<03:51,  3.36s/it]Filtering on model accuracy:  43%|████▎     | 52/120 [03:22<03:40,  3.25s/it]Filtering on model accuracy:  44%|████▍     | 53/120 [03:25<03:32,  3.17s/it]Filtering on model accuracy:  45%|████▌     | 54/120 [03:28<03:33,  3.23s/it]Filtering on model accuracy:  46%|████▌     | 55/120 [03:31<03:23,  3.13s/it]Filtering on model accuracy:  47%|████▋     | 56/120 [03:34<03:15,  3.05s/it]Filtering on model accuracy:  48%|████▊     | 57/120 [03:37<03:12,  3.05s/it]Filtering on model accuracy:  48%|████▊     | 58/120 [03:40<03:05,  2.99s/it]Filtering on model accuracy:  49%|████▉     | 59/120 [03:42<02:58,  2.92s/it]Filtering on model accuracy:  50%|█████     | 60/120 [03:45<02:54,  2.91s/it]Filtering on model accuracy:  51%|█████     | 61/120 [03:48<02:53,  2.94s/it]Filtering on model accuracy:  52%|█████▏    | 62/120 [03:51<02:40,  2.77s/it]Filtering on model accuracy:  52%|█████▎    | 63/120 [03:53<02:39,  2.80s/it]Filtering on model accuracy:  53%|█████▎    | 64/120 [03:59<03:25,  3.68s/it]Filtering on model accuracy:  54%|█████▍    | 65/120 [04:02<03:10,  3.47s/it]Filtering on model accuracy:  55%|█████▌    | 66/120 [04:05<02:58,  3.30s/it]Filtering on model accuracy:  56%|█████▌    | 67/120 [04:08<02:48,  3.18s/it]Filtering on model accuracy:  57%|█████▋    | 68/120 [04:12<02:57,  3.42s/it]Filtering on model accuracy:  57%|█████▊    | 69/120 [04:15<02:46,  3.26s/it]Filtering on model accuracy:  58%|█████▊    | 70/120 [04:18<02:37,  3.15s/it]Filtering on model accuracy:  59%|█████▉    | 71/120 [04:21<02:29,  3.05s/it]Filtering on model accuracy:  60%|██████    | 72/120 [04:24<02:29,  3.12s/it]Filtering on model accuracy:  61%|██████    | 73/120 [04:27<02:28,  3.17s/it]Filtering on model accuracy:  62%|██████▏   | 74/120 [04:31<02:34,  3.36s/it]Filtering on model accuracy:  62%|██████▎   | 75/120 [04:35<02:38,  3.53s/it]Filtering on model accuracy:  63%|██████▎   | 76/120 [04:38<02:29,  3.39s/it]Filtering on model accuracy:  64%|██████▍   | 77/120 [04:41<02:26,  3.41s/it]Filtering on model accuracy:  65%|██████▌   | 78/120 [04:44<02:17,  3.27s/it]Filtering on model accuracy:  66%|██████▌   | 79/120 [04:47<02:11,  3.20s/it]Filtering on model accuracy:  67%|██████▋   | 80/120 [04:51<02:10,  3.27s/it]Filtering on model accuracy:  68%|██████▊   | 81/120 [04:54<02:11,  3.38s/it]
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  68%|██████▊   | 82/120 [04:57<02:05,  3.29s/it]Filtering on model accuracy:  69%|██████▉   | 83/120 [05:00<01:57,  3.17s/it]Filtering on model accuracy:  70%|███████   | 84/120 [05:04<01:58,  3.29s/it]Filtering on model accuracy:  71%|███████   | 85/120 [05:07<01:49,  3.13s/it]Filtering on model accuracy:  72%|███████▏  | 86/120 [05:10<01:52,  3.32s/it]Filtering on model accuracy:  72%|███████▎  | 87/120 [05:13<01:46,  3.22s/it]Filtering on model accuracy:  73%|███████▎  | 88/120 [05:16<01:37,  3.06s/it]Filtering on model accuracy:  74%|███████▍  | 89/120 [05:19<01:32,  3.00s/it]Filtering on model accuracy:  75%|███████▌  | 90/120 [05:22<01:29,  2.98s/it]Filtering on model accuracy:  76%|███████▌  | 91/120 [05:24<01:21,  2.81s/it]Filtering on model accuracy:  77%|███████▋  | 92/120 [05:29<01:30,  3.22s/it]Filtering on model accuracy:  78%|███████▊  | 93/120 [05:31<01:24,  3.13s/it]Filtering on model accuracy:  78%|███████▊  | 94/120 [05:35<01:21,  3.14s/it]Filtering on model accuracy:  79%|███████▉  | 95/120 [05:37<01:16,  3.07s/it]Filtering on model accuracy:  80%|████████  | 96/120 [05:40<01:08,  2.86s/it]Filtering on model accuracy:  81%|████████  | 97/120 [05:42<01:02,  2.71s/it]Filtering on model accuracy:  82%|████████▏ | 98/120 [05:45<00:57,  2.61s/it]Filtering on model accuracy:  82%|████████▎ | 99/120 [05:49<01:06,  3.19s/it]Filtering on model accuracy:  83%|████████▎ | 100/120 [05:52<01:02,  3.11s/it]Filtering on model accuracy:  84%|████████▍ | 101/120 [05:55<00:58,  3.07s/it]Filtering on model accuracy:  85%|████████▌ | 102/120 [05:58<00:54,  3.02s/it]Filtering on model accuracy:  86%|████████▌ | 103/120 [06:03<01:00,  3.59s/it]Filtering on model accuracy:  87%|████████▋ | 104/120 [06:06<00:54,  3.39s/it]Filtering on model accuracy:  88%|████████▊ | 105/120 [06:09<00:48,  3.22s/it]Filtering on model accuracy:  88%|████████▊ | 106/120 [06:11<00:43,  3.11s/it]Filtering on model accuracy:  89%|████████▉ | 107/120 [06:16<00:44,  3.41s/it]Filtering on model accuracy:  90%|█████████ | 108/120 [06:19<00:39,  3.28s/it]Filtering on model accuracy:  91%|█████████ | 109/120 [06:22<00:35,  3.27s/it]Filtering on model accuracy:  92%|█████████▏| 110/120 [06:25<00:31,  3.15s/it]Filtering on model accuracy:  92%|█████████▎| 111/120 [06:29<00:30,  3.44s/it]Filtering on model accuracy:  93%|█████████▎| 112/120 [06:32<00:26,  3.33s/it]Filtering on model accuracy:  94%|█████████▍| 113/120 [06:35<00:22,  3.17s/it]Filtering on model accuracy:  95%|█████████▌| 114/120 [06:37<00:17,  2.92s/it]Filtering on model accuracy:  96%|█████████▌| 115/120 [06:39<00:13,  2.77s/it]Filtering on model accuracy:  97%|█████████▋| 116/120 [06:42<00:10,  2.67s/it]Filtering on model accuracy:  98%|█████████▊| 117/120 [06:45<00:08,  2.67s/it]Filtering on model accuracy:  98%|█████████▊| 118/120 [06:50<00:07,  3.51s/it]Filtering on model accuracy:  99%|█████████▉| 119/120 [06:53<00:03,  3.42s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:57<00:00,  3.54s/it]Filtering on model accuracy: 100%|██████████| 120/120 [06:57<00:00,  3.48s/it]
+
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  reordered: 0/120 passed filter
+Filtering on model accuracy:   0%|          | 0/120 [00:00<?, ?it/s]Filtering on model accuracy:   1%|          | 1/120 [00:03<07:18,  3.68s/it]Filtering on model accuracy:   2%|▏         | 2/120 [00:07<07:09,  3.64s/it]Filtering on model accuracy:   2%|▎         | 3/120 [00:10<06:46,  3.48s/it]Filtering on model accuracy:   3%|▎         | 4/120 [00:13<06:37,  3.43s/it]Filtering on model accuracy:   4%|▍         | 5/120 [00:17<06:23,  3.34s/it]Filtering on model accuracy:   5%|▌         | 6/120 [00:20<06:11,  3.26s/it]Filtering on model accuracy:   6%|▌         | 7/120 [00:22<05:48,  3.08s/it]Filtering on model accuracy:   7%|▋         | 8/120 [00:25<05:26,  2.91s/it]Filtering on model accuracy:   8%|▊         | 9/120 [00:28<05:20,  2.89s/it]Filtering on model accuracy:   8%|▊         | 10/120 [00:30<05:09,  2.82s/it]Filtering on model accuracy:   9%|▉         | 11/120 [00:33<04:56,  2.72s/it]Filtering on model accuracy:  10%|█         | 12/120 [00:36<04:49,  2.68s/it]Filtering on model accuracy:  11%|█         | 13/120 [00:38<04:36,  2.58s/it]Filtering on model accuracy:  12%|█▏        | 14/120 [00:41<04:55,  2.79s/it]Filtering on model accuracy:  12%|█▎        | 15/120 [00:44<05:00,  2.87s/it]Filtering on model accuracy:  13%|█▎        | 16/120 [00:47<05:01,  2.90s/it]Filtering on model accuracy:  14%|█▍        | 17/120 [00:50<04:54,  2.86s/it]Filtering on model accuracy:  15%|█▌        | 18/120 [00:53<05:00,  2.95s/it]Filtering on model accuracy:  16%|█▌        | 19/120 [00:56<05:00,  2.98s/it]Filtering on model accuracy:  17%|█▋        | 20/120 [00:59<04:54,  2.95s/it]Filtering on model accuracy:  18%|█▊        | 21/120 [01:02<04:59,  3.03s/it]Filtering on model accuracy:  18%|█▊        | 22/120 [01:05<04:49,  2.95s/it]Filtering on model accuracy:  19%|█▉        | 23/120 [01:08<04:48,  2.97s/it]Filtering on model accuracy:  20%|██        | 24/120 [01:11<04:34,  2.86s/it]Filtering on model accuracy:  21%|██        | 25/120 [01:14<04:33,  2.88s/it]Filtering on model accuracy:  22%|██▏       | 26/120 [01:16<04:29,  2.87s/it]Filtering on model accuracy:  22%|██▎       | 27/120 [01:19<04:15,  2.75s/it]Filtering on model accuracy:  23%|██▎       | 28/120 [01:21<04:05,  2.67s/it]Filtering on model accuracy:  24%|██▍       | 29/120 [01:24<03:57,  2.61s/it]Filtering on model accuracy:  25%|██▌       | 30/120 [01:26<03:50,  2.56s/it]Filtering on model accuracy:  26%|██▌       | 31/120 [01:29<03:45,  2.54s/it]Filtering on model accuracy:  27%|██▋       | 32/120 [01:31<03:41,  2.52s/it]Filtering on model accuracy:  28%|██▊       | 33/120 [01:34<03:38,  2.51s/it]Filtering on model accuracy:  28%|██▊       | 34/120 [01:36<03:41,  2.58s/it]Filtering on model accuracy:  29%|██▉       | 35/120 [01:39<03:38,  2.56s/it]Filtering on model accuracy:  30%|███       | 36/120 [01:41<03:31,  2.52s/it]Filtering on model accuracy:  31%|███       | 37/120 [01:44<03:36,  2.60s/it]Filtering on model accuracy:  32%|███▏      | 38/120 [01:47<03:33,  2.61s/it]Filtering on model accuracy:  32%|███▎      | 39/120 [01:50<03:38,  2.70s/it]Filtering on model accuracy:  33%|███▎      | 40/120 [01:53<03:44,  2.81s/it]  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  34%|███▍      | 41/120 [01:56<03:40,  2.79s/it]Filtering on model accuracy:  35%|███▌      | 42/120 [01:59<03:43,  2.87s/it]Filtering on model accuracy:  36%|███▌      | 43/120 [02:02<03:45,  2.93s/it]Filtering on model accuracy:  37%|███▋      | 44/120 [02:04<03:38,  2.88s/it]Filtering on model accuracy:  38%|███▊      | 45/120 [02:07<03:37,  2.90s/it]Filtering on model accuracy:  38%|███▊      | 46/120 [02:10<03:29,  2.83s/it]Filtering on model accuracy:  39%|███▉      | 47/120 [02:13<03:28,  2.86s/it]Filtering on model accuracy:  40%|████      | 48/120 [02:16<03:20,  2.79s/it]Filtering on model accuracy:  41%|████      | 49/120 [02:18<03:19,  2.80s/it]Filtering on model accuracy:  42%|████▏     | 50/120 [02:21<03:09,  2.71s/it]Filtering on model accuracy:  42%|████▎     | 51/120 [02:23<03:01,  2.63s/it]Filtering on model accuracy:  43%|████▎     | 52/120 [02:26<02:53,  2.56s/it]Filtering on model accuracy:  44%|████▍     | 53/120 [02:28<02:48,  2.52s/it]Filtering on model accuracy:  45%|████▌     | 54/120 [02:31<02:52,  2.61s/it]Filtering on model accuracy:  46%|████▌     | 55/120 [02:34<02:48,  2.59s/it]Filtering on model accuracy:  47%|████▋     | 56/120 [02:36<02:48,  2.63s/it]Filtering on model accuracy:  48%|████▊     | 57/120 [02:39<02:45,  2.62s/it]Filtering on model accuracy:  48%|████▊     | 58/120 [02:42<02:47,  2.71s/it]Filtering on model accuracy:  49%|████▉     | 59/120 [02:45<02:47,  2.75s/it]Filtering on model accuracy:  50%|█████     | 60/120 [02:47<02:40,  2.68s/it]Filtering on model accuracy:  51%|█████     | 61/120 [02:50<02:41,  2.74s/it]Filtering on model accuracy:  52%|█████▏    | 62/120 [02:53<02:39,  2.75s/it]Filtering on model accuracy:  52%|█████▎    | 63/120 [02:56<02:39,  2.80s/it]Filtering on model accuracy:  53%|█████▎    | 64/120 [03:05<04:21,  4.67s/it]Filtering on model accuracy:  54%|█████▍    | 65/120 [03:08<03:49,  4.17s/it]Filtering on model accuracy:  55%|█████▌    | 66/120 [03:11<03:23,  3.77s/it]Filtering on model accuracy:  56%|█████▌    | 67/120 [03:13<03:04,  3.47s/it]Filtering on model accuracy:  57%|█████▋    | 68/120 [03:17<03:01,  3.50s/it]Filtering on model accuracy:  57%|█████▊    | 69/120 [03:20<02:46,  3.27s/it]Filtering on model accuracy:  58%|█████▊    | 70/120 [03:22<02:36,  3.13s/it]Filtering on model accuracy:  59%|█████▉    | 71/120 [03:26<02:31,  3.09s/it]Filtering on model accuracy:  60%|██████    | 72/120 [03:28<02:19,  2.91s/it]Filtering on model accuracy:  61%|██████    | 73/120 [03:30<02:10,  2.78s/it]Filtering on model accuracy:  62%|██████▏   | 74/120 [03:33<02:05,  2.72s/it]Filtering on model accuracy:  62%|██████▎   | 75/120 [03:36<02:00,  2.67s/it]Filtering on model accuracy:  63%|██████▎   | 76/120 [03:38<01:53,  2.58s/it]Filtering on model accuracy:  64%|██████▍   | 77/120 [03:40<01:48,  2.51s/it]Filtering on model accuracy:  65%|██████▌   | 78/120 [03:45<02:13,  3.19s/it]Filtering on model accuracy:  66%|██████▌   | 79/120 [03:48<02:08,  3.13s/it]Filtering on model accuracy:  67%|██████▋   | 80/120 [03:52<02:13,  3.33s/it]Filtering on model accuracy:  68%|██████▊   | 81/120 [03:56<02:22,  3.64s/it]
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.Filtering on model accuracy:  68%|██████▊   | 82/120 [03:59<02:11,  3.45s/it]Filtering on model accuracy:  69%|██████▉   | 83/120 [04:03<02:11,  3.57s/it]Filtering on model accuracy:  70%|███████   | 84/120 [04:07<02:16,  3.80s/it]Filtering on model accuracy:  71%|███████   | 85/120 [04:11<02:07,  3.63s/it]Filtering on model accuracy:  72%|███████▏  | 86/120 [04:14<01:56,  3.42s/it]Filtering on model accuracy:  72%|███████▎  | 87/120 [04:17<01:52,  3.41s/it]Filtering on model accuracy:  73%|███████▎  | 88/120 [04:19<01:40,  3.13s/it]Filtering on model accuracy:  74%|███████▍  | 89/120 [04:22<01:30,  2.91s/it]Filtering on model accuracy:  75%|███████▌  | 90/120 [04:24<01:22,  2.76s/it]Filtering on model accuracy:  76%|███████▌  | 91/120 [04:28<01:25,  2.95s/it]Filtering on model accuracy:  77%|███████▋  | 92/120 [04:31<01:22,  2.95s/it]Filtering on model accuracy:  78%|███████▊  | 93/120 [04:33<01:18,  2.89s/it]Filtering on model accuracy:  78%|███████▊  | 94/120 [04:37<01:22,  3.16s/it]Filtering on model accuracy:  79%|███████▉  | 95/120 [04:40<01:14,  2.96s/it]Filtering on model accuracy:  80%|████████  | 96/120 [04:42<01:06,  2.78s/it]Filtering on model accuracy:  81%|████████  | 97/120 [04:44<01:01,  2.66s/it]Filtering on model accuracy:  82%|████████▏ | 98/120 [04:47<00:56,  2.59s/it]Filtering on model accuracy:  82%|████████▎ | 99/120 [04:49<00:52,  2.52s/it]Filtering on model accuracy:  83%|████████▎ | 100/120 [04:52<00:50,  2.52s/it]Filtering on model accuracy:  84%|████████▍ | 101/120 [04:54<00:47,  2.48s/it]Filtering on model accuracy:  85%|████████▌ | 102/120 [04:56<00:43,  2.44s/it]Filtering on model accuracy:  86%|████████▌ | 103/120 [04:59<00:41,  2.42s/it]Filtering on model accuracy:  87%|████████▋ | 104/120 [05:01<00:38,  2.43s/it]Filtering on model accuracy:  88%|████████▊ | 105/120 [05:04<00:36,  2.41s/it]Filtering on model accuracy:  88%|████████▊ | 106/120 [05:06<00:33,  2.39s/it]Filtering on model accuracy:  89%|████████▉ | 107/120 [05:09<00:33,  2.60s/it]Filtering on model accuracy:  90%|█████████ | 108/120 [05:11<00:30,  2.52s/it]Filtering on model accuracy:  91%|█████████ | 109/120 [05:14<00:27,  2.47s/it]Filtering on model accuracy:  92%|█████████▏| 110/120 [05:16<00:24,  2.44s/it]Filtering on model accuracy:  92%|█████████▎| 111/120 [05:18<00:21,  2.42s/it]Filtering on model accuracy:  93%|█████████▎| 112/120 [05:21<00:19,  2.40s/it]Filtering on model accuracy:  94%|█████████▍| 113/120 [05:23<00:16,  2.41s/it]Filtering on model accuracy:  95%|█████████▌| 114/120 [05:26<00:14,  2.39s/it]Filtering on model accuracy:  96%|█████████▌| 115/120 [05:28<00:11,  2.39s/it]Filtering on model accuracy:  97%|█████████▋| 116/120 [05:31<00:10,  2.62s/it]Filtering on model accuracy:  98%|█████████▊| 117/120 [05:34<00:07,  2.55s/it]Filtering on model accuracy:  98%|█████████▊| 118/120 [05:36<00:04,  2.49s/it]Filtering on model accuracy:  99%|█████████▉| 119/120 [05:39<00:02,  2.54s/it]Filtering on model accuracy: 100%|██████████| 120/120 [05:41<00:00,  2.48s/it]Filtering on model accuracy: 100%|██████████| 120/120 [05:41<00:00,  2.84s/it]
+
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  Filter error: Traceback (most recent call last):
+
+RemoteException: Model is not pinned and hotswapping is not supported for this API key. See https://nnsight.net/status/ for a list of scheduled models.
+  distractor: 0/120 passed filter
+
+============================================================
+[22:30:45] Condition: standard (0 pairs)
+============================================================
+  answer_pointer_L38: IIA=0.9341 (cached)
+  answer_pointer_L52: IIA=0.7438 (cached)
+  answer_pointer_L53: IIA=0.5725 (cached)
+
+============================================================
+[22:30:45] Condition: decoy (0 pairs)
+============================================================
+  answer_pointer_L38: IIA=0.7619 (cached)
+  answer_pointer_L52: IIA=0.6325 (cached)
+  answer_pointer_L53: IIA=0.4316 (cached)
+
+============================================================
+[22:30:45] Condition: reordered (0 pairs)
+============================================================
+  answer_pointer_L38: IIA=0.8838 (cached)
+  answer_pointer_L52: IIA=0.6380 (cached)
+  answer_pointer_L53: IIA=0.4406 (cached)
+
+============================================================
+[22:30:45] Condition: distractor (0 pairs)
+============================================================
+  answer_pointer_L38: IIA=0.9020 (cached)
+  answer_pointer_L52: IIA=0.7918 (cached)
+  answer_pointer_L53: IIA=0.4497 (cached)
+
+============================================================
+INTERPRETATION
+============================================================
+
+  answer_pointer_L38:
+    Standard IIA:     0.9341
+    Mean adversarial: 0.8492
+      decoy: 0.7619
+      reordered: 0.8838
+      distractor: 0.9020
+    Drop: 0.0849, ratio: 0.91
+    -> GENUINE BELIEF
+
+  answer_pointer_L52:
+    Standard IIA:     0.7438
+    Mean adversarial: 0.6874
+      decoy: 0.6325
+      reordered: 0.6380
+      distractor: 0.7918
+    Drop: 0.0564, ratio: 0.92
+    -> GENUINE BELIEF
+
+  answer_pointer_L53:
+    Standard IIA:     0.5725
+    Mean adversarial: 0.4406
+      decoy: 0.4316
+      reordered: 0.4406
+      distractor: 0.4497
+    Drop: 0.1319, ratio: 0.77
+    -> GENUINE BELIEF
+
+[22:30:45] Saved to /Users/elliottower/Documents/GitHub/lookback-validity-audit/results/surface_heuristic/summary.json

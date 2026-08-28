@@ -1,0 +1,165 @@
+% SCAFFOLD B: "Subspaces encode entity bindings, not beliefs"
+% Use if: E14 false-belief IIA < 0.30, E12 shows framing-invariance,
+%          E15 observability IIA < 0.30
+% Current data: UNLIKELY given E14 L38=0.975, but scaffold for completeness.
+%
+% This file contains ONLY the new/changed sections.
+% The existing paper (lookback_audit.tex) stays intact through Section 5.
+% Changes: new abstract, new Section 6 (Results), rewritten Section 7 (Discussion).
+
+%%% ---- UPDATED ABSTRACT ---- %%%
+
+% Mechanistic interpretability routinely labels causal findings with
+% vocabulary borrowed from cognitive science without testing whether the
+% evidence supports the specificity these labels imply. We audit a
+% three-part ``lookback mechanism'' reported to track characters' beliefs
+% in Llama-3.1-70B-Instruct through pointer dereference implemented via
+% attention. A pre-registered validity assessment identifies six untested
+% assumptions, most critically that the paper's evaluation never tests
+% false beliefs: the story-generation code includes belief = reality for
+% every evaluated pair. We conduct 15 pre-registered experiments. The
+% subspaces survive shuffled-label and random-baseline controls,
+% confirming they capture genuine task-relevant structure. However, they
+% are framing-invariant (belief, action-recall, and reality questions
+% produce matched IIA), fail to generalize to genuine false-belief
+% stories (IIA < 0.30 when belief $\neq$ reality), and show no transfer
+% to observability-mediated knowledge. We recharacterize the mechanism
+% as attention-mediated entity-state retrieval: the subspaces encode
+% ``what did this character put where?'' rather than ``what does this
+% character believe?'' The mechanism is real; the label overshoots.
+
+%%% ---- SECTION 6: RESULTS ---- %%%
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Positive controls and measurement validity (E1--E4)}
+
+% Same as Scaffold A — the positive controls and measurement validity
+% experiments don't depend on the belief-vs-binding question.
+% E1: positive control replicates
+% E2: shuffled labels beaten
+% E3: task specificity passes (echo=0, entity_tracking=0)
+% E4: surface heuristic results
+
+\subsection{Internal structure (E5--E9)}
+
+% Same structure as Scaffold A — these are architectural tests.
+
+\subsection{Specificity of the belief interpretation (E10--E11)}
+
+% E11 cross-task: L38 = 0.529 on factual recall becomes MORE important
+% in this version — it's evidence that L38 is a generic retrieval
+% mechanism, not belief-specific.
+
+\subsection{Belief-vs-binding dissociation (E12--E15)}
+\label{sec:dissociation}
+
+% E12: Question-framing control
+% - All framings produce matched IIA
+% - INTERPRETATION: The subspace encodes entity-state bindings.
+%   "What does X believe Y contains?" and "What did X put in Y?"
+%   and "What is inside Y?" all activate the same subspace equally.
+%   The belief framing adds no explanatory power.
+
+% E13: Distractor insertion
+% - If IIA drops with distractors: positional features
+% - If IIA preserved: semantic binding (supports entity binding)
+
+% E14: True false-belief test  *** KEY EXPERIMENT ***
+% - Behavioral accuracy: low (< 0.30) OR
+%   Behavioral accuracy > 0.50 but IIA < 0.30
+% - INTERPRETATION (if behavioral accuracy > 0.50 AND IIA < 0.30):
+%   "The subspace trained on entity-binding does not generalize to
+%   false beliefs. Combined with E12 showing framing-invariance,
+%   this supports the recharacterization: the subspace encodes
+%   character-state bindings that happen to align with beliefs in
+%   the paper's task, but does not encode epistemic state per se."
+
+% E15: Observability dissociation  *** KEY EXPERIMENT ***
+% - Observed-other-container IIA < 0.30
+% - Self-container control matches baseline
+% - INTERPRETATION: "The subspace only encodes self-action bindings.
+%   It tracks 'what did I put where?' but not 'what did I see
+%   someone else put where?' — the latter requires modeling
+%   observability, which the subspace does not capture."
+
+% ---- KEY SYNTHESIS ----
+% 1. Framing-invariant (E12): not belief-specific
+% 2. Fails on false beliefs (E14): not epistemic
+% 3. Fails on observability (E15): not tracking who-sees-what
+% 4. Partially transfers to factual recall (E11): generic retrieval
+%
+% The subspace encodes "what entity is associated with what state
+% at what location" — entity-state binding. In the paper's task,
+% this happens to align with belief because belief = reality.
+% The "belief tracking" label overshoots the mechanism's scope.
+
+\subsection{Summary table}
+
+% TABLE: experiment | subspace | prediction | result | verdict
+% E1-E4: green (measurement validity confirmed)
+% E5-E9: mixed
+% E10-E11: yellow (L38 partially generic)
+% E12: red for belief interpretation (framing-invariant)
+% E13: green or yellow
+% E14: red (fails on false beliefs)
+% E15: red (fails on observability)
+
+
+%%% ---- SECTION 7: DISCUSSION (REWRITTEN) ---- %%%
+
+\section{Discussion}
+\label{sec:discussion_v2}
+
+% PARAGRAPH 1: State the main finding
+% The lookback subspaces are real — they survive every measurement
+% control. The interpretive label is wrong — they do not track beliefs.
+
+% PARAGRAPH 2: What the subspaces actually do
+% The subspaces encode character-state associations: which character
+% put which drink in which container. This is entity binding, a
+% well-studied phenomenon in cognitive science and transformer
+% interpretability. The paper's CausalToM task always queries
+% characters about their own containers, so entity binding and belief
+% produce identical answers. The false-belief test (E14) breaks this
+% alignment and reveals the subspace tracks the binding, not the belief.
+
+% PARAGRAPH 3: Why this matters
+% The mechanism is genuinely interesting — it shows the model has
+% structured representations for entity-state associations that can
+% be isolated to specific layer ranges and low-rank subspaces. The
+% contribution is real. The issue is referential inflation: calling
+% this "belief tracking" imports cognitive specificity the evidence
+% does not support. A more accurate characterization — "entity-state
+% binding via attention-mediated retrieval" — preserves the technical
+% contribution while avoiding overclaimed cognitive parallels.
+
+% PARAGRAPH 4: Implications for mechanistic interpretability
+% This case study illustrates a general pattern: interchange
+% interventions identify WHAT information a subspace carries but not
+% HOW the model uses it. A subspace achieving high IIA on a task
+% demonstrates causal relevance to the task. But the task determines
+% what the subspace is tested for — and a task where belief = reality
+% cannot distinguish belief from entity binding. The interpretive
+% label must be calibrated to the most parsimonious explanation
+% consistent with the full experimental battery, not the most
+% cognitively impressive one consistent with the original task.
+
+% PARAGRAPH 5: Verdict
+% We maintain the "Causally Suggestive" rating. The subspaces are
+% causally relevant to the task (confirmed by E1, E2, E7). The
+% mechanism label requires correction from "belief tracking" to
+% "entity-state retrieval." The three-stage architecture (binding →
+% answer → visibility) is better characterized as entity encoding →
+% entity retrieval → input gating.
+
+% PARAGRAPH 6: Limitations
+% Same as Scaffold A
+
+\paragraph{Contracted claim (revised).}
+% "Belief tracking via pointer dereference" should be contracted to
+% "entity-state retrieval via attention-mediated subspace routing."
+% The pointer metaphor is apt — the subspace does carry a reference
+% from the question to the relevant entity-state pair. But the
+% referent is an entity-state binding, not an epistemic state.

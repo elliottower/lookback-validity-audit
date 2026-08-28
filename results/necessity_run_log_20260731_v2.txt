@@ -1,0 +1,2676 @@
+[22:28:38] Necessity test (zero-ablation)
+[22:28:38] Seed: 42, N eval: 80
+[22:28:38] Generating counterfactual pairs...
+[22:29:17] Filtering answer pairs...
+Filtering on model accuracy:   0%|          | 0/240 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   0%|          | 1/240 [00:14<56:21, 14.15s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   1%|          | 2/240 [00:21<39:35,  9.98s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   1%|▏         | 3/240 [00:33<43:42, 11.07s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 4/240 [00:41<38:05,  9.69s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 5/240 [00:53<41:44, 10.66s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:   2%|▎         | 6/240 [01:04<42:32, 10.91s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 7/240 [01:44<1:18:41, 20.27s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 8/240 [02:02<1:15:56, 19.64s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 9/240 [02:11<1:02:59, 16.36s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:05<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:05<00:00]
+Filtering on model accuracy:   4%|▍         | 10/240 [02:32<1:08:00, 17.74s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   5%|▍         | 11/240 [02:45<1:01:21, 16.08s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 12/240 [03:02<1:02:39, 16.49s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 13/240 [03:15<58:46, 15.54s/it]  
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   6%|▌         | 14/240 [03:27<53:58, 14.33s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   6%|▋         | 15/240 [04:04<1:19:19, 21.15s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 16/240 [04:14<1:06:30, 17.81s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 17/240 [04:25<59:05, 15.90s/it]  
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 18/240 [04:37<54:37, 14.77s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A
+⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 19/240 [04:46<47:43, 12.96s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 20/240 [04:57<44:48, 12.22s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 21/240 [05:12<47:45, 13.08s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 22/240 [05:24<46:08, 12.70s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  10%|▉         | 23/240 [05:40<50:23, 13.93s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 24/240 [05:53<48:11, 13.39s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A
+⬇ Downloading: 100%|██████████| 525/525 [00:02<00:00][A⬇ Downloading: 100%|██████████| 525/525 [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 25/240 [06:03<44:45, 12.49s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█         | 26/240 [06:26<55:26, 15.54s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█▏        | 27/240 [06:38<51:59, 14.65s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 28/240 [06:46<44:28, 12.59s/it]Filtering on model accuracy:  12%|█▏        | 29/240 [07:21<1:07:34, 19.21s/it]  Filter error: _ssl.c:993: The handshake operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  12%|█▎        | 30/240 [07:34<1:00:53, 17.40s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+Exception in thread Thread-663 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+packet queue is empty, aborting
+/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[23:02:16] Necessity test (zero-ablation)
+[23:02:16] Seed: 42, N eval: 80
+[23:02:16] Generating counterfactual pairs...
+[23:02:27] Filtering answer pairs...
+Filtering on model accuracy:   0%|          | 0/240 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   0%|          | 1/240 [00:07<29:34,  7.43s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   1%|          | 2/240 [00:13<27:25,  6.91s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   1%|▏         | 3/240 [00:21<28:17,  7.16s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A
+⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 4/240 [00:28<27:59,  7.12s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 5/240 [00:41<36:10,  9.24s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:   2%|▎         | 6/240 [00:47<31:37,  8.11s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 7/240 [00:54<30:04,  7.75s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 8/240 [01:00<28:24,  7.35s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 9/240 [01:05<25:04,  6.51s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 10/240 [01:21<35:51,  9.35s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   5%|▍         | 11/240 [01:26<31:18,  8.20s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 12/240 [01:35<31:31,  8.30s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 13/240 [01:45<33:54,  8.96s/it]Filtering on model accuracy:   6%|▌         | 14/240 [01:52<31:36,  8.39s/it]  Filter error: Connection error
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   6%|▋         | 15/240 [02:01<31:34,  8.42s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 16/240 [02:38<1:03:57, 17.13s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 17/240 [02:46<53:05, 14.28s/it]  
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 18/240 [02:53<44:55, 12.14s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 19/240 [03:00<38:37, 10.49s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 20/240 [03:11<39:26, 10.76s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 21/240 [03:19<35:56,  9.85s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 22/240 [03:48<56:16, 15.49s/it]  Filter error: TLS/SSL connection has been closed (EOF) (_ssl.c:1010)
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  10%|▉         | 23/240 [03:54<46:43, 12.92s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 24/240 [04:02<40:52, 11.35s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 25/240 [04:08<34:35,  9.65s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█         | 26/240 [04:19<35:32,  9.96s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█▏        | 27/240 [04:24<30:54,  8.71s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A
+⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 28/240 [04:33<30:40,  8.68s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 29/240 [04:40<29:15,  8.32s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  12%|█▎        | 30/240 [04:49<29:42,  8.49s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A
+⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 31/240 [04:59<31:07,  8.94s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 32/240 [05:13<35:54, 10.36s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 33/240 [05:23<34:56, 10.13s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 34/240 [05:31<33:16,  9.69s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  15%|█▍        | 35/240 [05:39<31:02,  9.08s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:02<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 36/240 [05:52<35:21, 10.40s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 37/240 [06:05<37:11, 10.99s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  16%|█▌        | 38/240 [06:10<31:28,  9.35s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  16%|█▋        | 39/240 [06:17<29:03,  8.67s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 40/240 [06:24<27:14,  8.17s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 41/240 [06:33<28:03,  8.46s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 42/240 [06:41<26:43,  8.10s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 43/240 [06:47<24:30,  7.47s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A
+⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 44/240 [06:53<23:02,  7.06s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 45/240 [07:02<25:27,  7.83s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 46/240 [07:12<27:01,  8.36s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  20%|█▉        | 47/240 [07:23<29:21,  9.13s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A
+⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  20%|██        | 48/240 [07:30<27:35,  8.62s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  20%|██        | 49/240 [07:36<24:33,  7.72s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  21%|██        | 50/240 [07:43<23:28,  7.41s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  21%|██▏       | 51/240 [07:49<22:02,  7.00s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 52/240 [08:00<26:21,  8.41s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 53/240 [08:06<23:59,  7.70s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▎       | 54/240 [08:13<22:27,  7.24s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 55/240 [08:17<19:34,  6.35s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 56/240 [08:22<18:44,  6.11s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  24%|██▍       | 57/240 [08:29<19:11,  6.29s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  24%|██▍       | 58/240 [08:39<21:50,  7.20s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▍       | 59/240 [08:45<20:50,  6.91s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▌       | 60/240 [08:50<19:41,  6.56s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▌       | 61/240 [08:57<19:19,  6.48s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  26%|██▌       | 62/240 [09:06<21:23,  7.21s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  26%|██▋       | 63/240 [09:14<21:50,  7.40s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  27%|██▋       | 64/240 [09:25<25:39,  8.74s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A
+⬇ Downloading: 100%|██████████| 521/521 [00:01<00:00][A⬇ Downloading: 100%|██████████| 521/521 [00:01<00:00]
+Filtering on model accuracy:  27%|██▋       | 65/240 [09:34<25:40,  8.80s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 66/240 [09:41<23:48,  8.21s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 67/240 [09:49<23:05,  8.01s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 68/240 [09:59<24:30,  8.55s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 69/240 [10:09<26:14,  9.21s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 70/240 [10:16<24:11,  8.54s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|██▉       | 71/240 [10:24<23:08,  8.21s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 72/240 [10:32<22:43,  8.12s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 73/240 [10:47<29:04, 10.45s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  31%|███       | 74/240 [10:54<25:21,  9.16s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  31%|███▏      | 75/240 [11:00<23:09,  8.42s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 76/240 [11:05<19:51,  7.27s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 77/240 [11:13<20:07,  7.41s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▎      | 78/240 [11:19<19:13,  7.12s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 79/240 [11:25<17:48,  6.63s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 80/240 [11:29<16:03,  6.02s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 81/240 [11:35<15:54,  6.00s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 82/240 [11:40<15:06,  5.74s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  35%|███▍      | 83/240 [11:47<15:43,  6.01s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  35%|███▌      | 84/240 [11:56<17:44,  6.82s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  35%|███▌      | 84/240 [12:03<22:23,  8.61s/it]
+[23:14:31] 80 answer pairs passed filter
+
+============================================================
+[23:14:31] binding_addr_payload_L34: L34, rank=3, ablation=all
+============================================================
+L34 zero-ablation (all):   0%|          | 0/80 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:18][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:10][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:07][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:06][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:04][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:04<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:06][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:07][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:07][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:06][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:05][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:06<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:07<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:07<00:02][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:08<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:08<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:10<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:03<00:56][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:11<01:35][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:20<01:47][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:27<01:39][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:43<01:39][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:52<02:52][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [01:03<02:52][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [01:10<02:54][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [01:23<02:54][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [01:25<02:39][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [01:38<02:18][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [01:48<01:52][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [01:55<01:24][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [02:13<01:24][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [02:23<01:49][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [02:43<01:49][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [03:09<02:22][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [03:23<02:22][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [04:03<02:36][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [04:23<02:36][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [04:38<02:03][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [04:53<02:03][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [05:13<01:30][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [05:33<01:30][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [05:43<00:53][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [05:53<00:53][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [06:11<00:19][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [06:20<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [06:20<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):   1%|▏         | 1/80 [08:48<11:36:08, 528.72s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:22][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:03<00:31][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:06<00:32][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:09<00:35][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:11<00:28][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:19<00:51][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:22<00:42][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:24<00:32][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:27<00:26][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:30<00:22][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:31<00:16][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:34<00:14][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:36<00:11][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:39<00:09][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:40<00:05][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:43<00:03][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:46<00:01][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:48<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:48<00:00]
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+L34 zero-ablation (all):   2%|▎         | 2/80 [10:03<5:40:10, 261.67s/it] 
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:12][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:04<00:40][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:09<00:52][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:11<00:42][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:14<00:35][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:20<00:45][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:21<00:33][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:24<00:28][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:25<00:21][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:29<00:21][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:31<00:18][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:33<00:13][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:35<00:10][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:37<00:07][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:38<00:05][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:40<00:03][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:43<00:01][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:45<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:45<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):   4%|▍         | 3/80 [11:23<3:49:16, 178.66s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:27][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:04<00:33][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:07<00:38][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:11<00:43][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:12<00:28][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:12<00:19][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:13<00:14][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:13<00:10][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:14<00:08][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:15<00:07][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:16<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:16<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:17<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:17<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:18<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:19<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:19<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:19<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:19<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:08][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:07][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:07][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:09][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:09][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:10][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:05<00:09][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:06<00:08][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:07<00:07][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:08<00:07][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:09<00:06][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:09<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:10<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:10<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:11<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:12<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:12<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:04][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+L34 zero-ablation (all):   5%|▌         | 4/80 [14:17<3:44:06, 176.92s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:04<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:06<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:05][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:09][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:07][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:06][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:09][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:05<00:09][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:05<00:08][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:06<00:07][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:07<00:06][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:07<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:08<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:08<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:09<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:09<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:10<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:11<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:11<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:11<00:00]
+L34 zero-ablation (all):   6%|▋         | 5/80 [16:57<3:33:33, 170.84s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:07][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:07][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:09<00:09][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:10<00:07][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:11<00:06][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:13<00:05][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:15<00:04][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:17<00:02][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:20<00:01][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:21<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:21<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):   8%|▊         | 6/80 [18:00<2:45:14, 133.98s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):   9%|▉         | 7/80 [18:38<2:05:04, 102.81s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:04][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:07][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:06][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:05<00:11][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:08<00:16][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:09<00:12][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:09<00:09][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:10<00:06][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:10<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:11<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:11<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:12<00:02][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:15<00:02][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:16<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:16<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:16<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  10%|█         | 8/80 [20:11<1:59:41, 99.75s/it] 
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:20][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:03<00:28][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:06<00:33][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:08<00:28][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:09<00:21][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:10<00:16][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:11<00:15][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:14<00:16][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:16<00:17][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:19<00:16][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:20<00:13][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:22<00:10][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:24<00:08][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:25<00:06][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:27<00:04][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:28<00:02][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:30<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:30<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:30<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  11%|█▏        | 9/80 [21:08<1:42:05, 86.27s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:02<00:40][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:05<00:43][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:07<00:36][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:08<00:27][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:11<00:26][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:12<00:22][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:16<00:26][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:19<00:25][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:21<00:19][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:22<00:16][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:25<00:16][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:27<00:12][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:28<00:08][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:29<00:05][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:30<00:03][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:32<00:02][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:33<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:33<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:33<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  12%|█▎        | 10/80 [22:12<1:32:38, 79.41s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:04][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:08<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:14][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:14][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:11][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:03<00:10][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:09][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:08][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:05<00:07][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:05<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:06<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:07<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:07<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:08<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+L34 zero-ablation (all):  14%|█▍        | 11/80 [24:46<1:57:27, 102.13s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:04][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:08<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:13<00:03][A⬇ Downloading:  45%|████▌     | 1.05M/2.31M [02:02<02:27]
+  Ablation error (attempt 2/3): ReadTimeout: The read operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:07][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:08][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:04<00:08][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:05<00:08][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:06<00:06][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:07<00:07][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:08<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:09<00:05][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:09<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:10<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:11<00:02][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:11<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:12<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00]
+L34 zero-ablation (all):  15%|█▌        | 12/80 [28:45<2:43:04, 143.89s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:07][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:06][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:05][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:06<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:07<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:08<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:06][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:06][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:06<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:07<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:08<00:04][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:09<00:03][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:10<00:02][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:11<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:12<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:12<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:12<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:13][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:11][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:12][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:03<00:11][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:04<00:10][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:09][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:06<00:09][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:07<00:10][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:08<00:08][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:08<00:06][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:09<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:10<00:05][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:11<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:12<00:03][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:12<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:13<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:13<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:14<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:14<00:00]
+L34 zero-ablation (all):  16%|█▋        | 13/80 [31:33<2:48:51, 151.22s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:06][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:06][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:06][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:07][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:07][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:06][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:07<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:08<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:09<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:10<00:03][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:10<00:02][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:11<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:12<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:07][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:08][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:14][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:03<00:11][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:10][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:08][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:05<00:09][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:06<00:08][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:07<00:07][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:08<00:06][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:08<00:05][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:09<00:04][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:10<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:11<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:12<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:12<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:13<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:14<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:14<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:10][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:14][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:03<00:13][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:04<00:13][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:05<00:10][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:06<00:08][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:06<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:06<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:07<00:04][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:07<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:08<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:09<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:09<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:10<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:10<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:11<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:11<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:11<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  18%|█▊        | 14/80 [34:19<2:51:09, 155.61s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:09][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:08][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:08][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  19%|█▉        | 15/80 [35:44<2:25:28, 134.28s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:09][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:10][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:08][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:06<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  20%|██        | 16/80 [36:25<1:53:27, 106.37s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  21%|██▏       | 17/80 [37:04<1:30:21, 86.06s/it] 
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+L34 zero-ablation (all):  22%|██▎       | 18/80 [39:21<1:44:49, 101.44s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:04][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:03][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:07<00:03][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:08<00:02][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:19][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:11][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:09][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:08][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:08][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:04<00:07][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:05<00:06][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:05<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:06<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:07<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:07<00:02][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:08<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:09<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:10<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+L34 zero-ablation (all):  24%|██▍       | 19/80 [41:58<1:59:51, 117.89s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:08][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:07][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:06][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:06][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:06<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:12][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:11][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:10][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:10][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:08][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:04<00:07][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:04<00:06][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:05<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:06<00:05][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:06<00:05][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:07<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:08<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:08<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:08<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:09<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:09<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00]
+L34 zero-ablation (all):  25%|██▌       | 20/80 [44:31<2:08:28, 128.47s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:04][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:03][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:08][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:10][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:10][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:08][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:07][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:06][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:04<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+L34 zero-ablation (all):  26%|██▋       | 21/80 [47:05<2:13:54, 136.18s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  28%|██▊       | 22/80 [48:30<1:56:43, 120.75s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  29%|██▉       | 23/80 [49:00<1:29:00, 93.69s/it] 
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:04<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:08][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:04][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:05][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:03][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:06<00:03][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:06<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+L34 zero-ablation (all):  30%|███       | 24/80 [51:24<1:41:24, 108.65s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:07][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:07][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:06][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:05][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:06<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:07<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:08<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:08<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:04][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:03][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:02][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:08<00:01][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:09<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:10<00:00]
+L34 zero-ablation (all):  31%|███▏      | 25/80 [54:00<1:52:45, 123.00s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  32%|███▎      | 26/80 [54:46<1:29:48, 99.78s/it] 
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:08][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:07][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:06][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:05][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:02][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:05<00:02][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:01][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:07<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+L34 zero-ablation (all):  34%|███▍      | 27/80 [57:05<1:38:32, 111.55s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  35%|███▌      | 28/80 [58:22<1:27:40, 101.16s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:01][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  36%|███▋      | 29/80 [59:50<1:22:45, 97.36s/it] 
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+L34 zero-ablation (all):  38%|███▊      | 30/80 [1:02:24<1:35:17, 114.35s/it]  Ablation error (attempt 3/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+  Ablation error (attempt 1/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+  Ablation error (attempt 2/3): WriteTimeout: The write operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  39%|███▉      | 31/80 [1:04:49<1:40:55, 123.58s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  40%|████      | 32/80 [1:05:34<1:19:54, 99.89s/it] 
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:15][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:12][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:09][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:04<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:05<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  41%|████▏     | 33/80 [1:06:22<1:06:04, 84.35s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:00<00:00][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  42%|████▎     | 34/80 [1:07:07<55:31, 72.42s/it]  
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  44%|████▍     | 35/80 [1:07:48<47:14, 63.00s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  45%|████▌     | 36/80 [1:08:36<42:54, 58.51s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+L34 zero-ablation (all):  46%|████▋     | 37/80 [1:09:07<36:08, 50.44s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  48%|████▊     | 38/80 [1:09:47<32:59, 47.13s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:01][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  49%|████▉     | 39/80 [1:10:23<29:55, 43.79s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  50%|█████     | 40/80 [1:10:52<26:11, 39.29s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:00<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:01<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  51%|█████▏    | 41/80 [1:11:32<25:44, 39.61s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:00<00:00][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  52%|█████▎    | 42/80 [1:12:05<23:54, 37.75s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  54%|█████▍    | 43/80 [1:12:38<22:24, 36.34s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  55%|█████▌    | 44/80 [1:13:08<20:33, 34.26s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+L34 zero-ablation (all):  56%|█████▋    | 45/80 [1:13:39<19:27, 33.35s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:01][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+L34 zero-ablation (all):  57%|█████▊    | 46/80 [1:14:22<20:29, 36.17s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+L34 zero-ablation (all):  59%|█████▉    | 47/80 [1:15:06<21:11, 38.54s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  60%|██████    | 48/80 [1:15:39<19:42, 36.95s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  61%|██████▏   | 49/80 [1:16:07<17:37, 34.12s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+L34 zero-ablation (all):  62%|██████▎   | 50/80 [1:16:37<16:26, 32.90s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:07][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  64%|██████▍   | 51/80 [1:17:12<16:14, 33.60s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:08][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:07][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:04][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:03<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:04<00:00][A
+⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  65%|██████▌   | 52/80 [1:17:48<15:59, 34.28s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+L34 zero-ablation (all):  66%|██████▋   | 53/80 [1:18:26<16:00, 35.57s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  68%|██████▊   | 54/80 [1:18:52<14:07, 32.61s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  69%|██████▉   | 55/80 [1:19:18<12:44, 30.57s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:07][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00][A
+⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+L34 zero-ablation (all):  70%|███████   | 56/80 [1:19:53<12:46, 31.93s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01][A
+⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:00<00:00][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:01<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]
+Exception in thread Thread-4549 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+  Ablation error (attempt 1/3): TypeError: a bytes-like object is required, not 'str'
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?][A
+⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02][A
+⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03][A
+⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01][A
+⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01][A
+⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01][A
+⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01][A
+⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01][A
+⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01][A
+⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01][A
+⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00][A
+⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00][A
+⬇ Downloading:  74%|███████▍  | 1.70M/2.31M [00:01<00:00][A
+⬇ Downloading:  80%|███████▉  | 1.84M/2.31M [00:01<00:00][A
+⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00][A
+⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00][A
+⬇ Downloading:  97%|█████████▋| 2.23M/2.31M [00:02<00:00][A⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+Exception in thread Thread-4583 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+packet queue is empty, aborting
+packet queue is empty, aborting
+packet queue is empty, aborting
+/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

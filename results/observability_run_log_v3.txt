@@ -1,0 +1,46 @@
+[21:46:14] Observability dissociation test
+[21:46:14] Seed: 42, N eval: 80
+[21:46:14] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+
+============================================================
+[21:46:24] Condition: observed_other_container
+  Char1 asked about container2 (filled by char2, which char1 observed)
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.9875
+    answer_pointer_L52: IIA=0.9750
+    answer_pointer_L53: IIA=0.2125
+
+============================================================
+[21:46:24] Condition: self_container_control
+  Char1 asked about container1 (filled by char1 themselves)
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+OBSERVABILITY DISSOCIATION SUMMARY
+============================================================
+
+observed_other_container:
+  Behavioral accuracy: 0.88
+  N pairs: 80
+  answer_pointer_L38: IIA=0.9875
+  answer_pointer_L52: IIA=0.9750
+  answer_pointer_L53: IIA=0.2125
+
+self_container_control:
+  Behavioral accuracy: 0.00
+  N pairs: 0
+  answer_pointer_L38: IIA=0.0000
+  answer_pointer_L52: IIA=0.0000
+  answer_pointer_L53: IIA=0.0000
+
+Dissociation (self - observed):
+  answer_pointer_L38: -0.9875
+  answer_pointer_L52: -0.9750
+  answer_pointer_L53: -0.2125
+
+[21:46:24] Done. Results at /Users/elliottower/Documents/GitHub/lookback-validity-audit/results/observability

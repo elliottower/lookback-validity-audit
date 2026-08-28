@@ -1,0 +1,94 @@
+[21:46:12] Question-framing control test
+[21:46:12] Seed: 42, N eval: 80
+[21:46:12] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+[21:46:12] Framings: ['belief', 'action_recall', 'reality_state', 'fill_completion']
+[21:46:12] Setting up nnsight...
+[21:46:23] Generating base pairs...
+[21:46:23] 240 raw pairs generated
+
+[21:46:23] Framing: belief
+  Loaded 80 cached filtered pairs
+
+[21:46:23] Framing: action_recall
+  Loaded 80 cached filtered pairs
+
+[21:46:23] Framing: reality_state
+  Loaded 80 cached filtered pairs
+
+[21:46:23] Framing: fill_completion
+  Loaded 80 cached filtered pairs
+
+[21:46:23] Intersection: 35 pairs pass all framings
+
+============================================================
+[21:46:23] Computing IIA for framing: belief
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=1.0000
+    answer_pointer_L52: IIA=1.0000
+    answer_pointer_L53: IIA=1.0000
+
+============================================================
+[21:46:23] Computing IIA for framing: action_recall
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.8857
+    answer_pointer_L52: IIA=0.4000
+    answer_pointer_L53: IIA=0.0571
+
+============================================================
+[21:46:23] Computing IIA for framing: reality_state
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+[21:46:23] Computing IIA for framing: fill_completion
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+QUESTION-FRAMING SUMMARY
+============================================================
+
+Shared pairs across all framings: 35
+
+  belief [BASELINE]: mean IIA=1.0000
+    answer_pointer_L38: IIA=1.0000
+    answer_pointer_L52: IIA=1.0000
+    answer_pointer_L53: IIA=1.0000
+
+  action_recall: mean IIA=0.4476
+    answer_pointer_L38: IIA=0.8857 (ratio=0.89)
+    answer_pointer_L52: IIA=0.4000 (ratio=0.40)
+    answer_pointer_L53: IIA=0.0571 (ratio=0.06)
+
+  reality_state: mean IIA=0.0000
+    answer_pointer_L38: IIA=0.0000 (ratio=0.00)
+    answer_pointer_L52: IIA=0.0000 (ratio=0.00)
+    answer_pointer_L53: IIA=0.0000 (ratio=0.00)
+
+  fill_completion: mean IIA=0.0000
+    answer_pointer_L38: IIA=0.0000 (ratio=0.00)
+    answer_pointer_L52: IIA=0.0000 (ratio=0.00)
+    answer_pointer_L53: IIA=0.0000 (ratio=0.00)
+
+Interpretation:
+  action_recall/answer_pointer_L38: diff=0.1143 > 0.10 threshold
+  action_recall/answer_pointer_L52: diff=0.6000 > 0.10 threshold
+  action_recall/answer_pointer_L53: diff=0.9429 > 0.10 threshold
+  reality_state/answer_pointer_L38: diff=1.0000 > 0.10 threshold
+  reality_state/answer_pointer_L52: diff=1.0000 > 0.10 threshold
+  reality_state/answer_pointer_L53: diff=1.0000 > 0.10 threshold
+  fill_completion/answer_pointer_L38: diff=1.0000 > 0.10 threshold
+  fill_completion/answer_pointer_L52: diff=1.0000 > 0.10 threshold
+  fill_completion/answer_pointer_L53: diff=1.0000 > 0.10 threshold
+  Some framings differ by > 0.10 from belief baseline.
+  -> Subspace may be sensitive to epistemic question framing.
+
+[21:46:23] Done. Results at /Users/elliottower/Documents/GitHub/lookback-validity-audit/results/question_framing

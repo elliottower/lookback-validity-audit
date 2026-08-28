@@ -1,0 +1,639 @@
+[02:06:05] Distractor insertion test
+[02:06:05] Seed: 42, N eval: 80
+[02:06:05] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+[02:06:29] Generating template-2 pairs...
+[02:06:29] Filtering on model accuracy...
+Filtering on model accuracy:   0%|          | 0/240 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   0%|          | 1/240 [00:07<28:46,  7.23s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   1%|          | 2/240 [00:14<27:51,  7.02s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   1%|▏         | 3/240 [00:19<23:59,  6.07s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 4/240 [00:24<23:03,  5.86s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 5/240 [00:30<23:02,  5.88s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:   2%|▎         | 6/240 [00:34<20:33,  5.27s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 7/240 [00:40<21:21,  5.50s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 8/240 [00:44<19:55,  5.15s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 9/240 [00:49<19:05,  4.96s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:02<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:02<00:00]
+Filtering on model accuracy:   4%|▍         | 10/240 [01:05<32:17,  8.43s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   5%|▍         | 11/240 [01:33<54:22, 14.25s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 12/240 [01:44<51:16, 13.50s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 13/240 [01:58<50:58, 13.47s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:02<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:02<00:00]
+Filtering on model accuracy:   6%|▌         | 14/240 [02:11<50:14, 13.34s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   6%|▋         | 15/240 [02:31<57:32, 15.34s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 16/240 [02:42<52:07, 13.96s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A
+⬇ Downloading: 100%|██████████| 530/530 [00:01<00:00][A⬇ Downloading: 100%|██████████| 530/530 [00:01<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 17/240 [02:55<51:45, 13.93s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 18/240 [03:04<45:13, 12.22s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 19/240 [03:23<52:37, 14.29s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 20/240 [03:35<49:53, 13.61s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 21/240 [03:44<44:45, 12.26s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 22/240 [03:54<42:19, 11.65s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A
+⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  10%|▉         | 23/240 [04:05<41:43, 11.54s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 24/240 [04:19<44:11, 12.27s/it]Filtering on model accuracy:  10%|█         | 25/240 [04:44<57:18, 15.99s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█         | 26/240 [05:06<1:03:15, 17.73s/it]Filtering on model accuracy:  11%|█▏        | 27/240 [05:13<51:48, 14.59s/it]    Filter error: Connection error
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 28/240 [05:28<52:14, 14.79s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 29/240 [05:46<54:44, 15.57s/it]  Filter error: Connection error
+
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  12%|█▎        | 30/240 [05:57<49:30, 14.14s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 31/240 [06:15<53:35, 15.39s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 32/240 [06:26<49:11, 14.19s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 33/240 [06:35<43:28, 12.60s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 34/240 [06:47<42:47, 12.46s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  15%|█▍        | 35/240 [06:59<41:58, 12.28s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 36/240 [07:10<40:36, 11.94s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 37/240 [07:20<37:57, 11.22s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:02<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:02<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  16%|█▌        | 38/240 [07:32<38:39, 11.48s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  16%|█▋        | 39/240 [07:54<49:01, 14.63s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 40/240 [08:07<47:29, 14.25s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 41/240 [08:28<53:34, 16.15s/it]Filtering on model accuracy:  18%|█▊        | 42/240 [08:54<1:03:09, 19.14s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 43/240 [09:11<1:00:59, 18.57s/it]Filtering on model accuracy:  18%|█▊        | 44/240 [09:52<1:21:59, 25.10s/it]  Filter error: _ssl.c:993: The handshake operation timed out
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 45/240 [10:11<1:15:40, 23.28s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A
+⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 46/240 [10:26<1:07:18, 20.81s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  20%|█▉        | 47/240 [10:38<58:37, 18.23s/it]  
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  20%|██        | 48/240 [11:05<1:06:54, 20.91s/it]Filtering on model accuracy:  20%|██        | 49/240 [11:30<1:10:34, 22.17s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  21%|██        | 50/240 [11:43<1:01:47, 19.51s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  21%|██▏       | 51/240 [11:56<54:39, 17.35s/it]  
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 52/240 [12:12<53:39, 17.12s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A
+⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 53/240 [12:35<58:09, 18.66s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▎       | 54/240 [12:49<54:09, 17.47s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 55/240 [13:03<50:48, 16.48s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 56/240 [13:16<46:49, 15.27s/it]Filtering on model accuracy:  24%|██▍       | 57/240 [13:23<39:08, 12.83s/it]Filtering on model accuracy:  24%|██▍       | 58/240 [13:30<33:47, 11.14s/it]  Filter error: Connection error
+  Filter error: Connection error
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▍       | 59/240 [13:43<34:43, 11.51s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▌       | 60/240 [13:57<37:16, 12.43s/it]Filtering on model accuracy:  25%|██▌       | 61/240 [14:29<54:40, 18.33s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  26%|██▌       | 62/240 [14:41<48:02, 16.20s/it]Filtering on model accuracy:  26%|██▋       | 63/240 [15:07<56:48, 19.26s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  27%|██▋       | 64/240 [15:25<55:46, 19.01s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+Filtering on model accuracy:  27%|██▋       | 65/240 [16:04<1:12:17, 24.78s/it]  Filter error: Server disconnected without sending a response.
+
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 66/240 [16:19<1:03:50, 22.02s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 67/240 [16:33<56:26, 19.57s/it]  
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 68/240 [16:40<45:19, 15.81s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 69/240 [16:55<44:30, 15.61s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 70/240 [17:12<45:04, 15.91s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|██▉       | 71/240 [17:50<1:03:14, 22.45s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 72/240 [18:12<1:03:03, 22.52s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 73/240 [18:40<1:06:46, 23.99s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  31%|███       | 74/240 [18:54<58:04, 20.99s/it]  
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  31%|███▏      | 75/240 [19:02<47:28, 17.27s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 76/240 [19:12<41:09, 15.06s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A
+⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 77/240 [19:20<34:42, 12.78s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▎      | 78/240 [19:35<36:38, 13.57s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 79/240 [19:45<33:27, 12.47s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:01<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:01<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 80/240 [19:57<32:49, 12.31s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A
+⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 81/240 [20:05<29:31, 11.14s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 82/240 [20:13<26:42, 10.14s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  35%|███▍      | 83/240 [20:21<24:31,  9.37s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  35%|███▌      | 84/240 [20:26<21:04,  8.10s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  35%|███▌      | 85/240 [20:34<20:41,  8.01s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  36%|███▌      | 86/240 [20:37<17:23,  6.78s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  36%|███▋      | 87/240 [20:43<16:01,  6.28s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  37%|███▋      | 88/240 [20:50<16:44,  6.61s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  37%|███▋      | 89/240 [20:55<15:10,  6.03s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  38%|███▊      | 90/240 [20:58<12:56,  5.18s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  38%|███▊      | 91/240 [21:03<12:52,  5.19s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  38%|███▊      | 92/240 [21:10<14:17,  5.79s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  39%|███▉      | 93/240 [21:19<16:27,  6.72s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  39%|███▉      | 93/240 [21:24<33:49, 13.81s/it]
+[02:27:53] 80 baseline pairs
+
+============================================================
+[02:27:53] Condition: baseline
+============================================================
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:05]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+  IIA flex trace error (attempt 1/3): WriteTimeout: The write operation timed out
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:00]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:11]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:14]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:11]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:08]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:06]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:05]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:04<00:06]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:06<00:10]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:07<00:10]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:09<00:09]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:09<00:06]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:10<00:05]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:10<00:03]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:11<00:02]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:11<00:01]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:12<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:12<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:13<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:05]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:07]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:06]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?]⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:04]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:04]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:04]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:06<00:04]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:07<00:03]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:08<00:02]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:08<00:01]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:09<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:09<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:08]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:06<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:05]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?]⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:10]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:08]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:07]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:06]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:05]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?]⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:14]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:02<00:16]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:10]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:02<00:05]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:04]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?]⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:00]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]
+Exception in thread Thread-2340 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+  IIA flex trace error (attempt 1/3): TypeError: a bytes-like object is required, not 'str'
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:00<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?]⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:01]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+Exception in thread Thread-2434 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+Exception in thread Thread-2436 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+  IIA flex trace error (attempt 1/3): TypeError: a bytes-like object is required, not 'str'
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?]⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?]⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+  IIA flex trace error (attempt 1/3): WriteTimeout: The write operation timed out
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+Exception in thread Thread-2554 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+Exception in thread Thread-2556 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+  IIA flex trace error (attempt 2/3): TypeError: a bytes-like object is required, not 'str'
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:06]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:05]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:04]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+  IIA flex trace error (attempt 3/3): WriteTimeout: The write operation timed out
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:09]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:06]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:05]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:04]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:03<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:03]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:05<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:01]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:06<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:07<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:06]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:06]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:03<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:06]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:05<00:05]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:05<00:04]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:05<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:06<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:06<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:06<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:07<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:07<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?]⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:03]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:02]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:04<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:06<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:07<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:01<00:18]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:01<00:12]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:02<00:09]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:02<00:07]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:03<00:06]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:03<00:05]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:03<00:04]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:04<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:04<00:03]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:04<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:04<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:04<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:05<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:05<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:05<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:05<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:06<00:00]
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?]⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:06]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:05]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:04]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:02<00:04]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:03<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+Exception in thread Thread-2675 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?]⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:01]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:02]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:02]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:04<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:04]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?]⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:03]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:02]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:03<00:02]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:01]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:04<00:01]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:04<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:04<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:05<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?]⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:01<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:01<00:00]
+Exception in thread Thread-2939 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+  IIA flex trace error (attempt 1/3): TypeError: a bytes-like object is required, not 'str'
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?]⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:02]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?]⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:07]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:05]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:01<00:04]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:01<00:04]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:03]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:03]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:02<00:03]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:02<00:02]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:02<00:02]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:02<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:03<00:01]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:03<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:03<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:03<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:03<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:04]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:03]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  28%|██▊       | 655k/2.31M [00:01<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:02]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?]⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:01]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:01]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:00<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:00<00:00]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:00]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:01<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:01<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:01<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:01<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:01<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:02<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:02<00:00]
+⬇ Downloading:   0%|          | 0.00/2.31M [00:00<?]⬇ Downloading:   6%|▌         | 131k/2.31M [00:00<00:03]⬇ Downloading:  11%|█▏        | 262k/2.31M [00:00<00:03]⬇ Downloading:  17%|█▋        | 393k/2.31M [00:00<00:02]⬇ Downloading:  23%|██▎       | 524k/2.31M [00:00<00:02]⬇ Downloading:  34%|███▍      | 786k/2.31M [00:01<00:01]⬇ Downloading:  40%|███▉      | 918k/2.31M [00:01<00:01]⬇ Downloading:  45%|████▌     | 1.05M/2.31M [00:01<00:01]⬇ Downloading:  51%|█████     | 1.18M/2.31M [00:01<00:01]⬇ Downloading:  57%|█████▋    | 1.31M/2.31M [00:01<00:01]⬇ Downloading:  62%|██████▏   | 1.44M/2.31M [00:02<00:01]⬇ Downloading:  68%|██████▊   | 1.57M/2.31M [00:02<00:00]⬇ Downloading:  74%|███████▎  | 1.70M/2.31M [00:02<00:00]⬇ Downloading:  79%|███████▉  | 1.84M/2.31M [00:02<00:00]⬇ Downloading:  85%|████████▌ | 1.97M/2.31M [00:02<00:00]⬇ Downloading:  91%|█████████ | 2.10M/2.31M [00:02<00:00]⬇ Downloading:  96%|█████████▋| 2.23M/2.31M [00:03<00:00]⬇ Downloading: 100%|██████████| 2.31M/2.31M [00:03<00:00]
+Exception in thread Thread-3072 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+packet queue is empty, aborting
+/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

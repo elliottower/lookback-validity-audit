@@ -1,0 +1,63 @@
+[21:46:12] Distractor insertion test
+[21:46:12] Seed: 42, N eval: 80
+[21:46:12] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+[21:46:23] Loaded 80 cached baseline pairs
+[21:46:23] 80 baseline pairs
+
+============================================================
+[21:46:23] Condition: baseline
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=1.0000
+    answer_pointer_L52: IIA=1.0000
+    answer_pointer_L53: IIA=0.7000
+
+============================================================
+[21:46:23] Condition: early
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+[21:46:23] Condition: mid
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+[21:46:23] Condition: late
+============================================================
+  Resumed from checkpoint
+    answer_pointer_L38: IIA=0.0000
+    answer_pointer_L52: IIA=0.0000
+    answer_pointer_L53: IIA=0.0000
+
+============================================================
+DISTRACTOR INSERTION SUMMARY
+============================================================
+
+baseline (n=80):
+  answer_pointer_L38: IIA=1.0000
+  answer_pointer_L52: IIA=1.0000
+  answer_pointer_L53: IIA=0.7000
+
+early (n=21):
+  answer_pointer_L38: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L52: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L53: IIA=0.0000 (drop=+0.7000)
+
+mid (n=0):
+  answer_pointer_L38: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L52: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L53: IIA=0.0000 (drop=+0.7000)
+
+late (n=0):
+  answer_pointer_L38: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L52: IIA=0.0000 (drop=+1.0000)
+  answer_pointer_L53: IIA=0.0000 (drop=+0.7000)
+
+[21:46:23] Done. Results at /Users/elliottower/Documents/GitHub/lookback-validity-audit/results/distractor_insertion
