@@ -55,16 +55,22 @@
   "experiment_scripts_should_use": {
     "_note": "Binding uses binding_lookback/address_and_payload; answer uses answer_lookback/pointer. Each keyed by lookback_type/concept/layer.",
     "binding_addr_payload_L34": {"layer": 34, "rank": 3, "sv_iia": 0.9625, "full_rank_iia": 0.975,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload",
+                                 "mask_indices": [2, 3, 5]},
     "binding_addr_payload_L35": {"layer": 35, "rank": 7, "sv_iia": 0.7375, "full_rank_iia": 0.800,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload",
+                                 "mask_indices": [2, 3, 4, 5, 29, 32, 43]},
     "binding_addr_payload_L36": {"layer": 36, "rank": 8, "sv_iia": 0.7500, "full_rank_iia": 0.825,
-                                 "lookback_type": "binding_lookback", "concept": "address_and_payload"},
+                                 "lookback_type": "binding_lookback", "concept": "address_and_payload",
+                                 "mask_indices": [2, 3, 4, 5, 6, 8, 30, 32]},
     "answer_pointer_L38": {"layer": 38, "rank": 3, "sv_iia": 0.925, "full_rank_iia": 1.0,
-                           "lookback_type": "answer_lookback", "concept": "pointer"},
+                           "lookback_type": "answer_lookback", "concept": "pointer",
+                           "mask_indices": [2, 4, 5]},
     "answer_pointer_L52": {"layer": 52, "rank": 18, "sv_iia": 0.775, "full_rank_iia": 0.925,
-                           "lookback_type": "answer_lookback", "concept": "pointer"},
+                           "lookback_type": "answer_lookback", "concept": "pointer",
+                           "mask_indices": [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 23, 24]},
     "answer_pointer_L53": {"layer": 53, "rank": 19, "sv_iia": 0.55, "full_rank_iia": 0.725,
-                           "lookback_type": "answer_lookback", "concept": "pointer"}
+                           "lookback_type": "answer_lookback", "concept": "pointer",
+                           "mask_indices": [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 26]}
   }
 }
