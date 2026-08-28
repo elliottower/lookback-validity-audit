@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-01T22:17:59.969004+00:00",
+  "timestamp": "2026-08-06T06:17:22.657062+00:00",
   "dry_run": false,
   "seed": 42,
   "n_eval": 80,
@@ -21,7 +21,7 @@
           "layer": 36,
           "offset": -2,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.9875,
           "basis_source": "existing_svd_topk",
           "rank": 3
         },
@@ -29,7 +29,7 @@
           "layer": 37,
           "offset": -1,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.9875,
           "basis_source": "existing_svd_topk",
           "rank": 3
         },
@@ -37,7 +37,7 @@
           "layer": 38,
           "offset": 0,
           "is_paper_layer": true,
-          "iia": 0.0,
+          "iia": 1.0,
           "basis_source": "paper_mask",
           "rank": 3
         },
@@ -45,15 +45,23 @@
           "layer": 39,
           "offset": 1,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.95,
           "basis_source": "existing_svd_topk",
+          "rank": 3
+        },
+        "40": {
+          "layer": 40,
+          "offset": 2,
+          "is_paper_layer": false,
+          "iia": 1.0,
+          "basis_source": "onthefly_svd",
           "rank": 3
         }
       },
-      "center_iia": 0.0,
-      "mean_adjacent_iia": 0.0,
-      "spread_ratio": null,
-      "interpretation": "INSUFFICIENT DATA"
+      "center_iia": 1.0,
+      "mean_adjacent_iia": 0.98125,
+      "spread_ratio": 0.98125,
+      "interpretation": "SPREAD (ratio > 0.8): IIA not layer-specific"
     },
     "answer_pointer_L52": {
       "center_layer": 52,
@@ -64,15 +72,23 @@
           "layer": 50,
           "offset": -2,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.975,
           "basis_source": "existing_svd_topk",
+          "rank": 18
+        },
+        "51": {
+          "layer": 51,
+          "offset": -1,
+          "is_paper_layer": false,
+          "iia": 1.0,
+          "basis_source": "onthefly_svd",
           "rank": 18
         },
         "52": {
           "layer": 52,
           "offset": 0,
           "is_paper_layer": true,
-          "iia": 0.0,
+          "iia": 1.0,
           "basis_source": "paper_mask",
           "rank": 18
         },
@@ -80,7 +96,7 @@
           "layer": 53,
           "offset": 1,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.9875,
           "basis_source": "existing_svd_topk",
           "rank": 18
         },
@@ -88,26 +104,34 @@
           "layer": 54,
           "offset": 2,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.975,
           "basis_source": "existing_svd_topk",
           "rank": 18
         }
       },
-      "center_iia": 0.0,
-      "mean_adjacent_iia": 0.0,
-      "spread_ratio": null,
-      "interpretation": "INSUFFICIENT DATA"
+      "center_iia": 1.0,
+      "mean_adjacent_iia": 0.9843750000000001,
+      "spread_ratio": 0.9843750000000001,
+      "interpretation": "SPREAD (ratio > 0.8): IIA not layer-specific"
     },
     "answer_pointer_L53": {
       "center_layer": 53,
       "rank": 19,
       "paper_iia": 0.55,
       "layer_results": {
+        "51": {
+          "layer": 51,
+          "offset": -2,
+          "is_paper_layer": false,
+          "iia": 1.0,
+          "basis_source": "onthefly_svd",
+          "rank": 19
+        },
         "52": {
           "layer": 52,
           "offset": -1,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.975,
           "basis_source": "existing_svd_topk",
           "rank": 19
         },
@@ -115,7 +139,7 @@
           "layer": 53,
           "offset": 0,
           "is_paper_layer": true,
-          "iia": 0.0,
+          "iia": 1.0,
           "basis_source": "paper_mask",
           "rank": 19
         },
@@ -123,15 +147,23 @@
           "layer": 54,
           "offset": 1,
           "is_paper_layer": false,
-          "iia": 0.0,
+          "iia": 0.975,
           "basis_source": "existing_svd_topk",
+          "rank": 19
+        },
+        "55": {
+          "layer": 55,
+          "offset": 2,
+          "is_paper_layer": false,
+          "iia": 1.0,
+          "basis_source": "onthefly_svd",
           "rank": 19
         }
       },
-      "center_iia": 0.0,
-      "mean_adjacent_iia": 0.0,
-      "spread_ratio": null,
-      "interpretation": "INSUFFICIENT DATA"
+      "center_iia": 1.0,
+      "mean_adjacent_iia": 0.9875,
+      "spread_ratio": 0.9875,
+      "interpretation": "SPREAD (ratio > 0.8): IIA not layer-specific"
     }
   }
 }

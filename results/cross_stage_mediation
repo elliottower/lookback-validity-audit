@@ -1,0 +1,85 @@
+{
+  "synthetic": false,
+  "timestamp": "2026-08-06T03:23:18.778414+00:00",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "ablation_method": "mean-ablation (not zero-ablation)",
+  "measurement_instrument": "interchange intervention (matching other experiments)",
+  "representative_layers": {
+    "binding_ablation": 34,
+    "binding_measure": 34,
+    "answer_ablation": 38,
+    "answer_measure": 52
+  },
+  "stages": {
+    "binding": {
+      "lookback_type": "binding_lookback",
+      "concept": "address_and_payload",
+      "layers": {
+        "34": 3,
+        "35": 7,
+        "36": 8
+      }
+    },
+    "answer": {
+      "lookback_type": "answer_lookback",
+      "concept": "pointer",
+      "layers": {
+        "38": 3,
+        "52": 18,
+        "53": 19
+      }
+    }
+  },
+  "hypothesis": {
+    "forward_mediation": "Ablating binding degrades answer IIA (binding causally feeds answer)",
+    "no_backward_effect": "Ablating answer does NOT degrade binding IIA (no reverse causation)"
+  },
+  "conditions": {
+    "baseline": {
+      "description": "No ablation, measure answer-pointer IIA at L52",
+      "ablated_stage": null,
+      "measured_stage": "answer",
+      "iia_mean": 0.9875,
+      "iia_std": 0.11180339887498947
+    },
+    "ablate_binding_measure_answer": {
+      "description": "Mean-ablate binding (L34), measure answer-pointer IIA at L52",
+      "ablated_stage": "binding",
+      "measured_stage": "answer",
+      "iia_mean": 0.65,
+      "iia_std": 0.4799789024899355
+    },
+    "ablate_answer_measure_binding": {
+      "description": "Mean-ablate answer (L38), measure binding IIA at L34",
+      "ablated_stage": "answer",
+      "measured_stage": "binding",
+      "iia_mean": 0.0,
+      "iia_std": 0.0
+    },
+    "baseline_binding": {
+      "description": "No ablation, measure binding IIA at L34 (for backward comparison)",
+      "ablated_stage": null,
+      "measured_stage": "binding",
+      "iia_mean": 0.0,
+      "iia_std": 0.0
+    }
+  },
+  "mediation_analysis": {
+    "forward_effect": {
+      "description": "Binding ablation effect on answer IIA",
+      "point_estimate": 0.3375,
+      "ci_95_lower": 0.23750000000000004,
+      "ci_95_upper": 0.44999999999999996,
+      "significant": true
+    },
+    "backward_effect": {
+      "description": "Answer ablation effect on binding IIA",
+      "point_estimate": 0.0,
+      "ci_95_lower": 0.0,
+      "ci_95_upper": 0.0,
+      "significant": false
+    },
+    "verdict": "Forward mediation supported: binding causally feeds answer but not vice versa"
+  }
+}

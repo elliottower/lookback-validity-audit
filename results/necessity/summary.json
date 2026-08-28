@@ -1,6 +1,6 @@
 {
   "experiment": "Necessity test (zero-ablation)",
-  "timestamp": "2026-08-01T22:17:55.623966+00:00",
+  "timestamp": "2026-08-06T03:27:50.227593+00:00",
   "seed": 42,
   "dry_run": false,
   "n_eval": 80,
@@ -15,10 +15,10 @@
       "rank": 3,
       "lookback_type": "binding_lookback",
       "ablation_positions": "all",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
+      "clean_accuracy": 1.0,
+      "ablated_accuracy": 1.0,
       "accuracy_drop": 0.0,
-      "n_samples": 0,
+      "n_samples": 80,
       "necessary": false
     },
     "binding_addr_payload_L35": {
@@ -26,10 +26,10 @@
       "rank": 7,
       "lookback_type": "binding_lookback",
       "ablation_positions": "all",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
-      "accuracy_drop": 0.0,
-      "n_samples": 0,
+      "clean_accuracy": 1.0,
+      "ablated_accuracy": 0.95,
+      "accuracy_drop": 0.050000000000000044,
+      "n_samples": 80,
       "necessary": false
     },
     "binding_addr_payload_L36": {
@@ -37,21 +37,21 @@
       "rank": 8,
       "lookback_type": "binding_lookback",
       "ablation_positions": "all",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
-      "accuracy_drop": 0.0,
-      "n_samples": 0,
-      "necessary": false
+      "clean_accuracy": 1.0,
+      "ablated_accuracy": 0.875,
+      "accuracy_drop": 0.125,
+      "n_samples": 80,
+      "necessary": true
     },
     "answer_pointer_L38": {
       "layer": 38,
       "rank": 3,
       "lookback_type": "answer_lookback",
       "ablation_positions": "last",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
-      "accuracy_drop": 0.0,
-      "n_samples": 0,
+      "clean_accuracy": 1.0,
+      "ablated_accuracy": 0.925,
+      "accuracy_drop": 0.07499999999999996,
+      "n_samples": 80,
       "necessary": false
     },
     "answer_pointer_L52": {
@@ -59,10 +59,10 @@
       "rank": 18,
       "lookback_type": "answer_lookback",
       "ablation_positions": "last",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
-      "accuracy_drop": 0.0,
-      "n_samples": 0,
+      "clean_accuracy": 0.9625,
+      "ablated_accuracy": 0.8625,
+      "accuracy_drop": 0.09999999999999998,
+      "n_samples": 80,
       "necessary": false
     },
     "answer_pointer_L53": {
@@ -70,11 +70,11 @@
       "rank": 19,
       "lookback_type": "answer_lookback",
       "ablation_positions": "last",
-      "clean_accuracy": 0.0,
-      "ablated_accuracy": 0.0,
-      "accuracy_drop": 0.0,
-      "n_samples": 0,
-      "necessary": false
+      "clean_accuracy": 1.0,
+      "ablated_accuracy": 0.8875,
+      "accuracy_drop": 0.11250000000000004,
+      "n_samples": 80,
+      "necessary": true
     }
   }
 }

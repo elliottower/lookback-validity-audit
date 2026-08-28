@@ -1,0 +1,569 @@
+{
+  "experiment": "X2 Mismatch test \u2014 Qwen2.5-14B-Instruct",
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "timestamp": "2026-08-06T22:20:42.617920+00:00",
+  "seed": 42,
+  "n_binding_pairs": 200,
+  "n_answer_pairs": 200,
+  "binding_layers": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34
+  ],
+  "answer_layers": [
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38
+  ],
+  "method": "Three-condition mismatch test (Prakash et al. lines 921-938). Condition 1: patch recalled tokens only. Condition 2: patch lookback tokens only. Condition 3: patch both. Mismatch signature: singles fail (<0.3 IIA), pair succeeds (>0.5 IIA).",
+  "binding_results": {
+    "12": {
+      "layer": 12,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.0,
+      "both_iia": 1.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "14": {
+      "layer": 14,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.01,
+      "both_iia": 0.975,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.9428208558483829,
+        0.9892754385292123
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.0027466006037749346,
+        0.03572248519617954
+      ]
+    },
+    "16": {
+      "layer": 16,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.01,
+      "both_iia": 0.97,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.9361048802675267,
+        0.9861798741692518
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.0027466006037749346,
+        0.03572248519617954
+      ]
+    },
+    "18": {
+      "layer": 18,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.01,
+      "both_iia": 0.965,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.9295285391333187,
+        0.9829446753626429
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.0027466006037749346,
+        0.03572248519617954
+      ]
+    },
+    "20": {
+      "layer": 20,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.365,
+      "both_iia": 0.425,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.35853495209243025,
+        0.4942919487953179
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.3014041621876483,
+        0.4336842594102984
+      ]
+    },
+    "22": {
+      "layer": 22,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.32,
+      "both_iia": 0.445,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.3778048169746545,
+        0.5142682436763609
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.2592642960770526,
+        0.38752026605354306
+      ]
+    },
+    "24": {
+      "layer": 24,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 0.995,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.9722256001302286,
+        0.999116854010634
+      ]
+    },
+    "26": {
+      "layer": 26,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 1.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.9811539940816791,
+        1.0
+      ]
+    },
+    "28": {
+      "layer": 28,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 1.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.9811539940816791,
+        1.0
+      ]
+    },
+    "30": {
+      "layer": 30,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 1.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.9811539940816791,
+        1.0
+      ]
+    },
+    "32": {
+      "layer": 32,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 1.0,
+      "lookback_only_iia": 1.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_lookback": [
+        0.9811539940816791,
+        1.0
+      ]
+    },
+    "34": {
+      "layer": 34,
+      "lookback_type": "binding",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.995,
+      "lookback_only_iia": 1.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.9722256001302286,
+        0.999116854010634
+      ],
+      "wilson_ci_lookback": [
+        0.9811539940816791,
+        1.0
+      ]
+    }
+  },
+  "answer_results": {
+    "16": {
+      "layer": 16,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.0,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.0,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_recalled": [
+        0.0,
+        0.018846005918320894
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "18": {
+      "layer": 18,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.005,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "20": {
+      "layer": 20,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.005,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "22": {
+      "layer": 22,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.005,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "24": {
+      "layer": 24,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.005,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "26": {
+      "layer": 26,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.005,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "28": {
+      "layer": 28,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.01,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.02,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.007804300176394188,
+        0.050287865505193874
+      ],
+      "wilson_ci_recalled": [
+        0.0027466006037749346,
+        0.03572248519617954
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "30": {
+      "layer": 30,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.01,
+      "lookback_only_iia": 0.0,
+      "both_iia": 0.44,
+      "mismatch_signature": false,
+      "wilson_ci_both": [
+        0.3729770042058236,
+        0.509284516504375
+      ],
+      "wilson_ci_recalled": [
+        0.0027466006037749346,
+        0.03572248519617954
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "32": {
+      "layer": 32,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 1.0,
+      "mismatch_signature": true,
+      "wilson_ci_both": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "34": {
+      "layer": 34,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.005,
+      "lookback_only_iia": 0.0,
+      "both_iia": 1.0,
+      "mismatch_signature": true,
+      "wilson_ci_both": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_recalled": [
+        0.0008831459893662054,
+        0.02777439986977148
+      ],
+      "wilson_ci_lookback": [
+        0.0,
+        0.018846005918320894
+      ]
+    },
+    "36": {
+      "layer": 36,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.035,
+      "lookback_only_iia": 0.02,
+      "both_iia": 1.0,
+      "mismatch_signature": true,
+      "wilson_ci_both": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_recalled": [
+        0.017055324637357105,
+        0.07047146086668134
+      ],
+      "wilson_ci_lookback": [
+        0.007804300176394188,
+        0.050287865505193874
+      ]
+    },
+    "38": {
+      "layer": 38,
+      "lookback_type": "answer",
+      "n_samples": 200,
+      "clean_accuracy": 1.0,
+      "recalled_only_iia": 0.035,
+      "lookback_only_iia": 0.02,
+      "both_iia": 1.0,
+      "mismatch_signature": true,
+      "wilson_ci_both": [
+        0.9811539940816791,
+        1.0
+      ],
+      "wilson_ci_recalled": [
+        0.017055324637357105,
+        0.07047146086668134
+      ],
+      "wilson_ci_lookback": [
+        0.007804300176394188,
+        0.050287865505193874
+      ]
+    }
+  }
+}

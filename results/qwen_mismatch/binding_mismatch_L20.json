@@ -1,0 +1,22 @@
+{
+  "layer": 20,
+  "lookback_type": "binding",
+  "n_samples": 200,
+  "clean_accuracy": 1.0,
+  "recalled_only_iia": 1.0,
+  "lookback_only_iia": 0.365,
+  "both_iia": 0.425,
+  "mismatch_signature": false,
+  "wilson_ci_both": [
+    0.35853495209243025,
+    0.4942919487953179
+  ],
+  "wilson_ci_recalled": [
+    0.9811539940816791,
+    1.0
+  ],
+  "wilson_ci_lookback": [
+    0.3014041621876483,
+    0.4336842594102984
+  ]
+}

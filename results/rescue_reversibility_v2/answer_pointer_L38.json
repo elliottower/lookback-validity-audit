@@ -1,0 +1,18 @@
+{
+  "layer": 38,
+  "rank": 3,
+  "lookback_type": "answer_lookback",
+  "positions": "last",
+  "clean_accuracy": 1.0,
+  "ablated_accuracy": 0.92,
+  "rescued_accuracy": 1.0,
+  "wrong_rescue_accuracy": 0.545,
+  "random_rescue_accuracy": 0.93,
+  "ablation_drop": 0.07999999999999996,
+  "rescue_recovery": 0.07999999999999996,
+  "wrong_recovery": -0.375,
+  "random_recovery": 0.010000000000000009,
+  "n_samples": 200,
+  "reversible": false,
+  "dry_run": false
+}

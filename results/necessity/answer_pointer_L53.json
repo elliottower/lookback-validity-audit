@@ -3,9 +3,9 @@
   "rank": 19,
   "lookback_type": "answer_lookback",
   "ablation_positions": "last",
-  "clean_accuracy": 0.0,
-  "ablated_accuracy": 0.0,
-  "accuracy_drop": 0.0,
-  "n_samples": 0,
-  "necessary": false
+  "clean_accuracy": 1.0,
+  "ablated_accuracy": 0.8875,
+  "accuracy_drop": 0.11250000000000004,
+  "n_samples": 80,
+  "necessary": true
 }

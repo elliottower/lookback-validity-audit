@@ -1,0 +1,37 @@
+{
+  "dry_run": false,
+  "framing": "action_recall",
+  "question_template": "What did {char} put in the {container}?",
+  "n_pairs": 250,
+  "subspace_iias": {
+    "answer_pointer_L38": 0.98,
+    "answer_pointer_L52": 1.0,
+    "answer_pointer_L53": 1.0
+  },
+  "wilson_cis": {
+    "answer_pointer_L38": {
+      "iia": 0.98,
+      "k": 245,
+      "n": 250,
+      "ci_lower": 0.9540437045850131,
+      "ci_upper": 0.9914278020553485,
+      "ci_width": 0.03738409747033544
+    },
+    "answer_pointer_L52": {
+      "iia": 1.0,
+      "k": 250,
+      "n": 250,
+      "ci_lower": 0.9848661527503766,
+      "ci_upper": 1.0,
+      "ci_width": 0.015133847249623411
+    },
+    "answer_pointer_L53": {
+      "iia": 1.0,
+      "k": 250,
+      "n": 250,
+      "ci_lower": 0.9848661527503766,
+      "ci_upper": 1.0,
+      "ci_width": 0.015133847249623411
+    }
+  }
+}

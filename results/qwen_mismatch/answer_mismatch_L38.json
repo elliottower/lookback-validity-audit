@@ -1,0 +1,22 @@
+{
+  "layer": 38,
+  "lookback_type": "answer",
+  "n_samples": 200,
+  "clean_accuracy": 1.0,
+  "recalled_only_iia": 0.035,
+  "lookback_only_iia": 0.02,
+  "both_iia": 1.0,
+  "mismatch_signature": true,
+  "wilson_ci_both": [
+    0.9811539940816791,
+    1.0
+  ],
+  "wilson_ci_recalled": [
+    0.017055324637357105,
+    0.07047146086668134
+  ],
+  "wilson_ci_lookback": [
+    0.007804300176394188,
+    0.050287865505193874
+  ]
+}
