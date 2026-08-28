@@ -3,9 +3,9 @@
   "rank": 3,
   "lookback_type": "binding_lookback",
   "ablation_positions": "all",
-  "clean_accuracy": 0.0,
-  "ablated_accuracy": 0.0,
+  "clean_accuracy": 1.0,
+  "ablated_accuracy": 1.0,
   "accuracy_drop": 0.0,
-  "n_samples": 0,
+  "n_samples": 80,
   "necessary": false
 }
