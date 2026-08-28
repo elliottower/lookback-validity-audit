@@ -4,7 +4,7 @@ A mechanistic validity audit of Prakash et al. (ICLR 2026), "Language models use
 
 ## What this is
 
-The Lookback paper claims language models implement belief tracking via "pointer dereference through attention" — three sub-mechanisms at non-overlapping layer ranges. We audit this claim against 34 validity criteria (v11) from the Mechanistic Validity framework and run 15 pre-registered experiments to test the structural gaps.
+The Lookback paper claims language models implement belief tracking via "pointer dereference through attention" — three sub-mechanisms at non-overlapping layer ranges. We audit this claim against the 36 validity criteria of the Mechanistic Validity framework (doi:10.5281/zenodo.20478480) and run 15 pre-registered experiments to test the structural gaps.
 
 ## Structure
 

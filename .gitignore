@@ -26,8 +26,13 @@ results/svd/partial_activations/
 results/svd/CausalToM/
 *.pt
 
+.planning/
+
 # macOS
 .DS_Store
 
 # Reference repo clone (use git submodule or re-clone from source)
 reference/belief_tracking/
+
+# Zenodo deposit bundles are regenerated from the tree; do not track (235 MB)
+submissions/zenodo/*.zip

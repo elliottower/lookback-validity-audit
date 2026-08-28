@@ -847,3 +847,56 @@ The moved tag is documented here for transparency.
 - `experiments/double_dissociation_test.py` — committed (I6, relabeled
   as single dissociation)
 - `experiments/convergent_validity_probe.py` — committed (C3)
+
+---
+
+## Amendment 11: Framework 34 → 36 criteria, and criterion IDs realigned in the paper
+
+**Date.** 2026-08-28.
+
+### 11a: Two criteria added upstream
+
+The Mechanistic Validity deposit (doi:10.5281/zenodo.20478480) now carries 36
+criteria. Two were added after this audit was pre-registered:
+
+- **C6 (Complementation validity):** a carving into named parts is established
+  as functional, rather than leaving distinct complementation groups
+  indistinguishable from one group whose members share a role
+- **I12 (Offset coupling):** a component that carries the role at one offset is
+  observed to carry it at others
+
+Both are scored against the same record, and both are **Not met**:
+
+| criterion | verdict | reasoning |
+|-----------|---------|-----------|
+| C6 Complementation validity | Not met | The three sub-mechanisms are ablated singly. The trans comparison needs two ablations and a composition rule. Pre-registered as Experiment 5 (cross-stage mediation); the run returned no usable estimates, so the question is open on our evidence as well as the audited paper's. |
+| I12 Offset coupling | Not met | The audited results come from one checkpoint, so a component holding the role transiently and one holding it throughout are indistinguishable in the design. |
+
+No result is recomputed and no earlier verdict changes.
+
+### 11b: Criterion IDs in the paper realigned to the current deposit
+
+The manuscript carried four IDs from the framework's pre-v11 numbering, where
+this file and the experiment scripts had already moved to the current one. The
+offsets are not uniform, so criteria were inserted at several points rather than
+appended, and the remap is by criterion **name**:
+
+| paper (was) | name | current |
+|-------------|------|---------|
+| M3 | Selection on the dependent variable | **M7** Selection correction |
+| I5 | Full-vector confound | **I7** Confound control |
+| I6 | Epistatic interaction | **I9** Epistatic interaction |
+| I7 | Rescue reversibility | **I10** Rescue reversibility |
+
+`V4` is recorded as *unlicensed labeling*, the deposit's name for it.
+
+### 11c: Summary table arithmetic
+
+The v9 summary table reported a total of 35 while its category ranges
+(C1--C5, M1--M7, I1--I11, E1--E6, V1--V5) summed to 34, the Not-met column
+being over by one. With C6 and I12 added the ranges are C1--C6, M1--M7,
+I1--I12, E1--E6, V1--V5, and the table reads 2 confirmed, 10 partial, 22 not
+met, 2 fails, totalling 36.
+
+**Files changed.** `paper/lookback_audit_v10.tex` (from v9; v9 is unmodified
+and remains the provenance), `AMENDMENTS.md`.
