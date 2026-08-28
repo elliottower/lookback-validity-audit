@@ -1,0 +1,37 @@
+[01:40:05] Distractor insertion test
+[01:40:05] Seed: 42, N eval: 80
+[01:40:05] Answer subspaces: ['answer_pointer_L38', 'answer_pointer_L52', 'answer_pointer_L53']
+[01:40:44] Generating template-2 pairs...
+[01:40:44] Filtering on model accuracy...
+Filtering on model accuracy:   0%|          | 0/240 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   0%|          | 1/240 [00:08<33:32,  8.42s/it]Exception in thread Thread-33 (_handle_eio_message):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/client.py", line 524, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/socketio/packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'P'
+Exception in thread Thread-37 (_read_loop_websocket):
+Traceback (most recent call last):
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/elliottower/Documents/GitHub/lookback-validity-audit/.venv/lib/python3.12/site-packages/engineio/client.py", line 562, in _read_loop_websocket
+    self.write_loop_task.join()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'join'
+/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

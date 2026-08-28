@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-31T06:00:06.887546+00:00",
+  "description": "Content: knowledge state belief",
+  "n_pairs": 120,
+  "subspace_results": {
+    "binding_addr_payload_L34": {
+      "iia": 0.6518075330026691,
+      "original_iia": 0.9625,
+      "iia_ratio": 0.6772026316910849,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L35": {
+      "iia": 0.5324469821043009,
+      "original_iia": 0.7375,
+      "iia_ratio": 0.7219620096329503,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L36": {
+      "iia": 0.4342619125662401,
+      "original_iia": 0.75,
+      "iia_ratio": 0.5790158834216534,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback"
+    },
+    "answer_pointer_L38": {
+      "iia": 0.6109766870545523,
+      "original_iia": 0.925,
+      "iia_ratio": 0.6605153373562728,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L52": {
+      "iia": 0.5285036086898572,
+      "original_iia": 0.775,
+      "iia_ratio": 0.6819401402449771,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L53": {
+      "iia": 0.34219424064846976,
+      "original_iia": 0.55,
+      "iia_ratio": 0.6221713466335813,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback"
+    }
+  }
+}

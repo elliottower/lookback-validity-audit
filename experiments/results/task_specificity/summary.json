@@ -1,0 +1,291 @@
+{
+  "synthetic": true,
+  "timestamp": "2026-07-31T06:00:03.528299+00:00",
+  "seed": 42,
+  "n_stories_per_condition": 120,
+  "design": "2x2 factorial: binding (yes/no) x belief (yes/no)",
+  "conditions": [
+    "echo_copy",
+    "entity_tracking",
+    "true_belief",
+    "false_belief"
+  ],
+  "limitation": "Binding_lookback subspaces (L34-36) skipped: custom stories have different token lengths than CausalToM, so the fixed state positions [155, 156, 167, 168] do not apply. Only answer_lookback subspaces (last-token intervention at L38, L52, L53) are tested.",
+  "hypothesis": {
+    "echo_copy": "IIA ~ chance (lookback absent)",
+    "entity_tracking": "IIA may be elevated (binding without belief)",
+    "true_belief": "IIA elevated but lower than false_belief if mechanism is belief-specific",
+    "false_belief": "IIA matches CausalToM (positive control)"
+  },
+  "results_by_condition": {
+    "echo_copy": {
+      "description": "Pure retrieval, no binding (strong control)",
+      "n_pairs": 120,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.9625
+        },
+        "binding_addr_payload_L35": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.7375
+        },
+        "binding_addr_payload_L36": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.75
+        },
+        "answer_pointer_L38": {
+          "iia_mean": 0.1345854102479279,
+          "skipped": false,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "iia_mean": 0.15647570438008765,
+          "skipped": false,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "iia_mean": 0.15274606749703418,
+          "skipped": false,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.55
+        }
+      }
+    },
+    "entity_tracking": {
+      "description": "Binding without belief (weak control)",
+      "n_pairs": 120,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.9625
+        },
+        "binding_addr_payload_L35": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.7375
+        },
+        "binding_addr_payload_L36": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.75
+        },
+        "answer_pointer_L38": {
+          "iia_mean": 0.46855418743837124,
+          "skipped": false,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "iia_mean": 0.43935986744256533,
+          "skipped": false,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "iia_mean": 0.4416443773110807,
+          "skipped": false,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.55
+        }
+      }
+    },
+    "true_belief": {
+      "description": "Binding + belief, character observed (belief = reality)",
+      "n_pairs": 120,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.9625
+        },
+        "binding_addr_payload_L35": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.7375
+        },
+        "binding_addr_payload_L36": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.75
+        },
+        "answer_pointer_L38": {
+          "iia_mean": 0.5069714360470339,
+          "skipped": false,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "iia_mean": 0.48201726407106804,
+          "skipped": false,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "iia_mean": 0.4867384732733554,
+          "skipped": false,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.55
+        }
+      }
+    },
+    "false_belief": {
+      "description": "Binding + belief, character absent (belief != reality, positive control)",
+      "n_pairs": 120,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 34,
+          "rank": 3,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.9625
+        },
+        "binding_addr_payload_L35": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 35,
+          "rank": 7,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.7375
+        },
+        "binding_addr_payload_L36": {
+          "iia_mean": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+          "layer": 36,
+          "rank": 8,
+          "lookback_type": "binding_lookback",
+          "concept": "address_and_payload",
+          "original_sv_iia": 0.75
+        },
+        "answer_pointer_L38": {
+          "iia_mean": 0.6539878490067069,
+          "skipped": false,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.925
+        },
+        "answer_pointer_L52": {
+          "iia_mean": 0.6685496200589137,
+          "skipped": false,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.775
+        },
+        "answer_pointer_L53": {
+          "iia_mean": 0.6396704903987024,
+          "skipped": false,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback",
+          "concept": "pointer",
+          "original_sv_iia": 0.55
+        }
+      }
+    }
+  },
+  "effect_sizes_vs_false_belief": {
+    "echo_copy": {
+      "answer_pointer_L38": 0.519402438758779,
+      "answer_pointer_L52": 0.5120739156788261,
+      "answer_pointer_L53": 0.4869244229016682
+    },
+    "entity_tracking": {
+      "answer_pointer_L38": 0.18543366156833568,
+      "answer_pointer_L52": 0.22918975261634839,
+      "answer_pointer_L53": 0.1980261130876217
+    },
+    "true_belief": {
+      "answer_pointer_L38": 0.14701641295967305,
+      "answer_pointer_L52": 0.18653235598784568,
+      "answer_pointer_L53": 0.152932017125347
+    }
+  }
+}

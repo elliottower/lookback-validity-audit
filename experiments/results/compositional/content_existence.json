@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-31T06:00:06.887546+00:00",
+  "description": "Content: existence belief",
+  "n_pairs": 120,
+  "subspace_results": {
+    "binding_addr_payload_L34": {
+      "iia": 0.641399168902427,
+      "original_iia": 0.9625,
+      "iia_ratio": 0.6663887469116124,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L35": {
+      "iia": 0.5181361448341119,
+      "original_iia": 0.7375,
+      "iia_ratio": 0.7025574845208296,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L36": {
+      "iia": 0.5441584511328096,
+      "original_iia": 0.75,
+      "iia_ratio": 0.7255446015104128,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback"
+    },
+    "answer_pointer_L38": {
+      "iia": 0.733411862072569,
+      "original_iia": 0.925,
+      "iia_ratio": 0.7928776887271016,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L52": {
+      "iia": 0.581816183414579,
+      "original_iia": 0.775,
+      "iia_ratio": 0.750730559244618,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L53": {
+      "iia": 0.44572784279769717,
+      "original_iia": 0.55,
+      "iia_ratio": 0.8104142596321766,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback"
+    }
+  }
+}

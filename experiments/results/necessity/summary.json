@@ -1,0 +1,80 @@
+{
+  "experiment": "Necessity test (zero-ablation)",
+  "timestamp": "2026-07-31T22:23:40.531807+00:00",
+  "seed": 42,
+  "dry_run": false,
+  "n_eval": 80,
+  "method": "Zero subspace component: x' = x - P @ x. Answer subspaces: position -1 only. Binding subspaces: all positions.",
+  "interpretation": {
+    "necessary": "ablated_accuracy << clean_accuracy (subspace removal breaks task)",
+    "redundant": "ablated_accuracy ~ clean_accuracy (model has other pathways)"
+  },
+  "subspaces": {
+    "binding_addr_payload_L34": {
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.9292003178751901,
+      "ablated_accuracy": 0.6195270391825948,
+      "accuracy_drop": 0.3096732786925953,
+      "n_samples": 80,
+      "necessary": true
+    },
+    "binding_addr_payload_L35": {
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.9109792962269232,
+      "ablated_accuracy": 0.5627035023032444,
+      "accuracy_drop": 0.3482757939236788,
+      "n_samples": 80,
+      "necessary": true
+    },
+    "binding_addr_payload_L36": {
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback",
+      "ablation_positions": "all",
+      "clean_accuracy": 0.9436751481531284,
+      "ablated_accuracy": 0.6148292028308938,
+      "accuracy_drop": 0.32884594532223455,
+      "n_samples": 80,
+      "necessary": true
+    },
+    "answer_pointer_L38": {
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.9675879594972565,
+      "ablated_accuracy": 0.8283252330862331,
+      "accuracy_drop": 0.13926272641102344,
+      "n_samples": 80,
+      "necessary": true
+    },
+    "answer_pointer_L52": {
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.9725448241393606,
+      "ablated_accuracy": 0.7756038243867558,
+      "accuracy_drop": 0.19694099975260482,
+      "n_samples": 80,
+      "necessary": true
+    },
+    "answer_pointer_L53": {
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback",
+      "ablation_positions": "last",
+      "clean_accuracy": 0.95737501568165,
+      "ablated_accuracy": 0.8217988572105858,
+      "accuracy_drop": 0.1355761584710642,
+      "n_samples": 80,
+      "necessary": true
+    }
+  }
+}

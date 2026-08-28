@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-31T06:00:06.887546+00:00",
+  "description": "Content: location belief (CausalToM baseline)",
+  "n_pairs": 120,
+  "subspace_results": {
+    "binding_addr_payload_L34": {
+      "iia": 0.958712889781802,
+      "original_iia": 0.9625,
+      "iia_ratio": 0.996065340033041,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L35": {
+      "iia": 0.7378086018201243,
+      "original_iia": 0.7375,
+      "iia_ratio": 1.0004184431459313,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L36": {
+      "iia": 0.7759375558658297,
+      "original_iia": 0.75,
+      "iia_ratio": 1.0345834078211062,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback"
+    },
+    "answer_pointer_L38": {
+      "iia": 0.922004638783857,
+      "original_iia": 0.925,
+      "iia_ratio": 0.9967617716582237,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L52": {
+      "iia": 0.8292489728348117,
+      "original_iia": 0.775,
+      "iia_ratio": 1.0699986746255634,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L53": {
+      "iia": 0.5453038426685471,
+      "original_iia": 0.55,
+      "iia_ratio": 0.9914615321246311,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback"
+    }
+  }
+}

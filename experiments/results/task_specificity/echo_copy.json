@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-07-31T06:00:03.528299+00:00",
+  "description": "Pure retrieval, no binding (strong control)",
+  "n_pairs": 120,
+  "subspace_iias": {
+    "binding_addr_payload_L34": {
+      "iia_mean": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback",
+      "concept": "address_and_payload",
+      "original_sv_iia": 0.9625
+    },
+    "binding_addr_payload_L35": {
+      "iia_mean": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback",
+      "concept": "address_and_payload",
+      "original_sv_iia": 0.7375
+    },
+    "binding_addr_payload_L36": {
+      "iia_mean": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions [155, 156, 167, 168]",
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback",
+      "concept": "address_and_payload",
+      "original_sv_iia": 0.75
+    },
+    "answer_pointer_L38": {
+      "iia_mean": 0.1345854102479279,
+      "skipped": false,
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback",
+      "concept": "pointer",
+      "original_sv_iia": 0.925
+    },
+    "answer_pointer_L52": {
+      "iia_mean": 0.15647570438008765,
+      "skipped": false,
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback",
+      "concept": "pointer",
+      "original_sv_iia": 0.775
+    },
+    "answer_pointer_L53": {
+      "iia_mean": 0.15274606749703418,
+      "skipped": false,
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback",
+      "concept": "pointer",
+      "original_sv_iia": 0.55
+    }
+  }
+}

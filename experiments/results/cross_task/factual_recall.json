@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-07-31T21:52:45.196529+00:00",
+  "description": "Factual recall (capitals, elements, animals, misc)",
+  "n_pairs": 80,
+  "subspace_iias": {
+    "binding_addr_payload_L34": {
+      "iia": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions",
+      "layer": 34,
+      "rank": 3
+    },
+    "binding_addr_payload_L35": {
+      "iia": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions",
+      "layer": 35,
+      "rank": 7
+    },
+    "binding_addr_payload_L36": {
+      "iia": null,
+      "skipped": true,
+      "skip_reason": "binding subspace requires CausalToM state token positions",
+      "layer": 36,
+      "rank": 8
+    },
+    "answer_pointer_L38": {
+      "iia": 0.12441429223241045,
+      "skipped": false,
+      "original_iia": 0.925,
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L52": {
+      "iia": 0.11952256324877425,
+      "skipped": false,
+      "original_iia": 0.775,
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L53": {
+      "iia": 0.03489611129496505,
+      "skipped": false,
+      "original_iia": 0.55,
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback"
+    }
+  }
+}

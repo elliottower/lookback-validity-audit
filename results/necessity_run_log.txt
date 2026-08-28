@@ -1,0 +1,352 @@
+[21:53:34] Necessity test (zero-ablation)
+[21:53:34] Seed: 42, N eval: 80
+[21:53:34] Generating counterfactual pairs...
+[21:53:49] Filtering answer pairs...
+Filtering on model accuracy:   0%|          | 0/240 [00:00<?, ?it/s]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   0%|          | 1/240 [00:15<1:01:17, 15.39s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   1%|          | 2/240 [00:30<1:00:52, 15.35s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   1%|▏         | 3/240 [00:47<1:03:06, 15.98s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 4/240 [01:06<1:07:11, 17.08s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   2%|▏         | 5/240 [01:25<1:09:59, 17.87s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:   2%|▎         | 6/240 [01:43<1:09:20, 17.78s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 7/240 [01:59<1:07:01, 17.26s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   3%|▎         | 8/240 [02:18<1:08:45, 17.78s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 9/240 [02:36<1:08:54, 17.90s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   4%|▍         | 10/240 [02:52<1:06:26, 17.33s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   5%|▍         | 11/240 [03:15<1:13:28, 19.25s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 12/240 [03:42<1:21:18, 21.40s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   5%|▌         | 13/240 [04:05<1:23:16, 22.01s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   6%|▌         | 14/240 [04:33<1:28:58, 23.62s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:   6%|▋         | 15/240 [04:56<1:27:50, 23.43s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   7%|▋         | 16/240 [05:22<1:30:20, 24.20s/it]Filtering on model accuracy:   7%|▋         | 17/240 [05:31<1:13:22, 19.74s/it]  Filter error: Connection error
+
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 18/240 [05:43<1:04:29, 17.43s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A
+⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A
+⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 19/240 [05:57<1:00:20, 16.38s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:   8%|▊         | 20/240 [06:12<58:13, 15.88s/it]  
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 21/240 [06:32<1:03:02, 17.27s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A
+⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:   9%|▉         | 22/240 [06:48<1:01:08, 16.83s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A
+⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A
+⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  10%|▉         | 23/240 [07:07<1:03:07, 17.45s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 24/240 [07:25<1:03:22, 17.61s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  10%|█         | 25/240 [07:46<1:06:33, 18.58s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█         | 26/240 [08:13<1:15:30, 21.17s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  11%|█▏        | 27/240 [08:44<1:26:09, 24.27s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 28/240 [09:02<1:18:13, 22.14s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  12%|█▏        | 29/240 [09:25<1:19:24, 22.58s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  12%|█▎        | 30/240 [09:48<1:18:58, 22.56s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 31/240 [10:12<1:20:50, 23.21s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  13%|█▎        | 32/240 [10:37<1:22:13, 23.72s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 33/240 [11:04<1:24:49, 24.59s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  14%|█▍        | 34/240 [11:29<1:25:11, 24.81s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  15%|█▍        | 35/240 [11:56<1:26:26, 25.30s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 36/240 [12:22<1:27:30, 25.74s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  15%|█▌        | 37/240 [12:48<1:27:11, 25.77s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  16%|█▌        | 38/240 [13:13<1:25:26, 25.38s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  16%|█▋        | 39/240 [13:39<1:26:02, 25.69s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 40/240 [14:05<1:25:55, 25.78s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  17%|█▋        | 41/240 [14:29<1:24:02, 25.34s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 42/240 [14:54<1:23:17, 25.24s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 43/240 [15:20<1:22:50, 25.23s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  18%|█▊        | 44/240 [15:47<1:23:59, 25.71s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 45/240 [16:14<1:25:00, 26.16s/it]
+⬇ Downloading:   0%|          | 0.00/525 [00:00<?][A⬇ Downloading: 100%|██████████| 525/525 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  19%|█▉        | 46/240 [16:43<1:27:17, 27.00s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  20%|█▉        | 47/240 [17:11<1:28:03, 27.38s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  20%|██        | 48/240 [17:36<1:25:10, 26.62s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  20%|██        | 49/240 [18:02<1:23:57, 26.37s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  21%|██        | 50/240 [18:29<1:24:33, 26.70s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  21%|██▏       | 51/240 [18:55<1:22:59, 26.35s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 52/240 [19:21<1:22:18, 26.27s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/520 [00:00<?][A⬇ Downloading: 100%|██████████| 520/520 [00:00<00:00]
+Filtering on model accuracy:  22%|██▏       | 53/240 [19:46<1:21:03, 26.01s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  22%|██▎       | 54/240 [20:12<1:20:12, 25.88s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 55/240 [20:33<1:15:33, 24.50s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  23%|██▎       | 56/240 [20:57<1:14:19, 24.24s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  24%|██▍       | 57/240 [21:17<1:10:55, 23.25s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  24%|██▍       | 58/240 [21:43<1:13:00, 24.07s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▍       | 59/240 [22:05<1:09:57, 23.19s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▌       | 60/240 [22:29<1:10:46, 23.59s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  25%|██▌       | 61/240 [22:55<1:12:04, 24.16s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  26%|██▌       | 62/240 [23:24<1:16:20, 25.73s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  26%|██▋       | 63/240 [23:48<1:14:37, 25.30s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  27%|██▋       | 64/240 [24:12<1:13:06, 24.92s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  27%|██▋       | 65/240 [24:41<1:15:37, 25.93s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 66/240 [25:03<1:12:24, 24.97s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 67/240 [25:29<1:12:28, 25.14s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A
+⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  28%|██▊       | 68/240 [25:51<1:09:03, 24.09s/it]
+⬇ Downloading:   0%|          | 0.00/526 [00:00<?][A⬇ Downloading: 100%|██████████| 526/526 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 69/240 [26:15<1:08:40, 24.10s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  29%|██▉       | 70/240 [26:37<1:06:24, 23.44s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|██▉       | 71/240 [27:03<1:08:26, 24.30s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 72/240 [27:27<1:07:44, 24.19s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  30%|███       | 73/240 [27:51<1:07:41, 24.32s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  31%|███       | 74/240 [28:16<1:07:15, 24.31s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  31%|███▏      | 75/240 [28:44<1:10:27, 25.62s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 76/240 [29:07<1:07:18, 24.63s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▏      | 77/240 [29:31<1:06:15, 24.39s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/524 [00:00<?][A⬇ Downloading: 100%|██████████| 524/524 [00:00<00:00]
+Filtering on model accuracy:  32%|███▎      | 78/240 [29:55<1:05:47, 24.37s/it]
+⬇ Downloading:   0%|          | 0.00/530 [00:00<?][A⬇ Downloading: 100%|██████████| 530/530 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 79/240 [30:19<1:05:30, 24.41s/it]
+⬇ Downloading:   0%|          | 0.00/529 [00:00<?][A⬇ Downloading: 100%|██████████| 529/529 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  33%|███▎      | 80/240 [30:41<1:02:43, 23.52s/it]
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/523 [00:00<?][A⬇ Downloading: 100%|██████████| 523/523 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 81/240 [31:02<1:00:35, 22.86s/it]
+⬇ Downloading:   0%|          | 0.00/528 [00:00<?][A⬇ Downloading: 100%|██████████| 528/528 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/522 [00:00<?][A⬇ Downloading: 100%|██████████| 522/522 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 82/240 [31:23<58:15, 22.13s/it]  
+⬇ Downloading:   0%|          | 0.00/527 [00:00<?][A⬇ Downloading: 100%|██████████| 527/527 [00:00<00:00]
+
+⬇ Downloading:   0%|          | 0.00/521 [00:00<?][A⬇ Downloading: 100%|██████████| 521/521 [00:00<00:00]
+Filtering on model accuracy:  34%|███▍      | 82/240 [31:43<1:01:07, 23.21s/it]
+[22:25:33] 80 answer pairs passed filter
+
+============================================================
+[22:25:33] binding_addr_payload_L34: L34, rank=3, ablation=all
+============================================================
+L34 zero-ablation (all):   0%|          | 0/80 [00:00<?, ?it/s]/Users/elliottower/.local/share/uv/python/cpython-3.12.13-macos-x86_64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,11 @@
+{
+  "layer": 38,
+  "rank": 3,
+  "lookback_type": "answer_lookback",
+  "ablation_positions": "last",
+  "clean_accuracy": 0.9675879594972565,
+  "ablated_accuracy": 0.8283252330862331,
+  "accuracy_drop": 0.13926272641102344,
+  "n_samples": 80,
+  "necessary": true
+}

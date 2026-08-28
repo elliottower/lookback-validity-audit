@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-31T06:00:06.887546+00:00",
+  "description": "CausalToM baseline, 2 characters",
+  "n_pairs": 120,
+  "subspace_results": {
+    "binding_addr_payload_L34": {
+      "iia": 0.956437502638318,
+      "original_iia": 0.9625,
+      "iia_ratio": 0.9937013014424082,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 34,
+      "rank": 3,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L35": {
+      "iia": 0.7201631767576704,
+      "original_iia": 0.7375,
+      "iia_ratio": 0.9764924430612479,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 35,
+      "rank": 7,
+      "lookback_type": "binding_lookback"
+    },
+    "binding_addr_payload_L36": {
+      "iia": 0.757586544449097,
+      "original_iia": 0.75,
+      "iia_ratio": 1.010115392598796,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 36,
+      "rank": 8,
+      "lookback_type": "binding_lookback"
+    },
+    "answer_pointer_L38": {
+      "iia": 0.9098812677576817,
+      "original_iia": 0.925,
+      "iia_ratio": 0.9836554246028991,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 38,
+      "rank": 3,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L52": {
+      "iia": 0.7561580174882389,
+      "original_iia": 0.775,
+      "iia_ratio": 0.9756877645009533,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 52,
+      "rank": 18,
+      "lookback_type": "answer_lookback"
+    },
+    "answer_pointer_L53": {
+      "iia": 0.5593435850291032,
+      "original_iia": 0.55,
+      "iia_ratio": 1.0169883364165513,
+      "mask_overlap_with_original": null,
+      "method": "transfer_last_token",
+      "layer": 53,
+      "rank": 19,
+      "lookback_type": "answer_lookback"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layer": 35,
+  "rank": 7,
+  "lookback_type": "binding_lookback",
+  "ablation_positions": "all",
+  "clean_accuracy": 0.9109792962269232,
+  "ablated_accuracy": 0.5627035023032444,
+  "accuracy_drop": 0.3482757939236788,
+  "n_samples": 80,
+  "necessary": true
+}

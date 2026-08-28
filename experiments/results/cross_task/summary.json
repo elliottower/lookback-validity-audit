@@ -1,0 +1,167 @@
+{
+  "synthetic": true,
+  "timestamp": "2026-07-31T21:52:45.196529+00:00",
+  "seed": 42,
+  "method": "transfer_test",
+  "method_note": "Applies CausalToM-derived subspace projections to non-belief tasks. Binding subspaces skipped (custom prompts lack CausalToM state positions). High IIA on non-belief tasks would indicate the subspace is a generic answer pointer, not a belief-tracking mechanism.",
+  "prediction": {
+    "supports_paper": "IIA ~ chance (0.0-0.2) on all non-belief tasks",
+    "weakens_paper": "IIA > 0.5 on any non-belief task"
+  },
+  "tasks": {
+    "factual_recall": {
+      "description": "Factual recall (capitals, elements, animals, misc)",
+      "n_pairs": 80,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 34,
+          "rank": 3
+        },
+        "binding_addr_payload_L35": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 35,
+          "rank": 7
+        },
+        "binding_addr_payload_L36": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 36,
+          "rank": 8
+        },
+        "answer_pointer_L38": {
+          "iia": 0.12441429223241045,
+          "skipped": false,
+          "original_iia": 0.925,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.11952256324877425,
+          "skipped": false,
+          "original_iia": 0.775,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.03489611129496505,
+          "skipped": false,
+          "original_iia": 0.55,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "arithmetic": {
+      "description": "Simple arithmetic (addition, single-token answers)",
+      "n_pairs": 120,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 34,
+          "rank": 3
+        },
+        "binding_addr_payload_L35": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 35,
+          "rank": 7
+        },
+        "binding_addr_payload_L36": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 36,
+          "rank": 8
+        },
+        "answer_pointer_L38": {
+          "iia": 0.07961543858985802,
+          "skipped": false,
+          "original_iia": 0.925,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.09090237310500164,
+          "skipped": false,
+          "original_iia": 0.775,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.13016084306640166,
+          "skipped": false,
+          "original_iia": 0.55,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    },
+    "color_property": {
+      "description": "Color/property associations",
+      "n_pairs": 56,
+      "subspace_iias": {
+        "binding_addr_payload_L34": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 34,
+          "rank": 3
+        },
+        "binding_addr_payload_L35": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 35,
+          "rank": 7
+        },
+        "binding_addr_payload_L36": {
+          "iia": null,
+          "skipped": true,
+          "skip_reason": "binding subspace requires CausalToM state token positions",
+          "layer": 36,
+          "rank": 8
+        },
+        "answer_pointer_L38": {
+          "iia": 0.09046607360080884,
+          "skipped": false,
+          "original_iia": 0.925,
+          "layer": 38,
+          "rank": 3,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L52": {
+          "iia": 0.06188573539105205,
+          "skipped": false,
+          "original_iia": 0.775,
+          "layer": 52,
+          "rank": 18,
+          "lookback_type": "answer_lookback"
+        },
+        "answer_pointer_L53": {
+          "iia": 0.056127606511077406,
+          "skipped": false,
+          "original_iia": 0.55,
+          "layer": 53,
+          "rank": 19,
+          "lookback_type": "answer_lookback"
+        }
+      }
+    }
+  },
+  "verdict": "Belief-specific: subspace does NOT transfer to non-belief tasks"
+}
