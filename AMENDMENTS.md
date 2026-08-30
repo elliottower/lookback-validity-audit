@@ -850,6 +850,28 @@ The moved tag is documented here for transparency.
 
 ---
 
+## How the freeze tags map to these amendments
+
+Tags number **freeze events**, not amendment numbers. The first freeze recorded five
+amendments written together; each later tag is one freeze.
+
+| tag | commit | amendments introduced |
+|-----|--------|-----------------------|
+| `prereg-v1` | c9bb775 | the registration itself |
+| `prereg-amendment-1` | 41c70be | 1, 2, 3, 4, 5 |
+| `prereg-amendment-2` | b0fb5d8 | 6 |
+| `prereg-amendment-3` | 97718a6 | 7 |
+| `prereg-amendment-4` | df22ffd | 8 |
+| `prereg-amendment-5` | 7b76306 | 9 |
+| `prereg-amendment-6` | 4e9246a | 10 |
+| `prereg-amendment-7` | 89952b5 | 11 |
+
+`prereg-amendment-4` therefore resolves to Amendment 8, not Amendment 4. Resolve a tag with
+`git rev-parse <tag>^{}`; the tags are annotated, so `rev-parse` without `^{}` returns the
+tag object rather than the commit.
+
+---
+
 ## Amendment 11: Framework 34 → 36 criteria, and criterion IDs realigned in the paper
 
 **Date.** 2026-08-28.
