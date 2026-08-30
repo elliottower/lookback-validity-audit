@@ -37,7 +37,13 @@ def setup_nnsight():
 
     from nnsight import CONFIG, LanguageModel
     CONFIG.APP.REMOTE_LOGGING = False
-    CONFIG.set_default_api_key(os.environ["NDIF_KEY"])
+    key = os.environ.get("NDIF_KEY") or os.environ.get("NDIF_API_KEY")
+    if not key:
+        raise RuntimeError(
+            "no NDIF key in the environment: set NDIF_KEY or NDIF_API_KEY. "
+            "The 1Password environment exports it as NDIF_API_KEY."
+        )
+    CONFIG.set_default_api_key(key)
 
     from nnsight.intervention.backends.remote import RemoteBackend
     RemoteBackend.CONNECT_TIMEOUT = 30.0

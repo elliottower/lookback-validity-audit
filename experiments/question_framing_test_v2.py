@@ -114,6 +114,9 @@ def main():
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--n-eval", type=int, default=500)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--framing", action="append", choices=sorted(FRAMINGS),
+        help="run only these framings; repeatable. Default: all four.")
     args = parser.parse_args()
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -126,7 +129,8 @@ def main():
     print(f"[{ts()}] Question-framing control test")
     print(f"[{ts()}] Seed: {args.seed}, N eval: {args.n_eval}")
     print(f"[{ts()}] Answer subspaces: {list(answer_subspaces.keys())}")
-    print(f"[{ts()}] Framings: {list(FRAMINGS.keys())}")
+    framings = {k: FRAMINGS[k] for k in (args.framing or FRAMINGS)}
+    print(f"[{ts()}] Framings: {list(framings)}")
 
     lm = None
     if not args.dry_run:
@@ -144,7 +148,7 @@ def main():
 
     # For each framing, create reframed pairs and filter independently
     framing_filtered = {}
-    for framing_key in FRAMINGS:
+    for framing_key in framings:
         print(f"\n[{ts()}] Framing: {framing_key}")
 
         cache_path = RESULTS_DIR / f"filtered_pairs_{framing_key}.json"
@@ -172,14 +176,14 @@ def main():
     # Compute intersection: pairs that pass ALL framings
     passing_per_framing = [
         {p["_pair_idx"] for p in framing_filtered[fk]}
-        for fk in FRAMINGS
+        for fk in framings
     ]
     shared_idxs = set.intersection(*passing_per_framing)
     print(f"\n[{ts()}] Intersection: {len(shared_idxs)} pairs pass all framings")
 
     # Build aligned subsets for each framing
     framing_shared = {}
-    for framing_key in FRAMINGS:
+    for framing_key in framings:
         subset = sorted(
             [p for p in framing_filtered[framing_key] if p["_pair_idx"] in shared_idxs],
             key=lambda p: p["_pair_idx"],
@@ -195,11 +199,11 @@ def main():
         "n_eval": args.n_eval,
         "n_raw": len(answer_raw),
         "n_shared": len(shared_idxs),
-        "n_per_framing": {fk: len(framing_filtered[fk]) for fk in FRAMINGS},
+        "n_per_framing": {fk: len(framing_filtered[fk]) for fk in framings},
         "framings": {},
     }
 
-    for framing_key in FRAMINGS:
+    for framing_key in framings:
         print(f"\n{'='*60}")
         print(f"[{ts()}] Computing IIA for framing: {framing_key}")
         print(f"{'='*60}")
@@ -268,7 +272,7 @@ def main():
     # Compute framing transfer ratios
     belief_iias = summary["framings"].get("belief", {}).get("subspace_iias", {})
     transfer_ratios = {}
-    for framing_key in FRAMINGS:
+    for framing_key in framings:
         if framing_key == "belief":
             continue
         other_iias = summary["framings"].get(framing_key, {}).get("subspace_iias", {})
@@ -289,7 +293,7 @@ def main():
     print(f"{'='*60}")
     print(f"\nShared pairs across all framings: {len(shared_idxs)}")
 
-    for framing_key in FRAMINGS:
+    for framing_key in framings:
         fdata = summary["framings"].get(framing_key, {})
         iias = fdata.get("subspace_iias", {})
         marker = " [BASELINE]" if framing_key == "belief" else ""

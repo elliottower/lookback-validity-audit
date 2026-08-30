@@ -32,6 +32,7 @@ Usage:
     uv run python experiments/unity_coupling_test.py --output results/cross_stage_mediation.json
 """
 
+import math
 import argparse
 import json
 import time
@@ -439,10 +440,20 @@ def main():
         n_bootstrap=args.n_bootstrap, rng=rng,
     )
 
-    fwd_significant = fwd_lo > 0
-    bwd_significant = bwd_lo > 0
+    # A bound that is nan compares false against everything, so without this guard an
+    # unestimated effect falls through to the both-non-significant branch and is reported
+    # as "independent processes" -- a substantive verdict produced by missing data. That
+    # happened on the 2026-08-01 run, where every condition returned nan.
+    estimated = not any(math.isnan(v) for v in (fwd_point, fwd_lo, bwd_point, bwd_lo))
 
-    if fwd_significant and not bwd_significant:
+    fwd_significant = estimated and fwd_lo > 0
+    bwd_significant = estimated and bwd_lo > 0
+
+    if not estimated:
+        verdict = ("Not estimated: one or more conditions returned nan, so neither the "
+                   "forward nor the backward effect is measured and the unity of the "
+                   "sub-mechanisms is untested by this run")
+    elif fwd_significant and not bwd_significant:
         verdict = "Forward mediation supported: binding causally feeds answer but not vice versa"
     elif fwd_significant and bwd_significant:
         verdict = "Bidirectional coupling: both stages affect each other (shared representation?)"
