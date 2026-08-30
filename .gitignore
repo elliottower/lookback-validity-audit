@@ -36,3 +36,8 @@ reference/belief_tracking/
 
 # Zenodo deposit bundles are regenerated from the tree; do not track (235 MB)
 submissions/zenodo/*.zip
+
+# Third-party PDFs fetched for related work. They live in the shared citations
+# library (corpora/mechinterp-related-work), hashed and recorded there; this is a
+# working copy and the repo may go public.
+reference/related_work/
