@@ -850,6 +850,138 @@ The moved tag is documented here for transparency.
 
 ---
 
+---
+
+## Amendment 12: Belief against observation history and reality, redundancy, and the last framing cell (E16--E18)
+
+**Date.** 2026-08-30, prior to any results from E16--E18.
+
+**Foreknowledge.** These are registered after results that motivate them were seen, and the
+record should say which. We have seen: the n = 250 question-framing run, where reality-state
+gives IIA 0.916 / 0.82 / 0.82 against belief framing's 1.0; the zero-ablation table, where
+removing each subspace singly costs 0.00--0.12 accuracy and four of six are recorded as not
+necessary; and Gur-Arieh, Geva and Geiger (ICLR 2026), who report the positional mechanism
+does not generalize beyond two or three entity groups. None of E16--E18 has been run, in
+dry-run or otherwise, and no stimuli for E16 exist yet.
+
+**Criteria addressed.** E16 is the I5 test: observation history and current reality are the
+rival mechanisms, and neither has been excluded. E17 bears on I1 (necessity) and I3
+(minimality). E18 completes the C4 framing series.
+
+### Experiment 16: Belief against observation history and against reality
+
+**Question.** Do the subspaces track what a character believes, what a character has
+observed, or what is currently true?
+
+**Why two conditions are not enough.** In the E14 stories the character does not observe the
+swap, so belief and observation history name the same answer. Adding a condition where the
+character is told about a real swap separates those two, but there belief and reality
+coincide, which is the degeneracy this audit identifies in CausalToM itself. A design with
+only those two conditions would reproduce, in the experiment meant to resolve the confound,
+the defect it was built to expose. Three conditions are required:
+
+| condition | what happens | belief | observation history | reality |
+|---|---|---|---|---|
+| untold | swap occurs, character does not see it | pre-swap | pre-swap | post-swap |
+| told-true | swap occurs, character is told | post-swap | pre-swap | post-swap |
+| misinformed | **no swap occurs**, character is told one did | post-swap | pre-swap | pre-swap |
+
+Each hypothesis predicts a distinct pattern across the three: belief tracks
+(pre, post, post), observation history (pre, pre, pre), reality (post, post, pre). Only the
+misinformed condition distinguishes belief from reality, and it is the cell on which the
+experiment turns.
+
+**Protocol.** 240 story pairs, 80 per condition, on the E14 template. Within a pair the
+condition is held fixed and only the drink identity varies; told-status is never varied
+within a pair. Characters, containers, question text, answer candidate set and answer-slot
+position are identical across conditions. The untold condition is padded with a neutral
+sentence matching the telling sentence in token count, so conditions differ in content and
+not in geometry. Each condition is filtered for model accuracy on clean and counterfactual
+runs independently. Stimuli are generated at 3x the target and pre-filter counts, post-filter
+counts and a sample of rejects are logged per condition, because differential attrition
+across conditions would make the IIAs non-comparable. IIA at L38, L52, L53, position -1.
+
+**Metrics.** IIA per (condition, subspace). Behavioral accuracy per condition, reported
+separately. Post-filter n per condition, and the attrition ratio between conditions.
+
+**Predictions.**
+- Untold: IIA > 0.90, replicating E14.
+- Told-true: IIA > 0.90.
+- Misinformed: IIA > 0.90.
+
+**Pre-committed interpretations.** IIA above 0.90 in all three supports belief over both
+rivals, and strengthens the audited paper's claim beyond what E14 can support. High untold
+with low told-true and low misinformed supports observation history. High untold, high
+told-true and low misinformed supports reality, and the E14 result should then be reported as
+consistent with the subspaces tracking current world-state. Any other pattern is reported
+without a preferred reading.
+
+**E16 is void if** fewer than 40 pairs survive filtering in any condition, or if post-filter
+n differs by more than a factor of two between conditions.
+
+### Experiment 17: Joint ablation (redundancy against genuine dispensability)
+
+**Question.** Is the low cost of removing each subspace singly a sign that the model does not
+use them, or that it uses several interchangeably?
+
+**Protocol.** Ablate the three binding subspaces together (L34, L35, L36) and the three
+answer subspaces together (L38, L52, L53). Two ablation types are run over the same pairs:
+zero-ablation, matching the single-subspace test, and mean-ablation over the task
+distribution. Each group and type is compared against a control ablating random subspaces of
+the same total rank at the same layers, **drawn from the orthogonal complement of the
+identified directions within the SVD basis**, so a control draw cannot overlap the subspace
+it is a control for. 200 draws per comparison; the observed value is reported as an exact
+quantile of the control distribution rather than thresholded.
+
+**Metrics.** Accuracy drop per (group, ablation type). The control distribution and the
+observed value's quantile within it. Clean accuracy, so drops can be read against headroom.
+
+**Predictions.**
+- Joint ablation of the answer group removes more than half the accuracy above chance.
+- The observed drop falls above the 95th percentile of the 200-draw control distribution.
+- Zero-ablation and mean-ablation agree in direction.
+- The binding group behaves the same way.
+
+The threshold is stated relative to headroom rather than as an absolute drop, since an
+absolute figure depends on clean accuracy and is not comparable across conditions.
+
+**Pre-committed interpretations.** A drop above the control's 95th percentile, in both
+ablation types, supports redundancy: the subspaces are used and the model compensates when
+one is removed. That reading strengthens the audited paper's claim, since it explains the
+single-ablation result without conceding the directions are inert. A drop the control
+distribution matches supports the reading that removal cost is a function of how much of the
+residual stream is destroyed rather than which directions are destroyed, and the
+single-ablation table should then be reported as uninformative about necessity in either
+direction. Zero and mean ablation diverging is itself a result: it would establish that the
+single-ablation table is an off-distribution artifact.
+
+**E17 does not distinguish redundancy from a dormant pathway.** It tests joint necessity
+only. A dormant-pathway reading of the interchange result survives whatever E17 returns, and
+settling that requires measuring these directions without intervention, which is not
+registered here.
+
+### Experiment 18: Fill-completion framing at n = 250
+
+**Question.** Does the fourth framing behave like reality-state, or like belief?
+
+**Protocol.** Fill-completion at n = 250 under the same per-framing accuracy filtering as the
+completed cells, on the same shared pairs.
+
+**Metrics.** IIA per subspace, with Wilson intervals.
+
+**Predictions.**
+- Fill-completion IIA falls between 0.75 and 0.95, patterning with reality-state.
+
+**This prediction is close to forced** and is registered for completeness rather than as a
+test. Three of the four framing cells are known and the fourth is a perspective-free query
+like reality-state; a result in the predicted band should not be scored as a confirmed novel
+prediction. A value below 0.50 would reopen the framing dissociation and is the only outcome
+that changes the paper.
+
+**All three are void if** the released SVD bases or masks are re-derived rather than reused,
+since every completed experiment in this audit uses the published ones and a mixed corpus is
+not comparable.
+
 ## How the freeze tags map to these amendments
 
 Tags number **freeze events**, not amendment numbers. The first freeze recorded five

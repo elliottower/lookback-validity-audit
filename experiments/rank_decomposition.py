@@ -121,6 +121,30 @@ def main():
 
         pairs = binding_pairs if is_binding else answer_pairs
 
+        # Reconstruct the published subspace before decomposing it. The 2026-08-01 run
+        # returned zero IIA at every rank including the full mask, while the same mask
+        # scores above 0.9 in the replication. Nineteen per-direction numbers measured
+        # against a baseline that is itself wrong are not a finding, so the full-mask
+        # value is checked first and the subspace is skipped if it does not reproduce.
+        if not args.dry_run:
+            proj_full = build_projection_matrix(svd_basis, indices)
+            if is_binding:
+                iia_full = compute_iia_binding(lm, pairs, layer, proj_full)
+            else:
+                iia_full = compute_iia_answer_flex(lm, pairs, layer, proj_full)
+            expected = sub_spec["sv_iia"]
+            print(f"  full-mask reconstruction: IIA={iia_full:.4f} (published {expected:.4f})")
+            if abs(iia_full - expected) > 0.15:
+                print(f"  SKIP: full-mask reconstruction does not reproduce the published "
+                      f"value; the harness, not the decomposition, is what this run measures")
+                summary["subspaces"][sub_name] = {
+                    "skipped": True,
+                    "skip_reason": "full-mask reconstruction failed",
+                    "full_mask_iia": float(iia_full),
+                    "published_iia": float(expected),
+                }
+                continue
+
         # Individual direction IIA
         individual_iias = {}
         for i, idx in enumerate(indices):
