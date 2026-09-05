@@ -25,6 +25,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import random
@@ -65,6 +66,17 @@ def load_subspace_specs():
     with open(specs_path) as f:
         data = json.load(f)
     return {k: v for k, v in data["experiment_scripts_should_use"].items() if not k.startswith("_")}
+
+
+def mask_rng(seed, subspace, i):
+    """A generator determined by (seed, subspace, index) rather than by call order.
+
+    A single generator advanced per draw cannot be resumed: restarting reseeds it while the
+    loop skips ahead, so the run redraws masks it already has. Deriving per index makes each
+    mask reproducible on its own and makes resume exact.
+    """
+    tag = int.from_bytes(hashlib.sha256(subspace.encode()).digest()[:4], "big")
+    return np.random.default_rng([seed, tag, i])
 
 
 def sample_random_svd_mask(n_components, rank, rng):
@@ -259,6 +271,11 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
+    if args.dry_run and "DRYRUN" not in str(args.output):
+        sys.exit(f"refusing to write a dry run to {args.output}: put DRYRUN in the path. "
+                 "A synthetic run once landed in results/ and was read as a measurement.")
+
+
     ts = lambda: datetime.now(timezone.utc).strftime("%H:%M:%S")
     rng = np.random.default_rng(args.seed)
     n_svd = 500
@@ -292,6 +309,9 @@ def main():
         print(f"[{ts()}] ERROR: SVD bases not found at {svd_dir}")
         print("Run scripts/extract_svd.py first.")
         sys.exit(1)
+
+    output_path = Path(args.output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     results = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -343,16 +363,32 @@ def main():
             compute_fn = compute_iia_binding
 
         # Compute IIA with random subspaces
+        # Append-only shard, one line per mask. A rewritten file can be truncated by a
+        # kill between open and write; an append cannot lose the lines already on disk.
+        shard = output_path.parent / f"{name}.masks.jsonl"
         random_iias = []
-        for i in tqdm(range(args.n_random), desc=f"Random subspaces"):
-            selected = sample_random_svd_mask(n_svd, rank, rng)
+        if shard.exists():
+            for line in shard.read_text().splitlines():
+                if line.strip():
+                    random_iias.append(json.loads(line)["iia"])
+            print(f"  resuming: {len(random_iias)} masks already on disk in {shard.name}")
+        for i in tqdm(range(len(random_iias), args.n_random), desc="Random subspaces",
+                      initial=len(random_iias), total=args.n_random):
+            selected = sample_random_svd_mask(n_svd, rank, mask_rng(args.seed, name, i))
 
             if args.dry_run:
-                iia = rng.random()
+                iia = mask_rng(args.seed, name + ":iia", i).random()
             else:
                 proj = build_projection_matrix(svd_basis, selected)
                 iia = compute_fn(lm, pairs, layer, proj)
 
+            with open(shard, "a") as fh:
+                fh.write(json.dumps({
+                    "i": i, "subspace": name, "layer": layer, "rank": rank,
+                    "mask": [int(x) for x in selected], "iia": float(iia),
+                    "dry_run": bool(args.dry_run),
+                    "t": datetime.now(timezone.utc).isoformat(),
+                }) + "\n")
             random_iias.append(iia)
 
         random_arr = np.array(random_iias)
@@ -384,8 +420,10 @@ def main():
         print(f"  Rank: {rank_count}/{args.n_random}, p={p_value:.6f}")
         print(f"  Significant at 0.01: {p_value < 0.01}")
 
-    output_path = Path(args.output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "w") as f:
+            json.dump(results, f, indent=2)
+        print(f"  checkpointed {len(results['subspaces'])} of {len(subspace_specs)} subspaces")
+
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
 

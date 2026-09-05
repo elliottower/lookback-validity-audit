@@ -41,3 +41,7 @@ submissions/zenodo/*.zip
 # library (corpora/mechinterp-related-work), hashed and recorded there; this is a
 # working copy and the repo may go public.
 reference/related_work/
+
+# Working notes and internal review material. Durable on disk, never committed:
+# the repo goes public and this is reasoning, not results.
+notes/
