@@ -998,7 +998,8 @@ amendments written together; each later tag is one freeze.
 | `prereg-amendment-6` | 4e9246a | 10 |
 | `prereg-amendment-7` | 89952b5 | 11 |
 | `prereg-amendment-8` | (see tag) | 12 |
-| `prereg-amendment-9` | (this freeze) | 13 |
+| `prereg-amendment-9` | da1a2df | 13 |
+| `prereg-amendment-10` | (this freeze) | 14 |
 
 `prereg-amendment-4` therefore resolves to Amendment 8, not Amendment 4. Resolve a tag with
 `git rev-parse <tag>^{}`; the tags are annotated, so `rev-parse` without `^{}` returns the
@@ -1258,3 +1259,49 @@ Reviewed externally four times before freezing. The review record is in
 changes it produced: the protocol-asymmetry confound, the correction of the independent-binomial
 bootstrap claim, the two-coordinate signature in EXP23, cellwise sign rules for the conditional
 crossed experiment, the Tango interval, and the necessity-direction sign error.
+
+---
+
+## Amendment 14: Three statistical corrections to Amendment 13 (EXP20, EXP22, EXP23)
+
+**Date.** 2026-09-06, prior to any results from EXP19--EXP23. Amendment 13 was frozen at
+`prereg-amendment-9` earlier the same day; a further design review found three specification
+defects before any run. Amendment 13 is left as frozen and corrected here rather than edited.
+
+### 14a: EXP20 decides by exact test, not by bootstrap
+
+**Defect.** Amendment 13 decided macro-category dominance with a pair bootstrap using a
+max-statistic over six contrasts. A nonparametric bootstrap returns a zero-width interval when all
+200 outputs fall in one category. That is the same boundary failure the Tango interval was adopted
+to avoid in EXP23, and it is a live possibility here: if the both-condition returns the clean
+answer on every pair, the bootstrap decides from an interval of width zero.
+
+**Correction.** Confirmatory dominance is tested by **exact conditional binomial tests** for the
+three pairwise macro-category comparisons at each layer --- `p_clean` vs `p_cf`, `p_clean` vs
+`p_off`, `p_cf` vs `p_off` --- Holm-adjusted across the six-test family spanning L26 and L30. Each
+test conditions on the pairs falling in the two categories compared and asks whether the split
+departs from one half. Proportions and paired bootstrap intervals are reported descriptively;
+bootstrap intervals decide nothing when a category has zero observations.
+
+### 14b: EXP23 requires both layers
+
+**Defect.** L26 and L30 were both named primary without stating whether the readout-site reduction
+must hold at both or may be declared from either.
+
+**Correction.** The reduction is confirmed only if sufficiency and necessity are each met
+**independently at both layers**. This is a conjunction across layers and therefore needs no
+further multiplicity correction. A result at one layer only is reported as layer-specific and does
+not confirm the reduction.
+
+### 14c: EXP22 compares within its own pairs
+
+**Defect.** Amendment 13 compared each N/S/X subset against "the EXP19 condition". EXP19 runs on 30
+equal-length gate pairs and EXP22 on 200. A paired Tango interval across two different pair sets is
+undefined, so as registered the comparison was not computable.
+
+**Correction.** Each subset is compared against the **full-complement cell measured on the same
+EXP22 pairs**. EXP19 remains a harness gate and enters no paired estimate.
+
+**Nothing else in Amendment 13 changes.** Sample sizes, layers, conditions, void conditions, the
+Tango interval and its 90% level, the necessity directions, the absence of an early screen, and
+EXP22's exploratory status all stand as frozen.
