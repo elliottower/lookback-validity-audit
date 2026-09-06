@@ -997,6 +997,8 @@ amendments written together; each later tag is one freeze.
 | `prereg-amendment-5` | 7b76306 | 9 |
 | `prereg-amendment-6` | 4e9246a | 10 |
 | `prereg-amendment-7` | 89952b5 | 11 |
+| `prereg-amendment-8` | (see tag) | 12 |
+| `prereg-amendment-9` | (this freeze) | 13 |
 
 `prereg-amendment-4` therefore resolves to Amendment 8, not Amendment 4. Resolve a tag with
 `git rev-parse <tag>^{}`; the tags are annotated, so `rev-parse` without `^{}` returns the
@@ -1054,3 +1056,205 @@ met, 2 fails, totalling 36.
 
 **Files changed.** `paper/lookback_audit_v10.tex` (from v9; v9 is unmodified
 and remains the provenance), `AMENDMENTS.md`.
+
+---
+
+## Amendment 13: Interaction-structure follow-ups on the cross-model test (EXP19--EXP23)
+
+**Date.** 2026-09-06, prior to any results from EXP19--EXP23.
+
+**Naming.** The design documents in `notes/perplexity_review_qwen_followups/` use letters. The
+canonical numbers continue this repository's series:
+
+| canonical | design letter | what it does |
+|---|---|---|
+| EXP19 | C2 | full-sequence positive control, harness gate |
+| EXP20 | EXP-A | output identity and logit margin in the both-condition |
+| EXP21 | C1 | directional symmetry |
+| EXP22 | C3 | omitted-region localization, exploratory |
+| EXP23 | EXP-C | decomposition of the binding lookback span |
+
+EXP-B (crossed position-by-dataset attribution) is **registered as conditional** on EXP23 and its
+condition set is not fixed here. EXP-D (head-level attribution) is **not registered**: its
+specification depends on EXP20 and the controls, and the measures available are attribution rather
+than causal.
+
+**Foreknowledge.** Registered after the results that motivate them. We have seen the cross-model
+mismatch results on Qwen2.5-14B-Instruct at 24 layer-by-mechanism cells, n = 200 each, and the
+exact order-2 Walsh coefficients computed from them: the binding protocol gives w2 = -0.499 at
+L24--L34 with both order-1 coefficients exactly zero, and the answer protocol gives w2 = +0.249 at
+L32--L38. We have also established, by reading the harness, that the two protocols differ in
+counterfactual generator, in layer range, and in the size of the patched lookback span -- the
+binding protocol patches every position from the question marker to the end of the prompt, the
+answer protocol patches the final position alone. No follow-up below has been run in any mode.
+
+**Criteria addressed.** EXP19 is a harness validity gate, not a criterion test. EXP20 bears on I4
+(alternative mechanisms): an IIA of zero does not distinguish cancellation from interference.
+EXP21 bears on I5 (confound control). EXP22 and EXP23 bear on V1 (label accuracy): whether
+"lookback tokens" names a mechanism or contains the readout site.
+
+### Experiment 19: Full-sequence positive control (gate)
+
+**Question.** Does replacing the entire clean residual sequence with the counterfactual sequence
+at a layer recover the counterfactual output?
+
+**Protocol.** 30 cached equal-length pairs, L26 and L30, binding pairs. One patched condition.
+
+**H1.** Full-sequence patching returns the counterfactual answer on every pair.
+
+| hypothesis | holds when |
+|---|---|
+| H1 | 30 of 30 at both layers |
+
+**Everything downstream is void if EXP19 fails.** A failure means the source-target alignment or
+the continuation setup is wrong, and no interchange result in this series is interpretable until
+it is fixed.
+
+**Interpretation limit, pre-committed.** If EXP19 succeeds where recalled+lookback fails, that
+shows the omitted positions carry information sufficient to alter the outcome. It does not show
+they cause the zero; they may override a cancellation rather than explain its origin.
+
+### Experiment 20: Output identity in the both-condition
+
+**Question.** At binding L26 and L30 the both-condition gives IIA 0.000. Is the output the clean
+answer, or something else?
+
+**Protocol.** Re-run the binding mismatch test at L26 and L30, n = 200, recording per pair and
+condition: predicted token id, `repr` of the decoded token, top-10 ids with logits, the clean and
+counterfactual answer logits, and whether every canonical drink is single-token in the answer
+context. Outputs are classified into five ordered exclusive categories -- exact clean answer,
+exact counterfactual answer, other canonical drink in either source prompt, canonical drink in
+neither, not a complete canonical drink -- with categories 1 and 2 taking precedence. The
+confirmatory endpoint collapses these to three macro-categories, `p_clean`, `p_cf` and
+`p_off = p3 + p4 + p5`, and is restricted to pairs where every canonical drink is verified
+single-token. Greedy completions are reported separately and never pooled into that multinomial.
+
+**H1.** The two patches cancel: `p_clean` exceeds both `p_cf` and `p_off`.
+**H2.** The two patches interfere: `p_off` exceeds both `p_clean` and `p_cf`.
+**H3.** Counterfactual transfer was mis-scored: `p_cf` exceeds both others.
+
+| hypothesis | holds when |
+|---|---|
+| H1 | `p_clean` beats both, both contrasts excluding zero under the simultaneous band |
+| H2 | `p_off` beats both on the same test |
+| H3 | `p_cf` beats both on the same test |
+| unresolved | no macro-category beats both |
+
+The band is a pair bootstrap with a max-statistic over six contrasts: the three pairwise
+macro-contrasts at L26 and at L30. The clean-minus-counterfactual logit margin is reported as
+median, interval, distribution and proportion above zero. **No mechanistic category is assigned
+from the margin**, which has no decision rule.
+
+**EXP20 is void if** clean accuracy is below 1.0 or the reproduced both-condition has a Wilson
+upper bound above 0.05. A single discordant pair is investigated and reported, not treated as
+voiding.
+
+### Experiment 21: Directional symmetry
+
+**Question.** Does the parity pattern hold when clean activations are patched into counterfactual
+prompts and the clean answer is scored?
+
+**Protocol.** The three-condition mismatch test with source and target exchanged, n = 200, L26 and
+L30.
+
+**H1.** The reverse direction reproduces the forward signature: singles near 1, pair near 0.
+
+**Pre-committed interpretation.** This measures directional symmetry and nothing stronger. A
+matching reverse signature strengthens the reading that parity is stable to intervention
+direction. An asymmetric result is compatible with genuine directional computation and with
+source-target geometry alike -- nonlinear processing, unequal logit margins, differing source
+activation geometry, or one state being more stable -- and **is not by itself evidence of
+artifact**.
+
+### Experiment 22: Omitted-region localization (exploratory)
+
+**Question.** Which positions outside the two named groups carry information sufficient to restore
+counterfactual transfer?
+
+**Protocol.** Partition the complement of recalled and lookback into N (non-state story content by
+template metadata), S (a system or instruction span, empty if absent) and X (every remaining
+position, including formatting and special tokens). X is the catch-all, so the partition holds by
+construction. Assert per pair that N, S and X are pairwise disjoint and their union is exactly
+`all non-padding positions \ (R union L)`, with R and L deduplicated; an observation where R and L
+intersect is undefined. Run the complete subset lattice over {N, S, X}, eight conditions, each on
+top of recalled+lookback, collapsing duplicate cells where S is empty. n = 200, L26 and L30.
+
+**EXP22 is exploratory throughout.** No omitted region is privileged in advance, so there is no
+principled sole confirmatory comparison, and adjusting across all eight subsets would consume the
+power the design has. Report the paired estimate and Tango score interval for each subset against
+the EXP19 condition, and each leave-one-out difference, **without confirmatory "restores" or
+"essential" declarations**. EXP22 localizes where to look; it settles nothing alone.
+
+### Experiment 23: Decomposition of the binding lookback span
+
+**Question.** The binding lookback span runs from the question marker to the end of the prompt and
+therefore contains the position the answer is read from. Does patching that span reduce to
+overwriting the readout site?
+
+**Protocol.** Partition the span into Q (question marker and content), A (answer cue and suffix,
+**excluding the final prompt token**) and F (the final prompt token). Boundaries come from known
+template spans converted to token indices by offset mapping, not inferred from punctuation after
+tokenization; an empty A is legal and recorded as empty. Run the complete subset lattice over
+{Q, A, F}, without and with the recalled patch: sixteen conditions per layer. n = 100 at L26 and
+L30. A reduced sentinel panel -- empty, F, QA, QAF, each without and with R -- at n = 50 for L24,
+L32 and L34, **from which no equivalence decision is taken**. Matched-cardinality controls draw
+one subset per pair per target cardinality from eligible non-target positions, seeded from the
+experiment seed and the pair id, with selected indices stored and the observation recorded
+undefined where too few eligible positions exist.
+
+Every subset S is scored on two coordinates, `T(S) = (IIA(S), IIA(R + S))`, because the full span
+has two outcomes that must both be reproduced: lookback-only near 1 and recalled+lookback near 0.
+
+**H1.** F alone reproduces the full-span signature on both coordinates.
+**H2.** F is necessary: removing it from the full span breaks at least one coordinate.
+**H3.** Readout-site artifact: H1 and H2 both hold.
+
+| hypothesis | holds when |
+|---|---|
+| H1 | T(F) equivalent to T(QAF) on both coordinates, paired TOST within delta = 0.05 |
+| H2 | `IIA(QAF) - IIA(QA) > delta` or `IIA(R+QA) - IIA(R+QAF) > delta`, Holm-adjusted across the two |
+| H3 | H1 and H2 |
+
+Intervals are **Tango score intervals for the difference of paired proportions**, at the 90% level
+implied by TOST at alpha = 0.05. A Wilson interval conditioned on discordant pairs alone is not a
+confidence interval for the marginal paired difference and degenerates at zero discordance, which
+coordinates sitting at 0.000 and 1.000 are likely to produce.
+
+The two necessity coordinates move in opposite directions, since `T(QAF)` is approximately
+`(1, 0)`: removing F should lower the first coordinate and raise the second, which is why the two
+differences are written with opposite operands rather than both as `T(QAF) - T(QA)`.
+
+**F versus QAF is the sole confirmatory comparison.** The other seven subsets are exploratory.
+Minimal sufficient subsets and essential parts are reported as exploratory description.
+
+**No early screen is run.** Inspecting F and R+F and then testing the same cells on the same pairs
+would compromise the confirmatory analysis, and re-running a deterministic intervention does not
+restore independence.
+
+**EXP23 is void if** the Q/A/F partition assertion fails on more than 10% of pairs.
+
+### Methodological notes applying to EXP19--EXP23
+
+1. Five source passes per pair: a clean trace, a counterfactual trace, and one per patched
+   condition.
+2. Interaction estimates use the per-pair contrast `d_i = (y00 - y10 - y01 + y11) / 4` with a
+   bootstrap that resamples pairs, carrying all four outcomes of a pair together. An earlier
+   analysis resampled cells as independent binomials and described the result as an upper bound on
+   interval width; that was wrong, because the dropped covariance terms have mixed signs.
+3. One JSONL row per pair per condition, appended, carrying the patched index sets, their
+   cardinalities, the decoded spans, a disjointness assertion between recalled and lookback, and a
+   union assertion for the combined condition. An observation failing any assertion is written as
+   undefined with its reason, never as a null.
+4. Position resolution uses tokenizer offset mappings and explicit semantic-role metadata, not the
+   `zip` alignment of sorted matches or separate tokenization of a prompt prefix, both of which
+   fail silently in the existing harness.
+5. Cached pair files with content hashes, and pinned model revision and library versions, recorded
+   in every result file.
+
+### Provenance of these designs
+
+Reviewed externally four times before freezing. The review record is in
+`notes/perplexity_review_qwen_followups/REVIEW_ROUNDS.md`, which is not committed. Substantive
+changes it produced: the protocol-asymmetry confound, the correction of the independent-binomial
+bootstrap claim, the two-coordinate signature in EXP23, cellwise sign rules for the conditional
+crossed experiment, the Tango interval, and the necessity-direction sign error.
