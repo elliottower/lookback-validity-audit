@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Causal findings in mechanistic interpretability carry specific labels---belief tracking, planning, deception---whose specificity is rarely tested. \citet{prakash2025lookback} report a ``lookback mechanism'' in Llama-3.1-70B-Instruct that tracks characters' beliefs through pointer dereference via attention, identifying low-rank subspaces at three layer ranges that carry belief content when swapped between stories. We apply the 36 criteria of the Mechanistic Validity framework and identify six untested assumptions, most critically that the story-generation code sets each character's belief equal to reality in every pair, so the evaluation never tested the phenomenon the claim is named for. Fifteen experiments were pre-registered in timestamped amendments; nine completed, three of them overturning our own predictions. (1)~The subspaces transfer to stories where belief diverges from reality (IIA $= 0.975$) and observability-mediated knowledge (IIA $= 0.988$), overturning our pre-registered prediction that they would not. Question framing modulates transfer: belief questions give IIA $= 1.0$ while reality-state questions give $0.82$--$0.92$ over the same story pairs, a reliable reduction that does not abolish transfer. (2)~A cross-model mismatch test on Qwen2.5-14B-Instruct confirms the answer lookback's dependency structure transfers (singles near zero, pair at $1.0$) while the binding mechanism shows a structurally different pattern---partial transport that full-residual patching cannot detect. (3)~That test is a complete two-player coalition function, so the interaction between its token groups is exact: binding is a parity function at layers 24--34, with both order-1 coefficients exactly zero and all non-constant energy at order~2, while the answer lookback is a conjunction at layers 32--38 ($w_2 = +0.249$ against a ceiling of $+0.25$). A summary reporting marginal contributions assigns binding two zeros. All readings stay at ``Causally Suggestive'' or below: the ladder gates baseline separation (M2) beneath every causal rung, and no matched-rank random-subspace comparison exists in the record, so the accumulated evidence does not move the tier. We propose the term \emph{perspective-indexed entity binding}.
+Causal findings in mechanistic interpretability carry specific labels---belief tracking, planning, deception---whose specificity is rarely tested. \citet{prakash2025lookback} report a ``lookback mechanism'' in Llama-3.1-70B-Instruct that tracks characters' beliefs through pointer dereference via attention, identifying low-rank subspaces at three layer ranges that carry belief content when swapped between stories. We apply the 36 criteria of the Mechanistic Validity framework and identify six untested assumptions, most critically that the story-generation code sets each character's belief equal to reality in every pair, so the evaluation never tested the phenomenon the claim is named for. Fifteen experiments were pre-registered in timestamped amendments; nine completed, three of them overturning our own predictions. (1)~The subspaces transfer to stories where belief diverges from reality (IIA $= 0.975$) and observability-mediated knowledge (IIA $= 0.988$), overturning our pre-registered prediction that they would not. Question framing modulates transfer: belief questions give IIA $= 1.0$ while reality-state questions give $0.82$--$0.92$ over the same story pairs, a reliable reduction that does not abolish transfer. (2)~A cross-model mismatch test on Qwen2.5-14B-Instruct confirms the answer lookback's dependency structure transfers (singles near zero, pair at $1.0$) while the binding mechanism shows a structurally different pattern---partial transport that full-residual patching cannot detect. (3)~That test is a complete two-player coalition function, so the interaction between its token groups is exact: the binding protocol yields a parity function at layers 24--34, with both order-1 coefficients exactly zero and all non-constant energy at order~2, while the answer protocol yields a conjunction at layers 32--38 ($w_2 = +0.249$ against a ceiling of $+0.25$). A summary reporting marginal contributions assigns the binding run two zeros. The two protocols differ in generator, layer range and the size of the patched span, so the sign difference is a difference between protocols as run and is not yet attributable among those three. All readings stay at ``Causally Suggestive'' or below: the ladder gates baseline separation (M2) beneath every causal rung, and no matched-rank random-subspace comparison exists in the record, so the accumulated evidence does not move the tier. We propose the term \emph{perspective-indexed entity binding}.
 \end{abstract}
 
 \noindent\textbf{Keywords:} mechanistic interpretability, validity, belief tracking, interchange interventions, replication
@@ -42,7 +42,7 @@ We produce a verdict on the five-tier scale (Proposed, Causally Suggestive, Mech
 \paragraph{Contributions.}
 (1)~A validity assessment against the 36 criteria, most critically showing that the evaluation's story generator never instantiates false beliefs, and fifteen pre-registered experiments testing the gaps.
 (2)~A framing dissociation confirming belief-specific subspaces: belief questions give IIA $= 1.0$ while reality-state questions give $0.82$--$0.92$ over the same story pairs, and the subspaces generalize to genuine false beliefs (IIA $= 0.975$) and observability-mediated knowledge (IIA $= 0.988$).
-(3)~An exact interaction decomposition of the cross-model test, which finds the two sub-mechanisms carrying pairwise interactions of opposite sign, each saturated at the bound the design admits.
+(3)~An exact interaction decomposition of the cross-model test, which finds the two protocols carrying pairwise interactions of opposite sign, each saturated at the bound the design admits, and identifies the crossed design that would attribute the difference.
 (4)~A verdict per reading rather than one for the claim, with baseline separation identified as the single gate holding every reading at ``Causally Suggestive'' or below, and a revised term: \emph{perspective-indexed entity binding}.
 
 
@@ -66,7 +66,7 @@ usable estimates, so the question stands open on our evidence as well as on the 
 paper's.
 
 \paragraph{No convergent evidence (C3).}
-All evidence comes from one method family: interchange interventions on residual stream vectors via NNsight. Subspace identification uses the same framework (SVD of intervention-site activations, then learning a binary mask over singular vectors to maximize IIA). No weight analysis and no attention pattern analysis. The qualification on independent
+Interchange interventions on residual stream vectors carry the argument, and subspace identification uses the same framework (SVD of intervention-site activations, then a binary mask over singular vectors trained to maximize the counterfactual logit). Appendix~L adds one weight-space measurement: the column-normalized query projection is projected onto the identified subspace basis, reshaped per head, and reported as a per-head Frobenius norm, with the same computation repeated for value projections (Figures~19 and~20). It does not converge on the subspace result independently, because the basis it projects onto is the mask's output, so a subspace selected for the wrong reason yields head norms selected for the wrong reason. No baseline accompanies it---no matched-rank random subspace, no null distribution over heads---and no test accompanies the figures, which are read as agreeing with the intervention result. No attention pattern analysis is reported. The qualification on independent
 probing is that the ordering-ID construct the mechanism is built on comes from
 \citet{dai2024representational}, who identify a low-rank subspace encoding ordering by PCA
 and confirm it by causal editing, and whom the audited paper cites. That is a second method
@@ -116,13 +116,13 @@ The paper ablates the mechanism (showing necessity) but does not restore a corru
 \paragraph{Single template (cross-distribution generalization).}
 All 80 stories follow the CausalToM template with fixed token positions, exactly two characters, and exactly two objects. No structural variation is tested.
 
-\paragraph{No cross-task transfer (EXP3).}
+\paragraph{No cross-task transfer.}
 The paper tests model generality (Gemma-3-27B, Qwen-2.5-14B) without task generality: different story formats, naturalistic text, multi-step reasoning with belief tracking as one component.
 
-\paragraph{No graded response (EXP5).}
+\paragraph{No graded response.}
 No partial ablation of the subspace is tested for proportional degradation. A dose-response curve would distinguish a sharply localized mechanism from diffuse information storage.
 
-\paragraph{No novel prediction (EXP6).}
+\paragraph{No novel prediction.}
 The mechanism is characterized post hoc, with no new behavioral prediction derived from the mechanistic account and tested on held-out data.
 
 \subsection{Interpretive validity}
@@ -163,7 +163,7 @@ Category & Confirmed & Partial & Not met & Fails \\
 Construct (C1--C6) & 1 & 2 & 3 & 0 \\
 Measurement (M1--M7) & 0 & 2 & 5 & 0 \\
 Internal (I1--I12) & 1 & 2 & 9 & 0 \\
-External (EXP1--EXP6) & 0 & 2 & 4 & 0 \\
+External (E1--E6) & 0 & 2 & 4 & 0 \\
 Interpretive (V1--V5) & 0 & 2 & 1 & 2 \\
 \midrule
 \textbf{Total (36)} & \textbf{2} & \textbf{10} & \textbf{22} & \textbf{2} \\
@@ -426,8 +426,8 @@ case, so a coefficient can be read as a fraction of the largest interaction the 
 \caption{Order-2 Walsh coefficients for the two token groups, Qwen2.5-14B-Instruct,
 $n = 200$ pairs per cell. Saturation is $w_2$ as a fraction of the bound it approaches.
 Order-2 energy is the share of non-constant Walsh energy at order~2. Intervals resample cells
-as independent binomials; the three patched conditions share the same pairs, so the paired
-interval is narrower than the one reported.}
+as independent binomials, which is not conservative: the dropped covariance terms have mixed
+signs, so the reported width may be too narrow.}
 \label{tab:interaction}
 \vspace{0.5\baselineskip}
 \begin{tabular}{llccccc}
@@ -456,8 +456,9 @@ bootstrap intervals over $10{,}000$ draws.}
 \label{fig:interaction}
 \end{figure}
 
-The two mechanisms take interactions of opposite sign, each saturated (Table~\ref{tab:interaction},
-Figure~\ref{fig:interaction}). From layer 24 the binding coalition values are
+The two protocols return interactions of opposite sign, each saturated (Table~\ref{tab:interaction},
+Figure~\ref{fig:interaction}). They are protocols rather than mechanisms because the two runs
+differ in three respects at once, and the difference is not attributable among them. From layer 24 the binding coalition values are
 $v = (0, 1, 1, 0)$ to within one pair in 200: either token group alone transfers the
 counterfactual answer on every pair, both together transfer it on none. Both order-1
 coefficients are exactly zero and $w_2 = -0.499$, so the function is parity over the two
@@ -479,9 +480,18 @@ accuracy $1.0$; read through the interaction, one is parity and the other conjun
 and \citet{tower2026epistatic} measures the component-level analogue for attention heads,
 where functionally selected circuits carry $17$--$19\%$ of their coalition energy at order~2.
 
-Two limits apply. An order-2 share over two players is not comparable to the same quantity
-over a fifteen-head circuit, so what carries weight in the binding result is that the order-1
-coefficients are exactly zero rather than that the share reaches one. And \citet{benzer1955}
+Three limits apply. The binding and answer runs are not a controlled comparison. They use
+different counterfactual generators, are reported over different layer ranges, and---most
+consequentially---patch lookback spans of different size: the binding protocol patches every
+position from the question marker to the end of the prompt, while the answer protocol patches
+the final position alone. Any of the three, span size included, could
+account for the opposite signs; final-token-only patching has not been run on the binding pairs
+at these layers, so none of them is established as the source. The results establish a
+difference between the protocols as run. Separating its causes requires a crossed design at
+shared layers with matched intervention size, which we have not run. Second, an order-2 share over two players is
+not comparable to the same quantity over a fifteen-head circuit, so what carries weight in the
+binding result is that the order-1 coefficients are exactly zero rather than that the share
+reaches one. Third, \citet{benzer1955}
 decides one unit or two from the sign of a double perturbation, sub-additivity reading as one
 pathway; that convention was defined for loss-of-function perturbations, and interchange
 interventions install a value rather than remove one, so we report the coefficients without

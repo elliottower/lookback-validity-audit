@@ -77,8 +77,12 @@ def bootstrap_w2(cell, n_draws, rng):
 
     The three patched conditions were measured on the same filtered pairs, but
     modal_qwen_mismatch_test.py stores counts rather than per-pair outcomes, so
-    the pairing cannot be preserved. Ignoring it inflates the variance, making
-    this interval an upper bound on the width rather than the exact one.
+    the pairing cannot be preserved. This is NOT an upper bound on the width:
+    expanding Var(4d) leaves 2Cov(v10,v01) - 2Cov(v10,v11) - 2Cov(v01,v11),
+    whose signs are mixed, so dropping them can widen or narrow the interval.
+    A positive Cov(v10,v01) alone makes the reported interval too narrow. The
+    fix is a paired bootstrap over per-pair contrasts, which needs per-pair
+    outcomes the source run did not store.
     """
     n = cell["n_samples"]
     if n == 0:
@@ -180,9 +184,21 @@ def main():
                 "computed: modal_qwen_mismatch_test.py stores counts, not per-pair outcomes."
             ),
             "bootstrap": (
-                "Cells resampled as independent binomials. The three patched conditions "
-                "share the same filtered pairs, so the true paired interval is narrower; "
-                "the reported interval is an upper bound on width."
+                "Cells resampled as independent binomials. This is not conservative: "
+                "Var(4d) carries 2Cov(v10,v01) - 2Cov(v10,v11) - 2Cov(v01,v11), whose "
+                "signs are mixed, so dropping the covariances can widen or narrow the "
+                "interval. A positive Cov(v10,v01) makes the reported interval too "
+                "narrow. A paired bootstrap over per-pair contrasts is required and "
+                "needs per-pair outcomes the source run did not store."
+            ),
+            "protocol_asymmetry": (
+                "The two mechanisms did not receive the same intervention. In "
+                "modal_qwen_mismatch_test.py the binding protocol patches the entire span "
+                "from 'Question:' to the end of the prompt (line 246), while the answer "
+                "protocol patches the final token alone (line 437). The two also use "
+                "different counterfactual generators and are reported over different layer "
+                "ranges. The opposite-signed coefficients are therefore a property of the "
+                "two protocols as run, not an established difference between mechanisms."
             ),
             "perturbation_semantics": (
                 "The Benzer complementation reading was defined for loss-of-function "
