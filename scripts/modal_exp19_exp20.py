@@ -53,6 +53,7 @@ image = (
         "dataclasses-json==0.6.7",
         "huggingface-hub==0.28.1",
     )
+    .env({"HF_HOME": "/hf", "HF_HUB_CACHE": "/hf/hub"})
     .add_local_dir(
         "/Users/elliottower/Documents/GitHub/lookback-validity-audit/reference/belief_tracking",
         remote_path="/root/belief_tracking",
@@ -60,6 +61,11 @@ image = (
 )
 
 vol = modal.Volume.from_name("lookback-exp19-exp20", create_if_missing=True)
+
+# Without this the container downloads eight model shards, about twenty minutes of A100
+# time, before any compute -- on every run, including a five-pair dry run.
+hf_cache = modal.Volume.from_name("hf-cache-qwen", create_if_missing=True)
+
 app = modal.App("lookback-exp19-exp20")
 
 MODEL = "Qwen/Qwen2.5-14B-Instruct"
@@ -222,21 +228,37 @@ def _offset_pair_by_role(src_roles, dst_roles):
 # ── Stimuli ──
 
 
-def _generate_binding_pairs(n_samples, seed):
+def _load_entities():
     import json
-    import random
-    import sys
-
-    sys.path.insert(0, "/root/belief_tracking")
-    from notebooks.causalToM_novis.utils import get_reversed_sentence_counterfacts
-
     def load(name):
         with open(f"/root/belief_tracking/data/synthetic_entities/{name}.json") as f:
             return json.load(f)
+    return load("characters"), load("bottles"), load("drinks")
 
+
+def _generate_binding_pairs(n_samples, seed):
+    """EXP20's pair set. counterfactual_ans == clean_ans here: the counterfactual
+    reverses characters, objects and states together, so bindings are preserved and only
+    narrative order moves. The intervention target is sample["target"]."""
+    import random
+    import sys
+    sys.path.insert(0, "/root/belief_tracking")
+    from notebooks.causalToM_novis.utils import get_reversed_sentence_counterfacts
     random.seed(seed)
-    return get_reversed_sentence_counterfacts(
-        load("characters"), load("bottles"), load("drinks"), n_samples)
+    return get_reversed_sentence_counterfacts(*_load_entities(), n_samples)
+
+
+def _generate_answer_pairs(n_samples, seed):
+    """EXP19's pair set (Amendment 16a). Counterfactual states are drawn disjoint from
+    the clean states, so counterfactual_ans differs from clean_ans and a full-sequence
+    replacement that transfers is distinguishable from one that does nothing. On binding
+    pairs the two answers coincide and the gate would be vacuous."""
+    import random
+    import sys
+    sys.path.insert(0, "/root/belief_tracking")
+    from notebooks.causalToM_novis.utils import get_reversed_sent_diff_state_counterfacts
+    random.seed(seed)
+    return get_reversed_sent_diff_state_counterfacts(*_load_entities(), n_samples)
 
 
 def _canonical_drinks():
@@ -277,8 +299,6 @@ def _filter_on_model(lm, pairs, max_size):
     for sample in tqdm(pairs, desc="Filtering"):
         clean_target = sample["clean_ans"].lower().strip()
         cf_target = sample["counterfactual_ans"].lower().strip()
-        if clean_target == cf_target:
-            continue
         with torch.no_grad():
             with lm.trace(sample["clean_prompt"]):
                 clean_pred = lm.lm_head.output[0, -1].argmax(dim=-1).save()
@@ -519,7 +539,8 @@ def _gate_from_disk(path, dry_run, required=None):
     return {"per_layer": summary, "gate_ok": bool(ok), "dry_run": bool(dry_run)}
 
 
-@app.function(image=image, gpu="A100", volumes={"/results": vol},
+@app.function(image=image, gpu="A100",
+              volumes={"/results": vol, "/hf": hf_cache},
               timeout=24 * 60 * 60, secrets=[modal.Secret.from_name("huggingface-secret")])
 def run(dry_run: bool = False, limit: int = 0):
     import json
@@ -530,6 +551,7 @@ def run(dry_run: bool = False, limit: int = 0):
     from huggingface_hub import HfApi
     from nnsight import LanguageModel
     from tqdm import tqdm
+
 
     if limit and not dry_run:
         raise RuntimeError(
@@ -550,6 +572,7 @@ def run(dry_run: bool = False, limit: int = 0):
 
     lm = LanguageModel(MODEL, revision=model_sha, torch_dtype=torch.float16,
                        device_map="auto")
+    hf_cache.commit()
     tok = lm.tokenizer
     source_sha = _stimulus_digest("/root/belief_tracking")
     if source_sha != EXPECTED_STIMULUS_SHA:
@@ -720,8 +743,12 @@ def run(dry_run: bool = False, limit: int = 0):
                 if all(("EXP20", idx, layer, c) in done for c in EXP20_CONDITIONS):
                     continue
                 s = pairs[idx]
+                # Amendment 16b: the stored harness scores the binding mismatch test
+                # against sample["target"], the answer expected after the interchange,
+                # which on binding pairs is neither clean_ans nor counterfactual_ans.
+                intervention_target = s["target"]
                 clean_id = _single_token_id(tok, s["clean_ans"].strip())
-                cf_id = _single_token_id(tok, s["counterfactual_ans"].strip())
+                cf_id = _single_token_id(tok, intervention_target.strip())
 
                 recalled = _find_state_positions(tok, s["clean_prompt"], s["clean_states"])
                 lookback = _find_question_answer_positions(tok, s["clean_prompt"])
@@ -743,7 +770,7 @@ def run(dry_run: bool = False, limit: int = 0):
 
                 checks = {
                     "answers_differ": s["clean_ans"].lower().strip()
-                                      != s["counterfactual_ans"].lower().strip(),
+                                      != intervention_target.lower().strip(),
                     "recalled_lookback_disjoint": not (set(recalled) & set(lookback)),
                     "recalled_cardinality_matches": len(recalled) == len(cf_recalled),
                     "lookback_cardinality_matches": len(lookback) == len(cf_lookback),
@@ -885,7 +912,13 @@ def run(dry_run: bool = False, limit: int = 0):
 
                     shared = {
                         "both_resolvers_agree": resolvers_agree,
-                        "clean_ans": s["clean_ans"], "cf_ans": s["counterfactual_ans"],
+                        "clean_ans": s["clean_ans"],
+                        "counterfactual_ans": s["counterfactual_ans"],
+                        "intervention_target": intervention_target,
+                        # cf_ans names the quantity IIA is scored against, which is the
+                        # intervention target. Every answer field is stored so the choice
+                        # is auditable rather than implicit.
+                        "cf_ans": intervention_target,
                         "clean_answer_id": clean_id, "cf_answer_id": cf_id,
                         "recalled_indices": recalled, "lookback_indices": lookback,
                         "cf_recalled_indices": cf_recalled, "cf_lookback_indices": cf_lookback,

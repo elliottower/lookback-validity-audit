@@ -1000,7 +1000,8 @@ amendments written together; each later tag is one freeze.
 | `prereg-amendment-8` | (see tag) | 12 |
 | `prereg-amendment-9` | da1a2df | 13 |
 | `prereg-amendment-10` | 662034b | 14 |
-| `prereg-amendment-11` | (this freeze) | 15 |
+| `prereg-amendment-11` | 0d7c871 | 15 |
+| `prereg-amendment-12` | (this freeze) | 16 |
 
 `prereg-amendment-4` therefore resolves to Amendment 8, not Amendment 4. Resolve a tag with
 `git rev-parse <tag>^{}`; the tags are annotated, so `rev-parse` without `^{}` returns the
@@ -1352,3 +1353,59 @@ and the four vendored stimulus-generating files at digest
 `400c8a5db9a92f59c0701915a0bbc02e8206ce3503cf79f0f85b6051e5b37297`, both asserted at runtime.
 Amendment 13 claimed the model was pinned; until this amendment the code resolved `main` at run
 time, which pinned a run rather than the registration.
+
+---
+
+## Amendment 16: EXP19 moves to answer pairs; EXP20 scores the intervention target
+
+**Date.** 2026-09-07. A limited dry run (5 pairs, `DRYRUN_` artifacts, no registered result)
+exposed both problems below before any registered run. No registered result exists for EXP19 or
+EXP20.
+
+### 16a: EXP19 cannot use binding pairs
+
+**Defect.** Amendment 13 registers EXP19 on the binding pair set and defines success as the
+full-sequence patch returning the counterfactual answer. In
+`get_reversed_sentence_counterfacts` the counterfactual reverses characters, objects **and**
+states together, so the bindings are unchanged and only the narrative order moves. Consequently
+`counterfactual_ans` equals `clean_ans` on every binding pair. A full-sequence replacement that
+worked and one that did nothing both return the same token, so the gate registered to detect a
+broken harness cannot detect one.
+
+**Correction.** EXP19 runs on the **answer** pair set
+(`get_reversed_sent_diff_state_counterfacts`), which draws counterfactual states guaranteed
+disjoint from the clean states, so `counterfactual_ans` differs from `clean_ans` by construction
+and the gate is diagnostic. EXP19's question --- whether patching a source residual sequence into
+a target run transfers at all --- concerns the harness rather than either mechanism, and both
+pair sets are built from the same template with the same reversal structure, so their token
+geometry is comparable. n and layers are unchanged: 30 equal-length pairs at L26 and L30, 30 of
+30 required at both.
+
+**EXP20 is unaffected** and continues on binding pairs, which is what it must reproduce.
+
+**A consequence worth recording.** Because binding pairs satisfy `clean_ans ==
+counterfactual_ans`, the stored harness's two filter conditions --- model returns `clean_ans` on
+the clean prompt, and `counterfactual_ans` on the counterfactual prompt --- are nearly the same
+condition. Its reported clean accuracy of 1.0 is therefore weaker evidence of pair validity than
+it appears. This is an observation about the audited harness, not a correction to it.
+
+### 16b: EXP20 scores the intervention target, not the counterfactual answer
+
+**Defect.** Amendment 13 describes EXP20's endpoint as IIA "against the counterfactual answer."
+The stored harness scores the binding mismatch test against `sample["target"]`, defined by the
+generator as `" " + clean_configs[idx].states[1 ^ random_object_idx]` --- the answer expected
+*after* the interchange, which on binding pairs is neither `clean_ans` nor `counterfactual_ans`.
+Scoring against `counterfactual_ans` would measure a different quantity and, because that field
+equals `clean_ans`, would report something close to clean accuracy while appearing to report IIA.
+
+**Correction.** EXP20's IIA, its Wilson bound and both void conditions are computed against
+`sample["target"]`, matching the run being reproduced. Clean accuracy remains scored against
+`clean_ans`. The registered `answers_differ` assertion compares `clean_ans` with
+`sample["target"]` rather than with `counterfactual_ans`. Every answer field is stored per
+observation so the choice is auditable rather than implicit.
+
+**Scoring remains by normalized decoded string**, as corrected in the conformance pass, not by
+token identity.
+
+**Nothing else changes.** Sample sizes, layers, the seven conditions, the two resolver arms of
+Amendment 15, the void conditions, and the completeness requirements all stand.
