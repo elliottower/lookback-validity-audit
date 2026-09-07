@@ -1,10 +1,11 @@
 """
 EXP19 (full-sequence gate) and EXP20 (output identity in the both-condition).
 
-Registered in AMENDMENTS.md Amendment 13 (tag prereg-amendment-9) and corrected by
-Amendment 14 (tag prereg-amendment-10), both frozen before either experiment was
-run in any mode. Amendment 14 is analysis-side; this script stores raw readouts
-and classifies nothing, so it is unaffected by those corrections.
+Registered in AMENDMENTS.md Amendment 13 (tag prereg-amendment-9), corrected by
+Amendment 14 (tag prereg-amendment-10), and extended by Amendment 15 (tag
+prereg-amendment-11), all frozen before either experiment was run in any mode.
+Amendment 14 is analysis-side; this script stores raw readouts and classifies
+nothing, so it is unaffected by those corrections.
 
 EXP19 is a harness gate. Replacing the entire clean residual sequence with the
 counterfactual sequence at a layer must recover the counterfactual output. If it
@@ -22,17 +23,19 @@ Design decisions a reader should not have to infer:
   logits and span metadata. It assigns no category and runs no test. Storing a
   verdict rather than the evidence is the defect that made this rerun necessary.
 
-* EXP20 must REPRODUCE the stored result, so it patches using the legacy position
-  resolvers verbatim. A second, offset-mapping resolver runs alongside purely as a
-  diagnostic: its indices are recorded and compared, never used for patching. That
-  detects the BPE boundary defect instead of merely asserting it exists.
+* EXP20 runs BOTH resolutions as patches (Amendment 15). The legacy arm reproduces
+  the stored intervention and carries every registered endpoint and void condition.
+  The offset arm applies Amendment 13's resolution and is exploratory. Agreement
+  between the two is recorded per observation and summarised per layer. This
+  replaces what would otherwise have been an amendment granting the legacy resolver
+  an exception, and it measures the resolver question rather than assuming it.
 
 * Every write is all-or-nothing per (pair, layer). Partial observations are the
   failure mode that makes an incomplete run look finished.
 
 Usage:
     modal run --detach scripts/modal_exp19_exp20.py
-    modal run --detach scripts/modal_exp19_exp20.py --dry-run
+    modal run --detach scripts/modal_exp19_exp20.py --dry-run --limit 5
     modal volume get lookback-exp19-exp20 results/ results/exp19_exp20/
 """
 
@@ -95,10 +98,10 @@ EXP20_CONDITIONS = ("clean",) + LEGACY_CONDITIONS + OFFSET_CONDITIONS
 
 
 # ── Position resolvers ──
-# The legacy pair is copied verbatim from modal_qwen_mismatch_test.py, defects
-# included, because EXP20's void condition is reproducing the stored result and
-# repairing them here would defeat it. The offset-mapping pair below is a
-# diagnostic only.
+# Both are patch sources under Amendment 15. The legacy pair is copied verbatim from
+# modal_qwen_mismatch_test.py, defects included, because EXP20's void condition is
+# reproducing the stored result and repairing them would defeat it. The offset pair
+# below applies the resolution registered in Amendment 13.
 
 
 def _find_state_positions(tokenizer, prompt, states):
@@ -144,14 +147,23 @@ def _offset_question_answer_positions(tokenizer, prompt):
 
 
 def _offset_state_positions(tokenizer, prompt, states):
-    """Offset-mapping resolution of state positions, with semantic-role metadata.
+    """Offset-mapping resolution of state positions, paired by narrative order.
 
-    Registered in Amendment 13. Unlike the legacy resolver this pairs occurrences by
-    role -- which state, which occurrence of it -- rather than by sorted token index,
-    and derives token indices from character offsets rather than from separately
-    tokenizing a prefix. Returns (positions, roles) or (None, None) where offsets are
-    unavailable, so a tokenizer lacking them disables this arm rather than failing it.
+    Registered in Amendment 13. Two differences from the legacy resolver: token indices
+    come from character offsets rather than from separately tokenizing a prefix, and
+    matching is word-boundary aware, so a state name cannot match inside a longer word.
+
+    Occurrences are keyed by **narrative order** -- the order in which state strings first
+    appear in the story -- not by index in the `states` list. That list is a generator
+    slot, not a semantic role: `get_reversed_sentence_counterfacts` builds the
+    counterfactual with `list(reversed(states))`, so slot 0 names a different drink in the
+    two prompts. Slot order happens to coincide with narrative order for this generator
+    because it reverses characters, objects and states together, but relying on that
+    coincidence would be the same class of error as the legacy `zip`.
+
+    Returns (positions, roles) or (None, None) where offsets are unavailable.
     """
+    import re as _re
     q_idx = prompt.find("Question:")
     story_end_char = q_idx if q_idx > -1 else len(prompt)
     enc = tokenizer(prompt, return_offsets_mapping=True, add_special_tokens=True)
@@ -159,53 +171,52 @@ def _offset_state_positions(tokenizer, prompt, states):
     if not offsets:
         return None, None
 
+    hits = []
+    for slot, state in enumerate(states):
+        for m in _re.finditer(r"\b" + _re.escape(state) + r"\b", prompt[:story_end_char]):
+            hits.append({"state": state, "generator_slot": slot, "char_start": m.start()})
+    hits.sort(key=lambda h: h["char_start"])
+
     positions, roles = [], []
-    for s_i, state in enumerate(states):
-        search_from = 0
-        occurrence = 0
-        while True:
-            c = prompt.find(state, search_from)
-            if c == -1 or c >= story_end_char:
-                break
-            span = [i for i, (a, b) in enumerate(offsets)
-                    if b > c and a < c + len(state) and b > a]
-            for tok_i in span:
-                positions.append(tok_i)
-                roles.append({"state_index": s_i, "state": state,
-                              "occurrence": occurrence, "char_start": c,
-                              "token_index": tok_i})
-            occurrence += 1
-            search_from = c + len(state)
+    for narrative_index, h in enumerate(hits):
+        c, state = h["char_start"], h["state"]
+        span = [i for i, (a, b) in enumerate(offsets)
+                if b > c and a < c + len(state) and b > a]
+        for k, tok_i in enumerate(span):
+            positions.append(tok_i)
+            roles.append({"narrative_index": narrative_index, "token_in_span": k,
+                          "state": state, "generator_slot": h["generator_slot"],
+                          "char_start": c, "token_index": tok_i})
     order = sorted(range(len(positions)), key=lambda i: positions[i])
     return [positions[i] for i in order], [roles[i] for i in order]
 
 
 def _offset_pair_by_role(src_roles, dst_roles):
-    """Align counterfactual to clean state positions by role, not by sorted index.
+    """Align counterfactual to clean state positions by narrative role.
 
-    Returns (src_positions, dst_positions) for roles present in both, or None if any
-    role is unmatched -- an unmatched role means the two prompts do not have the same
-    state structure, which the legacy resolver would silently truncate away.
+    Role identity is (narrative_index, token_in_span). Returns
+    (src_positions, dst_positions, pairing) or None when the two prompts do not share the
+    same role set or a role spans a different number of tokens. Returning None is the
+    point: silently truncating a mismatch is exactly the legacy defect.
     """
     if src_roles is None or dst_roles is None:
         return None
-    def key(r):
-        return (r["state_index"], r["occurrence"], r["token_index"] - r["token_index"])
-    src = {}
-    for r in src_roles:
-        src.setdefault((r["state_index"], r["occurrence"]), []).append(r["token_index"])
-    dst = {}
-    for r in dst_roles:
-        dst.setdefault((r["state_index"], r["occurrence"]), []).append(r["token_index"])
-    if set(src) != set(dst):
+    def index(roles):
+        out = {}
+        for r in roles:
+            out[(r["narrative_index"], r["token_in_span"])] = r
+        return out
+    src, dst = index(src_roles), index(dst_roles)
+    if set(src) != set(dst) or not src:
         return None
-    src_pos, dst_pos = [], []
-    for k in sorted(src):
-        if len(src[k]) != len(dst[k]):
-            return None
-        src_pos.extend(src[k])
-        dst_pos.extend(dst[k])
-    return src_pos, dst_pos
+    keys = sorted(src)
+    src_pos = [src[k]["token_index"] for k in keys]
+    dst_pos = [dst[k]["token_index"] for k in keys]
+    pairing = [{"narrative_index": k[0], "token_in_span": k[1],
+                "cf_state": src[k]["state"], "clean_state": dst[k]["state"],
+                "cf_pos": src[k]["token_index"], "clean_pos": dst[k]["token_index"]}
+               for k in keys]
+    return src_pos, dst_pos, pairing
 
 
 # ── Stimuli ──
@@ -308,9 +319,15 @@ def _readout(tokenizer, logits_saved, drink_token_ids, clean_id, cf_id):
     top = torch.topk(logits, TOP_K)
     top_ids = [int(i) for i in top.indices.tolist()]
     pred_id = int(logits.argmax().item())
+    pred_text = tokenizer.decode([pred_id])
     return {
         "pred_id": pred_id,
-        "pred_repr": repr(tokenizer.decode([pred_id])),
+        "pred_repr": repr(pred_text),
+        # Filtering and EXP19 score by normalized decoded string. Two token ids can
+        # decode to the same normalized answer, so scoring the void conditions on ids
+        # could void a run whose decoded outputs reproduce the registered criteria.
+        "pred_text": pred_text,
+        "pred_normalized": pred_text.lower().strip(),
         "top_ids": top_ids,
         "top_strings": [repr(tokenizer.decode([i])) for i in top_ids],
         "top_logits": [float(v) for v in top.values.tolist()],
@@ -409,42 +426,61 @@ def _validate_exp20_from_disk(path, n_pairs, layers, dry_run):
     out = {"dry_run": bool(dry_run), "per_layer": {}, "complete": True}
     for layer in layers:
         keys = [k for k in rows if k[1] == layer]
+        # "Every condition has a row" and "every registered measurement succeeded" are
+        # different facts. Conflating them lets one wholly undefined pair-layer pass as
+        # complete while clean accuracy is reported over the remaining 199.
         full = [k for k in keys
                 if set(LEGACY_CONDITIONS) | {"clean"} <= set(rows[k])]
         both_arms = [k for k in full if "both_offset" in rows[k]]
         agree = sum(1 for k in both_arms
-                    if rows[k]["both"]["pred_id"] == rows[k]["both_offset"]["pred_id"])
+                    if rows[k]["both"]["pred_normalized"]
+                    == rows[k]["both_offset"]["pred_normalized"])
         und = [k for k in undefined if k[1] == layer]
+        def norm(v):
+            return (v or "").lower().strip()
         clean_hits = sum(
             1 for k in full
-            if rows[k]["clean"]["pred_id"] == rows[k]["clean"].get("clean_answer_id"))
+            if rows[k]["clean"]["pred_normalized"] == norm(rows[k]["clean"].get("clean_ans")))
         both_hits = sum(
             1 for k in full
-            if rows[k]["both"]["pred_id"] == rows[k]["both"].get("cf_answer_id"))
+            if rows[k]["both"]["pred_normalized"] == norm(rows[k]["both"].get("cf_ans")))
         n = len(full)
         clean_acc = clean_hits / n if n else 0.0
         both_iia = both_hits / n if n else 0.0
         every_condition = [k for k in set(list(rows) + list(undefined)) if k[1] == layer
                            and set(rows.get(k, {})) | set(undefined.get(k, []))
                            == set(EXP20_CONDITIONS)]
-        layer_ok = len(every_condition) == n_pairs
+        all_keys_accounted_for = len(every_condition) == n_pairs
+        legacy_complete = len(full) == n_pairs
+        analysis_ready = all_keys_accounted_for and legacy_complete
         out["per_layer"][str(layer)] = {
-            "complete_observations": n, "undefined_observations": len(und),
-            "expected": n_pairs, "accounted_for": layer_ok,
-            "clean_accuracy": clean_acc,
-            "both_iia": both_iia,
-            "both_iia_wilson_upper": wilson_upper(both_hits, n),
-            "void_clean_accuracy_below_1": clean_acc < 1.0,
-            "void_both_incompatible_with_stored_zero": wilson_upper(both_hits, n) >= 0.05,
-            "offset_arm_defined": len(both_arms),
+            "expected": n_pairs,
+            "all_keys_accounted_for": all_keys_accounted_for,
+            "legacy_defined": len(full),
+            "legacy_complete": legacy_complete,
+            "offset_defined": len(both_arms),
+            "offset_undefined": len(full) - len(both_arms),
+            "analysis_ready": analysis_ready,
+            "undefined_observations": len(und),
+            "clean_accuracy_n": n, "both_iia_n": n,
+            "clean_accuracy": clean_acc if legacy_complete else None,
+            "both_iia": both_iia if legacy_complete else None,
+            "clean_accuracy_preliminary": None if legacy_complete else clean_acc,
+            "both_iia_preliminary": None if legacy_complete else both_iia,
+            "both_iia_wilson_upper": wilson_upper(both_hits, n) if legacy_complete else None,
+            # Void decisions are withheld rather than guessed when the legacy arm is
+            # short: an n = 199 verdict against an n = 200 design is not a verdict.
+            "void_clean_accuracy_below_1": (clean_acc < 1.0) if legacy_complete else None,
+            "void_both_incompatible_with_stored_zero":
+                (wilson_upper(both_hits, n) >= 0.05) if legacy_complete else None,
             "resolver_agreement": (agree / len(both_arms)) if both_arms else None,
             "resolver_disagreements": len(both_arms) - agree,
         }
-        out["complete"] = out["complete"] and layer_ok
+        out["complete"] = out["complete"] and analysis_ready
     return out
 
 
-def _gate_from_disk(path, dry_run):
+def _gate_from_disk(path, dry_run, required=None):
     """The gate is reconstructed from persisted rows, never from in-memory counters.
 
     An in-memory counter is reset by a restart, so a resumed run would fail the gate
@@ -452,6 +488,7 @@ def _gate_from_disk(path, dry_run):
     """
     import json
     import os
+    required = N_EXP19 if required is None else required
     per_layer = {layer: {"hits": set(), "misses": set(), "undefined": set()} for layer in LAYERS}
     if os.path.exists(path):
         with open(path) as fh:
@@ -472,11 +509,11 @@ def _gate_from_disk(path, dry_run):
     summary, ok = {}, True
     for layer, b in per_layer.items():
         defined = len(b["hits"]) + len(b["misses"])
-        layer_ok = (defined == N_EXP19 and not b["undefined"] and len(b["misses"]) == 0)
+        layer_ok = (defined == required and not b["undefined"] and len(b["misses"]) == 0)
         summary[str(layer)] = {
             "hits": len(b["hits"]), "misses": len(b["misses"]),
             "undefined": len(b["undefined"]), "defined": defined,
-            "required": N_EXP19, "layer_ok": layer_ok,
+            "required": required, "layer_ok": layer_ok,
         }
         ok = ok and layer_ok
     return {"per_layer": summary, "gate_ok": bool(ok), "dry_run": bool(dry_run)}
@@ -484,7 +521,7 @@ def _gate_from_disk(path, dry_run):
 
 @app.function(image=image, gpu="A100-40GB", volumes={"/results": vol},
               timeout=24 * 60 * 60, secrets=[modal.Secret.from_name("huggingface")])
-def run(dry_run: bool = False):
+def run(dry_run: bool = False, limit: int = 0):
     import json
     import os
     from datetime import datetime, timezone
@@ -494,6 +531,10 @@ def run(dry_run: bool = False):
     from nnsight import LanguageModel
     from tqdm import tqdm
 
+    if limit and not dry_run:
+        raise RuntimeError(
+            "--limit only applies to a dry run. A registered run uses the sample sizes "
+            "in Amendment 13; a short real run would report a smaller n than registered.")
     prefix = "DRYRUN_" if dry_run else ""
     d = "/results"
     shard = os.path.join(d, f"{prefix}observations.jsonl")
@@ -554,7 +595,11 @@ def run(dry_run: bool = False):
         shard_digest = digest
         print(f"[{ts()}] {len(pairs)} pairs, digest {digest[:12]}, cached")
 
-    if len(pairs) != N_EXP20:
+    if limit:
+        pairs = pairs[:limit]
+        print(f"[{ts()}] DRY RUN limited to {len(pairs)} pairs; this run is a structural "
+              "check and reports no registered result")
+    if not limit and len(pairs) != N_EXP20:
         raise RuntimeError(
             f"filtering yielded {len(pairs)} pairs, registration specifies {N_EXP20}. "
             "Amend the registration or widen N_STORIES; do not proceed on a smaller sample.")
@@ -573,8 +618,9 @@ def run(dry_run: bool = False):
 
     manifest = {
             "generated": datetime.now(timezone.utc).isoformat(),
-            "registration": "AMENDMENTS.md Amendments 13 and 14; tags "
-                            "prereg-amendment-9, prereg-amendment-10",
+            "registration": "AMENDMENTS.md Amendments 13, 14 and 15; tags "
+                            "prereg-amendment-9, prereg-amendment-10, "
+                            "prereg-amendment-11",
             "layers": LAYERS, "n_exp19": N_EXP19, "n_exp20": len(pairs),
             "filtered_pairs_file": os.path.basename(pairs_path),
             "single_token_drink_ids": drink_ids,
@@ -615,14 +661,15 @@ def run(dry_run: bool = False):
                  "undefined": True, "reason": reason} for c in conditions]
 
     # ── EXP19 ──
+    n_gate = min(N_EXP19, len(pairs)) if limit else N_EXP19
     equal_len = []
     for i, s in enumerate(pairs):
         if len(tok.encode(s["clean_prompt"])) == len(tok.encode(s["counterfactual_prompt"])):
             equal_len.append(i)
-        if len(equal_len) >= N_EXP19:
+        if len(equal_len) >= n_gate:
             break
-    if len(equal_len) < N_EXP19:
-        raise RuntimeError(f"only {len(equal_len)} equal-length pairs, {N_EXP19} required")
+    if len(equal_len) < n_gate:
+        raise RuntimeError(f"only {len(equal_len)} equal-length pairs, {n_gate} required")
 
     for layer in LAYERS:
         for n, idx in enumerate(tqdm(equal_len, desc=f"EXP19 L{layer}")):
@@ -652,7 +699,7 @@ def run(dry_run: bool = False):
                 vol.commit()
         vol.commit()
 
-    gate = _gate_from_disk(shard, dry_run)
+    gate = _gate_from_disk(shard, dry_run, required=n_gate)
     with open(gate_path, "w") as fh:
         json.dump(gate, fh, indent=2)
     vol.commit()
@@ -729,10 +776,9 @@ def run(dry_run: bool = False):
                         m["cf_tok"] == m["clean_tok"] for m in legacy_state_mapping),
                     "offset_recalled": off_recalled,
                     "offset_state_roles": off_roles,
-                    "offset_state_pairing": ([list(t) for t in zip(*off_state_pair)]
-                                             if off_state_pair else None),
+                    "offset_state_pairing": off_state_pair[2] if off_state_pair else None,
                     "legacy_offset_recalled_agree": (off_state_pair is not None
-                                                     and list(off_state_pair[1]) == recalled),
+                                                     and sorted(off_state_pair[1]) == recalled),
                 }
 
                 # An assertion failure is an undefined observation, never a measured one.
@@ -782,6 +828,9 @@ def run(dry_run: bool = False):
                         and offset_lookback is not None
                         and cf_offset_lookback is not None
                         and len(offset_lookback) == len(cf_offset_lookback)
+                        and len(off_state_pair[0]) > 0
+                        and not (set(off_state_pair[1]) & set(offset_lookback))
+                        and not (set(off_state_pair[0]) & set(cf_offset_lookback))
                         and all(0 <= q < n_clean for q in off_state_pair[1] + offset_lookback)
                         and all(0 <= q < n_cf for q in off_state_pair[0] + cf_offset_lookback)
                     )
@@ -828,7 +877,14 @@ def run(dry_run: bool = False):
                                            "both-condition is not the union of the singles"))
                         continue
 
+                    by_cond = {r["condition"]: r for r in pending if not r.get("undefined")}
+                    resolvers_agree = (
+                        by_cond["both"]["pred_normalized"]
+                        == by_cond["both_offset"]["pred_normalized"]
+                        if "both_offset" in by_cond else None)
+
                     shared = {
+                        "both_resolvers_agree": resolvers_agree,
                         "clean_ans": s["clean_ans"], "cf_ans": s["counterfactual_ans"],
                         "clean_answer_id": clean_id, "cf_answer_id": cf_id,
                         "recalled_indices": recalled, "lookback_indices": lookback,
@@ -854,6 +910,7 @@ def run(dry_run: bool = False):
         vol.commit()
 
     completeness = _validate_exp20_from_disk(shard, len(pairs), LAYERS, dry_run)
+    completeness["limited_dry_run"] = bool(limit)
     with open(os.path.join(d, f"{prefix}exp20_completeness.json"), "w") as fh:
         json.dump(completeness, fh, indent=2)
     vol.commit()
@@ -879,5 +936,5 @@ def run(dry_run: bool = False):
 
 
 @app.local_entrypoint()
-def main(dry_run: bool = False):
-    run.remote(dry_run=dry_run)
+def main(dry_run: bool = False, limit: int = 0):
+    run.remote(dry_run=dry_run, limit=limit)
