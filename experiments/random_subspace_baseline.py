@@ -91,12 +91,21 @@ def sample_random_svd_mask(n_components, rank, rng):
 
 
 def build_projection_matrix(svd_basis, selected_indices):
-    """Build (d_model, d_model) projection matrix from selected SVD directions.
+    """Build the (d_model, d_model) projection from selected SVD directions.
 
-    Matches the paper: P = V_selected.T @ V_selected
+    P = V_selected.T @ V_selected, matching the paper and matching ndif_utils, which is
+    what every script in this repository that produced a real result uses.
+
+    An earlier revision replaced this with the factored form (x @ V.T) @ V, on the
+    reasoning that shipping V (98 KB at rank 3) rather than P (268 MB) would avoid the
+    WriteTimeout seen in a smoke test. Two things were wrong with that. The scripts that
+    did produce results -- necessity, rescue -- send P over NDIF on every trace and
+    succeed, so the payload is not fatal and that timeout was transient load. And the
+    factored form chains two matmuls against a CPU tensor inside the trace, which raises
+    a device mismatch that the single matmul does not.
     """
     V_sel = svd_basis[selected_indices]  # (rank, d_model)
-    return V_sel.T @ V_sel  # (d_model, d_model)
+    return V_sel.T @ V_sel               # (d_model, d_model)
 
 
 def generate_counterfactual_pairs(n_samples, seed):
@@ -431,6 +440,14 @@ def main():
             random_iias.append(iia)
 
         random_arr = np.array(random_iias)
+        if random_arr.size == 0:
+            print(f"  no usable masks for {name}; every draw was fully undefined")
+            results["subspaces"][name] = {
+                "layer": layer, "rank": rank, "lookback_type": lookback,
+                "concept": concept, "usable_masks": 0,
+                "note": "every random draw returned no defined pairs; nothing to compare",
+            }
+            continue
         rank_count = int(np.sum(random_arr >= identified_iia))
         p_value = (rank_count + 1) / (len(random_iias) + 1)
 
