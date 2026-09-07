@@ -519,8 +519,8 @@ def _gate_from_disk(path, dry_run, required=None):
     return {"per_layer": summary, "gate_ok": bool(ok), "dry_run": bool(dry_run)}
 
 
-@app.function(image=image, gpu="A100-40GB", volumes={"/results": vol},
-              timeout=24 * 60 * 60, secrets=[modal.Secret.from_name("huggingface")])
+@app.function(image=image, gpu="A100", volumes={"/results": vol},
+              timeout=24 * 60 * 60, secrets=[modal.Secret.from_name("huggingface-secret")])
 def run(dry_run: bool = False, limit: int = 0):
     import json
     import os
