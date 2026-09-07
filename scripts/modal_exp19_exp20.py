@@ -655,9 +655,21 @@ def run(dry_run: bool = False, limit: int = 0):
         with open(meta_path) as fh:
             existing = json.load(fh)
         if existing["provenance"] != prov:
-            raise RuntimeError(
-                f"run_metadata.json provenance differs from this run: "
-                f"{existing['provenance']} vs {prov}")
+            if not dry_run:
+                raise RuntimeError(
+                    f"run_metadata.json provenance differs from this run: "
+                    f"{existing['provenance']} vs {prov}")
+            # A dry run produces no registered result and its artifacts are disposable,
+            # so a changed provenance means "start over", not "stop". Refusing here would
+            # force a manual volume clean between every structural check.
+            print(f"[{ts()}] dry-run provenance changed; discarding prior DRYRUN artifacts")
+            for name in os.listdir(d):
+                if name.startswith("DRYRUN_"):
+                    os.remove(os.path.join(d, name))
+            done = set()   # shard_digest already holds this run's pair set
+            with open(meta_path, "w") as fh:
+                json.dump(manifest, fh, indent=2)
+            vol.commit()
         with open(os.path.join(d, f"{prefix}resume_events.jsonl"), "a") as fh:
             fh.write(json.dumps({"resumed": datetime.now(timezone.utc).isoformat(),
                                  "observations_on_disk": len(done)}) + "\n")
