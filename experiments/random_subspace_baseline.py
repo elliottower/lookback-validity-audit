@@ -56,7 +56,14 @@ def setup_nnsight():
 
     from nnsight import CONFIG, LanguageModel
     CONFIG.APP.REMOTE_LOGGING = False
-    CONFIG.set_default_api_key(os.environ["NDIF_KEY"])
+    # The 1Password environment exports this as NDIF_API_KEY; reading only NDIF_KEY
+    # raises KeyError before anything else happens.
+    key = os.environ.get("NDIF_KEY") or os.environ.get("NDIF_API_KEY")
+    if not key:
+        raise RuntimeError(
+            "no NDIF key in the environment: set NDIF_KEY or NDIF_API_KEY. "
+            "The 1Password environment exports it as NDIF_API_KEY.")
+    CONFIG.set_default_api_key(key)
 
     return LanguageModel(MODEL)
 
@@ -156,7 +163,7 @@ def filter_on_model(lm, pairs, max_size=80):
     return filtered
 
 
-def compute_iia_answer(lm, pairs, layer, projection, retries=3):
+def compute_iia_answer(lm, pairs, layer, projection, retries=3, emit=lambda r: None):
     """Compute IIA for answer_lookback via subspace interchange on NDIF.
 
     Intervention at the last token position only:
@@ -164,9 +171,9 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
 
     nnsight constraint: no loops inside trace, no double output access.
     """
-    correct, total = 0, 0
+    correct, total, undefined = 0, 0, 0
 
-    for sample in pairs:
+    for pair_i, sample in enumerate(pairs):
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
         target = sample.get("target", sample.get("counterfactual_ans", ""))
@@ -195,18 +202,27 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
                 is_correct = pred_tok == target.lower().strip()
                 correct += int(is_correct)
                 total += 1
+                emit({"pair": pair_i, "layer": layer, "kind": "answer",
+                      "pred": pred_tok, "target": target.lower().strip(),
+                      "correct": bool(is_correct), "attempt": attempt})
                 break
 
             except Exception as e:
                 if attempt < retries - 1:
-                    time.sleep(3 * (attempt + 1))
+                    time.sleep(min(60, 3 * 2 ** attempt))
                 else:
-                    total += 1
+                    # A dropped NDIF session is not a wrong answer. Counting it as one
+                    # pushes every random-subspace IIA down, which flatters the
+                    # identified subspace -- the wrong direction for a floor control.
+                    undefined += 1
+                    emit({"pair": pair_i, "layer": layer, "kind": "answer",
+                          "undefined": True, "reason": f"{type(e).__name__}: {e}"})
 
-    return correct / total if total > 0 else 0.0
+    return {"correct": correct, "total": total, "undefined": undefined,
+            "iia": correct / total if total > 0 else None}
 
 
-def compute_iia_binding(lm, pairs, layer, projection, retries=3):
+def compute_iia_binding(lm, pairs, layer, projection, retries=3, emit=lambda r: None):
     """Compute IIA for binding_lookback via subspace interchange on NDIF.
 
     Intervention at state token positions [155, 156, 167, 168] with swap:
@@ -214,9 +230,9 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3):
     Must save full layer output to access multiple positions (OutOfOrderError
     prevents multiple output[0] accesses).
     """
-    correct, total = 0, 0
+    correct, total, undefined = 0, 0, 0
 
-    for sample in pairs:
+    for pair_i, sample in enumerate(pairs):
         alt_prompt = sample["counterfactual_prompt"]
         org_prompt = sample["clean_prompt"]
         target = sample.get("target", sample.get("counterfactual_ans", ""))
@@ -251,15 +267,21 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3):
                 is_correct = pred_tok == target.lower().strip()
                 correct += int(is_correct)
                 total += 1
+                emit({"pair": pair_i, "layer": layer, "kind": "binding",
+                      "pred": pred_tok, "target": target.lower().strip(),
+                      "correct": bool(is_correct), "attempt": attempt})
                 break
 
             except Exception as e:
                 if attempt < retries - 1:
-                    time.sleep(3 * (attempt + 1))
+                    time.sleep(min(60, 3 * 2 ** attempt))
                 else:
-                    total += 1
+                    undefined += 1
+                    emit({"pair": pair_i, "layer": layer, "kind": "binding",
+                          "undefined": True, "reason": f"{type(e).__name__}: {e}"})
 
-    return correct / total if total > 0 else 0.0
+    return {"correct": correct, "total": total, "undefined": undefined,
+            "iia": correct / total if total > 0 else None}
 
 
 def main():
@@ -376,16 +398,33 @@ def main():
                       initial=len(random_iias), total=args.n_random):
             selected = sample_random_svd_mask(n_svd, rank, mask_rng(args.seed, name, i))
 
+            obs_path = output_path.parent / f"{name}.observations.jsonl"
+
+            def emit(row, _i=i, _p=obs_path):
+                row.update({"mask_index": _i, "subspace": name,
+                            "t": datetime.now(timezone.utc).isoformat(),
+                            "dry_run": bool(args.dry_run)})
+                with open(_p, "a") as fh:
+                    fh.write(json.dumps(row) + "\n")
+
             if args.dry_run:
                 iia = mask_rng(args.seed, name + ":iia", i).random()
+                stats = {"iia": iia, "correct": None, "total": None, "undefined": None}
             else:
                 proj = build_projection_matrix(svd_basis, selected)
-                iia = compute_fn(lm, pairs, layer, proj)
+                stats = compute_fn(lm, pairs, layer, proj, emit=emit)
+                iia = stats["iia"]
+                if iia is None:
+                    print(f"  mask {i}: every pair undefined "
+                          f"({stats['undefined']} drops); not recorded")
+                    continue
 
             with open(shard, "a") as fh:
                 fh.write(json.dumps({
                     "i": i, "subspace": name, "layer": layer, "rank": rank,
                     "mask": [int(x) for x in selected], "iia": float(iia),
+                    "correct": stats["correct"], "total": stats["total"],
+                    "undefined": stats["undefined"],
                     "dry_run": bool(args.dry_run),
                     "t": datetime.now(timezone.utc).isoformat(),
                 }) + "\n")
