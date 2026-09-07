@@ -105,8 +105,13 @@ def project_onto(x, basis):
     """
     # `.to(x)` copies device and dtype together. Device alone leaves a float32 basis
     # against a bfloat16 model and raises "expected mat1 and mat2 to have the same dtype".
-    V = basis.to(x)
-    return (x @ V.T) @ V
+    M = basis.to(x)
+    if M.ndim == 2 and M.shape[0] == M.shape[1]:
+        # Already a materialised (d_model, d_model) projection. Accepted so existing
+        # callers keep working, but it still costs 268 MB on the wire; pass the
+        # (rank, d_model) basis instead where you can.
+        return x @ M
+    return (x @ M.T) @ M
 
 
 def build_projection_from_basis(basis):
@@ -214,7 +219,8 @@ def _build_context_swapped_output(cl_t, cf_t, projection, intervention_positions
     for tgt, src in intervention_positions:
         if projection is not None:
             x = cl_t[tgt]
-            patched[tgt] = x - (x @ projection) + (cf_t[src] @ projection)
+            patched[tgt] = (x - project_onto(x, projection)
+                            + project_onto(cf_t[src], projection))
         else:
             patched[tgt] = cf_t[src]
 
@@ -234,7 +240,10 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3):
         lm: nnsight LanguageModel
         pairs: list of dicts with clean_prompt, counterfactual_prompt, counterfactual_ans
         layer: int, layer to intervene at
-        projection: (d_model, d_model) projection matrix, or None for full swap
+        projection: either a (rank, d_model) basis, which is what you want -- it goes
+            over the wire at rank x d_model rather than d_model^2 -- or a materialised
+            (d_model, d_model) projection, which still works but costs 268 MB per trace.
+            None for a full swap.
         retries: retry count for NDIF errors
 
     Returns: IIA as float in [0, 1]
@@ -315,7 +324,8 @@ def compute_iia_answer_flex(lm, pairs, layer, projection, retries=3):
                     patched = cl_t.clone()
                     if projection is not None:
                         x = cl_t[-1]
-                        patched[-1] = x - (x @ projection) + (cf_t[-1] @ projection)
+                        patched[-1] = (x - project_onto(x, projection)
+                                       + project_onto(cf_t[-1], projection))
                     else:
                         patched[-1] = cf_t[-1]
 
