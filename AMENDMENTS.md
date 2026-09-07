@@ -999,7 +999,8 @@ amendments written together; each later tag is one freeze.
 | `prereg-amendment-7` | 89952b5 | 11 |
 | `prereg-amendment-8` | (see tag) | 12 |
 | `prereg-amendment-9` | da1a2df | 13 |
-| `prereg-amendment-10` | (this freeze) | 14 |
+| `prereg-amendment-10` | 662034b | 14 |
+| `prereg-amendment-11` | (this freeze) | 15 |
 
 `prereg-amendment-4` therefore resolves to Amendment 8, not Amendment 4. Resolve a tag with
 `git rev-parse <tag>^{}`; the tags are annotated, so `rev-parse` without `^{}` returns the
@@ -1305,3 +1306,49 @@ EXP22 pairs**. EXP19 remains a harness gate and enters no paired estimate.
 **Nothing else in Amendment 13 changes.** Sample sizes, layers, conditions, void conditions, the
 Tango interval and its 90% level, the necessity directions, the absence of an early screen, and
 EXP22's exploratory status all stand as frozen.
+
+---
+
+## Amendment 15: Two resolver arms for EXP20
+
+**Date.** 2026-09-07, prior to any results from EXP19--EXP23.
+
+**Problem.** Amendment 13's methodological note 4 specifies offset-mapping resolution with
+semantic-role metadata for EXP19--EXP23. EXP20's registered void condition requires it to
+reproduce the stored cross-model result, which was produced with the legacy resolvers; changing
+them changes the intervention and defeats the reproduction. As registered, the two requirements
+cannot both be met.
+
+**Correction --- both resolutions are run as patches, not one as an exception.** EXP20 gains
+three conditions. The legacy arm (`recalled_only`, `lookback_only`, `both`) reproduces the stored
+intervention. The offset arm (`recalled_only_offset`, `lookback_only_offset`, `both_offset`)
+applies the Amendment 13 resolution: token indices derived from character offsets, and
+counterfactual-to-clean state positions paired by semantic role --- which state, which occurrence
+--- rather than by sorted index. Seven conditions per pair-layer, including the unpatched clean
+readout.
+
+**Registered endpoints are unchanged and belong to the legacy arm.** Clean accuracy, the
+both-condition IIA and its Wilson upper bound, and both void conditions are computed from it. The
+offset arm carries no registered prediction and is exploratory.
+
+**The comparison is the point.** Per-observation agreement between `both` and `both_offset` is
+recorded, and the run reports a per-layer agreement rate. Agreement settles the resolver question
+empirically. Disagreement shows the stored cross-model result depended on a tokenization artifact,
+which is a more consequential finding than anything else EXP20 was designed to produce.
+
+**An unresolvable offset arm does not void the observation.** Where offset resolution fails, or
+any index falls out of range, the three offset conditions are written undefined with the reason
+and the legacy arm proceeds. Analysis requires all seven conditions present, defined or undefined.
+
+**Anticipated failure mode, stated in advance.** The role-based pairing returns no alignment where
+the clean and counterfactual prompts do not share state structure, rather than truncating the
+mismatch as the legacy `zip` does. If that fires on most pairs the agreement rate is
+uninformative, and the completeness artifact will say so through `offset_arm_defined`.
+
+**Cost.** $(2 + 6) \times 200 \times 2 = 3{,}200$ forward passes, against 2,000 for a single arm.
+
+**Pinning.** The model is pinned literally at commit `cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8`
+and the four vendored stimulus-generating files at digest
+`400c8a5db9a92f59c0701915a0bbc02e8206ce3503cf79f0f85b6051e5b37297`, both asserted at runtime.
+Amendment 13 claimed the model was pinned; until this amendment the code resolved `main` at run
+time, which pinned a run rather than the registration.
