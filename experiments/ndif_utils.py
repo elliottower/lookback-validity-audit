@@ -88,6 +88,27 @@ def build_projection_matrix(svd_basis, selected_indices):
     return V_sel.T @ V_sel  # (d_model, d_model)
 
 
+def project_onto(x, basis):
+    """Project x onto the subspace spanned by `basis`, inside a remote trace.
+
+    Two things this handles that a bare `x @ P` does not.
+
+    Payload: P = basis.T @ basis is (d_model, d_model), 268 MB in float32 at
+    d_model = 8192, and NDIF times out uploading it on every trace. Since
+    x @ (V.T @ V) == (x @ V.T) @ V, sending the basis instead costs rank x d_model --
+    98 KB at rank 3.
+
+    Device: under nnsight 0.7 a local CPU tensor used inside a remote trace raises
+    "Expected all tensors to be on the same device". Even a 32 KB vector does. Earlier
+    nnsight moved them silently, which is why scripts written against it produced results
+    and now do not. `.to(x.device)` inside the trace is what works.
+    """
+    # `.to(x)` copies device and dtype together. Device alone leaves a float32 basis
+    # against a bfloat16 model and raises "expected mat1 and mat2 to have the same dtype".
+    V = basis.to(x)
+    return (x @ V.T) @ V
+
+
 def build_projection_from_basis(basis):
     """Build (d_model, d_model) projection from a (rank, d_model) basis directly.
 

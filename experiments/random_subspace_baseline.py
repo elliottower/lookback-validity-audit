@@ -42,6 +42,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 BELIEF_TRACKING = REPO_ROOT / "reference" / "belief_tracking"
 
 sys.path.insert(0, str(BELIEF_TRACKING))
+from ndif_utils import project_onto
 from src.dataset import Dataset as StoryDataset
 from src.dataset import Sample
 
@@ -196,9 +197,8 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3, emit=lambda r: N
                     with tracer.invoke(org_prompt):
                         curr = lm.model.layers[layer].output[0][-1].clone()
                         if projection is not None:
-                            alt_proj = alt_last @ projection
-                            org_proj = curr @ projection
-                            patch = curr - org_proj + alt_proj
+                            patch = (curr - project_onto(curr, projection)
+                                     + project_onto(alt_last, projection))
                         else:
                             patch = alt_last
 
@@ -260,9 +260,9 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3, emit=lambda r: 
                         if projection is not None:
                             for p_pos, c_pos in [(167, 155), (168, 156), (155, 167), (156, 168)]:
                                 curr = org_out[p_pos].clone()
-                                alt_proj = alt_out[c_pos] @ projection
-                                org_proj = curr @ projection
-                                org_out[p_pos] = curr - org_proj + alt_proj
+                                org_out[p_pos] = (
+                                    curr - project_onto(curr, projection)
+                                    + project_onto(alt_out[c_pos], projection))
                         else:
                             org_out[167] = alt_out[155]
                             org_out[168] = alt_out[156]
@@ -420,7 +420,7 @@ def main():
                 iia = mask_rng(args.seed, name + ":iia", i).random()
                 stats = {"iia": iia, "correct": None, "total": None, "undefined": None}
             else:
-                proj = build_projection_matrix(svd_basis, selected)
+                proj = svd_basis[selected]   # (rank, d_model); see project_onto
                 stats = compute_fn(lm, pairs, layer, proj, emit=emit)
                 iia = stats["iia"]
                 if iia is None:
