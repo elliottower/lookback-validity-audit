@@ -811,6 +811,9 @@ def run(dry_run: bool = False, limit: int = 0):
                     "legacy_offset_agree": (offset_lookback is not None
                                             and set(lookback) == set(offset_lookback)),
                     "legacy_state_mapping": legacy_state_mapping,
+                    # Expected False on a real interchange: the whole point is to write a
+                    # different state into the clean run. Recorded to show which token
+                    # replaced which, not as a health check.
                     "state_mapping_tokens_match": all(
                         m["cf_tok"] == m["clean_tok"] for m in legacy_state_mapping),
                     "offset_recalled": off_recalled,
@@ -939,7 +942,8 @@ def run(dry_run: bool = False, limit: int = 0):
                         "cf_recalled_decoded": repr(tok.decode([cf_ids_full[i] for i in cf_recalled])),
                         "cf_lookback_decoded": repr(tok.decode([cf_ids_full[i] for i in cf_lookback])),
                         "n_tokens_clean": n_clean, "n_tokens_cf": n_cf,
-                        "assertions": checks, "resolver_diagnostic": diagnostic,
+                        "assertions": checks, "assertions_ok": checks["all_ok"],
+                        "resolver_diagnostic": diagnostic,
                         "both_is_union": True,
                     }
                     for row in pending:
@@ -967,7 +971,7 @@ def run(dry_run: bool = False, limit: int = 0):
     for layer, r in completeness["per_layer"].items():
         if r["resolver_agreement"] is not None:
             print(f"[{ts()}] L{layer} resolver agreement: {r['resolver_agreement']:.4f} "
-                  f"over {r['offset_arm_defined']} pairs, "
+                  f"over {r['offset_defined']} pairs, "
                   f"{r['resolver_disagreements']} disagreements")
         if r["void_clean_accuracy_below_1"]:
             print(f"[{ts()}] L{layer} VOID: clean accuracy {r['clean_accuracy']:.4f} < 1.0")
