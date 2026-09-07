@@ -1,0 +1,22 @@
+{
+  "per_layer": {
+    "26": {
+      "hits": 30,
+      "misses": 0,
+      "undefined": 0,
+      "defined": 30,
+      "required": 30,
+      "layer_ok": true
+    },
+    "30": {
+      "hits": 30,
+      "misses": 0,
+      "undefined": 0,
+      "defined": 30,
+      "required": 30,
+      "layer_ok": true
+    }
+  },
+  "gate_ok": true,
+  "dry_run": false
+}

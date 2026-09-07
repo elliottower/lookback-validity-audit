@@ -1,0 +1,50 @@
+{
+  "generated": "2026-09-07T18:15:14.110050+00:00",
+  "registration": "AMENDMENTS.md Amendments 13, 14 and 15; tags prereg-amendment-9, prereg-amendment-10, prereg-amendment-11",
+  "layers": [
+    26,
+    30
+  ],
+  "n_exp19": 30,
+  "n_exp20": 200,
+  "filtered_pairs_file": "filtered_pairs_2c8ac088199738973a3b6b5144016ac343d302b305591519cffec8f35668e51d.json",
+  "single_token_drink_ids": {
+    "water": 3015,
+    "milk": 14074,
+    "tea": 15243,
+    "beer": 12883,
+    "soda": 38862,
+    "juice": 22815,
+    "coffee": 10799,
+    "wine": 13078,
+    "gin": 46183,
+    "rum": 13995,
+    "champagne": 64293,
+    "cocktail": 39910,
+    "punch": 20380,
+    "espresso": 65421,
+    "cocoa": 61788,
+    "sprite": 17051,
+    "monster": 17651,
+    "bourbon": 92748,
+    "port": 2635,
+    "float": 2224,
+    "stout": 89672,
+    "ale": 21463,
+    "porter": 87186
+  },
+  "all_drinks_single_token": true,
+  "greedy_completion_fallback_triggered": false,
+  "dry_run": false,
+  "provenance": {
+    "model": "Qwen/Qwen2.5-14B-Instruct",
+    "model_revision_requested": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+    "model_commit_sha": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+    "pairs_digest": "2c8ac088199738973a3b6b5144016ac343d302b305591519cffec8f35668e51d",
+    "belief_tracking_digest": "400c8a5db9a92f59c0701915a0bbc02e8206ce3503cf79f0f85b6051e5b37297",
+    "seed": 42,
+    "nnsight": "0.7.0",
+    "torch": "2.5.1+cu124",
+    "transformers": "4.48.3"
+  }
+}

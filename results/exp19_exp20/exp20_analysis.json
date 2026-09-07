@@ -1,0 +1,574 @@
+{
+  "observations": "/Users/elliottower/Documents/GitHub/lookback-validity-audit/results/exp19_exp20/observations.jsonl",
+  "n_exp20_defined": 2800,
+  "layers": [
+    26,
+    30
+  ],
+  "canonical_drinks_seen": [
+    "ale",
+    "beer",
+    "bourbon",
+    "champagne",
+    "cocktail",
+    "cocoa",
+    "coffee",
+    "espresso",
+    "float",
+    "gin",
+    "juice",
+    "milk",
+    "monster",
+    "port",
+    "porter",
+    "punch",
+    "rum",
+    "soda",
+    "sprite",
+    "stout",
+    "tea",
+    "water",
+    "wine"
+  ],
+  "conditions": {
+    "L26/both": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L26/both_offset": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L26/clean": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L26/lookback_only": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L26/lookback_only_offset": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L26/recalled_only": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L26/recalled_only_offset": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L30/both": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L30/both_offset": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L30/clean": {
+      "n": 200,
+      "categories": {
+        "1": 200,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 0.0,
+      "returns_clean_answer": 1.0,
+      "top_token": [
+        [
+          "' milk'",
+          13
+        ],
+        [
+          "' wine'",
+          12
+        ],
+        [
+          "' monster'",
+          12
+        ]
+      ]
+    },
+    "L30/lookback_only": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L30/lookback_only_offset": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L30/recalled_only": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    },
+    "L30/recalled_only_offset": {
+      "n": 200,
+      "categories": {
+        "1": 0,
+        "2": 200,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "macro": {
+        "p_clean": 0,
+        "p_cf": 200,
+        "p_off": 0
+      },
+      "iia_vs_intervention_target": 1.0,
+      "returns_clean_answer": 0.0,
+      "top_token": [
+        [
+          "' ale'",
+          16
+        ],
+        [
+          "' bourbon'",
+          14
+        ],
+        [
+          "' wine'",
+          13
+        ]
+      ]
+    }
+  },
+  "confirmatory": {
+    "L26": {
+      "macro_counts": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "n": 200,
+      "both_condition_margin": {
+        "definition": "clean-answer logit minus intervention-target logit",
+        "n": 200,
+        "min": 1.6875,
+        "median": 18.296875,
+        "max": 27.05859375,
+        "q05": 7.921875,
+        "q95": 24.5,
+        "proportion_above_zero": 1.0
+      },
+      "both_vs_unpatched": {
+        "same_predicted_token": 200,
+        "n": 200,
+        "same_top10_ordering": 0,
+        "note": "identical argmax but different logit ordering means the combined patch is not a no-op: it perturbs the distribution and lands back on the clean answer"
+      }
+    },
+    "L30": {
+      "macro_counts": {
+        "p_clean": 200,
+        "p_cf": 0,
+        "p_off": 0
+      },
+      "n": 200,
+      "both_condition_margin": {
+        "definition": "clean-answer logit minus intervention-target logit",
+        "n": 200,
+        "min": 3.0,
+        "median": 18.734375,
+        "max": 28.3046875,
+        "q05": 9.734375,
+        "q95": 24.6171875,
+        "proportion_above_zero": 1.0
+      },
+      "both_vs_unpatched": {
+        "same_predicted_token": 200,
+        "n": 200,
+        "same_top10_ordering": 0,
+        "note": "identical argmax but different logit ordering means the combined patch is not a no-op: it perturbs the distribution and lands back on the clean answer"
+      }
+    },
+    "tests": [
+      {
+        "layer": 26,
+        "contrast": "p_clean vs p_cf",
+        "k": 200,
+        "n": 200,
+        "p_raw": 1.2446030555722283e-60,
+        "p_holm": 7.46761833343337e-60
+      },
+      {
+        "layer": 26,
+        "contrast": "p_clean vs p_off",
+        "k": 200,
+        "n": 200,
+        "p_raw": 1.2446030555722283e-60,
+        "p_holm": 7.46761833343337e-60
+      },
+      {
+        "layer": 26,
+        "contrast": "p_cf vs p_off",
+        "k": 0,
+        "n": 0,
+        "p_raw": 1.0,
+        "p_holm": 1.0
+      },
+      {
+        "layer": 30,
+        "contrast": "p_clean vs p_cf",
+        "k": 200,
+        "n": 200,
+        "p_raw": 1.2446030555722283e-60,
+        "p_holm": 7.46761833343337e-60
+      },
+      {
+        "layer": 30,
+        "contrast": "p_clean vs p_off",
+        "k": 200,
+        "n": 200,
+        "p_raw": 1.2446030555722283e-60,
+        "p_holm": 7.46761833343337e-60
+      },
+      {
+        "layer": 30,
+        "contrast": "p_cf vs p_off",
+        "k": 0,
+        "n": 0,
+        "p_raw": 1.0,
+        "p_holm": 1.0
+      }
+    ],
+    "family": "3 pairwise macro-contrasts x 2 layers, Holm-adjusted",
+    "verdict": {
+      "L26": "cancellation",
+      "L30": "cancellation"
+    }
+  }
+}
