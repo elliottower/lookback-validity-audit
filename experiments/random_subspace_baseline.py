@@ -106,7 +106,48 @@ def build_projection_matrix(svd_basis, selected_indices):
     a device mismatch that the single matmul does not.
     """
     V_sel = svd_basis[selected_indices]  # (rank, d_model)
+    # P = V^T V is an orthogonal projector only if the selected rows are orthonormal.
+    # They come from a truncated SVD and should be; verify rather than assume.
+    gram = V_sel @ V_sel.T
+    eye = torch.eye(gram.shape[0], device=gram.device, dtype=gram.dtype)
+    if not torch.allclose(gram, eye, atol=1e-4, rtol=1e-4):
+        raise ValueError(
+            f"selected SVD rows are not orthonormal: max |V V^T - I| = "
+            f"{(gram - eye).abs().max().item():.3e}. P = V^T V would not be a projector."
+        )
     return V_sel.T @ V_sel               # (d_model, d_model)
+
+
+def story_vocab(sample, side):
+    """Entity tokens belonging to one story: its states, characters and objects."""
+    return sorted({
+        w.lower().strip()
+        for key in (f"{side}_states", f"{side}_characters", f"{side}_objects")
+        for w in (sample.get(key) or [])
+        if w
+    })
+
+
+def pair_hash(sample):
+    """Content hash over the fields that define a pair, for checking index joins."""
+    payload = json.dumps({
+        k: sample.get(k)
+        for k in ("clean_prompt", "counterfactual_prompt", "clean_ans",
+                  "counterfactual_ans", "clean_states", "counterfactual_states")
+    }, sort_keys=True, default=str)
+    return hashlib.sha256(payload.encode()).hexdigest()[:16]
+
+
+def drop_degenerate(pairs, label):
+    """A == B leaves no clean-versus-counterfactual contrast, so the A/B labels are
+    arbitrary and every downstream classification of that pair is uninterpretable."""
+    keep = [s for s in pairs
+            if (s.get("clean_ans") or "").lower().strip()
+            != (s.get("counterfactual_ans") or "").lower().strip()]
+    dropped = len(pairs) - len(keep)
+    if dropped:
+        print(f"[{ts()}] dropped {dropped} degenerate {label} pairs where A == B")
+    return keep, dropped
 
 
 def generate_counterfactual_pairs(n_samples, seed):
@@ -196,6 +237,14 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3, emit=lambda r: N
 
                     with tracer.invoke(org_prompt):
                         curr = lm.model.layers[layer].output[0][-1].clone()
+                        # output[0] is (seq, d_model) here -- nnsight drops batch for a
+                        # single-prompt trace -- so [-1] is the final token. If a library
+                        # change ever makes output[0] (batch, seq, d_model), [-1] silently
+                        # becomes the whole sequence and this patches every position.
+                        assert curr.ndim == 1, (
+                            f"expected a (d_model,) activation at the final token, got "
+                            f"{tuple(curr.shape)}; output[0] is no longer (seq, d_model)"
+                        )
                         if projection is not None:
                             patch = (curr - project_onto(curr, projection)
                                      + project_onto(alt_last, projection))
@@ -219,13 +268,13 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3, emit=lambda r: N
                       # observation: the pair index alone cannot be joined back if the
                       # generator's RNG stream ever differs from the run that produced it.
                       "clean_ans": (sample.get("clean_ans") or "").lower().strip(),
-                      "story_vocab": sorted({
-                          w.lower().strip()
-                          for key in ("clean_states", "counterfactual_states",
-                                      "clean_characters", "counterfactual_characters",
-                                      "clean_objects", "counterfactual_objects")
-                          for w in (sample.get(key) or [])
-                      })})
+                      "pair_hash": pair_hash(sample),
+                      # Split by story. A prediction found only in the donor story is
+                      # transferred content, not a coherent third answer produced from the
+                      # recipient's own entities, and pooling the two would count the first
+                      # as evidence for the second.
+                      "clean_vocab": story_vocab(sample, "clean"),
+                      "cf_vocab": story_vocab(sample, "counterfactual")})
                 break
 
             except Exception as e:
@@ -296,13 +345,13 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3, emit=lambda r: 
                       # observation: the pair index alone cannot be joined back if the
                       # generator's RNG stream ever differs from the run that produced it.
                       "clean_ans": (sample.get("clean_ans") or "").lower().strip(),
-                      "story_vocab": sorted({
-                          w.lower().strip()
-                          for key in ("clean_states", "counterfactual_states",
-                                      "clean_characters", "counterfactual_characters",
-                                      "clean_objects", "counterfactual_objects")
-                          for w in (sample.get(key) or [])
-                      })})
+                      "pair_hash": pair_hash(sample),
+                      # Split by story. A prediction found only in the donor story is
+                      # transferred content, not a coherent third answer produced from the
+                      # recipient's own entities, and pooling the two would count the first
+                      # as evidence for the second.
+                      "clean_vocab": story_vocab(sample, "clean"),
+                      "cf_vocab": story_vocab(sample, "counterfactual")})
                 break
 
             except Exception as e:
@@ -358,6 +407,9 @@ def main():
         binding_pairs = filter_on_model(lm, binding_pairs, max_size=args.n_eval_samples)
         print(f"[{ts()}] {len(binding_pairs)} binding pairs passed filter")
 
+        answer_pairs, n_drop_a = drop_degenerate(answer_pairs, "answer")
+        binding_pairs, n_drop_b = drop_degenerate(binding_pairs, "binding")
+
         # The registered second arm of EXP2 -- the coherent-third-answer rate -- needs each
         # pair's clean answer and its story vocabulary, neither of which the per-observation
         # rows carry. Dumping the evaluation pairs makes that arm computable offline, and
@@ -366,6 +418,7 @@ def main():
         pairs_path.write_text(json.dumps({
             "seed": args.seed,
             "n_eval_samples": args.n_eval_samples,
+            "n_degenerate_dropped": {"answer": n_drop_a, "binding": n_drop_b},
             "answer_pairs": answer_pairs,
             "binding_pairs": binding_pairs,
         }, indent=2, default=str))
@@ -396,8 +449,12 @@ def main():
                 verdict = "OK" if mismatched == 0 else f"MISMATCH on {mismatched}/{seen}"
                 print(f"[{ts()}] pair-index join vs {shard_name}: {verdict}")
                 if mismatched:
-                    print("  Existing observations do not line up with the regenerated pairs. "
-                          "Do not join them by index; the third-answer arm needs a fresh run.")
+                    raise SystemExit(
+                        f"  Existing observations in {shard_name} do not line up with the "
+                        f"regenerated pairs ({mismatched}/{seen} targets disagree). Joining by "
+                        f"index would silently attach the wrong story to each observation. "
+                        f"Write to a fresh --output directory instead."
+                    )
 
     # Load SVD bases
     svd_dir = REPO_ROOT / "results" / "svd" / "CausalToM"
@@ -475,7 +532,9 @@ def main():
             obs_path = output_path.parent / f"{name}.observations.jsonl"
 
             def emit(row, _i=i, _p=obs_path):
-                row.update({"mask_index": _i, "subspace": name,
+                # An explicit arm label rather than "is mask_index present", which a
+                # resume or a serialization change could quietly break.
+                row.update({"arm": "random", "mask_index": _i, "subspace": name,
                             "t": datetime.now(timezone.utc).isoformat(),
                             "dry_run": bool(args.dry_run)})
                 with open(_p, "a") as fh:
