@@ -330,7 +330,7 @@ EXP12--EXP15 & Amendment 9 & complete & Section~\ref{sec:dissociation_results} \
 Cross-model & Amendment 10 (criterion E3) & complete & Section~\ref{sec:crossmodel} \\
 Rescue & Amendment 10 (criterion I10) & complete & Section~\ref{sec:results} \\
 EXP16--EXP18 & Amendment 12 & not run & --- \\
-EXP19--EXP20 & Amendment 13 & complete & Section~\ref{sec:crossmodel} \\
+EXP19--EXP20 & Amendment 13 & complete & Section~\ref{sec:exp1920} \\
 EXP21--EXP23 & Amendment 13 & not run & --- \\
 \bottomrule
 \end{tabular}
@@ -582,6 +582,47 @@ pathway; that convention was defined for loss-of-function perturbations, and int
 interventions install a value rather than remove one, so we report the coefficients without
 the same-unit verdict. The decomposition was derived from the cross-model results afterward and is a
 follow-up rather than a registered prediction.
+
+\subsection{What the both-condition outputs (EXP19--EXP20)}
+\label{sec:exp1920}
+
+The interaction result above rests on the both-condition scoring zero: patching the recalled
+and lookback groups together restores none of the counterfactual answer. Zero is compatible
+with three different things happening inside the model, and the coefficient is the same under
+all three. The patches could cancel and leave the clean computation intact; they could transfer
+the counterfactual answer, which the scoring would then have mismeasured; or they could destroy
+the computation and emit something belonging to neither story. EXP19 and EXP20 were registered
+in Amendment 13, before either was run, to separate them.
+
+\paragraph{EXP19: full-sequence positive control (gate).}
+Patching every position must reproduce the counterfactual answer, or the harness cannot detect
+transfer at all and no null from it means anything. The gate passes at both layers: $30/30$
+hits at L26 and $30/30$ at L30, with no undefined observation. Amendment 16a moved this gate
+onto answer pairs, because on binding pairs the clean and counterfactual answers coincide by
+construction and the test would be vacuous.
+
+\paragraph{EXP20: output identity.}
+Every readout in the both-condition is classified into one of three exhaustive categories---the
+clean answer, the intervention target, or neither---and a conclusion requires one to beat both
+others under exact conditional binomial tests, Holm-adjusted across the six comparisons. The
+result is unambiguous. At both layers, all $200$ readouts return the clean answer: $200$ clean,
+$0$ target, $0$ off-target, giving $p_{\text{Holm}} = 7.5 \times 10^{-60}$ against each
+alternative. Clean accuracy is $1.0$ and the both-condition interchange accuracy is $0.0$ with a
+Wilson upper bound of $0.019$. Two independent resolvers agree on every observation
+($1.0$ agreement, $0$ disagreements), and no observation is undefined across $2{,}800$ scored
+readouts.
+
+The verdict is \textbf{cancellation}, not transfer and not interference. Two further quantities
+say the patches are nonetheless doing something. The margin between the clean-answer logit and
+the intervention-target logit is positive on every pair, with a median of $+18.3$ at L26 and
+$+18.7$ at L30 and a minimum of $+1.7$, so the model is not marginally preferring the clean
+answer but decisively so. And the combined patch is not a no-op: it reproduces the unpatched
+argmax on $200/200$ pairs while reproducing the unpatched top-ten ordering on $0/200$. The
+distribution is perturbed and lands back on the same answer.
+
+This is what licenses reading the order-2 coefficient as interaction rather than as a scoring
+artifact. It also bounds the reading: cancellation shows the two groups are jointly
+inert on the answer, not that either is inert alone, and the singles were already near zero.
 
 \subsection{Rescue reversibility (L38, $n = 200$)}
 
