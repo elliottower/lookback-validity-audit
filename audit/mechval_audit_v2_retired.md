@@ -1,5 +1,13 @@
 # Mechanistic Validity Audit V2: Language Models Use Lookbacks to Track Beliefs
 
+> **Retired.** This is the pre-experiment audit, written on the framework's
+> earlier 25-criterion scheme (C1--C5, M1--M6, I1--I5, E1--E4, V1--V5) with
+> criterion names that no longer exist. It is kept because it records what we
+> predicted before running anything, and several of those predictions were
+> overturned. The live audit is `mechval_audit_v3.md`, scored against the
+> current 36 criteria with the experimental results in place.
+
+
 Paper: Prakash, Shapira, Sen Sharma, Riedl, Belinkov, Rott Shaham, Bau, Geiger. ICLR 2026. arXiv:2505.14685.
 
 Frameworks applied: MechVal (7-tier verdict), MechRef (transport + failure modes), CVI (cross-view invariance depth).
