@@ -372,6 +372,8 @@ def main():
     parser.add_argument("--n-eval-samples", type=int, default=80)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=str, default=str(REPO_ROOT / "results" / "random_subspace_baseline.json"))
+    parser.add_argument("--subspaces", default=None,
+                        help="comma-separated subspace names; default all")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -477,6 +479,14 @@ def main():
         "subspaces": {},
     }
 
+    wanted = {x.strip() for x in args.subspaces.split(',')} if args.subspaces else None
+    if wanted:
+        missing = wanted - set(subspace_specs)
+        if missing:
+            raise SystemExit(f"unknown subspace(s): {sorted(missing)}")
+        subspace_specs = {k: v for k, v in subspace_specs.items() if k in wanted}
+        print(f"[{ts()}] restricted to {sorted(subspace_specs)}")
+
     for name, spec in subspace_specs.items():
         layer = spec["layer"]
         rank = spec["rank"]
@@ -505,6 +515,16 @@ def main():
                 continue
             svd_basis = torch.load(svd_path, weights_only=True).float()  # (n_comp, d_model)
             print(f"  SVD basis: {svd_basis.shape}")
+            # project_onto computes (x @ V.T) @ V, which is an orthogonal projection only
+            # if the rows are orthonormal. Both arms rely on it, so check once here.
+            gram = svd_basis @ svd_basis.T
+            off = (gram - torch.eye(gram.shape[0], dtype=gram.dtype)).abs().max().item()
+            if off > 1e-3:
+                raise ValueError(
+                    f"SVD rows for {name} are not orthonormal: max |V V^T - I| = {off:.3e}; "
+                    f"(x @ V.T) @ V is not an orthogonal projection."
+                )
+            print(f"  orthonormality: max |V V^T - I| = {off:.2e}")
 
         # Compute IIA with identified subspace (paper's result)
         identified_iia = spec["sv_iia"]
@@ -514,6 +534,35 @@ def main():
             compute_fn = compute_iia_answer
         else:
             compute_fn = compute_iia_binding
+
+        # The identified subspace, measured here rather than taken from the spec. The
+        # third-answer rate compares arms, and a rate from a differently-scored arm is
+        # not comparable to one scored by this loop.
+        ident_obs = output_path.parent / f"{name}.observations.jsonl"
+        ident_done = output_path.parent / f"{name}.identified.json"
+        if not args.dry_run and not ident_done.exists():
+            sel_ident = spec.get("selected_indices") or spec.get("mask_indices")
+            if not sel_ident:
+                print(f"  no stored mask indices for {name}; identified arm skipped")
+            else:
+                def emit_ident(row, _p=ident_obs):
+                    row.update({"arm": "identified", "mask_index": None, "subspace": name,
+                                "t": datetime.now(timezone.utc).isoformat(),
+                                "dry_run": False})
+                    with open(_p, "a") as fh:
+                        fh.write(json.dumps(row) + "\n")
+
+                proj_ident = svd_basis[list(sel_ident)]   # same form as the random arm
+                st = compute_fn(lm, pairs, layer, proj_ident, emit=emit_ident)
+                ident_done.write_text(json.dumps({
+                    "subspace": name, "layer": layer, "rank": rank,
+                    "selected_indices": [int(x) for x in sel_ident],
+                    "measured_iia": st["iia"], "paper_iia": identified_iia,
+                    "correct": st["correct"], "total": st["total"],
+                    "undefined": st["undefined"],
+                }, indent=2))
+                print(f"  identified arm measured IIA {st['iia']} "
+                      f"(paper reports {identified_iia})")
 
         # Compute IIA with random subspaces
         # Append-only shard, one line per mask. A rewritten file can be truncated by a
