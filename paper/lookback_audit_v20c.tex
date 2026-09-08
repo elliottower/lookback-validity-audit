@@ -364,7 +364,8 @@ For each identified subspace we draw random index sets of the same rank from the
 subspace, extended to 100 at L34, for 350 masks and 28{,}000 interventions in total with no
 undefined observation. No random subspace reaches the identified subspace at any layer
 (Table~\ref{tab:baseline}), so the rank-test $p$ is at its floor for all six---$(0+1)/(50+1) =
-0.0196$, and $(0+1)/(100+1) = 0.0099$ at L34. Separation is not uniform in rank: at rank 3 every
+0.0196$, and $(0+1)/(100+1) = 0.0099$ at L34. The registration set the bar at $p < 0.01$ against
+200 draws; the shortfall in draws and its consequence are recorded under Deviations. Separation is not uniform in rank: at rank 3 every
 random draw returns exactly $0.0$ against identified values of $0.925$ and $0.963$, while at rank
 7 one draw reaches $0.6125$ against an identified $0.738$. The identified directions are not
 arbitrary, and the margin narrows as rank grows.
@@ -724,6 +725,37 @@ EXP15$^\dagger$ & Observed-other IIA $< 0.30$ & IIA $= 0.988$ & Overturned \\
 \end{table}
 
 
+\subsection*{Deviations from the pre-registration}
+
+Two deviations occurred in EXP2. Neither alters the direction of the result, and both concern
+how much of the registered design was executed rather than what it returned.
+
+\paragraph{Draw count, and the threshold it puts out of reach.}
+The registration specifies 200 random index sets per subspace and a decision rule of $p < 0.01$
+on the one-sided rank test $p = (k+1)/(n+1)$. We ran 50 per subspace, extended to 100 at L34.
+The rule and the draw count interact: with no random draw reaching the identified value, $p$ is
+$1/(n+1)$, so $n = 50$ bottoms out at $0.0196$ and cannot return a value below $0.01$ whatever
+the separation. Five of the six subspaces are therefore reported as separating without meeting
+the registered threshold, and L34 meets it at $0.0099$. The shortfall is in $n$, fixed before
+any intervention ran, rather than in what the draws returned: no random subspace of matched
+rank reached the identified value at any layer, and at rank 3 every draw returned exactly
+$0.000$ against identified values of $0.925$ and $0.963$.
+
+\paragraph{The coherent-third-answer arm was not run.}
+The registration adds a second measurement to EXP2: the rate at which each random subspace
+produces a coherent third answer, defined in advance as a token from the story's entity
+vocabulary distinct from both the clean and the counterfactual answer, to test whether the
+decomposable structure is direction-specific rather than a property of the basis geometry. That
+rate is not computed here. The per-intervention records hold each prediction and its target but
+not the clean answer or the story vocabulary, so the arm is not recoverable from the stored
+observations and would need the evaluation pairs alongside them.
+
+Neither deviation is load-bearing for M2 as the framework defines it, which asks whether the
+measurement separates from a matched baseline; the separation is absolute on the draws taken.
+Both bound what the experiment can be cited for: an identified subspace that no matched-rank
+random draw approaches, on 350 draws, and no evidence either way on whether the third answers
+are direction-specific.
+
 \section{Discussion}
 \label{sec:discussion}
 
@@ -835,13 +867,12 @@ Three extensions follow from the design rather than from its results. The first 
 verbatim quotation with a locator in the audited source, and a criterion with no quotation is
 recorded as an assertion rather than a result. The second is binding every reported figure to
 the run that produced it, so a number in this manuscript and a number in a results file
-cannot disagree; three completed experiments in this audit were absent from an earlier draft
-because no such binding existed. The third is a second case: \citet{cui2026dual} apply the
+cannot disagree. The third is a second case: \citet{cui2026dual} apply the
 binding account in another modality, and auditing it against the same criteria would test
 whether the verdicts here are a property of the claim or of the auditor.
 
 \paragraph{Revised claim.}
-We originally proposed contracting ``belief tracking via pointer dereference'' to ``attention-mediated retrieval.'' EXP12--EXP15 warrant a more specific characterization. The subspaces encode character-state associations that update with observability and state changes, accessible specifically through character-perspective queries. This is richer than ``retrieval'' but more precise than ``belief tracking''---belief tracking implemented as entity-state binding, not as a separate cognitive primitive. We propose the term \emph{perspective-indexed entity binding}: the bindings are indexed to
+Contracting ``belief tracking via pointer dereference'' to ``attention-mediated retrieval'' understates what EXP12--EXP15 show. The subspaces encode character-state associations that update with observability and state changes, accessible specifically through character-perspective queries. This is richer than ``retrieval'' but more precise than ``belief tracking''---belief tracking implemented as entity-state binding, not as a separate cognitive primitive. We propose the term \emph{perspective-indexed entity binding}: the bindings are indexed to
 whose perspective a question asks about, and are read out differently under belief framing
 than under reality framing. We do not call them belief-constitutive. Constitution is a
 non-causal relation, and the standard test for constitutive relevance in the mechanism

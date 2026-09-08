@@ -334,6 +334,47 @@ def main():
         binding_pairs = filter_on_model(lm, binding_pairs, max_size=args.n_eval_samples)
         print(f"[{ts()}] {len(binding_pairs)} binding pairs passed filter")
 
+        # The registered second arm of EXP2 -- the coherent-third-answer rate -- needs each
+        # pair's clean answer and its story vocabulary, neither of which the per-observation
+        # rows carry. Dumping the evaluation pairs makes that arm computable offline, and
+        # retroactively for masks already on disk, since observations are keyed by pair index.
+        pairs_path = Path(args.output).parent / "random_subspace_eval_pairs.json"
+        pairs_path.write_text(json.dumps({
+            "seed": args.seed,
+            "n_eval_samples": args.n_eval_samples,
+            "answer_pairs": answer_pairs,
+            "binding_pairs": binding_pairs,
+        }, indent=2, default=str))
+        print(f"[{ts()}] wrote {pairs_path.name} "
+              f"({len(answer_pairs)} answer, {len(binding_pairs)} binding)")
+
+        # Pair indices only join to existing observations if regeneration reproduced the same
+        # filtered set. Check it against a shard rather than assuming it.
+        for shard_name, pairs in (("answer_pointer_L38", answer_pairs),
+                                  ("binding_addr_payload_L34", binding_pairs)):
+            obs_path = Path(args.output).parent / f"{shard_name}.observations.jsonl"
+            if not obs_path.exists() or not pairs:
+                continue
+            seen, mismatched = 0, 0
+            for line in obs_path.read_text().splitlines():
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                i = row.get("pair")
+                if i is None or i >= len(pairs):
+                    continue
+                seen += 1
+                stored = (row.get("target") or "").lower().strip()
+                regen = (pairs[i].get("counterfactual_ans") or "").lower().strip()
+                if stored and regen and stored != regen:
+                    mismatched += 1
+            if seen:
+                verdict = "OK" if mismatched == 0 else f"MISMATCH on {mismatched}/{seen}"
+                print(f"[{ts()}] pair-index join vs {shard_name}: {verdict}")
+                if mismatched:
+                    print("  Existing observations do not line up with the regenerated pairs. "
+                          "Do not join them by index; the third-answer arm needs a fresh run.")
+
     # Load SVD bases
     svd_dir = REPO_ROOT / "results" / "svd" / "CausalToM"
     if not svd_dir.exists() and not args.dry_run:
