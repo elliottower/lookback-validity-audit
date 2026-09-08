@@ -187,6 +187,7 @@ def filter_on_model(lm, pairs, max_size=80):
     Uses two separate traces per sample (nnsight can't loop inside trace).
     """
     filtered = []
+    errors, evaluated = 0, 0
     for sample in tqdm(pairs, desc="Filtering on model accuracy"):
         clean_prompt = sample["clean_prompt"]
         cf_prompt = sample["counterfactual_prompt"]
@@ -203,13 +204,31 @@ def filter_on_model(lm, pairs, max_size=80):
             clean_tok = lm.tokenizer.decode([clean_pred.item()]).lower().strip()
             cf_tok = lm.tokenizer.decode([cf_pred.item()]).lower().strip()
 
+            evaluated += 1
             if clean_tok == clean_target.lower().strip() and cf_tok == cf_target.lower().strip():
                 filtered.append(sample)
                 if len(filtered) >= max_size:
                     break
         except Exception as e:
+            errors += 1
             print(f"  Filter error: {e}")
             time.sleep(2)
+
+    # A backend outage looks exactly like a dataset in which no pair passes: every
+    # attempt raises, the exception is swallowed, and the function returns a short or
+    # empty list that the rest of the run treats as the evaluation set. Distinguish the
+    # two by counting errors, and refuse to continue on an outage rather than measuring
+    # 200 masks against nothing.
+    attempted = errors + evaluated
+    if attempted and errors / attempted > 0.25:
+        raise SystemExit(
+            f"aborting: {errors} of {attempted} filter attempts raised "
+            f"({errors / attempted:.0%}). The backend is failing, not the pairs. "
+            f"{len(filtered)} pairs passed, which is not an evaluation set."
+        )
+    if len(filtered) < max_size:
+        print(f"  WARNING: {len(filtered)} pairs passed, fewer than the {max_size} requested "
+              f"({evaluated} evaluated, {errors} errored)")
 
     return filtered
 
