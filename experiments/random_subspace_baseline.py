@@ -213,7 +213,19 @@ def compute_iia_answer(lm, pairs, layer, projection, retries=3, emit=lambda r: N
                 total += 1
                 emit({"pair": pair_i, "layer": layer, "kind": "answer",
                       "pred": pred_tok, "target": target.lower().strip(),
-                      "correct": bool(is_correct), "attempt": attempt})
+                      "correct": bool(is_correct), "attempt": attempt,
+                      # The registered third-answer arm asks whether a prediction that is
+                      # neither A nor B is nonetheless a story entity. Both are needed per
+                      # observation: the pair index alone cannot be joined back if the
+                      # generator's RNG stream ever differs from the run that produced it.
+                      "clean_ans": (sample.get("clean_ans") or "").lower().strip(),
+                      "story_vocab": sorted({
+                          w.lower().strip()
+                          for key in ("clean_states", "counterfactual_states",
+                                      "clean_characters", "counterfactual_characters",
+                                      "clean_objects", "counterfactual_objects")
+                          for w in (sample.get(key) or [])
+                      })})
                 break
 
             except Exception as e:
@@ -278,7 +290,19 @@ def compute_iia_binding(lm, pairs, layer, projection, retries=3, emit=lambda r: 
                 total += 1
                 emit({"pair": pair_i, "layer": layer, "kind": "binding",
                       "pred": pred_tok, "target": target.lower().strip(),
-                      "correct": bool(is_correct), "attempt": attempt})
+                      "correct": bool(is_correct), "attempt": attempt,
+                      # The registered third-answer arm asks whether a prediction that is
+                      # neither A nor B is nonetheless a story entity. Both are needed per
+                      # observation: the pair index alone cannot be joined back if the
+                      # generator's RNG stream ever differs from the run that produced it.
+                      "clean_ans": (sample.get("clean_ans") or "").lower().strip(),
+                      "story_vocab": sorted({
+                          w.lower().strip()
+                          for key in ("clean_states", "counterfactual_states",
+                                      "clean_characters", "counterfactual_characters",
+                                      "clean_objects", "counterfactual_objects")
+                          for w in (sample.get(key) or [])
+                      })})
                 break
 
             except Exception as e:
